@@ -1,0 +1,40 @@
+.card {
+  border-radius: 16px;
+  border: 1px solid white;
+
+  &__inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  &__inner {
+    padding: 20px fluid-size(20, 30) fluid-size(20, 25);
+    color: var(--color-text-white);
+  }
+
+  &__number {
+    font-size: fluid-size(16, 36);
+    line-height: 137%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: fluid-size(20, 36);
+    line-height: 137%;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    text-align: justify;
+    text-transform: uppercase;
+    font-size: fluid-size(12, 16);
+    line-height: 137%;
+  }
+}

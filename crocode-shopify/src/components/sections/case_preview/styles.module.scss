@@ -1,0 +1,58 @@
+.cases {
+  &__inner {
+    position: relative;
+    padding: fluid-size(80, 165) fluid-size(25, 125) fluid-size(150, 245); 
+  }
+
+  &__header {
+    margin-bottom: fluid-size(41, 67);
+  }
+
+  &__title {
+    font-size: fluid-size(16, 36);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 137%;
+    margin-bottom: fluid-size(15, 5);
+  }
+
+  &__subtitle {
+    font-size: fluid-size(32, 64);
+    line-height: 117%;
+    text-transform: uppercase;
+    margin-bottom: fluid-size(10, 15);
+  }
+
+  &__message {
+    font-size: fluid-size(12, 20);
+    line-height: 137%;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    gap: fluid-size(13, 20);
+
+    @include media-up(md) {
+      display: grid;
+      grid-template-columns: fluid-size(100, 485) fluid-size(80, 340) fluid-size(50, 235) 1fr;
+    }
+
+    @include media-down(md) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__case {
+    border-radius: 20px;
+    background-color: white;
+
+    @include media-up(md) {
+      height: fluid-size(120, 525);
+    }
+
+    @include media-down(md) {
+      height: fluid-size(215, 400, 0, 768);
+    }
+  }
+}

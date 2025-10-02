@@ -1,0 +1,35 @@
+.experts {
+  border-top-left-radius: fluid-size(44, 77);
+  border-top-right-radius: fluid-size(44, 77);
+  margin-top: -100px;
+  background: var(--color-bg-white);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:  fluid-size(135, 265) 20px fluid-size(125, 150);
+  }
+
+  &__subtitle {
+    font-size: fluid-size(16, 36); 
+    text-transform: uppercase;
+    color: var(--color-text-black);
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    line-height: 140%;
+    max-width: fluid-size(375, 1515);
+    margin-bottom: fluid-size(20, 30);
+  }
+
+  &__message {
+    font-size: fluid-size(12, 20);
+    line-height: 180%;
+    text-align: center;
+    max-width: fluid-size(336, 757);
+    color: var(--color-text-black);
+    margin-bottom: fluid-size(70, 50);
+  }
+}

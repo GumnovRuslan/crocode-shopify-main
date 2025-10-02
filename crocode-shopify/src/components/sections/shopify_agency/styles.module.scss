@@ -1,0 +1,77 @@
+.section {
+  background: #000;
+
+  &__inner {
+    padding: fluid-size(80, 165) fluid-size(30, 125) fluid-size(65, 95);
+  }
+
+  &__header {
+    margin-bottom: fluid-size(40, 120);
+  }
+
+  &__title {
+    font-size: fluid-size(16, 36);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 137%;
+    color: var(--color-title-white);
+    margin-bottom: 50px;
+  }
+
+  &__subtitle {
+    font-size: fluid-size(32, 64);
+    line-height: 117%;
+    text-transform: uppercase;
+    margin-bottom: fluid-size(10, 15);
+    color: var(--color-text-white);
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+}
+
+.slider {
+  position: relative;
+  margin-bottom: fluid-size(80, 120);
+
+  &__card {
+    width: fluid-size(220, 460);
+    height: fluid-size(310, 640);
+    border-radius: 20px;
+    background: white;
+  }
+
+  &__btn {
+    &_prev, 
+    &_next {
+      position: absolute;
+      z-index: 100;
+      top: 50%;
+    }
+
+    &_prev {
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    &_next {
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+  }
+}
+
+.embla {
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__slider {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+}

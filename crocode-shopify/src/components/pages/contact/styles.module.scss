@@ -1,0 +1,22 @@
+.contact {
+  background: #000;
+
+  &__inner {
+    padding: fluid-size(270, 300) fluid-size(20, 125) fluid-size(135, 300); 
+  }
+
+  &__title {
+    font-size: fluid-size(16, 36);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-title-white);
+    margin-bottom: fluid-size(10, 15);
+
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(150, 250);
+  }
+}

@@ -1,0 +1,21 @@
+.section {
+  position: relative;
+  overflow: hidden;
+
+  &--rounded {
+    border-top-left-radius: fluid-size(44, 77);
+    border-top-right-radius: fluid-size(44, 77);
+    
+     @include media-up(xxl) {
+      margin-bottom: -100px;  
+    }
+
+    @include media-between(md, xxl) {
+      margin-bottom: -80px;  
+    }
+
+    @include media-down(md) {
+      margin-bottom: -50px;  
+    }
+  }
+}
