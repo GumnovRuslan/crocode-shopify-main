@@ -3,10 +3,6 @@
   border-radius: 20px;
   overflow: hidden;
 
-  &__image {
-    object-fit: cover;
-  }
-
   &__link {
     display: flex;
     flex-direction: column;

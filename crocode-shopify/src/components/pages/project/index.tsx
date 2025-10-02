@@ -3,17 +3,23 @@
 import { HeroProject, Summary, Gallery, Comments, LetsTalk, CaseStudyDetails } from "@/components/sections"
 import { Section } from "@/components/ui"
 import { useDarkThemeForHeader } from "@/hooks/useHeaderTheme"
+import { TProject } from "@/types/project"
 
-const ProjectPage = () => {
+type TProps = {
+  project: TProject
+}
+
+const ProjectPage = ({project}: TProps) => {
   useDarkThemeForHeader()
+  console.log('project', project)
 
   return (
     <>
       <HeroProject 
-        title="HVISK x shopify plus" 
+        title={project?.title} 
         subtitle="Membership Case Study"
         message="Shopify Custom Theme Design & Development"
-        background={{src: '/images/test-project-hero.jpg', alt: ''}}
+        background={{src: project.coverImage.image.asset.url ?? '/images/test-project-hero.jpg', alt: project.coverImage.altText ?? 'Project Hero Image'}}
       />
       <Summary />
       <Gallery/>

@@ -2,8 +2,8 @@ import {MasterDetailIcon} from '@sanity/icons'
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'Projects',
-  title: 'Projects',
+  name: 'blogs',
+  title: 'Blogs',
   type: 'document',
   icon: MasterDetailIcon,
   preview: {
@@ -16,6 +16,19 @@ export default defineType({
       title: 'Title',
       name: 'title',
       type: 'string',
+      validation: (Rule) => Rule.required()
+    }),
+    defineField({
+      name: 'language',
+      title: 'Language',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'English', value: 'en' },
+          { title: 'Polish', value: 'pl' },
+        ]
+      },
+      validation: (Rule) => Rule.required()
     }),
     defineField({
       title: 'Breadcrumbs',

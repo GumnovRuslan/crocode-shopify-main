@@ -8,7 +8,6 @@ type TProps = {
 }
 
 const Burger = ({ isActive, setIsActive = () =>{}, className = '', theme }: TProps) => {
-  console.log(theme)
   return (
     <button 
       className={`${styles.burger} ${isActive ? styles['burger--active'] : ''} ${className}`}

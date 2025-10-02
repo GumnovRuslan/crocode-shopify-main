@@ -2,13 +2,15 @@ import {MasterDetailIcon} from '@sanity/icons'
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'Blogs',
-  title: 'Blogs',
+  name: 'projects',
+  title: 'Projects',
   type: 'document',
   icon: MasterDetailIcon,
   preview: {
     select: {
       title: 'title',
+      subtitle: 'language',
+      media: 'coverImage.image'
     },
   },
   fields: [
@@ -16,17 +18,19 @@ export default defineType({
       title: 'Title',
       name: 'title',
       type: 'string',
+      validation: (Rule) => Rule.required()
     }),
     defineField({
-      title: 'Breadcrumbs',
-      name: 'breadcrumbs',
-      type: 'array',
-      of: [
-        {
-          name: 'link',
-          type: 'link',
-        },
-      ],
+      name: 'language',
+      title: 'Language',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'English', value: 'en' },
+          { title: 'Polish', value: 'pl' },
+        ]
+      },
+      validation: (Rule) => Rule.required()
     }),
     defineField({
       name: 'slug',
@@ -36,6 +40,7 @@ export default defineType({
         source: 'title',
         maxLength: 96,
       },
+      validation: (Rule) => Rule.required()
     }),
     defineField({
       title: 'Description',
@@ -48,9 +53,9 @@ export default defineType({
       type: 'imageWithAlt',
     }),
     defineField({
-      title: 'Author name',
-      name: 'author',
-      type: 'string',
+      title: 'Description',
+      name: 'description',
+      type: 'brief',
     }),
     defineField({
       title: 'Status',
@@ -95,12 +100,6 @@ export default defineType({
           type: 'image',
         },
       ],
-    }),
-    defineField({
-      title: 'Socials',
-      name: 'socials',
-      type: 'array',
-      of: [{type: 'socialIconsItem'}],
     }),
   ],
 })

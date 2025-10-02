@@ -4,6 +4,7 @@ import styles from './styles.module.scss'
 
 import { Tag, ProjectCard } from '@/components/ui'
 import useScreenSize from '@/hooks/useScreenSize'
+import { TProject } from '@/types/project'
 
 const TAGS = [
   {
@@ -23,30 +24,16 @@ const TAGS = [
   },
 ]
 
-type TCard = {
-  title: string;
-  label: string;
-  image?: {
-    src: string;
-    alt: string;
-  }
-}
-const CARD: TCard = {
-  title: 'Gilbert Rugby',
-  label: 'Shopify Plus Design & Build',
-  image: {
-    src: '/images/cards/card-project.png',
-    alt: 'Project Gilbert Rugby'
-  }
+type TProps = {
+  projects: TProject[];
 }
 
-const cardsArr: TCard[] = Array.from({length: 25}).map((_, i) => ({...CARD, title: `${CARD.title} ${i + 1}`}))
-
-const Projects = () => {
+const Projects = ({projects}: TProps) => {
+  console.log('projects', projects)
   const { isLg } = useScreenSize()
 
-  const sortArray = (arr: TCard[], isMobile?: boolean): TCard[][] => {
-    const columnsArr = arr.reduce((acc: TCard[][], card: TCard, index: number) => {
+  const sortArray = (arr: TProject[]): TProject[][] => {
+    const columnsArr = arr.reduce((acc: TProject[][], card: TProject, index: number) => {
       if (index % 3 === 0) {
         acc[2].push(card)
       } else if (index % 3 === 1) {
@@ -59,7 +46,7 @@ const Projects = () => {
     return columnsArr
   }
 
-  const sortedCards: TCard[][] = sortArray(cardsArr)
+  const sortedCards: TProject[][] = sortArray(projects)
 
   return (<>
     <section className={styles.projects}>
@@ -69,10 +56,10 @@ const Projects = () => {
       <div className={styles.projects__list}>
         {!isLg ? sortedCards.map((column, columnId) => 
           <div className={styles.projects__column} key={columnId}>
-            {column.map((card, i) => <ProjectCard className={styles.projects__card} {...card} key={i}/>)}
+            {column.map((card, i) => <ProjectCard className={styles.projects__card} project={card} key={i}/>)}
           </div>
         ) : (
-          cardsArr.map((card, i) => <ProjectCard className={styles.projects__card} {...card} key={i}/>)
+          projects.map((card, i) => <ProjectCard className={styles.projects__card} project={card} key={i}/>)
         )}
       </div>
     </section>

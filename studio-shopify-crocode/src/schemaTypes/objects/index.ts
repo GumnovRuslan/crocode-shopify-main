@@ -5,6 +5,7 @@ import socialIconItem from './templates/socialIcons'
 import seo from './templates/seo'
 import cookies from './templates/cookies'
 import imageWithAlt from './templates/imageWithAlt'
+import brief from './templates/the-brief'
 
 export default [
   link,
@@ -14,4 +15,5 @@ export default [
   seo,
   cookies,
   imageWithAlt,
+  brief,
 ]

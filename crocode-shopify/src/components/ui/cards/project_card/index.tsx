@@ -1,25 +1,24 @@
 import styles from './styles.module.scss'
 
 import Link from 'next/link'
-import Image from 'next/image'
+import Background from '../../background';
+import { TProject } from '@/types/project';
 
 type TProps = {
   className?: string;
-  title: string;
-  label: string;
-  image?: {
-    src: string;
-    alt: string;
-  }
+  project: TProject
 }
 
-const ProjectCard = ({className, title, label, image}: TProps) => {
+const ProjectCard = ({className, project}: TProps) => {
+  console.log('article', project)
+  const { title, coverImage, slug } = project || {}
+
   return (
     <div className={`${styles.card} ${className}`}>
-      <Image className={styles.card__image} src={image?.src || '/images/cards/card-project.png'} fill alt={image?.alt || `Project ${title}`}/>
-      <Link href={'#'} className={styles.card__link}>
-        <span className={styles.card__title}>{title}</span>
-        <span className={styles.card__label}>{label}</span>
+      <Background desktop={coverImage?.image.asset.url || '/images/cards/card-project.png'} alt={coverImage?.altText || `Project ${title}`}/>
+      <Link href={`our-work/${slug.current}`} className={styles.card__link}>
+        <span className={styles.card__title}>{project?.title}</span>
+        <span className={styles.card__label}>{'Shopify Plus Design & Build'}</span>
       </Link>
     </div>
   )
