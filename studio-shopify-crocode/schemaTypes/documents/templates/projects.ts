@@ -2,8 +2,8 @@ import {MasterDetailIcon} from '@sanity/icons'
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'articlesItem',
-  title: 'Example Articles item',
+  name: 'Projects',
+  title: 'Projects',
   type: 'document',
   icon: MasterDetailIcon,
   preview: {
@@ -12,6 +12,11 @@ export default defineType({
     },
   },
   fields: [
+    defineField({
+      title: 'Title',
+      name: 'title',
+      type: 'string',
+    }),
     defineField({
       title: 'Breadcrumbs',
       name: 'breadcrumbs',
@@ -22,19 +27,6 @@ export default defineType({
           type: 'link',
         },
       ],
-    }),
-    defineField({
-      title: 'Date',
-      name: 'date',
-      type: 'date',
-      options: {
-        dateFormat: 'DD-MMM-YYYY',
-      },
-    }),
-    defineField({
-      title: 'Title',
-      name: 'title',
-      type: 'string',
     }),
     defineField({
       name: 'slug',
@@ -69,20 +61,6 @@ export default defineType({
     defineField({
       name: 'seo',
       type: 'seo',
-    }),
-    defineField({
-      title: 'Category',
-      name: 'category',
-      type: 'string',
-      initialValue: 'Latest',
-      options: {
-        list: [
-          {title: 'Latest', value: 'Latest'},
-          {title: 'Technologies', value: 'Technologies'},
-          {title: 'UI/UX', value: 'UI/UX'},
-          {title: 'Client guides', value: 'Client guides'},
-        ],
-      },
     }),
     defineField({
       title: 'Content',
