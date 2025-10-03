@@ -3,7 +3,7 @@
 import styles from './styles.module.scss'
 
 import Image from 'next/image'
-import { TBackground } from '@/types/background'
+import { TBackground } from '@/types/templates/background'
 import useScreenSize from '@/hooks/useScreenSize'
 
 type TProps = TBackground & {

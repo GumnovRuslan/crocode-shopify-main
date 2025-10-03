@@ -2,7 +2,7 @@ import { Comments, Hero, Projects, LetsTalk} from "@/components/sections"
 import { Section } from "@/components/ui"
 import { fetchGraphQL } from "@/lib/sanity/graphql";
 import { getProjects } from "@/lib/sanity/queries/projects";
-import { TProject } from "@/types/project";
+import { TProject } from "@/types/templates/project";
 
 export default async function OurWorkPage() {
   const { data: projectsData } = await fetchGraphQL(getProjects('en'));

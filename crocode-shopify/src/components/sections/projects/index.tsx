@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 
 import { Tag, ProjectCard } from '@/components/ui'
 import useScreenSize from '@/hooks/useScreenSize'
-import { TProject } from '@/types/project'
+import { TProjectCard } from '@/types/templates/project'
 
 const TAGS = [
   {
@@ -25,15 +25,14 @@ const TAGS = [
 ]
 
 type TProps = {
-  projects: TProject[];
+  projects: TProjectCard[];
 }
 
 const Projects = ({projects}: TProps) => {
-  console.log('projects', projects)
   const { isLg } = useScreenSize()
 
-  const sortArray = (arr: TProject[]): TProject[][] => {
-    const columnsArr = arr.reduce((acc: TProject[][], card: TProject, index: number) => {
+  const sortArray = (arr: TProjectCard[]): TProjectCard[][] => {
+    const columnsArr = arr.reduce((acc: TProjectCard[][], card: TProjectCard, index: number) => {
       if (index % 3 === 0) {
         acc[2].push(card)
       } else if (index % 3 === 1) {
@@ -46,7 +45,7 @@ const Projects = ({projects}: TProps) => {
     return columnsArr
   }
 
-  const sortedCards: TProject[][] = sortArray(projects)
+  const sortedCards: TProjectCard[][] = sortArray(projects)
 
   return (<>
     <section className={styles.projects}>

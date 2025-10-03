@@ -17,15 +17,15 @@ export default defineConfig({
       structure,
     }), 
     visionTool(), 
-    documentInternationalization({
-      supportedLanguages: [
-        { id: 'en', title: 'English' },
-        { id: 'pl', title: 'Polish' },
-      ],
-      schemaTypes: ['blogs', 'projects', 'lesson'],
-      languageField: `language`,
-      weakReferences: false,
-    }),
+    // documentInternationalization({
+    //   supportedLanguages: [
+    //     { id: 'en', title: 'English' },
+    //     { id: 'pl', title: 'Polish' },
+    //   ],
+    //   schemaTypes: ['blogs', 'projects'],
+    //   languageField: `language`,
+    //   weakReferences: false,
+    // }),
   ],
     
 

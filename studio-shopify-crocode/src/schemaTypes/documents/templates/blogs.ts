@@ -9,19 +9,15 @@ export default defineType({
   preview: {
     select: {
       title: 'title',
+      subtitle: 'language',
     },
   },
   fields: [
     defineField({
-      title: 'Title',
-      name: 'title',
-      type: 'string',
-      validation: (Rule) => Rule.required()
-    }),
-    defineField({
       name: 'language',
       title: 'Language',
       type: 'string',
+      description: 'На каком языке отображать проект',
       options: {
         list: [
           { title: 'English', value: 'en' },
@@ -31,39 +27,24 @@ export default defineType({
       validation: (Rule) => Rule.required()
     }),
     defineField({
-      title: 'Breadcrumbs',
-      name: 'breadcrumbs',
-      type: 'array',
-      of: [
-        {
-          name: 'link',
-          type: 'link',
-        },
-      ],
-    }),
-    defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'title',
-        maxLength: 96,
-      },
-    }),
-    defineField({
-      title: 'Description',
-      name: 'desc',
-      type: 'text',
-    }),
-    defineField({
-      title: 'Cover image',
-      name: 'coverImage',
-      type: 'imageWithAlt',
-    }),
-    defineField({
-      title: 'Author name',
-      name: 'author',
+      title: 'Title',
+      name: 'title',
       type: 'string',
+      description: 'Название статьи',
+      validation: (Rule) => Rule.required()
+    }),
+    defineField({
+      title: 'Customer',
+      name: 'customer',
+      type: 'string',
+      description: 'Заказчик',
+      validation: (Rule) => Rule.required()
+    }),
+    defineField({
+      title: 'Gallery',
+      name: 'gallery',
+      type: 'gallery',
+      description: 'Изображениея для галереи'
     }),
     defineField({
       title: 'Status',
@@ -72,12 +53,9 @@ export default defineType({
       hidden: true,
     }),
     defineField({
-      name: 'seo',
-      type: 'seo',
-    }),
-    defineField({
       title: 'Content',
       name: 'content',
+      description: 'Текст блога',
       type: 'array',
       of: [
         {
@@ -110,10 +88,8 @@ export default defineType({
       ],
     }),
     defineField({
-      title: 'Socials',
-      name: 'socials',
-      type: 'array',
-      of: [{type: 'socialIconsItem'}],
+      name: 'seo',
+      type: 'seo',
     }),
   ],
 })

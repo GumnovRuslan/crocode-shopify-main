@@ -9,40 +9,35 @@ export default defineType({
       name: 'description',
       title: 'Description',
       type: 'text',
-      description: 'Detailed description of the project',
+      description: 'Текст описания',
       validation: (Rule: any) => Rule.required()
     },
     {
       name: 'industry',
       title: 'Industry',
       type: 'string',
-      description: 'Industry sector ',
+      description: 'К какой категории относится (Fashion)',
       validation: (Rule: any) => Rule.required()
     },
     {
       name: 'technologies',
       title: 'Technologies',
       type: 'array',
-      description: 'List of technologies used in the project',
+      description: 'Технологии при создании проекта',
       of: [
         {
           type: 'string'
         }
       ],
       options: {
-        layout: 'tags'
+        layout: 'array'
       }
     },
     {
       name: 'website',
       title: 'Website URL',
       type: 'url',
-      description: 'Link to the live project'
+      description: 'Ссылка на сайт проекта'
     },
-    {
-      name: 'project',
-      title: 'Project',
-      type: 'string',
-      description: 'Link to the project case study on our website'},
   ],
 })

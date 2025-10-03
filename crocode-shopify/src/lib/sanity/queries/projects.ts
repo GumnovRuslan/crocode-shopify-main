@@ -2,15 +2,12 @@ export const getProjects = (lang: string = 'en') => `
   query {
   allProjects(where: { language: { eq: "${lang}" } }) {
   	_id
-    title
     language
+    title
+    workDone
     slug {current}
-    coverImage {
-      image {
-        asset {
-          url
-        }
-      }
+    cardImage {
+      image {asset {url}}
       altText
     }
   }
@@ -44,6 +41,7 @@ export const getProject = (slug: string) => `
     allProjects(where: { slug: { current: { eq: "${slug}" } } }) {
     _id
     title
+    workDone
     language
     slug {current}
     coverImage {
@@ -53,6 +51,24 @@ export const getProject = (slug: string) => `
         }
       }
       altText
+    }
+    brief {
+      description
+      industry
+      technologies
+      website
+    }
+    gallery {
+      galleryImages {
+        image { asset {url}}
+        altText
+      }
+    }
+    solution {
+      solutionText
+      projectScreenshot {
+        image {asset {url}}
+      }
     }
   }
 }

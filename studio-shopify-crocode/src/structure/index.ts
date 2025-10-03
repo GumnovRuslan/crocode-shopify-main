@@ -8,8 +8,7 @@ export const structure: StructureResolver = (S) =>
     .items([
       langList(S, 'Blogs', 'blogs'),
       langList(S, 'Projects', 'projects'),
-      langList(S, 'Lessons', 'lesson'),
 
       // остальные типы документов (убираем дефолтный список lesson)
-      ...S.documentTypeListItems().filter((item) => item.getId() !== 'blogs' && item.getId() !== 'projects' && item.getId() !== 'lesson'),
+      ...S.documentTypeListItems().filter((item) => item.getId() !== 'blogs' && item.getId() !== 'projects'),
     ])

@@ -1,15 +1,20 @@
 import styles from './styles.module.scss'
 
 import { Background } from '@/components/ui'
+import { TImage } from '@/types/templates/project'
 
-const Gallery = () => {
+type TProps = {
+  images: TImage[]
+}
+
+const Gallery = ({images}: TProps) => {
   return (
     <section className={styles.gallery}>
       <div className={styles.gallery__inner}>
         <div className={styles.gallery__content}>
-          {Array.from({length: 12}).map((_, i) => 
+          {images?.map((item, i) => 
             <div className={styles.gallery__card} key={i}>
-              <Background desktop={'/images/cards/card-project.png'} alt='card image'/>
+              <Background desktop={item?.image.asset.url ?? '/images/cards/card-project.png'} alt={item?.altText}/>
             </div>
           )}
         </div>

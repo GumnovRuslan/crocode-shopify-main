@@ -43,6 +43,9 @@
     &_item {
       font-size: fluid-size(12, 20); 
       line-height: 130%;
+      a {
+        color: var(--color-text-black);
+      }
     }
   }
 }
