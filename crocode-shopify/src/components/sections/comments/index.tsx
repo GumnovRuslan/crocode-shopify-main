@@ -4,45 +4,25 @@ import styles from './styles.module.scss'
 
 import { useState, useEffect, useCallback } from 'react'
 import { BtkIcon } from '@/components/icons'
-import { Comment, SliderBtn } from '@/components/ui'
+import { Comment, SliderBtn, Text } from '@/components/ui'
 import useEmblaCarousel from 'embla-carousel-react'
-
-const COMMENTS = [
-  {
-    text: 'CROCOD created an excellent Shopify site — fast, high-quality, and detail-oriented. Happy with the collaboration and highly recommend!',
-    author: 'Alexa Smith',
-    project: 'SienaHome'
-  },
-  {
-    text: 'CROCOD created an excellent Shopify site — fast, high-quality, and detail-oriented. Happy with the collaboration and highly recommend!',
-    author: 'Alexa Smith',
-    project: 'SienaHome'
-  },
-  {
-    text: 'CROCOD created an excellent Shopify site — fast, high-quality, and detail-oriented. Happy with the collaboration and highly recommend!',
-    author: 'Alexa Smith',
-    project: 'SienaHome'
-  },
-  {
-    text: 'CROCOD created an excellent Shopify site — fast, high-quality, and detail-oriented. Happy with the collaboration and highly recommend!',
-    author: 'Alexa Smith',
-    project: 'SienaHome'
-  },
-  {
-    text: 'CROCOD created an excellent Shopify site — fast, high-quality, and detail-oriented. Happy with the collaboration and highly recommend!',
-    author: 'Alexa Smith',
-    project: 'SienaHome'
-  },
-]
+import { useTranslations } from 'next-intl'
 
 const Comments = () => {
+  const t = useTranslations('HomePage.comments')
   const [emblaRef, emblaApi] = useEmblaCarousel()
-    const [canScrollPrev, setCanScrollPrev] = useState(false)
-    const [canScrollNext, setCanScrollNext] = useState(false)
-  
-    const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
-    const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
-  
+  const [canScrollPrev, setCanScrollPrev] = useState(false)
+  const [canScrollNext, setCanScrollNext] = useState(false)
+  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
+
+  const commentKey = ['items.item1', 'items.item2', 'items.item3', 'items.item4']
+  const COMMENTS = commentKey.map(key => ({
+      text: t(`${key}.text`),
+      author: t(`${key}.author`),
+      project: t(`${key}.project`)
+    }))
+
     useEffect(() => {
       if (!emblaApi) return;
   
@@ -64,7 +44,7 @@ const Comments = () => {
   return (
     <section className={styles.comments}>
       <div className={styles.comments__inner}>
-        <h2 className={styles.comments__title}>Your Experience Is Our Priority</h2>
+        <Text className={styles.comments__title} tag='h2' text={t('title')} style='big'/>
         <div className={styles.slider}>
           <div className={styles.slider__comment}>
             <div className={styles.slider__comment_btk}>

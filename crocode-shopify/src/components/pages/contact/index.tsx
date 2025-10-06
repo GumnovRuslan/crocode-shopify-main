@@ -4,16 +4,18 @@ import styles from './styles.module.scss'
 
 import { useDarkThemeForHeader } from "@/hooks/useHeaderTheme"
 import { Form, MapSection } from "@/components/sections"
-import { Section } from '@/components/ui'
+import { Section, Text } from '@/components/ui'
+import { useTranslations } from 'next-intl'
 
 const ContactPage = () => {
   useDarkThemeForHeader()
+  const t = useTranslations('ContactPage')
   return (<>
     <Section className={styles.contact}>
       <div className={styles.contact__inner}>
-        <h1 className={styles.contact__title}>Ready to start your partnership for growth?</h1>
+        <Text className={styles.contact__title} tag='h1' text={t('title')} style='small'/>
         <div className={styles.contact__content}>
-          <Form title="Let's talk about your project"/>
+          <Form/>
           <MapSection/>
         </div>
       </div>

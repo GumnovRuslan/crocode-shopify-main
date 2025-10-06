@@ -2,7 +2,7 @@ import styles from './styles.module.scss'
 
 import Link from 'next/link'
 import Background from '../../background';
-import { TProjectCard } from '@/types/templates/project';
+import { TProjectCard } from '@/types/project';
 
 type TProps = {
   className?: string;

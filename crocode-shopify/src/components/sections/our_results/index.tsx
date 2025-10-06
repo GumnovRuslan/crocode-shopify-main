@@ -1,6 +1,7 @@
 import styles from './styles.module.scss'
 
-import { Section, SectionTitle, ResultCard } from '@/components/ui'
+import { Section, Text, ResultCard } from '@/components/ui'
+import { useTranslations } from 'next-intl'
 
 const CARDS = [
   {
@@ -22,10 +23,11 @@ const CARDS = [
 ]
 
 const OurResult = () => {
+  const t = useTranslations("AboutUsPage.results")
   return (
     <Section type='rounded' className={styles.result}>
       <div className={styles.result__inner}>
-        <SectionTitle className={styles.result__title} center text='Our in-house, skilled team support brands through transformative ecommerce strategies'/>
+        <Text className={styles.result__title} tag='h2' text={t('title')} style='big'/>
         <div className={styles.result__content}>
           {CARDS.map((card, i) => <ResultCard {...card} key={i}/>)}
         </div>

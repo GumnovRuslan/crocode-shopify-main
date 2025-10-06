@@ -2,8 +2,9 @@
 
 import styles from './styles.module.scss'
 
-import { Section, Accordion, SectionTitle } from '@/components/ui'
+import { Section, Accordion, Text } from '@/components/ui'
 import { useState } from 'react'
+import { useTranslations } from 'next-intl'
 
 const columns = [
   'Design & Development',
@@ -13,6 +14,7 @@ const columns = [
 ]
 
 const ServicesSection = () => {
+  const t = useTranslations('Services')
   const [idOpenAccordion, setIdOpenAccordion] = useState<number | null>(null)
 
   const handlerClick = (id: number) => {
@@ -22,18 +24,18 @@ const ServicesSection = () => {
   return (
     <Section className={styles.services}>
       <div className={styles.services__inner}>
-        <h1 className={styles.services__title}>Services</h1>
+        <Text className={styles.services__title} tag='h1' text='Services' style='small'/>
         <div className={styles.services__content}>
-          {columns.map((name, i) => 
+          {columns.map((name, i) => (
             <div className={styles.services__column} key={i}>
-              <SectionTitle className={styles.services__name} text={name} />
+              <Text className={styles.services__name} tag='h2' text={name} style='big'/>
               <div className={styles.services__list}>
                 {Array.from({length: 5}).map((_, i) => 
                   <Accordion isOpen={idOpenAccordion == i} handlerToggle={() => handlerClick(i)} key={i}/>
                 )}
               </div>
             </div>
-          )}
+          ))}
         </div>
       </div>
     </Section>

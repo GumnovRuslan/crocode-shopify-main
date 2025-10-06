@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 
-import { Section, SectionTitle, Background } from '@/components/ui'
+import { Section, Text, Background } from '@/components/ui'
 
 type TPropsCard = {
   className?: string;
@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
     <Section type='rounded' className={styles.section}>
       <div className={styles.section__inner}>
         <div className={styles.section__header}>
-          <SectionTitle className={styles.section__title} center text='Why Choose crocode?'/>
+          <Text className={styles.section__title} center text='Why Choose crocode?'/>
           <p className={styles.section__description}>
             Creative collaboration underpins everything we do as Shopify Experts in London. We build close-working relationships with our clients and partners to work with goals in mind whilst offering a wealth of digital expertise. From startup-ups to world-leading brands, we deliver ecommerce strategies to deliver Shopify & Shopify Plus stores that perform.
           </p>

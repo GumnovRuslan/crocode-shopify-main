@@ -1,13 +1,16 @@
 import styles from './styles.module.scss'
 
-import { Section, SectionTitle } from '@/components/ui'
+import { Section, Text } from '@/components/ui'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
 const Clients = () => {
+  const t = useTranslations('HomePage.clients');
+
   return (
     <Section className={styles.clients}>
       <div className={styles.clients__inner}>
-        <SectionTitle className={styles.clients__title} color='white' center text='Trusted by world-class ecommerce businesses'/>
+        <Text className={styles.clients__title} tag='h2' text={t('title')} style='big'/>
         <div className={styles.clients__list} >
           {Array.from({length: 18}).map((_, i) => 
             <div className={styles.clients__item} key={i}>

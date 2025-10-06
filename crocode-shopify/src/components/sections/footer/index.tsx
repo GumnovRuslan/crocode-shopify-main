@@ -1,8 +1,10 @@
 import styles from './styles.module.scss'
 
 import { InstagramIcon, LinkedinIcon, TwitterIcon } from '@/components/icons'
+import { Button } from '@/components/ui'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 const NETWORK = [
   {
@@ -20,17 +22,16 @@ const NETWORK = [
 ]
 
 const Footer = () => {
+  const t = useTranslations('Footer')
   return (
     <footer className={styles.footer}>
       <Image src='/images/bg_footer.webp' fill alt='bg'/>
       <div className={styles.footer__inner}>
         <div className={styles.footer__content}>
-          <p className={styles.footer__message}>
-            Let's talk ecommerce
-          </p>
+          <p className={styles.footer__message}>{t('message')}</p>
           <div className={styles.footer__buttons}>
-            <button className={styles.footer__button}>Get in Touch</button>
-            <button className={styles.footer__button}>Sing up to</button>
+            <Button as='link' href='/contact' text={t('buttons.contact.text')} styleType='secondary'/>
+            <Button as='link' href='/' text={t('buttons.register.text')} styleType='secondary'/>
           </div>
           <div className={styles.footer__network}>
             {NETWORK.map((item, i) => (

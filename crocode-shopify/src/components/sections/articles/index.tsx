@@ -1,7 +1,7 @@
 import styles from './styles.module.scss'
 
 import { Section, Article } from '@/components/ui'
-import { TArticles } from '@/types/templates/article'
+import { TArticles } from '@/types/article'
 
 const ARTICLE = {
   title: 'Shopify Plus Agency',

@@ -3,7 +3,7 @@
 import { HeroProject, Summary, Gallery, Comments, LetsTalk, CaseStudyDetails } from "@/components/sections"
 import { Section } from "@/components/ui"
 import { useDarkThemeForHeader } from "@/hooks/useHeaderTheme"
-import { TProject } from "@/types/templates/project"
+import { TProject } from "@/types/project"
 
 type TProps = {
   project: TProject

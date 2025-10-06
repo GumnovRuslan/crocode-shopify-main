@@ -27,9 +27,17 @@
 
 .popup {
   & > div {
-    max-width: fluid-size(115, 180);
-    border-radius: 20px;
     background: #000;
+
+    &:nth-child(1) {
+      border-right-color: currentColor;
+      background: transparent;
+    }
+
+    &:nth-child(2) {
+      max-width: fluid-size(115, 180);
+      border-radius: 20px;
+    }
   }
 
   &__text {

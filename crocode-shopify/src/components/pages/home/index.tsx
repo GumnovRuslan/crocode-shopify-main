@@ -9,16 +9,18 @@ import {
   Clients 
 } from "@/components/sections";
 import { Section } from "@/components/ui";
+import { useTranslations } from "next-intl";
 
 export default function HomePage() {
+  const t = useTranslations('HomePage.hero')
 
   return (<>
     <Hero 
       bg={{desktop: '/images/bg_hero.webp', mobile: '/images/bg_hero_mobile.webp', alt: 'bg hero'}}
-      title="Dependable Ecommerce and Shopify Solutions" 
-      subtitle="We are a leading Shopify and Shopify Plus agency that designs, develops strategies, and helps grow ecommerce businesses."
+      title={t('title')} 
+      subtitle={t('subtitle')}
       isShowNetwork
-      isShowButton
+      button={{text: t('button.text')}}
     />
     <HomeAboutUs/>
     <Clients/>

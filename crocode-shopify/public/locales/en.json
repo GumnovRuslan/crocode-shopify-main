@@ -1,0 +1,228 @@
+{
+  "Header": {
+    "nav": {
+      "our-work": "Our Work",
+      "services": "Services",
+      "about-us": "About Us",
+      "contact": "Contact"
+    },
+    "button": {
+      "text": "Get In Touch"
+    }
+  },
+  "HomePage": {
+    "hero": {
+      "title": "Dependable Ecommerce and Shopify Solutions",
+      "subtitle": "We are a leading Shopify and Shopify Plus agency that designs, develops strategies, and helps grow ecommerce businesses.",
+      "button": {
+        "text": "Discuss your project"
+      }
+    },
+    "about-us": {
+      "title": "About us",
+      "message": "<strong>crocode</strong> is a trusted partner in the world of <strong>Shopify</strong> and <strong>Shopify Plus</strong>. We help businesses reach the next level and fully unlock the potential of online sales.",
+      "text": "Mgroup, a leading Shopify development agency, provides comprehensive end-to-end Shopify development services tailored to your unique needs and goals. Our team of Shopify experts, as a trusted Shopify agency, offers specialized support to Shopify store owners, ensuring optimization of every aspect of your online business. Our Shopify Plus agency services cover all areas of e-commerce: from setup and customization to ongoing maintenance and optimization. With extensive experience as a Shopify Plus partner, our Shopify development agency stays ahead of industry trends and best practices, helping you maintain a competitive edge."
+    },
+    "clients": {
+      "title": "Trusted by world-class ecommerce businesses"
+    },
+    "explore": {
+      "title": "Explore Case Studies",
+      "subtitle": "Shopify Plus Agency for Scalable",
+      "text": "From building custom Shopify themes to powerful Shopify Applications that drive growth."
+    },
+    "scalable": {
+      "title": "Shopify Plus Agency for Scalable",
+      "subtitle": "Expert Shopify Plus Development for Fast-Growing Brands",
+      "button": {
+        "text": "Explore case studies"
+      }
+    },
+    "services": {
+      "title": "Services",
+      "cards": {
+        "card1": {
+          "title": "Design & Development",
+          "description": "Our dedicated UX creative web designers, craft unique ideas that push the boundaries of online experiences and allow your store to compete in fast-moving markets."
+        },
+        "card2": {
+          "title": "CRO",
+          "description": "Our dedicated UX creative web designers, craft unique ideas that push the boundaries of online experiences and allow your store to compete in fast-moving markets."
+        },
+        "card3": {
+          "title": "SEO",
+          "description": "Our dedicated UX creative web designers, craft unique ideas that push the boundaries of online experiences and allow your store to compete in fast-moving markets."
+        },
+        "card4": {
+          "title": "Email & SMS New build project",
+          "description": "Our dedicated UX creative web designers, craft unique ideas that push the boundaries of online experiences and allow your store to compete in fast-moving markets."
+        }
+      }
+    },
+    "comments": {
+      "title": "Your Experience Is Our Priority",
+      "items": {
+        "item1": {
+          "text": "CROCOD created an excellent Shopify site — fast, high-quality, and detail-oriented. Happy with the collaboration and highly recommend!",
+          "author": "Alexa Smith",
+          "project": "SienaHome"
+        },
+        "item2": {
+          "text": "CROCOD created an excellent Shopify site — fast, high-quality, and detail-oriented. Happy with the collaboration and highly recommend!",
+          "author": "Alexa Smith",
+          "project": "SienaHome"
+        },
+        "item3": {
+          "text": "CROCOD created an excellent Shopify site — fast, high-quality, and detail-oriented. Happy with the collaboration and highly recommend!",
+          "author": "Alexa Smith",
+          "project": "SienaHome"
+        },
+        "item4": {
+          "text": "CROCOD created an excellent Shopify site — fast, high-quality, and detail-oriented. Happy with the collaboration and highly recommend!",
+          "author": "Alexa Smith",
+          "project": "SienaHome"
+        }
+      }
+    },
+    "experts": {
+      "title": "Shopify experts",
+      "subtitle": "In the world of ecommerce: Shopify and Shopify Plus for your business",
+      "text": "We are a certified Shopify agency specializing in partnering with brands to create, build, launch, maintain, and expand Shopify and Shopify Plus stores. As a trusted Shopify partner, we’re here whenever you’re ready. Get in touch with our team to discuss your project.",
+      "button": {
+        "text": "get in touch"
+      }
+    }
+  },
+  "OurWork": {
+    "hero": {
+      "title": "We've helped top brands and startups create high-performance ecommerce websites",
+      "subtitle": "We are a leading Shopify and Shopify Plus agency that designs, develops strategies, and helps grow ecommerce businesses"
+    }
+  },
+  "ServicesPAge": {
+    "title": "Services"
+  },
+  "AboutUsPage": {
+    "hero": {
+      "title": "Experienced professionals with a positive attitude and a genuine passion for creating the best online shopping solutions that inspire and amaze",
+      "subtitle": "We are a leading Shopify and Shopify Plus agency that designs, develops strategies, and helps grow ecommerce businesses"
+    },
+    "results": {
+      "title": "Our in-house, skilled team support brands through transformative ecommerce strategies"
+    },
+    "ShopifyPlusHighlights": {
+      "title": "Shopify Plus Agency for Scalable",
+      "items": {
+        "item1": {
+          "title": "Creativity",
+          "text": "We bring bold ideas to life. Our work is rooted in imaginative thinking that pushes boundaries and captivates customers. From design to storytelling, we approach every project with originality, ensuring each brand we work with stands out in the Shopify ecosystem and against competition."
+        },
+        "item2": {
+          "title": "Technical Excellence",
+          "text": "We bring bold ideas to life. Our work is rooted in imaginative thinking that pushes boundaries and captivates customers. From design to storytelling, we approach every project with originality, ensuring each brand we work with stands out in the Shopify ecosystem and against competition."
+        },
+        "item3": {
+          "title": "Creativity",
+          "text": "We bring bold ideas to life. Our work is rooted in imaginative thinking that pushes boundaries and captivates customers. From design to storytelling, we approach every project with originality, ensuring each brand we work with stands out in the Shopify ecosystem and against competition."
+        },
+        "item4": {
+          "title": "People-first",
+          "text": "We bring bold ideas to life. Our work is rooted in imaginative thinking that pushes boundaries and captivates customers. From design to storytelling, we approach every project with originality, ensuring each brand we work with stands out in the Shopify ecosystem and against competition."
+        }
+      }
+    },
+    "lets-talk": {
+      "title": "Let's talk ecommerce",
+      "description": "We are a certified Shopify agency specializing in partnering with brands to create, build, launch, maintain, and expand Shopify and Shopify Plus stores. As a trusted Shopify partner, we’re here whenever you’re ready. Get in touch with our team to discuss your project.",
+      "button": {
+        "text": "Get in touch"
+      }
+    }
+  },
+  "ContactPage": {
+    "title": "Ready to start your partnership for growth?",
+    "form": {
+      "title": "Let's talk about your project",
+      "inputs": {
+        "firstName": {
+          "label": "First Name",
+          "placeholder": "What's your first name?",
+          "errors": {
+            "required": "First name is required",
+            "minLen": "First name must be at least 2 characters"
+          }
+        },
+        "lastName": {
+          "label": "Last Name",
+          "placeholder": "What's your last name?",
+          "errors": {
+            "required": "Last name is required",
+            "minLen": "Last name must be at least 2 characters"
+          }
+        },
+        "companyName": {
+          "label": "Company name",
+          "placeholder": "What's your company name?",
+          "errors": {
+            "required": "Company name is required"
+          }
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "What's your email?",
+          "errors": {
+            "required": "Email is required",
+            "notValid": "Please enter a valid email address"
+          }
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "What's your phone?",
+          "errors": {
+            "required": "Phone is required",
+            "notValid": "Please enter a valid phone number"
+          }
+        },
+        "budget": {
+          "label": "Budget",
+          "placeholder": "What's your budget?",
+          "errors": {
+            "required": "Budget is required"
+          }
+        },
+        "aboutProject": {
+          "label": "Tell us about your project",
+          "placeholder": "Describe your project"
+        },
+        "checkbox": {
+          "label": "Join our ecommerce newsletter to receive free ecommerce guides, tips, tricks & more",
+          "errors": {
+            "required": "You must agree to join the newsletter"
+          }
+        }
+      },
+      "button": {
+        "text": "Submit enquiry",
+        "submitting": "Submitting...",
+        "errors": {
+          "required": "Please complete all required fields"
+        }
+      }
+    },
+    "map": {
+      "title": "Our offices",
+      "address": "al. Tadeusza Rejtana 53A/303 35-326 Rzeszów, Poland"
+    }
+  },
+  "Footer": {
+    "message": "Let's talk ecommerce",
+    "buttons": {
+      "contact": {
+        "text": "Get in Touch"
+      },
+      "register": {
+        "text": "Sing up to"
+      }
+    }
+  }
+}

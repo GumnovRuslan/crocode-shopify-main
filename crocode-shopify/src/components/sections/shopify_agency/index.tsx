@@ -2,11 +2,13 @@
 
 import styles from './styles.module.scss'
 
-import { SliderBtn, Button } from '@/components/ui'
+import { SliderBtn, Button, Text } from '@/components/ui'
 import { useState, useEffect, useCallback} from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
+import { useTranslations } from 'next-intl'
 
 const ShopifyAgency = () => {
+  const t = useTranslations('HomePage.scalable')
   const [emblaRef, emblaApi] = useEmblaCarousel()
   const [canScrollPrev, setCanScrollPrev] = useState(false)
   const [canScrollNext, setCanScrollNext] = useState(false)
@@ -36,7 +38,7 @@ const ShopifyAgency = () => {
     <section className={styles.section}>
       <div className={styles.section__inner}>
         <div className={styles.section__header}>
-          <h2 className={styles.section__title}>Shopify Plus Agency for Scalable</h2>
+          <Text className={styles.section__title} tag='h2' text='Shopify Plus Agency for Scalable' style='small'/>
           <p className={styles.section__subtitle}>Expert Shopify Plus Development for Fast-Growing Brands</p>
         </div>
         <div className={styles.slider}>
@@ -62,7 +64,7 @@ const ShopifyAgency = () => {
             onClick={scrollNext}
           />
         </div>
-        <Button className={styles.section__button} as='link' href='#' text='Explore case studies'/>
+        <Button className={styles.section__button} as='link' href='#' text={t('button.text')}/>
       </div>
     </section>
   )

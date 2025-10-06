@@ -1,4 +1,4 @@
-import { TImage } from ".."
+import { TImage } from "./image"
 
 export type TBrief = {
   description: string

@@ -1,7 +1,7 @@
 import styles from './styles.module.scss'
 
-import { Title } from '@/components/ui'
-import { TBrief } from '@/types/templates/project'
+import { Text } from '@/components/ui'
+import { TBrief } from '@/types/project'
 import Link from 'next/link'
 
 type TProps = {
@@ -33,7 +33,7 @@ const Summary = ({title, brief}: TProps) => {
 		<section className={styles.summary}>
 			<div className={styles.summary__inner}>
 				<div className={styles.summary__description}>
-					<Title className={styles.summary__title} type='h2' text='The Brief' style='big'/>
+					<Text className={styles.summary__title} type='h2' text='The Brief' style='big'/>
 					<p className={styles.summary__message}>{brief?.description}</p>
 				</div>
 				<div className={styles.summary__detail}>

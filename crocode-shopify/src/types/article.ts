@@ -1,4 +1,4 @@
-import { TImage } from "..";
+import { TImage } from "./image";
 import { PortableTextBlock } from "@portabletext/react";
 
 export type TArticles = {

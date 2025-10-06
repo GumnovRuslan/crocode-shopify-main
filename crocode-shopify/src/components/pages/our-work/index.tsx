@@ -2,16 +2,20 @@ import { Comments, Hero, Projects, LetsTalk} from "@/components/sections"
 import { Section } from "@/components/ui"
 import { fetchGraphQL } from "@/lib/sanity/graphql";
 import { getProjects } from "@/lib/sanity/queries/projects";
-import { TProject } from "@/types/templates/project";
+import { TProjectCard } from "@/types/project";
+import { getLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
-export default async function OurWorkPage() {
-  const { data: projectsData } = await fetchGraphQL(getProjects('en'));
-  const projects: TProject[] = projectsData?.allProjects || [];
+const OurWorkPage = async () => {
+  const t = await getTranslations('OurWork.hero')
+  const locale: string = await getLocale()
+  const { data: projectsData } = await fetchGraphQL(getProjects(locale));
+  const projects: TProjectCard[] = projectsData?.allProjects || [];
 
   return (<>
     <Hero 
-      title="We've helped top brands and startups create high-performance ecommerce websites" 
-      subtitle="We are a leading Shopify and Shopify Plus agency that designs, develops strategies, and helps grow ecommerce businesses"
+      title={t('title')} 
+      subtitle={t('subtitle')}
     />
     <Projects projects={projects}/>
     <Section>
@@ -20,5 +24,7 @@ export default async function OurWorkPage() {
     </Section>
   </>)
 }
+
+export default OurWorkPage
 
 

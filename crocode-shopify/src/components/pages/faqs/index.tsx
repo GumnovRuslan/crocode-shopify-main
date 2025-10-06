@@ -2,7 +2,7 @@
 
 import styles from './styles.module.scss'
 
-import { Section, Title } from '@/components/ui'
+import { Section, Text } from '@/components/ui'
 import { useDarkThemeForHeader } from '@/hooks/useHeaderTheme'
 import { Faqs, Comments, Experts } from '@/components/sections'
 

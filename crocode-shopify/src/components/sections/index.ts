@@ -1,6 +1,6 @@
 import Header from "./header";
 import Footer from "./footer";
-import HomeAboutUs from "./home/about_us";
+import HomeAboutUs from "./about_us";
 import Services from "./home/services";
 import Experts from "./expert_partnership";
 import Comments from './comments'

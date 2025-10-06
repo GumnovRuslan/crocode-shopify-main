@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 
 import { Tag, ProjectCard } from '@/components/ui'
 import useScreenSize from '@/hooks/useScreenSize'
-import { TProjectCard } from '@/types/templates/project'
+import { TProjectCard } from '@/types/project'
 
 const TAGS = [
   {

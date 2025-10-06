@@ -24,7 +24,7 @@ type TProps = {
   };
 };
 
-mapboxgl.accessToken = 'pk.eyJ1IjoibWl0c3VydXlhbm8iLCJhIjoiY2w0c2Y0NTAyMDJhaDNjbXplNXViMDhlYSJ9.tXv1LSmf3LOf25M4ohCx5A'// process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN!;
+mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
 
 const PopupContent = ({ text }: { text: string }) => (
   <div className={styles.popup__content}>
@@ -38,7 +38,7 @@ const MapboxMap = ({ className, map }: TProps) => {
 
   const setMarker = ({
     className = '',
-    icon = '/marker.svg',
+    icon = '/images/marker.svg',
     coordinates,
     popup = '',
   }: TMarker) => {

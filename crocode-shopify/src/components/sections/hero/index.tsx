@@ -1,7 +1,7 @@
 import styles from './styles.module.scss'
 
 import Link from 'next/link'
-import { Button, Background } from '@/components/ui'
+import { Button, Background, Text } from '@/components/ui'
 
 type TProps = {
   bg?: {
@@ -10,12 +10,14 @@ type TProps = {
     alt: string
   };
   isShowNetwork?: boolean;
-  isShowButton?: boolean;
+  button?: {
+    text: string
+  };
   title: string;
   subtitle?: string
 }
 
-const Hero = ({bg, title, subtitle, isShowNetwork = false, isShowButton = false}: TProps) => {
+const Hero = ({bg, title, subtitle, isShowNetwork = false, button}: TProps) => {
   return (
     <section className={styles.hero}>
       {bg && (
@@ -23,10 +25,10 @@ const Hero = ({bg, title, subtitle, isShowNetwork = false, isShowButton = false}
       )}
       <div className={styles.hero__inner}>
         <div className={styles.hero__content}>
-          <h1 className={styles.hero__title}>{title}</h1>
+          <Text className={styles.hero__title} tag='h1' text={title} style="big"/>
           <p className={styles.hero__description}>{subtitle}</p>
-          {isShowButton && (
-            <Button as='button' type='button' styleType='secondary' className={styles.hero__button} text='Discuss your project'/>
+          {button && (
+            <Button as='button' type='button' styleType='secondary' className={styles.hero__button} text={button.text}/>
           )}
         </div>
         {isShowNetwork && (

@@ -2,7 +2,7 @@
 
 import styles from './styles.module.scss'
 
-import { Section, Accordion, SectionTitle, Title } from '@/components/ui'
+import { Section, Accordion, Text } from '@/components/ui'
 import { useState } from 'react'
 
 
@@ -17,8 +17,8 @@ const Faqs = () => {
   return (
     <Section className={styles.section}>
       <div className={styles.section__inner}>
-        <Title className={styles.section__title} type='h1' text='Faqs' style='small'/>
-        <Title className={styles.section__subtitle} type='h2' text='Shopify Theme Projects' style='big'/>
+        <Text className={styles.section__title} tag='h1' text='Faqs' style='small'/>
+        <Text className={styles.section__subtitle} tag='p' text='Shopify Theme Projects' style='big'/>
         <div className={styles.section__list}>
           {Array.from({length: 7}).map((el, i) => 
             <Accordion isOpen={i == accordionIdIsOpen} handlerToggle={() => handlerToggle(i)} key={i}/>

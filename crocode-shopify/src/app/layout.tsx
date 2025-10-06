@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Header, Footer } from "@/components/sections";
 import { HeaderThemeProvider } from "@/contexts/HeaderThemeContext";
+import {NextIntlClientProvider} from 'next-intl';
 import "@/styles/index.scss";
 import '@/styles/root.scss';
 
@@ -25,11 +26,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={geistInter.variable}>
         <HeaderThemeProvider>
-          <Header/>
-          <main className="main">
-            {children}
-          </main>
-          <Footer/>
+          <NextIntlClientProvider>
+            <Header/>
+            <main className="main">
+              {children}
+            </main>
+            <Footer/>
+          </NextIntlClientProvider>
         </HeaderThemeProvider>
       </body>
     </html>
