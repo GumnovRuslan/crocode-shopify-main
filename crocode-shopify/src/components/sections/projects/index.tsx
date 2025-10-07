@@ -4,61 +4,88 @@ import styles from './styles.module.scss'
 
 import { Tag, ProjectCard } from '@/components/ui'
 import useScreenSize from '@/hooks/useScreenSize'
-import { TProjectCard } from '@/types/project'
-
-const TAGS = [
-  {
-    text: 'our services'
-  },
-  {
-    text: 'fashion, health & Beauty'
-  },
-  {
-    text: 'food & drink'
-  },
-  {
-    text: 'luxury goods'
-  },
-  {
-    text: 'technology & electronics'
-  },
-]
+import { TProjectCard, TProjectCategory } from '@/types'
+import { useMemo, useState } from 'react'
 
 type TProps = {
   projects: TProjectCard[];
+  categories: TProjectCategory[];
 }
 
-const Projects = ({projects}: TProps) => {
+const Projects = ({projects, categories}: TProps) => {
+  const [selectedCategories, setSelectedCategories] = useState<TProjectCategory[]>([])
   const { isLg } = useScreenSize()
 
-  const sortArray = (arr: TProjectCard[]): TProjectCard[][] => {
-    const columnsArr = arr.reduce((acc: TProjectCard[][], card: TProjectCard, index: number) => {
-      if (index % 3 === 0) {
-        acc[2].push(card)
-      } else if (index % 3 === 1) {
-        acc[1].push(card);
+  const toggleCategory = (category: TProjectCategory) => {
+    setSelectedCategories(prev => {
+      const isAlreadySelected = prev.some(item => item._id === category._id)
+      
+      if (isAlreadySelected) {
+        return prev.filter(item => item._id !== category._id)
       } else {
-        acc[0].push(card);
+        return [...prev, category]
       }
-      return acc;
-    }, [[], [], []]);
+    })
+  }
+
+  const filteredProjects = useMemo(() => {
+    if (selectedCategories.length === 0) {
+      return projects
+    }
+    
+    const selectedCategoryIds = selectedCategories.map(cat => cat._id)
+    
+    return projects.filter(project => 
+      selectedCategoryIds.includes(project.category?._id)
+    )
+  }, [projects, selectedCategories])
+
+  const sortArray = (arr: TProjectCard[]): TProjectCard[][] => {
+    const columnsArr: TProjectCard[][] = [[], [], []]
+    const projectsToSort = [...arr]
+    
+    projectsToSort.forEach((card, index) => {
+      if (index % 3 === 0) {
+        columnsArr[2].push(card)
+      } else if (index % 3 === 1) {
+        columnsArr[1].push(card);
+      } else {
+        columnsArr[0].push(card);
+      }
+    });
+    
     return columnsArr
   }
 
-  const sortedCards: TProjectCard[][] = sortArray(projects)
+  const sortedCards: TProjectCard[][] = useMemo(() => {
+    return sortArray(filteredProjects)
+  }, [filteredProjects, selectedCategories])
+
 
   return (<>
     <section className={styles.projects}>
       <div className={styles.projects__filter}>
-        {TAGS.map((tag, i) => <Tag {...tag} key={i}/>)}
+        {categories?.map((category, i) => {
+          const isActive = selectedCategories.some(item => item?._id === category?._id)
+          return (
+            <Tag 
+              text={category.categoryName} 
+              isActive={isActive}
+              onClick={() => toggleCategory(category)}
+              key={i}
+            />
+        )})}
       </div>
       <div className={styles.projects__list}>
-        {!isLg ? sortedCards.map((column, columnId) => 
-          <div className={styles.projects__column} key={columnId}>
-            {column.map((card, i) => <ProjectCard className={styles.projects__card} project={card} key={i}/>)}
-          </div>
+        {!isLg ? sortedCards.map((column, columnId) => {
+          if(!column.length) return null
+          else return (
+            <div className={`${styles.projects__column} ${styles[`projects__column--${columnId+1}`]}`} key={columnId}>
+              {column.map((card, i) => <ProjectCard className={styles.projects__card} project={card} key={i}/>)}
+            </div>
+          )}
         ) : (
-          projects.map((card, i) => <ProjectCard className={styles.projects__card} project={card} key={i}/>)
+          filteredProjects.map((card, i) => <ProjectCard className={styles.projects__card} project={card} key={i}/>)
         )}
       </div>
     </section>

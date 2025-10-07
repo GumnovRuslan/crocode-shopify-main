@@ -25,7 +25,7 @@ const CARDS = [
 const OurResult = () => {
   const t = useTranslations("AboutUsPage.results")
   return (
-    <Section type='rounded' className={styles.result}>
+    <Section type='rounded' className={styles.result} shift>
       <div className={styles.result__inner}>
         <Text className={styles.result__title} tag='h2' text={t('title')} style='big'/>
         <div className={styles.result__content}>

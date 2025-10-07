@@ -14,7 +14,7 @@ const columns = [
 ]
 
 const ServicesSection = () => {
-  const t = useTranslations('Services')
+  const t = useTranslations('ServicesPage')
   const [idOpenAccordion, setIdOpenAccordion] = useState<number | null>(null)
 
   const handlerClick = (id: number) => {
@@ -24,7 +24,7 @@ const ServicesSection = () => {
   return (
     <Section className={styles.services}>
       <div className={styles.services__inner}>
-        <Text className={styles.services__title} tag='h1' text='Services' style='small'/>
+        <Text className={styles.services__title} tag='h1' text={t('title')} style='small'/>
         <div className={styles.services__content}>
           {columns.map((name, i) => (
             <div className={styles.services__column} key={i}>

@@ -53,6 +53,25 @@ export default defineType({
       validation: (Rule) => Rule.required()
     }),
     defineField({
+      name: 'category',
+      title: 'Category',
+      description: "К какой категории относится проект",
+      type: 'reference',
+      to: [{ type: 'projectCategories' }],
+      options: {
+        filter: ({ document }) => {
+          if (!document?.language) {
+            return { filter: '' } // Пока не выбран язык
+          }
+          
+          return {
+            filter: 'language == $lang',
+            params: { lang: document.language }
+          }
+        }
+      }
+    }),
+    defineField({
       title: 'Card Image',
       name: 'cardImage',
       type: 'imageWithAlt',

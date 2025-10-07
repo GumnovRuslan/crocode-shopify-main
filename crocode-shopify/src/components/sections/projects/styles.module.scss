@@ -20,6 +20,7 @@
     @include media-up(lg) {
       max-width: 60%;
       gap: 20px;
+      margin-bottom: 30px;
     }
 
     @include media-down(lg) {
@@ -31,9 +32,10 @@
 
   &__list {
     @include media-up(lg) {
-      width: max-content;
-      margin: 0 auto;
+      // width: max-content;
+      // margin: 0 auto;
       display: flex;
+      justify-content: center;
       gap: fluid-size(25, 40);
     }
 
@@ -50,14 +52,15 @@
     @include media-up(lg) {
       display: flex;
       flex-direction: column;
+      align-items: flex-end;
       gap: fluid-size(20, 35); 
 
-      &:nth-child(1) {
-        margin-top: 440px;
+      &--1 {
+        margin-top: fluid-size(440 / 3, 440); 
       }
 
-      &:nth-child(2) {
-        margin-top: 195px;
+      &--2 {
+        margin-top: fluid-size(195 / 3, 195);
       }
     }
   }

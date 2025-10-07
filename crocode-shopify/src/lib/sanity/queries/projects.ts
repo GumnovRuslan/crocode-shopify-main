@@ -6,6 +6,10 @@ export const getProjects = (lang: string = 'en') => `
     title
     workDone
     slug {current}
+    category {
+      _id
+      categoryName
+    }
     cardImage {
       image {asset {url}}
       altText

@@ -8,7 +8,7 @@ const Clients = () => {
   const t = useTranslations('HomePage.clients');
 
   return (
-    <Section className={styles.clients}>
+    <Section className={styles.clients} type='rounded' shift>
       <div className={styles.clients__inner}>
         <Text className={styles.clients__title} tag='h2' text={t('title')} style='big'/>
         <div className={styles.clients__list} >

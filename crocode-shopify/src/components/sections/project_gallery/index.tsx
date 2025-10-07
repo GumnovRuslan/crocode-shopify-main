@@ -1,7 +1,7 @@
 import styles from './styles.module.scss'
 
 import { Background } from '@/components/ui'
-import { TImage } from '@/types/image'
+import { TImage } from '@/types/templates/image'
 
 type TProps = {
   images: TImage[]

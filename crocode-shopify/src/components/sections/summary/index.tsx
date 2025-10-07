@@ -1,7 +1,7 @@
 import styles from './styles.module.scss'
 
 import { Text } from '@/components/ui'
-import { TBrief } from '@/types/project'
+import { TBrief } from '@/types/templates/project'
 import Link from 'next/link'
 
 type TProps = {

@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 import Text from '../../text'
 import Button from '../../button'
 import Image from 'next/image'
-import { TArticles } from '@/types/article'
+import { TArticles } from '@/types/templates/article'
 import { ptComponents } from '@/utils/portableTextComponents'
 import { PortableText } from '@portabletext/react'
 

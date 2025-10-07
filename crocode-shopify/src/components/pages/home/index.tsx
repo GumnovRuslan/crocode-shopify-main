@@ -25,7 +25,7 @@ export default function HomePage() {
     <HomeAboutUs/>
     <Clients/>
     <CasesPreview/>
-    <Section>
+    <Section type="rounded">
       <ShopifyAgency/>
       <Services/>
       <Comments/>

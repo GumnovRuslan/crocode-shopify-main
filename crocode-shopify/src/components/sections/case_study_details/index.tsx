@@ -2,7 +2,7 @@ import styles from './styles.module.scss'
 
 import { Section, Background } from '@/components/ui'
 import Image from 'next/image'
-import { TSolution } from '@/types/project'
+import { TSolution } from '@/types/templates/project'
 
 type TProps = {
   solution: TSolution

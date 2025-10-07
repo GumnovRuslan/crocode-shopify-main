@@ -19,6 +19,11 @@ export type TProjectCard = {
   workDone: string;
   slug: { current: string };
   cardImage: TImage
+  category: {
+    _id: string;
+    categoryName: string;
+    // language: string;
+  }
 }
 
 export type TProject = {

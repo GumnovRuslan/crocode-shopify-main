@@ -2,6 +2,11 @@
   padding: fluid-size(23, 18) fluid-size(17, 25); 
   border-radius: 50px;
   background: var(--color-btn-primary);
+  transition: 0.3s;
+
+  &--active {
+    box-shadow: 0 0 5px black;
+  }
 
   &__text {
     text-transform: uppercase;

@@ -1,7 +1,7 @@
 import { ArticlesSection } from "@/components/sections"
 import { fetchGraphQL } from "@/lib/sanity/graphql";
 import { getArticles } from "@/lib/sanity/queries/articles";
-import { TArticles } from "@/types/article";
+import { TArticles } from "@/types/templates/article";
 import { getLocale } from "next-intl/server";
 
 const ArticlesPage = async () => {

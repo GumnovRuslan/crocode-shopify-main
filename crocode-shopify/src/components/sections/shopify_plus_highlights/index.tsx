@@ -13,7 +13,7 @@ const ShopifyPlusHighlights = () => {
   }))
 
   return (
-    <Section className={styles.shopify_plus} type='rounded'>
+    <Section className={styles.shopify_plus} type='rounded' shift>
       <Background desktop='/images/bg_hero.webp' mobile='/images/bg_hero_mobile.webp'alt='Image background'/>
       <div className={styles.shopify_plus__inner}>
         <Text className={styles.shopify_plus__title} tag='h2' text={t('title')} style='big'/>
