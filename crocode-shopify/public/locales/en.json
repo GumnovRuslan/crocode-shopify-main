@@ -26,10 +26,22 @@
     "clients": {
       "title": "Trusted by world-class ecommerce businesses"
     },
-    "explore": {
-      "title": "Explore Case Studies",
-      "subtitle": "Shopify Plus Agency for Scalable",
-      "text": "From building custom Shopify themes to powerful Shopify Applications that drive growth."
+    "industries": {
+      "title": "Industries",
+      "cards": {
+        "card1": {
+          "title": "eCommerce",
+          "text": "Software development for your online store automates all processes and helps you save time, increase business productivity and support its successful operation."
+        },
+        "card2": {
+          "title": "WEB",
+          "text": "We design visually striking, user-friendly, and SEO-optimized websites for businesses, including ecommerce, shopping platforms, and blogs, helping them build trust with their audience."
+        },
+        "card3": {
+          "title": "MOBILE",
+          "text": "We develop intuitive, high-performance mobile apps for industries like ecommerce, entertainment, and healthcare, ensuring a seamless user experience across all devices."
+        }
+      }
     },
     "scalable": {
       "title": "Shopify Plus Agency for Scalable",
@@ -219,10 +231,27 @@
     "buttons": {
       "contact": {
         "text": "Get in Touch"
-      },
-      "register": {
-        "text": "Sing up to"
       }
-    }
+    },
+    "columns": {
+      "what-we-do": {
+        "title": "What we do",
+        "nav": {
+          "our-work":"Our Work",
+          "services": "Services",
+          "about-us":"About Us",
+          "why-crocode": "Why Crocode",
+          "faqs": "FAQS"
+        }
+      },
+      "get-in-touch": {
+        "title": "Get in touch",
+        "nav": {
+          "email": "welcome@crocode.io",
+          "contact": "Contact"
+        }
+      }
+    },
+    "copyright": "© 2025 KROKOD Sp. z o.o. All Rights Reserved"
   }
 }

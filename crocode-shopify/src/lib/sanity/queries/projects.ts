@@ -45,28 +45,29 @@ export const getProject = (slug: string) => `
     allProjects(where: { slug: { current: { eq: "${slug}" } } }) {
     _id
     title
+    client
     workDone
     language
     slug {current}
+    theme
     coverImage {
-      image {
-        asset {
-          url
-        }
-      }
+      imageDesktop {asset {url}}
+      imageMobile {asset {url}}
       altText
     }
     brief {
       description
       industry
       technologies
-      website
+      website {
+        text
+        url
+      }
     }
     gallery {
-      galleryImages {
-        image { asset {url}}
-        altText
-      }
+      imageDesktop {asset {url}}
+      imageMobile {asset {url}}
+      altText
     }
     solution {
       solutionText

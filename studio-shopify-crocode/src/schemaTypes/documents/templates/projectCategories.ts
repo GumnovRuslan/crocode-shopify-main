@@ -1,11 +1,11 @@
-import { MasterDetailIcon } from "@sanity/icons";
+import { DocumentsIcon } from "@sanity/icons";
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
   name: "projectCategories",
   type: "document",
   title: "Project Categories",
-  icon: MasterDetailIcon,
+  icon: DocumentsIcon,
   preview: {
     select: {
       title: "categoryName",

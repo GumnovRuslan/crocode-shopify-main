@@ -4,14 +4,19 @@ import {
   Services, 
   Comments, 
   Hero, 
-  CasesPreview, 
+  Industries, 
   ShopifyAgency, 
   Clients 
 } from "@/components/sections";
 import { Section } from "@/components/ui";
+import { TProjectCard } from "@/types";
 import { useTranslations } from "next-intl";
 
-export default function HomePage() {
+type TProps = {
+  projects: TProjectCard[]
+}
+
+const HomePage = ({projects}: TProps) => {
   const t = useTranslations('HomePage.hero')
 
   return (<>
@@ -24,12 +29,14 @@ export default function HomePage() {
     />
     <HomeAboutUs/>
     <Clients/>
-    <CasesPreview/>
+    <Industries/>
     <Section type="rounded">
-      <ShopifyAgency/>
+      <ShopifyAgency projects={projects}/>
       <Services/>
       <Comments/>
     </Section>
     <Experts/>
   </>);
 }
+
+export default HomePage;

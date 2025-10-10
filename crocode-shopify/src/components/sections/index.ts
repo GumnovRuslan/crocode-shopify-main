@@ -5,7 +5,7 @@ import Services from "./home/services";
 import Experts from "./expert_partnership";
 import Comments from './comments'
 import Hero from "./hero";
-import CasesPreview from "./case_preview";
+import Industries from "./industries";
 import ShopifyAgency from "./shopify_agency";
 import Clients from "./clients";
 import Projects from "./projects";
@@ -34,7 +34,7 @@ export {
   Experts,
   Services,
   Comments,
-  CasesPreview,
+  Industries,
   ShopifyAgency,
   Clients,
   Projects,

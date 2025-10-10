@@ -56,11 +56,11 @@
       gap: fluid-size(20, 35); 
 
       &--1 {
-        margin-top: fluid-size(440 / 3, 440); 
+        margin-top: fluid-size(calc(440 / 3), 440); 
       }
 
       &--2 {
-        margin-top: fluid-size(195 / 3, 195);
+        margin-top: fluid-size(calc(195 / 3), 195);
       }
     }
   }

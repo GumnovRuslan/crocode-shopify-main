@@ -19,6 +19,7 @@ type ButtonAsButton = TButton &
 type ButtonAsLink = TButton &
   Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, keyof TButton> & {
     href: string;
+    as: 'link';
   };
 
 type TProps = ButtonAsButton | ButtonAsLink;
