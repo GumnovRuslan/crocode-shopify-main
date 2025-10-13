@@ -1,15 +1,19 @@
 import styles from './styles.module.scss'
 
-import { Section, Text } from '@/components/ui';
+import { Section, Text, Background } from '@/components/ui';
+import { useTranslations } from 'next-intl';
 
 const AgencyDescription = () => {
+  const t = useTranslations('WhyCrocodePage.AgencyDescription')
+  
   return ( 
     <Section type='rounded' className={styles.section}>
+      <Background desktop='/images/background/bg-dark.webp' alt='background image'/>
       <div className={styles.section__inner}>
-        <Text className={styles.section__title} tag='h2' text='People-first agency' style='small'/>
+        <Text className={styles.section__title} tag='h2' text={t('title')} style='big'/>
         <div className={styles.section__content}>
-          <p className={styles.section__text}>We are a highly skilled, multi-disciplinary Shopify agency dedicated to delivering innovative, data-driven ecommerce solutions and exceptional customer experiences. At the heart of our work is a people-first philosophy that values trust, independence, and personal growth. This approach creates an open environment where our team feels empowered to challenge conventions and deliver the best outcomes for our merchants.</p>
-          <p className={styles.section__text}>Our remote-first culture encourages creative freedom by avoiding micromanagement, allowing our specialists to think outside the box and go the extra mile. We place equal importance on the experience of our merchants and our team members, fostering a supportive community that genuinely cares. This strong foundation of people-first values sets us apart and enables us to bring exceptional personal and commercial value to every project we undertake.</p>
+          <p className={styles.section__text}>{t('text1')}</p>
+          <p className={styles.section__text}>{t('text2')}</p>
         </div>
       </div>
     </Section>

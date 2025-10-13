@@ -1,5 +1,5 @@
 import { HeroProject, Summary, Gallery, Comments, LetsTalk, CaseStudyDetails } from "@/components/sections"
-import { Section } from "@/components/ui"
+import { Background, Section } from "@/components/ui"
 import { TProject } from "@/types/templates/project"
 
 type TProps = {
@@ -22,7 +22,8 @@ const ProjectPage = ({project}: TProps) => {
       <Summary brief={project?.brief} title={project?.title}/>
       <Gallery image={project?.gallery}/>
       <CaseStudyDetails solution={project?.solution}/>
-      <Section type='rounded'>
+      <Section type='rounded' isBlack>
+        <Background desktop='/images/background/bg-black-ball.webp' alt="background black with balls"/>
         <Comments/>
         <LetsTalk/>
       </Section>

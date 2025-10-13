@@ -5,14 +5,16 @@ type TProps = {
   className?: string;
   type?: 'rounded';
   shift?: boolean;
+  isBlack?: boolean;
 }
 
-const Section = ({children, type, shift = false, className}: TProps) => {
+const Section = ({children, type, shift = false, isBlack = false, className}: TProps) => {
   return (
     <section className={`
     ${styles.section} 
     ${type ? styles[`section--${type}`] : ''}
     ${shift ? styles[`section--shift`] : ''} 
+    ${isBlack ? styles[`section--black`] : ''} 
     ${className}
     `}>
       {children}

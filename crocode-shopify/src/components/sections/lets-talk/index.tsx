@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 
-import { Button, ProjectCardSecondary, Text } from '@/components/ui'
+import { Button, ProjectCardSecondary, Section, Text } from '@/components/ui'
 import { getLocale, getTranslations } from 'next-intl/server';
 import { fetchGraphQL } from '@/lib/sanity/graphql';
 import { getProjects } from '@/lib/sanity/queries/projects';
@@ -13,7 +13,7 @@ const LetsTalk = async () => {
   const projects: TProjectCard[] = projectsData?.allProjects || [];
 
   return (
-    <section className={styles.talk}>
+    <Section className={styles.talk}>
       <div className={styles.talk__inner}>
         <div className={styles.talk__info}>
           <div className={styles.talk__info_content}>
@@ -27,7 +27,7 @@ const LetsTalk = async () => {
           <ProjectCardSecondary className={styles.talk__card} project={projects[1]} type={'wide'}/>
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 

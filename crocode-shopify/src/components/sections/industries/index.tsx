@@ -15,7 +15,7 @@ const Industries = () => {
 
   return (
     <Section className={styles.industries} type='rounded' shift>
-      <Background desktop={'/images/bg_hero.webp'} mobile='/images/bg_hero.webp' alt='background'/>
+      <Background desktop={'/images/background/bg_hero.webp'} mobile='/images/background/bg_hero.webp' alt='background'/>
       <div className={styles.industries__inner}>
         <Text className={styles.industries__title} tag='h2' text={t('title')} style='small'/>
         <div className={styles.industries__content}>

@@ -1,5 +1,5 @@
 import { Comments, Hero, Projects, LetsTalk} from "@/components/sections"
-import { Section } from "@/components/ui"
+import { Section, Background } from "@/components/ui"
 import { fetchGraphQL } from "@/lib/sanity/graphql";
 import { getProjectCategories } from "@/lib/sanity/queries/projectCategories";
 import { getProjects } from "@/lib/sanity/queries/projects";
@@ -21,7 +21,8 @@ const OurWorkPage = async () => {
       subtitle={t('subtitle')}
     />
     <Projects projects={projects} categories={categories}/>
-    <Section>
+    <Section type="rounded">
+      <Background desktop='/images/background/bg-black-ball.webp' alt="background black with balls"/>
       <Comments/>
       <LetsTalk/>
     </Section>

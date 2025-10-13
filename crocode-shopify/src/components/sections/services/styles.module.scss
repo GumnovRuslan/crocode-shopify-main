@@ -1,7 +1,7 @@
 .services {
-  background: #000;
 
   &__inner {
+    position: relative;
     padding: fluid-size(270, 300) fluid-size(20, 125) fluid-size(100, 600); 
   }
 

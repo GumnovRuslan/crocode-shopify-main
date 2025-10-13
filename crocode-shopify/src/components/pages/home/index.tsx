@@ -8,7 +8,7 @@ import {
   ShopifyAgency, 
   Clients 
 } from "@/components/sections";
-import { Section } from "@/components/ui";
+import { Section, Background } from "@/components/ui";
 import { TProjectCard } from "@/types";
 import { useTranslations } from "next-intl";
 
@@ -21,7 +21,7 @@ const HomePage = ({projects}: TProps) => {
 
   return (<>
     <Hero 
-      bg={{desktop: '/images/bg_hero.webp', mobile: '/images/bg_hero_mobile.webp', alt: 'bg hero'}}
+      bg={{desktop: '/images/background/bg_hero.webp', mobile: '/images/background/bg_hero_mobile.webp', alt: 'bg hero'}}
       title={t('title')} 
       subtitle={t('subtitle')}
       isShowNetwork
@@ -31,6 +31,7 @@ const HomePage = ({projects}: TProps) => {
     <Clients/>
     <Industries/>
     <Section type="rounded">
+      <Background desktop='/images/background/bg-black-ball-toll.webp' alt="background black with balls"/>
       <ShopifyAgency projects={projects}/>
       <Services/>
       <Comments/>

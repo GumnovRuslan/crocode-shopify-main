@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 
-import { Section, Text } from '@/components/ui'
+import { Section, Text, Background } from '@/components/ui'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 
@@ -84,6 +84,7 @@ const Clients = () => {
 
   return (
     <Section className={styles.clients} type='rounded' shift>
+      <Background desktop='/images/background/bg-dark.webp' alt='background image'/>
       <div className={styles.clients__inner}>
         <Text className={styles.clients__title} tag='h2' text={t('title')} style='big'/>
         <div className={styles.clients__list} >

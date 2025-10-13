@@ -2,7 +2,7 @@
 
 import styles from './styles.module.scss'
 
-import { Section, Text } from '@/components/ui'
+import { Background, Section, Text } from '@/components/ui'
 import { useDarkThemeForHeader } from '@/hooks/useHeaderTheme'
 import { Faqs, Comments, Experts } from '@/components/sections'
 
@@ -10,7 +10,8 @@ const FaqsPage = () => {
   useDarkThemeForHeader()
 
   return (<>
-    <Section className={styles.faqs}>
+    <Section className={styles.faqs} isBlack>
+      <Background desktop='/images/background/bg-black-ball-toll.webp' alt="background black with balls"/>
       <Faqs/>
       <Comments/>
       <Experts/>

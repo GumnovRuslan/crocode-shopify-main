@@ -27,7 +27,7 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <Image src='/images/bg_footer.webp' fill alt='bg'/>
+      <Image src='/images/background/bg_footer.webp' fill alt='bg'/>
       <div className={styles.footer__inner}>
         <div className={styles.footer__content}>
           <div className={styles.footer__info}>

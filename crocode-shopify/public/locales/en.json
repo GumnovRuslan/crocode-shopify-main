@@ -226,6 +226,49 @@
       "address": "al. Tadeusza Rejtana 53A/303 35-326 Rzeszów, Poland"
     }
   },
+  "WhyCrocodePage": {
+    "hero": {
+      "title": "Our Approach",
+      "subtitle": "We are a Shopify Experts agency that helps ecommerce sites grow by boosting sales, expanding product range, and increasing conversion rates.We are a Shopify Experts agency that helps ecommerce sites grow by boosting sales, expanding product range, and increasing conversion rates"
+    },
+    "ourService": {
+      "card1": {
+        "title": "Creativity",
+        "description": "We focus on UX and UI design to create engaging, seamless Shopify experiences that guide customers effortlessly through the store. Our in-house design and development team craft unique, memorable sites aligned with omni-channel campaigns and ecommerce goals. We also prioritize brand identity, logos, and conversion-driven strategies."
+      },
+      "card2": {
+        "title": "Technology",
+        "description": "As Shopify Experts, we deliver advanced software using modern tech and secure integrations, partnering with top providers to enhance Shopify’s features and ensure future-ready, high-performance solutions."
+      },
+      "card3": {
+        "title": "Data",
+        "description": "Our Shopify developers build ecommerce stores focused on commercial value and business goals. Guided by data and analytics, we provide strategic insights and challenge page status quo to optimize performance. By combining experience, traffic data, and creativity, we maximize the benefits of the Shopify platform and deliver results through tailored marketing strategies."
+      }
+    },
+    "AgencyDescription": {
+      "title": "People-first agency",
+      "text1": "We are a highly skilled, multi-disciplinary Shopify agency dedicated to delivering innovative, data-driven ecommerce solutions and exceptional customer experiences. At the heart of our work is a people-first philosophy that values trust, independence, and personal growth. This approach creates an open environment where our team feels empowered to challenge conventions and deliver the best outcomes for our merchants.",
+      "text2": "Our remote-first culture encourages creative freedom by avoiding micromanagement, allowing our specialists to think outside the box and go the extra mile. We place equal importance on the experience of our merchants and our team members, fostering a supportive community that genuinely cares. This strong foundation of people-first values sets us apart and enables us to bring exceptional personal and commercial value to every project we undertake."
+    },
+    "whyChooseUs": {
+      "title": "Why Choose crocode?",
+      "description": "Creative collaboration underpins everything we do as Shopify Experts in London. We build close-working relationships with our clients and partners to work with goals in mind whilst offering a wealth of digital expertise. From startup-ups to world-leading brands, we deliver ecommerce strategies to deliver Shopify & Shopify Plus stores that perform.",
+      "cards": {
+        "card1": {
+          "text": "We go beyond standard solutions to create Shopify stores that challenge the conventions of design and technical capability. Our goal is not just to implement features, but to create a digital experience that delights your customers and gives you a real competitive advantage."
+        },
+        "card2": {
+          "text": "We believe that great decisions come from data, not guesses. Our team delves into your store's analytics to identify growth points, optimize the user experience, and increase conversion. We build not just websites, but powerful tools for scaling your business."
+        },
+        "card3": {
+          "text": "Our work doesn't end on launch day. We become your long-term technical partners, ensuring your store runs smoothly, providing prompt support, and helping you adapt to new challenges. Your success is our success, and we are committed to supporting you at every step of the way."
+        },
+        "card4": {
+          "text": "As certified Shopify and Shopify Plus experts, we have an in-depth understanding of the platform. This allows us to recommend the most effective and modern solutions, leverage best practices, and avoid common pitfalls, saving you time and budget."
+        }
+      }
+    }
+  },
   "Footer": {
     "message": "Let's talk ecommerce",
     "buttons": {
