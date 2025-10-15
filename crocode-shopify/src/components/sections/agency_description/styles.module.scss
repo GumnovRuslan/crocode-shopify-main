@@ -1,11 +1,14 @@
 .section {
+  position: relative;
   background: #000;
 
   &__inner {
+    position: relative;
     padding: fluid-size(80, 120) fluid-size(30, 125) fluid-size(160, 200); 
   }
 
   &__title {
+    text-align: center;
     color: var(--color-title-white);
     margin-bottom: fluid-size(80, 100);
   }

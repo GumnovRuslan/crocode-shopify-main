@@ -1,9 +1,11 @@
-import { StructureBuilder } from 'sanity/structure'
+import { StructureBuilder } from 'sanity/structure';
+import {MasterDetailIcon} from '@sanity/icons'
 
 export const langList = (S: StructureBuilder, title: string, name: string) => {
   return (
     S.listItem()
       .title(title)
+        .icon(MasterDetailIcon)
         .child(
           S.list()
             .title(`${title} by language`)

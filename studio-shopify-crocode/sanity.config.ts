@@ -17,29 +17,9 @@ export default defineConfig({
       structure,
     }), 
     visionTool(), 
-    // documentInternationalization({
-    //   supportedLanguages: [
-    //     { id: 'en', title: 'English' },
-    //     { id: 'pl', title: 'Polish' },
-    //   ],
-    //   schemaTypes: ['blogs', 'projects'],
-    //   languageField: `language`,
-    //   weakReferences: false,
-    // }),
   ],
-    
 
   schema: {
     types: schemaTypes,
   },
-
-  // document: {
-  //   newDocumentOptions: (prev, { creationContext }) => {
-  //     if (creationContext.type === 'global') {
-  //       // фильтруем шаблоны; templateId обычно равен имени типа (например 'lesson')
-  //       return prev.filter((t) => t.templateId !== 'lesson')
-  //     }
-  //     return prev
-  //   },
-  // },
 })

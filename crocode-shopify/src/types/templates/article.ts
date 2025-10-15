@@ -1,11 +1,15 @@
 import { TImage } from "./image";
 import { PortableTextBlock } from "@portabletext/react";
 
-export type TArticles = {
+type TArticles = {
   _id: string;
   language: string;
   customer: string;
   title: string;
-  gallery: {galleryImages: TImage[]};
+  gallery: {
+    galleryImages: {image: TImage, altText: string}[], 
+  };
   contentRaw: PortableTextBlock[];
 }
+
+export default TArticles

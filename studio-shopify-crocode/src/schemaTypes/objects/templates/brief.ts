@@ -35,8 +35,8 @@ export default defineType({
     },
     {
       name: 'website',
-      title: 'Website URL',
-      type: 'url',
+      title: 'Website link',
+      type: 'link',
       description: 'Ссылка на сайт проекта'
     },
   ],

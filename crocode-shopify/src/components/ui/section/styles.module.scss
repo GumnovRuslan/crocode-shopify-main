@@ -2,11 +2,17 @@
   position: relative;
   overflow: hidden;
 
+  &--black {
+    background: #000;
+  }
+
   &--rounded {
     border-top-left-radius: fluid-size(44, 77);
     border-top-right-radius: fluid-size(44, 77);
-    
-     @include media-up(xxl) {
+  }
+
+  &--shift {
+    @include media-up(xxl) {
       margin-bottom: -100px;  
     }
 

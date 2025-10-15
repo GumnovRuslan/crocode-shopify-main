@@ -15,6 +15,7 @@ import Input from "./input";
 import Text from "./text";
 import Article from "./cards/article";
 import MapboxMap from "./map";
+import CardIndustry from "./cards/card_industry";
 
 export {
   Button,
@@ -34,4 +35,5 @@ export {
   Text,
   Article,
   MapboxMap,
+  CardIndustry,
 }

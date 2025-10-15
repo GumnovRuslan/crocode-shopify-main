@@ -1,5 +1,4 @@
 .section {
-  background: #000;
 
   &__inner {
     padding: fluid-size(80, 165) fluid-size(30, 125) fluid-size(65, 95);
@@ -10,19 +9,11 @@
   }
 
   &__title {
-    font-size: fluid-size(16, 36);
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 137%;
     color: var(--color-title-white);
-    margin-bottom: 50px;
+    margin-bottom: fluid-size(27, 50);
   }
 
   &__subtitle {
-    font-size: fluid-size(32, 64);
-    line-height: 117%;
-    text-transform: uppercase;
-    margin-bottom: fluid-size(10, 15);
     color: var(--color-text-white);
   }
 

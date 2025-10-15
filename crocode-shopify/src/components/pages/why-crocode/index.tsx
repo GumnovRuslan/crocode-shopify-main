@@ -1,17 +1,20 @@
 import { Hero, Comments, LetsTalk, WhyChooseUs, AgencyDescription, OurServices } from "@/components/sections";
-import { Section } from "@/components/ui";
+import { Background, Section } from "@/components/ui";
+import { useTranslations } from "next-intl";
 
 const WhyCrocodePage = () => {
+  const t  = useTranslations('WhyCrocodePage.hero')
   return (<>
     <Hero 
-      bg={{desktop: '/images/bg_hero.webp', mobile: '/images/bg_hero_mobile.webp', alt: 'bg hero'}}
-      title="Our Approach" 
-      subtitle="We are a Shopify Experts agency that helps ecommerce sites grow by boosting sales, expanding product range, and increasing conversion rates.We are a Shopify Experts agency that helps ecommerce sites grow by boosting sales, expanding product range, and increasing conversion rates"
+      bg={{desktop: '/images/background/bg_hero.webp', mobile: '/images/background/bg_hero_mobile.webp', alt: 'bg hero'}}
+      title={t('title')}
+      subtitle={t('subtitle')}
     />
     <OurServices/>
     <AgencyDescription/>
     <WhyChooseUs/>
-    <Section type='rounded'>
+    <Section type='rounded' isBlack>
+      <Background desktop='/images/background/bg-black-ball-toll.webp' alt="background black with balls"/>
       <Comments/>
       <LetsTalk/>
     </Section>

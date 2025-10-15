@@ -2,12 +2,17 @@
 
 import styles from './styles.module.scss'
 
-import { SliderBtn, Button, Text } from '@/components/ui'
+import { SliderBtn, Button, Text, Section, ProjectCard } from '@/components/ui'
 import { useState, useEffect, useCallback} from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import { useTranslations } from 'next-intl'
+import { TProjectCard } from '@/types'
 
-const ShopifyAgency = () => {
+type TProps = {
+  projects: TProjectCard[]
+}
+
+const ShopifyAgency = ({projects}: TProps) => {
   const t = useTranslations('HomePage.scalable')
   const [emblaRef, emblaApi] = useEmblaCarousel()
   const [canScrollPrev, setCanScrollPrev] = useState(false)
@@ -35,18 +40,18 @@ const ShopifyAgency = () => {
   }, [emblaApi]);
 
   return (
-    <section className={styles.section}>
+    <Section className={styles.section}>
       <div className={styles.section__inner}>
         <div className={styles.section__header}>
-          <Text className={styles.section__title} tag='h2' text='Shopify Plus Agency for Scalable' style='small'/>
-          <p className={styles.section__subtitle}>Expert Shopify Plus Development for Fast-Growing Brands</p>
+          <Text className={styles.section__title} tag='h2' text={t('title')} style='small'/>
+          <Text className={styles.section__subtitle} tag='p' text={t('subtitle')} style='big'/>
         </div>
         <div className={styles.slider}>
           <div className={styles.embla} ref={emblaRef}>
             <div className={styles.embla__container}>
-              {Array.from({length: 10}).map((_, i) => (
+              {projects?.map((project, i) => (
                 <div className={styles['embla__slide']} key={i}>
-                  <div className={styles.slider__card}></div>
+                  <ProjectCard className={styles.slider__card} project={project}/>
                 </div>
               ))}
             </div>
@@ -64,9 +69,9 @@ const ShopifyAgency = () => {
             onClick={scrollNext}
           />
         </div>
-        <Button className={styles.section__button} as='link' href='#' text={t('button.text')}/>
+        <Button className={styles.section__button} as='link' href='/our-work' text={t('button.text')}/>
       </div>
-    </section>
+    </Section>
   )
 }
 

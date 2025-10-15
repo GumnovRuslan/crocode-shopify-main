@@ -1,11 +1,11 @@
-import {MasterDetailIcon} from '@sanity/icons'
+import { DocumentsIcon } from '@sanity/icons'
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
   name: 'projects',
   title: 'Projects',
   type: 'document',
-  icon: MasterDetailIcon,
+  icon: DocumentsIcon,
   preview: {
     select: {
       title: 'title',
@@ -35,6 +35,12 @@ export default defineType({
       validation: (Rule) => Rule.required()
     }),
     defineField({
+      title: 'Client',
+      name: 'client',
+      type: 'string',
+      description: 'Название заказчика или оргинизации',
+    }),
+    defineField({
       title: 'Work Done',
       name: 'workDone',
       type: 'string',
@@ -53,6 +59,39 @@ export default defineType({
       validation: (Rule) => Rule.required()
     }),
     defineField({
+      name: 'theme',
+      title: 'Theme',
+      type: 'string',
+      description: 'В какой теме отображать hero и header',
+      options: {
+        list: [
+          { title: 'light', value: 'light' },
+          { title: 'dark', value: 'dark' },
+        ]
+      },
+      initialValue: 'light',
+      validation: (Rule) => Rule.required()
+    }),
+    defineField({
+      name: 'category',
+      title: 'Category',
+      description: "К какой категории относится проект",
+      type: 'reference',
+      to: [{ type: 'projectCategories' }],
+      options: {
+        filter: ({ document }) => {
+          if (!document?.language) {
+            return { filter: '' } // Пока не выбран язык
+          }
+          
+          return {
+            filter: 'language == $lang',
+            params: { lang: document.language }
+          }
+        }
+      }
+    }),
+    defineField({
       title: 'Card Image',
       name: 'cardImage',
       type: 'imageWithAlt',
@@ -60,10 +99,10 @@ export default defineType({
       validation: (Rule) => Rule.required()
     }),
     defineField({
-      title: 'Hero image',
+      title: 'Hero images',
       name: 'coverImage',
-      type: 'imageWithAlt',
-      description: 'Изображение для главной страницы'
+      type: 'bigAndSmallImages',
+      description: 'Изображения для главной страницы'
     }),
     defineField({
       title: 'Brief',
@@ -74,8 +113,8 @@ export default defineType({
     defineField({
       title: 'Gallery',
       name: 'gallery',
-      type: 'gallery',
-      description: 'Изображениея для галереи'
+      type: 'bigAndSmallImages',
+      description: 'Изображения для галереи'
     }),
     defineField({
       title: 'Solution',
@@ -89,40 +128,6 @@ export default defineType({
       type: 'string',
       hidden: true,
     }),
-    // defineField({
-    //   title: 'Content',
-    //   name: 'content',
-    //   type: 'array',
-    //   of: [
-    //     {
-    //       type: 'block',
-    //       marks: {
-    //         decorators: [
-    //           {title: 'Strong', value: 'strong'},
-    //           {title: 'Emphasis', value: 'em'},
-    //           {title: 'Code', value: 'code'},
-    //         ],
-    //       },
-    //       styles: [
-    //         {title: 'Normal', value: 'normal'},
-    //         {title: 'H1', value: 'h1'},
-    //         {title: 'H2', value: 'h2'},
-    //         {title: 'H3', value: 'h3'},
-    //         {title: 'H4', value: 'h4'},
-    //         {title: 'H5', value: 'h5'},
-    //         {title: 'H6', value: 'h6'},
-    //         {title: 'Quote', value: 'blockquote'},
-    //       ],
-    //       lists: [
-    //         {title: 'Bullet', value: 'bullet'},
-    //         {title: 'Numbered', value: 'number'},
-    //       ],
-    //     },
-    //     {
-    //       type: 'image',
-    //     },
-    //   ],
-    // }),
     defineField({
       name: 'seo',
       type: 'seo',

@@ -1,5 +1,7 @@
-export type TBackground = {
+type TBackground = {
   desktop: string
   mobile?: string
   alt: string
 }
+
+export default TBackground

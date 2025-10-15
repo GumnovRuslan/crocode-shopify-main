@@ -2,8 +2,8 @@
   background: #000;
 
   &__inner {
+    position: relative;
     padding: fluid-size(90, 188) 20px fluid-size(160, 292); 
-    // max-width: 70%;
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;

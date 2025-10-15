@@ -20,6 +20,7 @@
   }
 
   &__title {
+    text-align: center;
     margin-bottom: fluid-size(20, 50);
   }
 
@@ -99,6 +100,7 @@
   padding: fluid-size(15, 50);
 
   &__text {
+    position: relative;
     text-transform: capitalize;
     text-align: center;
     font-size: fluid-size(12, 36);

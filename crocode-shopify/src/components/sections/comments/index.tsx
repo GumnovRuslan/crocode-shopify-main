@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 
 import { useState, useEffect, useCallback } from 'react'
 import { BtkIcon } from '@/components/icons'
-import { Comment, SliderBtn, Text } from '@/components/ui'
+import { Comment, Section, SliderBtn, Text } from '@/components/ui'
 import useEmblaCarousel from 'embla-carousel-react'
 import { useTranslations } from 'next-intl'
 
@@ -42,7 +42,7 @@ const Comments = () => {
     }, [emblaApi]);
 
   return (
-    <section className={styles.comments}>
+    <Section className={styles.comments}>
       <div className={styles.comments__inner}>
         <Text className={styles.comments__title} tag='h2' text={t('title')} style='big'/>
         <div className={styles.slider}>
@@ -79,7 +79,7 @@ const Comments = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 

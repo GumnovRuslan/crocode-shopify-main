@@ -4,19 +4,24 @@ import {
   Services, 
   Comments, 
   Hero, 
-  CasesPreview, 
+  Industries, 
   ShopifyAgency, 
   Clients 
 } from "@/components/sections";
-import { Section } from "@/components/ui";
+import { Section, Background } from "@/components/ui";
+import { TProjectCard } from "@/types";
 import { useTranslations } from "next-intl";
 
-export default function HomePage() {
+type TProps = {
+  projects: TProjectCard[]
+}
+
+const HomePage = ({projects}: TProps) => {
   const t = useTranslations('HomePage.hero')
 
   return (<>
     <Hero 
-      bg={{desktop: '/images/bg_hero.webp', mobile: '/images/bg_hero_mobile.webp', alt: 'bg hero'}}
+      bg={{desktop: '/images/background/bg_hero.webp', mobile: '/images/background/bg_hero_mobile.webp', alt: 'bg hero'}}
       title={t('title')} 
       subtitle={t('subtitle')}
       isShowNetwork
@@ -24,12 +29,15 @@ export default function HomePage() {
     />
     <HomeAboutUs/>
     <Clients/>
-    <CasesPreview/>
-    <Section>
-      <ShopifyAgency/>
+    <Industries/>
+    <Section type="rounded">
+      <Background desktop='/images/background/bg-black-ball-toll.webp' alt="background black with balls"/>
+      <ShopifyAgency projects={projects}/>
       <Services/>
       <Comments/>
     </Section>
     <Experts/>
   </>);
 }
+
+export default HomePage;

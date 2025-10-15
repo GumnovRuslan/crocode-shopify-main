@@ -1,6 +1,7 @@
 import styles from './styles.module.scss'
 
 import { Section, Text, Background } from '@/components/ui'
+import { useTranslations } from 'next-intl'
 
 type TPropsCard = {
   className?: string;
@@ -21,22 +22,21 @@ const Card = ({className, text, background}: TPropsCard) => {
 }
 
 const WhyChooseUs = () => {
+  const t = useTranslations('WhyCrocodePage.whyChooseUs')
   return (
     <Section type='rounded' className={styles.section}>
       <div className={styles.section__inner}>
         <div className={styles.section__header}>
-          <Text className={styles.section__title} center text='Why Choose crocode?'/>
-          <p className={styles.section__description}>
-            Creative collaboration underpins everything we do as Shopify Experts in London. We build close-working relationships with our clients and partners to work with goals in mind whilst offering a wealth of digital expertise. From startup-ups to world-leading brands, we deliver ecommerce strategies to deliver Shopify & Shopify Plus stores that perform.
-          </p>
+          <Text className={styles.section__title} tag='h2' text={t('title')} style='big'/>
+          <p className={styles.section__description}>{t('description')}</p>
         </div>
         <div className={styles.section__list}>
-          <Card className={styles.section__card} text='We go above and beyond to design and develop Shopify stores that push the boundaries of design & technical capability.'/>
-          <Card className={styles.section__card} background={{src: '/images/cards/card-project.png', alt: 'card'}}/>
-          <Card className={styles.section__card} background={{src: '/images/cards/card-project.png', alt: 'card'}}/>
-          <Card className={styles.section__card} text='We go above and beyond to design and develop Shopify stores that push the boundaries of design & technical capability.'/>
-          <Card className={styles.section__card} text='We go above and beyond to design and develop Shopify stores that push the boundaries of design & technical capability.'/>
-          <Card className={styles.section__card} text='We go above and beyond to design and develop Shopify stores that push the boundaries of design & technical capability.'/>
+          <Card className={styles.section__card} text={t('cards.card1.text')} background={{src: '/images/cards/why-crocode/whycrocode-card-1.png', alt: 'card'}}/>
+          <Card className={styles.section__card} background={{src: '/images/cards/why-crocode/bg-image-1.webp', alt: 'card'}}/>
+          <Card className={styles.section__card} background={{src: '/images/cards/why-crocode/bg-image-2.webp', alt: 'card'}}/>
+          <Card className={styles.section__card} text={t('cards.card2.text')} background={{src: '/images/cards/why-crocode/whycrocode-card-2.png', alt: 'card'}}/>
+          <Card className={styles.section__card} text={t('cards.card3.text')} background={{src: '/images/cards/why-crocode/whycrocode-card-3.png', alt: 'card'}}/>
+          <Card className={styles.section__card} text={t('cards.card4.text')} background={{src: '/images/cards/why-crocode/whycrocode-card-4.png', alt: 'card'}}/>
         </div>
       </div>
     </Section>

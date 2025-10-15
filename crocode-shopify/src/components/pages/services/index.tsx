@@ -1,14 +1,18 @@
 'use client'
 
 import { ServicesSection, Comments } from "@/components/sections"
+import { Background, Section } from "@/components/ui"
 import { useDarkThemeForHeader } from "@/hooks/useHeaderTheme"
 
 const ServicesPage = () => {
   useDarkThemeForHeader()
 
   return (<>
-    <ServicesSection/>
-    <Comments/>
+    <Section isBlack>
+      <Background desktop='/images/background/bg-black-ball-toll.webp' alt="background black with balls"/>
+      <ServicesSection/>
+      <Comments/>
+    </Section>
   </>)
 }
 
