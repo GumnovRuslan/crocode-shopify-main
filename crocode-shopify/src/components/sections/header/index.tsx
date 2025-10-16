@@ -21,11 +21,6 @@ const Header = () => {
   const {isMobile} = useScreenSize()
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false)
 
-  // "our-work": "Nasze Realizacje",
-  //     "services": "Usługi",
-  //     "about-us": "O nas",
-  //     "contact": "Kontakt"
-
   const NAV_LIST = {
     'our-work': {
       text: t('nav.our-work'),
@@ -70,13 +65,13 @@ const Header = () => {
           <span className={styles.header__logo}>Crocode</span>
         </Link>
         <div className={`${styles.header__menu} ${menuIsOpen ? styles[`header__menu--open`] : ''}`}>
-           <nav className={styles.header__nav}>
+           <menu className={styles.header__nav}>
             {Object.values(NAV_LIST).map((item, i) => (
               <li className={styles.header_nav_item} key={i}>
                 <Link className={styles.header__nav_link} onClick={() => setMenuIsOpen(false)} href={item.href}>{item.text}</Link>
               </li>
             ))}
-          </nav>
+          </menu>
           <Button className={styles.header__button} as='link' href='/contact' styleType='secondary' text='Get in Touch'/>
         </div>
         <Burger className={styles.header__burger} theme={theme} isActive={menuIsOpen} setIsActive={() => setMenuIsOpen(!menuIsOpen)}/>

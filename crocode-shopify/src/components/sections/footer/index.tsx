@@ -8,14 +8,17 @@ import { useTranslations } from 'next-intl'
 
 const NETWORK = [
   {
+    name: "Instagram",
     href: '#',
     icon: InstagramIcon
   },
   {
+    name: "LinkedIn",
     href: '#',
     icon: LinkedinIcon
   },
   {
+    name: "Twitter",
     href: '#',
     icon: TwitterIcon
   },
@@ -23,7 +26,6 @@ const NETWORK = [
 
 const Footer = () => {
   const t = useTranslations('Footer')
-  const nav = 'columns.what-we-do.nav'
 
   return (
     <footer className={styles.footer}>
@@ -37,7 +39,7 @@ const Footer = () => {
             </div>
             <div className={styles.footer__network}>
               {NETWORK.map((item, i) => (
-                <Link className={styles.footer__network_link} href={item.href} key={i}>
+                <Link className={styles.footer__network_link} href={item.href} aria-label={item.name} key={i}>
                   <item.icon/>
                 </Link>
               ))}
@@ -66,8 +68,8 @@ const Footer = () => {
             <p className={styles.footer__copyright}>{t('copyright')}</p>
           </div>
           <nav className={styles.footer__nav}>
-            <Link className={styles.footer__nav_item} href={'/'}>Shopify Agency</Link>
-            <Link className={styles.footer__nav_item} href={'/'}>Privacy Policy</Link>
+            <Link className={styles.footer__nav_item} href={'/'}>{t('shopify-agency')}</Link>
+            <Link className={styles.footer__nav_item} href={'/'}>{t('privacy-policy')}</Link>
           </nav>
         </div>
       </div>
