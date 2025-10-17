@@ -2,7 +2,7 @@
 
   &__inner {
     display: flex;
-    padding: fluid-size(0, 300) fluid-size(25, 110) fluid-size(120, 200); 
+    padding: fluid-size(0, 150) fluid-size(25, 110) fluid-size(120, 200); 
 
     @include media-up(lg) {
       justify-content: center;

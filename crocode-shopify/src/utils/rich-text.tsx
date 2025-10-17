@@ -8,7 +8,7 @@ type TProps = {
   isRawKey?: boolean;
 }
 
-const RichText = ({translationKey, tag: Tag = 'div', isRawKey = true,  className }: TProps) => {
+const RichText = ({translationKey, tag: Tag = 'div', isRawKey = true,  className, }: TProps) => {
   const t = useTranslations();
   const html = isRawKey ? t.raw(translationKey) : translationKey;
   

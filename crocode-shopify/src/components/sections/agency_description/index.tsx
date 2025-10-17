@@ -7,7 +7,7 @@ const AgencyDescription = () => {
   const t = useTranslations('WhyCrocodePage.AgencyDescription')
   
   return ( 
-    <Section type='rounded' className={styles.section}>
+    <Section type='rounded' shift className={styles.section}>
       <Background desktop='/images/background/bg-dark.webp' alt='background image'/>
       <div className={styles.section__inner}>
         <Text className={styles.section__title} tag='h2' text={t('title')} style='big'/>

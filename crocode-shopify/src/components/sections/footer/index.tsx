@@ -1,9 +1,8 @@
 import styles from './styles.module.scss'
 
 import { InstagramIcon, LinkedinIcon, TwitterIcon } from '@/components/icons'
-import { Button } from '@/components/ui'
+import { Button, Background } from '@/components/ui'
 import Link from 'next/link'
-import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
 const NETWORK = [
@@ -29,7 +28,7 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <Image src='/images/background/bg_footer.webp' fill alt='bg'/>
+      <Background desktop='/images/background/bg_footer.webp' alt='bg'/>
       <div className={styles.footer__inner}>
         <div className={styles.footer__content}>
           <div className={styles.footer__info}>

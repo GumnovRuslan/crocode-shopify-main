@@ -1,4 +1,12 @@
 {
+  "Seo": {
+    "description": "Crocode is a Shopify and eCommerce development agency specializing in Shopify Plus, custom themes, apps, and Hydrogen. We help online brands grow through design, performance, and conversion optimization.",
+    "keywords": "Shopify development, Shopify Plus, Shopify Hydrogen, Shopify apps, Shopify themes, headless commerce, eCommerce optimization, custom Shopify store, Shopify agency, Shopify migration",
+    "openGraph": {
+      "title": "Crocode — Shopify & Headless Commerce Experts",
+      "description": "Crocode — Shopify & Headless Commerce Experts helping eCommerce brands scale with custom Shopify Plus, Hydrogen, and app solutions."
+    }
+  },
   "Header": {
     "nav": {
       "our-work": "Our Work",
@@ -11,6 +19,15 @@
     }
   },
   "HomePage": {
+    "seo" : {
+      "title": "Shopify Development & Headless Commerce",
+      "description": "Crocode builds Shopify, Shopify Plus, custom themes, apps, and Hydrogen stores. We help eCommerce brands scale and optimize performance.",
+      "keywords": "Shopify development, Shopify Plus, custom Shopify themes, Shopify app development, Shopify Hydrogen, eCommerce optimization, Shopify migration",
+      "openGraph": {
+        "title": "Crocode — Shopify & Headless Commerce Experts",
+        "description": "We specialize in Shopify, Shopify Plus, apps, themes, and Hydrogen solutions for eCommerce businesses."
+      }
+    },
     "hero": {
       "title": "Dependable Ecommerce and Shopify Solutions",
       "subtitle": "We are a leading Shopify and Shopify Plus agency that designs, develops strategies, and helps grow ecommerce businesses.",
@@ -105,7 +122,16 @@
       }
     }
   },
-  "OurWork": {
+  "OurWorkPage": {
+    "seo": {
+      "title": "Our Work — Crocode | Shopify & eCommerce Portfolio",
+      "description": "Explore Crocode’s portfolio of high-performance Shopify and Shopify Plus stores, custom themes, and eCommerce solutions. See how we helped brands grow with design, development, and strategy.",
+      "keywords": "Shopify portfolio, Shopify ecommerce websites, Shopify custom themes, Shopify Plus projects, eCommerce showcase, Crocode portfolio, Shopify design and development",
+      "openGraph": {
+        "title": "Crocode Portfolio — Shopify & eCommerce Projects",
+        "description": "Check out real projects by Crocode: custom Shopify themes, Shopify Plus sites, performance, design and development."
+      }
+    },
     "hero": {
       "title": "We've helped top brands and startups create high-performance ecommerce websites",
       "subtitle": "We are a leading Shopify and Shopify Plus agency that designs, develops strategies, and helps grow ecommerce businesses"
@@ -115,31 +141,58 @@
     "title": "Services"
   },
   "AboutUsPage": {
+    "seo": {
+      "title": "About Crocode — Shopify & eCommerce Development Experts",
+      "description": "Crocode is a Shopify and Shopify Plus development agency creating high-performance eCommerce stores, custom themes, and apps for global brands.",
+      "keywords": "Shopify agency, Shopify Plus development, Shopify Hydrogen, Shopify apps, headless commerce, eCommerce strategy, custom Shopify theme, Shopify experts, Shopify developers, Shopify design agency",
+      "openGraph": {
+        "title": "About Crocode — Shopify Experts for eCommerce Growth",
+        "description": "Meet Crocode — Shopify Plus and Hydrogen agency that builds scalable, high-performance online stores for modern eCommerce brands."
+      }
+    },
     "hero": {
       "title": "Experienced professionals with a positive attitude and a genuine passion for creating the best online shopping solutions that inspire and amaze",
       "subtitle": "We are a leading Shopify and Shopify Plus agency that designs, develops strategies, and helps grow ecommerce businesses"
     },
     "results": {
-      "title": "Our in-house, skilled team support brands through transformative ecommerce strategies"
+      "title": "Our in-house, skilled team support brands through transformative ecommerce strategies",
+      "cards": {
+        "card1": {
+          "name": "Team Members",
+          "text": "20"
+        },
+        "card2": {
+          "name": "Happy Clients",
+          "text": "100+"
+        },
+        "card3": {
+          "name": "Launched Projects",
+          "text": "18"
+        },
+        "card4": {
+          "name": "Average Growth Rate",
+          "text": "9x"
+        }
+      }
     },
     "ShopifyPlusHighlights": {
-      "title": "Shopify Plus Agency for Scalable",
+      "title": "Shopify Plus Agency for Scalable Growth",
       "items": {
         "item1": {
           "title": "Creativity",
-          "text": "We bring bold ideas to life. Our work is rooted in imaginative thinking that pushes boundaries and captivates customers. From design to storytelling, we approach every project with originality, ensuring each brand we work with stands out in the Shopify ecosystem and against competition."
+          "text": "We design unique, brand-centric Shopify stores that tell your story and engage customers. From wireframes to final delivery, our goal is to make your store not only look amazing but also convert effectively."
         },
         "item2": {
           "title": "Technical Excellence",
-          "text": "We bring bold ideas to life. Our work is rooted in imaginative thinking that pushes boundaries and captivates customers. From design to storytelling, we approach every project with originality, ensuring each brand we work with stands out in the Shopify ecosystem and against competition."
+          "text": "Our developers are experts in Shopify Plus, Hydrogen, and custom app development. We build reliable, fast, and scalable storefronts optimized for SEO, performance, and accessibility — ensuring your brand stands out in a competitive market."
         },
         "item3": {
-          "title": "Creativity",
-          "text": "We bring bold ideas to life. Our work is rooted in imaginative thinking that pushes boundaries and captivates customers. From design to storytelling, we approach every project with originality, ensuring each brand we work with stands out in the Shopify ecosystem and against competition."
+          "title": "Innovation",
+          "text": "We embrace modern technologies and headless commerce architectures to unlock new digital opportunities. With Crocode, your business stays flexible and future-ready."
         },
         "item4": {
-          "title": "People-first",
-          "text": "We bring bold ideas to life. Our work is rooted in imaginative thinking that pushes boundaries and captivates customers. From design to storytelling, we approach every project with originality, ensuring each brand we work with stands out in the Shopify ecosystem and against competition."
+          "title": "People-First Approach",
+          "text": "We see every partnership as collaboration. Clear communication, transparency, and shared goals are what make our projects successful — every time."
         }
       }
     },
@@ -152,6 +205,15 @@
     }
   },
   "ContactPage": {
+    "seo": {
+      "title": "Contact Us — Crocode",
+      "description": "Get in touch with Crocode — Shopify and eCommerce development agency. We build Shopify Plus, custom themes, apps, and Hydrogen stores.",
+      "keywords": "contact Crocode, get in touch, Shopify development agency contact, eCommerce agency contact, Shopify experts contact",
+      "openGraph": {
+        "title": "Contact Crocode — Shopify & eCommerce Experts",
+        "description": "Reach out to Crocode for Shopify development, custom apps, themes, and headless commerce solutions."
+      }
+    },
     "title": "Ready to start your partnership for growth?",
     "form": {
       "title": "Let's talk about your project",
@@ -227,6 +289,15 @@
     }
   },
   "WhyCrocodePage": {
+    "seo": {
+      "title": "Why Crocode — Shopify & eCommerce Agency",
+      "description": "Discover why Crocode is the trusted Shopify and eCommerce development partner: expertise in Shopify Plus, custom themes, Hydrogen, performance optimization and support.",
+      "keywords": "Why Crocode, Shopify agency, Shopify Plus expertise, Shopify development partner, custom Shopify themes, Shopify Hydrogen, eCommerce agency, Crocode benefits, agency advantages",
+      "openGraph": {
+        "title": "Why Crocode — Your Shopify & eCommerce Partner",
+        "description": "Learn what makes Crocode unique: deep Shopify expertise, performance-driven approach, creative design, and full support for growth."
+      }
+    },
     "hero": {
       "title": "Our Approach",
       "subtitle": "We are a Shopify Experts agency that helps ecommerce sites grow by boosting sales, expanding product range, and increasing conversion rates.We are a Shopify Experts agency that helps ecommerce sites grow by boosting sales, expanding product range, and increasing conversion rates"
@@ -266,6 +337,61 @@
         "card4": {
           "text": "As certified Shopify and Shopify Plus experts, we have an in-depth understanding of the platform. This allows us to recommend the most effective and modern solutions, leverage best practices, and avoid common pitfalls, saving you time and budget."
         }
+      }
+    }
+  },
+  "FaqsPage": {
+    "seo": {
+      "title": "Shopify eCommerce Development FAQs — Crocode",
+      "description": "Find answers to the most common questions about Shopify, Shopify Plus, custom themes, app development, Hydrogen storefronts, SEO optimization, and eCommerce performance. Crocode — your Shopify development partner.",
+      "keywords": "Shopify development, Shopify Plus, custom Shopify themes, Shopify app development, Shopify Hydrogen, eCommerce optimization, Shopify SEO, Shopify migration, Shopify maintenance, Shopify agency",
+      "openGraph": {
+        "title": "Shopify eCommerce Development FAQs — Crocode",
+        "description": "Answers to frequently asked questions about Shopify projects: Shopify Plus, custom themes, app development, Hydrogen, SEO, and migrations. Learn how Crocode helps brands grow with Shopify."
+      }
+    },
+    "title": "FAQS",
+    "subtitle": "Shopify eCommerce Development FAQs",
+    "items": {
+      "item1": {
+        "question": "What is Shopify and why is it the best platform for eCommerce businesses?",
+        "answer": "<p>Shopify is a powerful eCommerce platform that allows brands to launch, manage, and scale online stores with ease. It offers a user-friendly admin, secure payments, built-in analytics, and thousands of apps to extend functionality — making it perfect for both startups and enterprise-level businesses.</p>"
+      },
+      "item2": {
+        "question": "What’s the difference between Shopify and Shopify Plus?",
+        "answer": "<p>Shopify Plus is designed for high-volume merchants and global brands. It provides advanced automation, deeper customization, API access, and dedicated support. If your business processes large numbers of orders or operates internationally, Shopify Plus is the ideal choice.</p>"
+      },
+      "item3": {
+        "question": "Do you develop custom Shopify themes?",
+        "answer": "<p>Yes. Our team designs and develops custom Shopify themes from scratch to perfectly match your brand identity and improve user experience.</p> <p>We also optimize existing Shopify themes for performance, SEO, and conversion rate improvement.</p>"
+      },
+      "item4": {
+        "question": "Can you build a custom Shopify app for my store?",
+        "answer": "<p>Absolutely. We specialize in Shopify app development, creating private or public apps that integrate seamlessly with your store’s functionality — from marketing automation and custom checkout flows to inventory management and data synchronization.</p>"
+      },
+      "item5": {
+        "question": "What is Shopify Hydrogen, and do you work with it?",
+        "answer": "<p>Shopify Hydrogen is a modern React-based framework for building headless Shopify stores. It provides full control over the storefront experience, allowing for high-speed, custom eCommerce experiences.</p> <p>We develop Hydrogen-based Shopify solutions for brands that need performance, scalability, and design freedom.</p>"
+      },
+      "item6": {
+        "question": "Do you offer migration services to Shopify?",
+        "answer": "<p>Yes, we handle complete Shopify migrations from platforms like WooCommerce, Magento, BigCommerce, or PrestaShop.</p> <p>We ensure all products, customers, and orders are transferred securely — preserving SEO rankings and URLs to maintain your store’s organic traffic.</p>"
+      },
+      "item7": {
+        "question": "Do you provide SEO and speed optimization for Shopify stores?",
+        "answer": "<p>Yes. We apply advanced Shopify SEO optimization techniques — structured data, image compression, meta tags, and Core Web Vitals improvement.</p> <p>Our goal is to make your Shopify store fast, mobile-friendly, and highly ranked in search engines.</p>"
+      },
+      "item8": {
+        "question": "Do you offer post-launch support and maintenance?",
+        "answer": "<p>Yes. We provide ongoing Shopify support, theme updates, app management, and performance monitoring to ensure your store keeps running smoothly and growing consistently.</p>"
+      },
+      "item9": {
+        "question": "What types of businesses do you work with?",
+        "answer": "<p>We partner with eCommerce brands, D2C startups, and enterprise retailers looking to build or scale their Shopify stores.</p> <p>Whether it’s a custom Shopify app, a full rebranding, or a migration project, our team tailors every solution to your goals.</p>"
+      },
+      "item10": {
+        "question": "Why choose your team for Shopify development?",
+        "answer": "<p>We’re a team of certified Shopify experts specializing in Shopify, Shopify Plus, Themes, Apps, and Hydrogen.</p> <p>Our projects focus on performance, scalability, and design excellence — helping eCommerce brands grow faster and sell more efficiently.</p>"
       }
     }
   },

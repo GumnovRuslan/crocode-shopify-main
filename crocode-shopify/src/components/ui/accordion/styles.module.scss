@@ -11,7 +11,7 @@
     text-transform: uppercase;
     font-size: fluid-size(16, 36);
     font-weight: 700;
-    line-height: 100%;
+    line-height: 130%;
     color: var(--color-text-white);
   }
 
@@ -35,9 +35,17 @@
     }
 
     &_text {
+      display: flex;
+      flex-direction: column;
+      gap: fluid-size(15, 40);
       text-transform: uppercase;
       font-size: fluid-size(12, 20);
       line-height: 150%;
+
+      br {
+        padding: 10px 0;
+      }
+
     }
   }
 }

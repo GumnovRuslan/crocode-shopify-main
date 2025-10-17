@@ -3,27 +3,14 @@ import styles from './styles.module.scss'
 import { Section, Text, ResultCard, Background } from '@/components/ui'
 import { useTranslations } from 'next-intl'
 
-const CARDS = [
-  {
-    name: 'Team members',
-    text: '20',
-  },
-  {
-    name: 'Happy clients',
-    text: '100+',
-  },
-  {
-    name: 'Happy clients',
-    text: '18',
-  },
-  {
-    name: 'Happy clients',
-    text: '9х',
-  },
-]
-
 const OurResult = () => {
   const t = useTranslations("AboutUsPage.results")
+
+  const CARDS = Object.keys(t.raw('cards')).map((key) => ({
+    name: t(`cards.${key}.name`),
+    text: t.raw(`cards.${key}.text`)
+  }))
+
   return (
     <Section type='rounded' className={styles.result} shift>
       <Background desktop='/images/background/bg-dark.webp' alt="background black"/>

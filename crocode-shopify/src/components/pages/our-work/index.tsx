@@ -8,7 +8,7 @@ import { getLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 
 const OurWorkPage = async () => {
-  const t = await getTranslations('OurWork.hero')
+  const t = await getTranslations('OurWorkPage.hero')
   const locale: string = await getLocale()
   const { data: projectsData } = await fetchGraphQL(getProjects(locale));
   const { data: projectCategories} = await fetchGraphQL(getProjectCategories(locale));

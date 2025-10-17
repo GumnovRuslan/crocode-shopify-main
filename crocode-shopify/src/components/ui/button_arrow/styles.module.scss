@@ -20,8 +20,8 @@
   }
 
   &--lg {
-    width: fluid-size(25, 72);
-    height: fluid-size(25, 72);
+    min-width: fluid-size(25, 72);
+    min-height: fluid-size(25, 72);
 
     .icon {
       width: fluid-size(20, 40);

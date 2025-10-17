@@ -6,8 +6,7 @@ import { useTranslations } from 'next-intl'
 const ShopifyPlusHighlights = () => {
   const t = useTranslations('AboutUsPage.ShopifyPlusHighlights');
 
-  const ITEMS = ['item1', 'item2', 'item3', 'item4']
-  .map(key => ({
+  const ITEMS = Object.keys(t.raw('items')).map(key => ({
     title: t(`items.${key}.title`),
     text: t(`items.${key}.text`),
   }))

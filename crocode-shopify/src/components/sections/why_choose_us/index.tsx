@@ -24,7 +24,7 @@ const Card = ({className, text, background}: TPropsCard) => {
 const WhyChooseUs = () => {
   const t = useTranslations('WhyCrocodePage.whyChooseUs')
   return (
-    <Section type='rounded' className={styles.section}>
+    <Section type='rounded' shift className={styles.section}>
       <div className={styles.section__inner}>
         <div className={styles.section__header}>
           <Text className={styles.section__title} tag='h2' text={t('title')} style='big'/>
