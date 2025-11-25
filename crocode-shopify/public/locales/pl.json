@@ -6,5 +6,57 @@
       "about-us": "O nas",
       "contact": "Kontakt"
     }
+  },
+  "ServiceDetailPage": {
+    "design-development": {
+      "hero": {
+        "title": "PROJEKTOWANIE I ROZWÓJ",
+        "subtitle": "JAKO SPRAWDZONA AGENCJA SHOPIFY DLA USŁUG PROJEKTOWANIA I ROZWOJU POMAGAMY ROSNĄĆ POPRZEZ ZWIĘKSZANIE SPRZEDAŻY, POSZERZANIE ASORTYMENTU PRODUKTÓW I ZWIĘKSZANIE WSPÓŁCZYNNIKÓW KONWERSJI"
+      },
+      "description": {
+        "title": "TUTAJ JEST ZREWIDOWANA WERSJA DOSTOSOWANA DO PROJEKTOWANIA I ROZWOJU",
+        "text1": "Jako agencja premium Shopify, rozwijając sklepy e-commerce gotowe na wymagania długo/średnioterminowe, starannie i właściwie planujemy każdy szczegół z odpowiednim UX. Wspieramy klientów jako zaufany partner w ciągle ewoluującym krajobrazie e-commerce.",
+        "text2": "Nasze projekty wymagają głębokiego zrozumienia i najwyższej jakości realizacji, ściśle współpracujemy z Twoim biznesem, rozwojem i dostawcami, oraz partnerami, i wdrażamy, jako zwycięzca na szybko rozwijającym się i agresywnym rynku."
+      },
+      "whyShopify": {
+        "title": "DLACZEGO WYBRAĆ SHOPIFY?",
+        "mainText": "Kreatywna Współpraca: Łączenie Wszystkiego Co Robimy Jako Eksperci Shopify. Budujemy Czysty Design I Łączymy Klientów Produktowych I Partnerów Zawsze Z Jasną Komunikacją, Tworząc Bogactwo Cyfrowej Ekspertyzy.",
+        "column1": "CO OFERUJE SHOPIFY?\n\nNasz zespół ciężko pracuje dla Ciebie, aby stworzyć środowisko e-commerce, które jest łatwo stabilne i szybko rosnące, zapewniając zestaw usług dla wszystkiego, czego potrzebujesz do rozwoju biznesu. Czy uruchamiasz nowy sklep, czy jesteś doświadczonym sprzedawcą chcącym wzmocnić swoją obecność online, nasze podejście jest dostosowane do spełnienia i przekroczenia Twoich konkretnych celów e-commerce.",
+        "column2": "CO OFERUJE SHOPIFY?\n\nShopify to najlepszy wybór dla rozwoju e-commerce wspierany latami doświadczenia rynkowego i zaufany przez miliony na całym świecie. Nasi eksperci Shopify zapewniają mieszankę głębokiej wiedzy produktowej i ciągłego rozwoju platformy, które umożliwiają szybki wzrost i sukces. Mamy narzędzia, których potrzebujesz do dostarczenia wysokiej jakości sklepu e-commerce i doświadczenia zakupowego klientom na dzisiejszym konkurencyjnym rynku e-commerce."
+      },
+      "offers": {
+        "offer1": {
+          "title": "CO OFERUJE SHOPIFY?",
+          "text": "Nasz zespół ciężko pracuje dla Ciebie, tworząc środowisko e-commerce wykorzystujące stabilne technologie, które dostarczają zakres usług pokrywających wszystkie Twoje wymagania e-commerce. Czy uruchamiasz nowy biznes, czy jesteś etablowanym sprzedawcą szukającym rozszerzenia obecności online, podchodzimy do każdego projektu ze świeżym spojrzeniem."
+        },
+        "offer2": {
+          "title": "CO OFERUJE SHOPIFY?",
+          "text": "Shopify to najlepszy wybór dla sprzedawców internetowych wspieranych latami doświadczenia i zaufanych przez miliony na całym świecie. Eksperci Shopify posiadają mieszankę głębokiej wiedzy produktowej i ciągłego rozwoju platformy."
+        },
+        "offer3": {
+          "title": "CO OFERUJE SHOPIFY?",
+          "text": "Nasz zespół ciężko pracuje dla Ciebie, tworząc środowisko e-commerce wykorzystujące stabilne technologie, które dostarczają zakres usług pokrywających wszystkie Twoje wymagania e-commerce."
+        },
+        "offer4": {
+          "title": "CO OFERUJE SHOPIFY?",
+          "text": "Eksperci Shopify posiadają mieszankę głębokiej wiedzy produktowej i ciągłego rozwoju platformy. Oferujemy narzędzia potrzebne do dostarczenia wysokiej jakości doświadczeń zakupowych online na konkurencyjnym rynku."
+        }
+      },
+      "details": {
+        "title": "WIĘCEJ SZCZEGÓŁÓW O USŁUDZE",
+        "text": "UZYSKAJ PRZEWAGĘ KOMPLEKSOWEGO ZWINNEGO WSPARCIA włączając: prowadzenie kampanii marketingowych poprzez wdrażanie zaawansowanych inicjatyw technologicznych, które napędzają długoterminowy wzrost."
+      },
+      "included": {
+        "title": "CO JEST ZAWARTE W USŁUDZE?",
+        "item1": "PEŁNY ZESTAW PLANOWANIA I BADAŃ / STRATEGIA / UX (UKŁAD STRON)",
+        "item2": "UŻYCIE FRAMEWORKU SYSTEMÓW, TECHNOLOGII I AUTOMATYZACJI",
+        "item3": "TWORZENIE DESIGNU / ZESTAW SZABLONÓW STRON / UNIKALNA USŁUGA",
+        "item4": "SZYBKI TRANSFER DO DEWELOPERÓW"
+      },
+      "video": {
+        "title": "WIDEO O NASZEJ PRACY",
+        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      }
+    }
   }
 }

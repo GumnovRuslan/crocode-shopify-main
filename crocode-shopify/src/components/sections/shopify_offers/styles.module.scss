@@ -1,0 +1,39 @@
+.offers {
+  padding: fluid-size(80, 150) fluid-size(40, 125);
+  color: var(--color-text-white);
+
+  &__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: fluid-size(40, 80);
+
+    @include media-down(md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(15, 25);
+    padding: fluid-size(20, 40);
+    border-radius: 8px;
+  }
+
+  &__card_title {
+    font-size: fluid-size(18, 24);
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: uppercase;
+  }
+
+  &__card_text {
+    font-size: fluid-size(14, 16);
+    line-height: 160%;
+  }
+}

@@ -296,5 +296,60 @@
       }
     },
     "copyright": "© 2025 KROKOD Sp. z o.o. All Rights Reserved"
+  },
+  "ServiceDetailPage": {
+    "design-development": {
+      "hero": {
+        "title": "DesiDesign & Developmentgn",
+        "subtitle": "We are a Shopify Experts agency that helps ecommerce sites grow by boosting sales, expanding product range, and increasing conversion rates.We are a Shopify Experts agency that helps ecommerce sites grow by boosting sales, expanding product range, and increasing conversion rates"
+      },
+      "description": {
+        "title": "Here is a revised version tailored for DesiDesign & Development",
+        "text1": "As a specialized Shopify Migration Agency, DesiDesign & Development excels in replatforming ecommerce stores to Shopify and Shopify Plus with precision and care. We recognize that migrating your online store to a new platform can be challenging, which is why our expert Shopify migration services provide comprehensive support, ensuring a smooth and efficient transition from beginning to end.",
+        "text2": "Our process includes thorough data architectural analysis, secure exporting and importing of data, and meticulous replatforming to guarantee that your site content, customer information, and order histories remain intact and unaltered. Whether you want to migrate from Magento, WooCommerce, BigCommerce, or any other ecommerce platform, DesiDesign & Development is your trusted partner for a seamless Shopify migration."
+      },
+      "whyShopify": {
+        "title": "Why Choose to Shopify?",
+        "mainText": "Creative collaboration underpins everything we do as Shopify Experts in London. We build close-working relationships with our clients and partners to work with goals in mind whilst offering a wealth of digital expertise."
+      },
+      "offers": {
+        "offer1": {
+          "title": "What does Shopify offer?",
+          "text1": "Shopify tends to be the go-to option for ecommerce merchants as it is one of the most scalable, feature-rich and fastest growing ecommerce platforms that exists today. Shopify and Shopify Plus are constantly updated to stay on top of trends and to provide a competitive edge over its competitors such as Magento, BigCommerce and WooCommerce.",
+          "text2": "Shopify is equipped with a plethora of features and 6,000+ apps that allow merchants to nurture their business and deliver a more powerful ecommerce experience. The flexibility of the app store means Shopify continually becomes more and more powerful with the world's best developers delivering the very best apps for you to use, making it very a worthwhile investment to migrate over to for long-term growth."
+        },
+        "offer2": {
+          "title": "What does Shopify offer?",
+          "text1": "Shopify tends to be the go-to option for ecommerce merchants as it is one of the most scalable, feature-rich and fastest growing ecommerce platforms that exists today. Shopify and Shopify Plus are constantly updated to stay on top of trends and to provide a competitive edge over its competitors such as Magento, BigCommerce and WooCommerce.",
+          "text2": "Shopify is equipped with a plethora of features and 6,000+ apps that allow merchants to nurture their business and deliver a more powerful ecommerce experience. The flexibility of the app store means Shopify continually becomes more and more powerful with the world's best developers delivering the very best apps for you to use, making it very a worthwhile investment to migrate over to for long-term growth."
+        },
+        "offer3": {
+          "title": "What does Shopify offer?",
+          "text1": "Shopify tends to be the go-to option for ecommerce merchants as it is one of the most scalable, feature-rich and fastest growing ecommerce platforms that exists today. Shopify and Shopify Plus are constantly updated to stay on top of trends and to provide a competitive edge over its competitors such as Magento, BigCommerce and WooCommerce.",
+          "text2": "Shopify is equipped with a plethora of features and 6,000+ apps that allow merchants to nurture their business and deliver a more powerful ecommerce experience. The flexibility of the app store means Shopify continually becomes more and more powerful with the world's best developers delivering the very best apps for you to use, making it very a worthwhile investment to migrate over to for long-term growth."
+        },
+        "offer4": {
+          "title": "What does Shopify offer?",
+          "text1": "Shopify tends to be the go-to option for ecommerce merchants as it is one of the most scalable, feature-rich and fastest growing ecommerce platforms that exists today. Shopify and Shopify Plus are constantly updated to stay on top of trends and to provide a competitive edge over its competitors such as Magento, BigCommerce and WooCommerce.",
+          "text2": "Shopify is equipped with a plethora of features and 6,000+ apps that allow merchants to nurture their business and deliver a more powerful ecommerce experience. The flexibility of the app store means Shopify continually becomes more and more powerful with the world's best developers delivering the very best apps for you to use, making it very a worthwhile investment to migrate over to for long-term growth."
+        }
+      },
+      "details": {
+        "title": "More details about the service",
+        "text1": "Our team specializes in comprehensive digital business transformation. We help companies adapt to modern realities by implementing advanced technological solutions that increase efficiency and competitiveness.",
+        "text2": "Since 2015, we have successfully completed over 500 projects across various industries: from manufacturing and logistics to retail and financial services. Our approach is based on a deep understanding of each business's specifics and applying international best practices."
+      },
+      "included": {
+        "title": "What is included in the service?",
+        "item1": "Analysis of current business processes and identification of growth points",
+        "item2": "Development of a personalized digital transformation strategy",
+        "item3": "Implementation of modern technologies and process automation",
+        "item4": "Staff training and 24/7 technical support"
+      },
+      "video": {
+        "title": "Video about our work",
+        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      }
+    }
   }
 }
