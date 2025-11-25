@@ -1,16 +1,16 @@
 .video {
-  padding: fluid-size(80, 120) fluid-size(40, 125);
+  padding: fluid-size(80, 147) fluid-size(20, 44) fluid-size(80, 100) fluid-size(20, 44);
 
   &__inner {
     display: flex;
     flex-direction: column;
-    gap: fluid-size(40, 60);
+    gap: fluid-size(15, 28);
     align-items: center;
   }
 
   &__title {
-    font-size: fluid-size(24, 48);
-    line-height: 130%;
+    font-size: fluid-size(24,36);
+    line-height: 226%;
     text-transform: uppercase;
     text-align: center;
   }

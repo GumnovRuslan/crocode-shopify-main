@@ -7,14 +7,13 @@ import {
   WhyShopify,
   ShopifyOffers,
   ServiceDetails,
-  ServiceIncluded,
   VideoSection,
   Experts
 } from "@/components/sections"
 import { Background, Section } from "@/components/ui"
 import { TProjectCard } from "@/types"
 import { useTranslations } from "next-intl"
-import { useDarkThemeForHeader } from "@/hooks/useHeaderTheme"
+import { useLightThemeForHeader } from "@/hooks/useHeaderTheme"
 
 type TProps = {
   slug: string;
@@ -22,7 +21,7 @@ type TProps = {
 }
 
 const ServiceDetailPage = ({slug, projects}: TProps) => {
-  useDarkThemeForHeader()
+  useLightThemeForHeader()
   const t = useTranslations(`ServiceDetailPage.${slug}`)
 
   return (<>
@@ -46,19 +45,14 @@ const ServiceDetailPage = ({slug, projects}: TProps) => {
     {/* Секция "Почему Shopify" + Офферы на чёрном фоне */}
     <Section type='rounded' isBlack>
       <Background
-        desktop='/images/background/bg-black-ball-toll.webp'
+        desktop='/images/background/bg-dark.webp'
         alt="background black with waves"
       />
-      <WhyShopify slug={slug}/>
       <ShopifyOffers slug={slug}/>
     </Section>
 
-    {/* Детали о сервисе */}
-    <ServiceDetails slug={slug}>
-    </ServiceDetails>
-
-    {/* Что включено в сервис */}
-    <ServiceIncluded slug={slug}/>
+    {/* Детали о сервисе и что включено */}
+    <ServiceDetails slug={slug}/>
 
     {/* Видео секция */}
     <VideoSection slug={slug}/>
