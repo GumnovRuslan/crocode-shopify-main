@@ -8,6 +8,23 @@ type TProps = {
   slug: string
 }
 
+// Helper function to parse text with __ markers and render with underline
+const parseTextWithUnderline = (text: string) => {
+  const parts = text.split(/(__.*?__)/g)
+
+  return parts.map((part, index) => {
+    if (part.startsWith('__') && part.endsWith('__')) {
+      const content = part.slice(2, -2)
+      return (
+        <span key={index} className={styles.underlined}>
+          {content}
+        </span>
+      )
+    }
+    return part
+  })
+}
+
 const ShopifyOffers = ({slug}: TProps) => {
   const t = useTranslations(`ServiceDetailPage.${slug}`)
 
@@ -25,8 +42,12 @@ const ShopifyOffers = ({slug}: TProps) => {
             <div className={styles.offers__card} key={index}>
               <h3 className={styles.offers__card_title}>{t(`offers.${key}.title`)}</h3>
               <div className={styles.offers__card_texts}>
-                <p className={styles.offers__card_text}>{t(`offers.${key}.text1`)}</p>
-                <p className={styles.offers__card_text}>{t(`offers.${key}.text2`)}</p>
+                <p className={styles.offers__card_text}>
+                  {parseTextWithUnderline(t(`offers.${key}.text1`))}
+                </p>
+                <p className={styles.offers__card_text}>
+                  {parseTextWithUnderline(t(`offers.${key}.text2`))}
+                </p>
               </div>
             </div>
           ))}

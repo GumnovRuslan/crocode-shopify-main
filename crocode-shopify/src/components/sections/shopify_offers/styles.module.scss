@@ -62,3 +62,9 @@
     gap: fluid-size(16, 27.4);
   }
 }
+
+.underlined {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
