@@ -44,6 +44,7 @@ const ServiceDetailPage = ({slug, projects}: TProps) => {
     <ShopifyAgency
       projects={projects.slice(0, 4)}
       showTitle={true}
+      customTitleStyle="centered"
     />
 
     {/* Секция "Почему Shopify" + Офферы на чёрном фоне */}

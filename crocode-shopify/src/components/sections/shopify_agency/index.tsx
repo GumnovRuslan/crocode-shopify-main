@@ -12,9 +12,10 @@ type TProps = {
   projects: TProjectCard[]
   showTitle?: boolean
   customTitle?: string
+  customTitleStyle?: 'default' | 'centered'
 }
 
-const ShopifyAgency = ({projects, showTitle = false, customTitle}: TProps) => {
+const ShopifyAgency = ({projects, showTitle = false, customTitle, customTitleStyle = 'default'}: TProps) => {
   const t = useTranslations('HomePage.scalable')
   const tNav = useTranslations('Header.nav')
   const [emblaRef, emblaApi] = useEmblaCarousel()
@@ -45,16 +46,21 @@ const ShopifyAgency = ({projects, showTitle = false, customTitle}: TProps) => {
   return (
     <Section className={styles.section}>
       <div className={styles.section__inner}>
-        {showTitle && (
-          <div className={styles.section__header}>
+        <div className={styles.section__header}>
+          {showTitle ? (
             <Text
-              className={styles.section__title}
+              className={`${styles.section__title} ${customTitleStyle === 'centered' ? styles['section__title--centered'] : ''}`}
               tag='h2'
               text={customTitle || tNav('our-work')}
               style='small'
             />
-          </div>
-        )}
+          ) : (
+            <>
+              <Text className={styles.section__title} tag='h2' text={t('title')} style='small'/>
+              <Text className={styles.section__subtitle} tag='p' text={t('subtitle')} style='big'/>
+            </>
+          )}
+        </div>
         <div className={styles.slider}>
           <div className={styles.embla} ref={emblaRef}>
             <div className={styles.embla__container}>

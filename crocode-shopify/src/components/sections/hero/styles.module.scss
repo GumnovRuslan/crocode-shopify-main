@@ -20,12 +20,16 @@
     @include media-down(md) {
       margin-bottom: -50px;
     }
+
+    .hero__inner {
+      padding-bottom: fluid-size(70, 150);
+    }
   }
 
   &__inner {
     display: flex;
     flex-direction: column;
-    gap: fluid-size(120, 140); 
+    gap: fluid-size(120, 140);
     position: relative;
     padding: 17px fluid-size(23, 44);
   }

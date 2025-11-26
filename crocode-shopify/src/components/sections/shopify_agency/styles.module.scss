@@ -11,6 +11,15 @@
   &__title {
     color: var(--color-title-white);
     margin-bottom: fluid-size(27, 50);
+
+    &--centered {
+      color: var(--color-text-black);
+      font-size: fluid-size(32, 64);
+      font-weight: 400;
+      line-height: 137%;
+      text-align: center;
+      text-transform: uppercase;
+    }
   }
 
   &__subtitle {
