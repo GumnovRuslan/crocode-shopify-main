@@ -4,10 +4,9 @@
 
   &__pattern {
     position: absolute;
-    top: -460px;
-    left: -640px;
+    top: fluid-size(-860, -460);
     opacity: 1;
-    transform: rotate(180deg);
+    width: 70%;
     pointer-events: none;
     z-index: 1;
   }
