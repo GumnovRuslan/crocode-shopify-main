@@ -13,7 +13,7 @@ const ServiceDescription = ({slug}: TProps) => {
   const t = useTranslations(`ServiceDetailPage.${slug}.description`)
 
   return (
-    <Section className={styles.description} type='rounded'>
+    <Section className={styles.description} type='rounded' shift>
       <div className={styles.description__inner}>
         <div className={styles.description__content}>
           <Text

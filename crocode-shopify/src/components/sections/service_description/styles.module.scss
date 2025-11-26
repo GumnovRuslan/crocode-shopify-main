@@ -1,5 +1,6 @@
 .description {
   padding: fluid-size(80, 120) fluid-size(40, 129) fluid-size(80, 120) fluid-size(40, 44);
+  background: var(--color-bg-white);
 
   &__inner {
     display: grid;

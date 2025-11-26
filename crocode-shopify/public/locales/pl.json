@@ -10,52 +10,54 @@
   "ServiceDetailPage": {
     "design-development": {
       "hero": {
-        "title": "PROJEKTOWANIE I ROZWÓJ",
-        "subtitle": "JAKO SPRAWDZONA AGENCJA SHOPIFY DLA USŁUG PROJEKTOWANIA I ROZWOJU POMAGAMY ROSNĄĆ POPRZEZ ZWIĘKSZANIE SPRZEDAŻY, POSZERZANIE ASORTYMENTU PRODUKTÓW I ZWIĘKSZANIE WSPÓŁCZYNNIKÓW KONWERSJI"
+        "title": "Projektowanie i Rozwój",
+        "subtitle": "Jesteśmy wiodącą agencją Shopify Experts, która pomaga witrynom e-commerce rosnąć poprzez zwiększanie sprzedaży, rozszerzanie asortymentu produktów i zwiększanie współczynników konwersji."
       },
       "description": {
-        "title": "TUTAJ JEST ZREWIDOWANA WERSJA DOSTOSOWANA DO PROJEKTOWANIA I ROZWOJU",
+        "title": "Oto poprawiona wersja dostosowana do Projektowania i Rozwoju",
         "text1": "Jako agencja premium Shopify, rozwijając sklepy e-commerce gotowe na wymagania długo/średnioterminowe, starannie i właściwie planujemy każdy szczegół z odpowiednim UX. Wspieramy klientów jako zaufany partner w ciągle ewoluującym krajobrazie e-commerce.",
         "text2": "Nasze projekty wymagają głębokiego zrozumienia i najwyższej jakości realizacji, ściśle współpracujemy z Twoim biznesem, rozwojem i dostawcami, oraz partnerami, i wdrażamy, jako zwycięzca na szybko rozwijającym się i agresywnym rynku."
       },
       "whyShopify": {
-        "title": "DLACZEGO WYBRAĆ SHOPIFY?",
-        "mainText": "Kreatywna Współpraca: Łączenie Wszystkiego Co Robimy Jako Eksperci Shopify. Budujemy Czysty Design I Łączymy Klientów Produktowych I Partnerów Zawsze Z Jasną Komunikacją, Tworząc Bogactwo Cyfrowej Ekspertyzy.",
-        "column1": "CO OFERUJE SHOPIFY?\n\nNasz zespół ciężko pracuje dla Ciebie, aby stworzyć środowisko e-commerce, które jest łatwo stabilne i szybko rosnące, zapewniając zestaw usług dla wszystkiego, czego potrzebujesz do rozwoju biznesu. Czy uruchamiasz nowy sklep, czy jesteś doświadczonym sprzedawcą chcącym wzmocnić swoją obecność online, nasze podejście jest dostosowane do spełnienia i przekroczenia Twoich konkretnych celów e-commerce.",
-        "column2": "CO OFERUJE SHOPIFY?\n\nShopify to najlepszy wybór dla rozwoju e-commerce wspierany latami doświadczenia rynkowego i zaufany przez miliony na całym świecie. Nasi eksperci Shopify zapewniają mieszankę głębokiej wiedzy produktowej i ciągłego rozwoju platformy, które umożliwiają szybki wzrost i sukces. Mamy narzędzia, których potrzebujesz do dostarczenia wysokiej jakości sklepu e-commerce i doświadczenia zakupowego klientom na dzisiejszym konkurencyjnym rynku e-commerce."
+        "title": "Dlaczego wybrać Shopify?",
+        "mainText": "Kreatywna współpraca stanowi podstawę wszystkiego, co robimy jako eksperci Shopify. Budujemy bliskie relacje robocze z naszymi klientami i partnerami, aby pracować z myślą o celach, oferując jednocześnie bogactwo cyfrowej wiedzy."
       },
       "offers": {
         "offer1": {
-          "title": "CO OFERUJE SHOPIFY?",
-          "text": "Nasz zespół ciężko pracuje dla Ciebie, tworząc środowisko e-commerce wykorzystujące stabilne technologie, które dostarczają zakres usług pokrywających wszystkie Twoje wymagania e-commerce. Czy uruchamiasz nowy biznes, czy jesteś etablowanym sprzedawcą szukającym rozszerzenia obecności online, podchodzimy do każdego projektu ze świeżym spojrzeniem."
+          "title": "Co oferuje Shopify?",
+          "text1": "Shopify jest preferowanym wyborem dla sprzedawców e-commerce, będąc jedną z najbardziej skalowalnych, bogatych w funkcje i najszybciej rozwijających się platform e-commerce, które istnieją dzisiaj. Shopify i Shopify Plus są stale aktualizowane, aby nadążać za trendami i zapewnić przewagę konkurencyjną nad konkurentami, takimi jak Magento, BigCommerce i WooCommerce.",
+          "text2": "Shopify jest wyposażony w mnóstwo funkcji i ponad 6000 aplikacji, które pozwalają sprzedawcom rozwijać swój biznes i dostarczać bardziej wydajne doświadczenia e-commerce. Elastyczność sklepu z aplikacjami sprawia, że Shopify staje się coraz potężniejszy dzięki najlepszym programistom na świecie dostarczającym najlepsze aplikacje do użytku, co czyni go bardzo opłacalną inwestycją w długoterminowy wzrost."
         },
         "offer2": {
-          "title": "CO OFERUJE SHOPIFY?",
-          "text": "Shopify to najlepszy wybór dla sprzedawców internetowych wspieranych latami doświadczenia i zaufanych przez miliony na całym świecie. Eksperci Shopify posiadają mieszankę głębokiej wiedzy produktowej i ciągłego rozwoju platformy."
+          "title": "Co oferuje Shopify?",
+          "text1": "Shopify jest preferowanym wyborem dla sprzedawców e-commerce, będąc jedną z najbardziej skalowalnych, bogatych w funkcje i najszybciej rozwijających się platform e-commerce, które istnieją dzisiaj. Shopify i Shopify Plus są stale aktualizowane, aby nadążać za trendami i zapewnić przewagę konkurencyjną nad konkurentami, takimi jak Magento, BigCommerce i WooCommerce.",
+          "text2": "Shopify jest wyposażony w mnóstwo funkcji i ponad 6000 aplikacji, które pozwalają sprzedawcom rozwijać swój biznes i dostarczać bardziej wydajne doświadczenia e-commerce. Elastyczność sklepu z aplikacjami sprawia, że Shopify staje się coraz potężniejszy dzięki najlepszym programistom na świecie dostarczającym najlepsze aplikacje do użytku, co czyni go bardzo opłacalną inwestycją w długoterminowy wzrost."
         },
         "offer3": {
-          "title": "CO OFERUJE SHOPIFY?",
-          "text": "Nasz zespół ciężko pracuje dla Ciebie, tworząc środowisko e-commerce wykorzystujące stabilne technologie, które dostarczają zakres usług pokrywających wszystkie Twoje wymagania e-commerce."
+          "title": "Co oferuje Shopify?",
+          "text1": "Shopify jest preferowanym wyborem dla sprzedawców e-commerce, będąc jedną z najbardziej skalowalnych, bogatych w funkcje i najszybciej rozwijających się platform e-commerce, które istnieją dzisiaj. Shopify i Shopify Plus są stale aktualizowane, aby nadążać za trendami i zapewnić przewagę konkurencyjną nad konkurentami, takimi jak Magento, BigCommerce i WooCommerce.",
+          "text2": "Shopify jest wyposażony w mnóstwo funkcji i ponad 6000 aplikacji, które pozwalają sprzedawcom rozwijać swój biznes i dostarczać bardziej wydajne doświadczenia e-commerce. Elastyczność sklepu z aplikacjami sprawia, że Shopify staje się coraz potężniejszy dzięki najlepszym programistom na świecie dostarczającym najlepsze aplikacje do użytku, co czyni go bardzo opłacalną inwestycją w długoterminowy wzrost."
         },
         "offer4": {
-          "title": "CO OFERUJE SHOPIFY?",
-          "text": "Eksperci Shopify posiadają mieszankę głębokiej wiedzy produktowej i ciągłego rozwoju platformy. Oferujemy narzędzia potrzebne do dostarczenia wysokiej jakości doświadczeń zakupowych online na konkurencyjnym rynku."
+          "title": "Co oferuje Shopify?",
+          "text1": "Shopify jest preferowanym wyborem dla sprzedawców e-commerce, będąc jedną z najbardziej skalowalnych, bogatych w funkcje i najszybciej rozwijających się platform e-commerce, które istnieją dzisiaj. Shopify i Shopify Plus są stale aktualizowane, aby nadążać za trendami i zapewnić przewagę konkurencyjną nad konkurentami, takimi jak Magento, BigCommerce i WooCommerce.",
+          "text2": "Shopify jest wyposażony w mnóstwo funkcji i ponad 6000 aplikacji, które pozwalają sprzedawcom rozwijać swój biznes i dostarczać bardziej wydajne doświadczenia e-commerce. Elastyczność sklepu z aplikacjami sprawia, że Shopify staje się coraz potężniejszy dzięki najlepszym programistom na świecie dostarczającym najlepsze aplikacje do użytku, co czyni go bardzo opłacalną inwestycją w długoterminowy wzrost."
         }
       },
       "details": {
-        "title": "WIĘCEJ SZCZEGÓŁÓW O USŁUDZE",
-        "text1": "UZYSKAJ PRZEWAGĘ KOMPLEKSOWEGO ZWINNEGO WSPARCIA włączając: prowadzenie kampanii marketingowych poprzez wdrażanie zaawansowanych inicjatyw technologicznych, które napędzają długoterminowy wzrost.",
+        "title": "Więcej szczegółów o usłudze",
+        "text1": "Uzyskaj przewagę kompleksowego zwinnego wsparcia włączając: prowadzenie kampanii marketingowych poprzez wdrażanie zaawansowanych inicjatyw technologicznych, które napędzają długoterminowy wzrost.",
         "text2": "Nasz zespół specjalizuje się w kompleksowej transformacji cyfrowej biznesu. Pomagamy firmom dostosować się do nowoczesnych realiów poprzez wdrażanie zaawansowanych rozwiązań technologicznych, które zwiększają efektywność i konkurencyjność."
       },
       "included": {
-        "title": "CO JEST ZAWARTE W USŁUDZE?",
-        "item1": "PEŁNY ZESTAW PLANOWANIA I BADAŃ / STRATEGIA / UX (UKŁAD STRON)",
-        "item2": "UŻYCIE FRAMEWORKU SYSTEMÓW, TECHNOLOGII I AUTOMATYZACJI",
-        "item3": "TWORZENIE DESIGNU / ZESTAW SZABLONÓW STRON / UNIKALNA USŁUGA",
-        "item4": "SZYBKI TRANSFER DO DEWELOPERÓW"
+        "title": "Co jest zawarte w usłudze?",
+        "item1": "Analiza obecnych procesów biznesowych i identyfikacja punktów wzrostu",
+        "item2": "Opracowanie spersonalizowanej strategii transformacji cyfrowej",
+        "item3": "Wdrożenie nowoczesnych technologii i automatyzacja procesów",
+        "item4": "Szkolenie personelu i całodobowe wsparcie techniczne"
       },
       "video": {
-        "title": "WIDEO O NASZEJ PRACY",
+        "title": "Wideo o naszej pracy",
         "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       }
     }

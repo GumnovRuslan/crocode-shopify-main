@@ -34,16 +34,20 @@ const ServiceDetailPage = ({slug, projects}: TProps) => {
       }}
       title={t('hero.title')}
       subtitle={t('hero.subtitle')}
+      shift={true}
     />
 
     {/* Текстовая секция - описание */}
     <ServiceDescription slug={slug}/>
 
     {/* Секция наших работ */}
-    <ShopifyAgency projects={projects.slice(0, 4)}/>
+    <ShopifyAgency
+      projects={projects.slice(0, 4)}
+      showTitle={true}
+    />
 
     {/* Секция "Почему Shopify" + Офферы на чёрном фоне */}
-    <Section type='rounded' isBlack>
+    <Section type='rounded' isBlack shift>
       <Background
         desktop='/images/background/bg-dark.webp'
         alt="background black with waves"

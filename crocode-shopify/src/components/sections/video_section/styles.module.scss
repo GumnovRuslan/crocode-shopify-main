@@ -1,5 +1,6 @@
 .video {
   padding: fluid-size(80, 147) fluid-size(20, 44) fluid-size(80, 100) fluid-size(20, 44);
+  background: var(--color-bg-white);
 
   &__inner {
     display: flex;

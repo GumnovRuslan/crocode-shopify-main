@@ -12,7 +12,7 @@ const VideoSection = ({slug}: TProps) => {
   const t = useTranslations(`ServiceDetailPage.${slug}.video`)
 
   return (
-    <Section className={styles.video} type='rounded'>
+    <Section className={styles.video} type='rounded' shift>
       <div className={styles.video__inner}>
         <Text
           className={styles.video__title}

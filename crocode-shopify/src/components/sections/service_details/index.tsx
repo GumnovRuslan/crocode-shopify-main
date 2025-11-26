@@ -16,7 +16,7 @@ const ServiceDetails = ({slug}: TProps) => {
   const items = ['item1', 'item2', 'item3', 'item4']
 
   return (
-    <Section className={styles.details} type='rounded'>
+    <Section className={styles.details} type='rounded' shift>
       <Background
         desktop='/images/background/bg_footer.webp'
         alt="service details background"

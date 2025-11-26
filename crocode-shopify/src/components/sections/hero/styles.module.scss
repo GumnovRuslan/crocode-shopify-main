@@ -8,6 +8,20 @@
     object-fit: cover;
   }
 
+  &--shift {
+    @include media-up(xxl) {
+      margin-bottom: -100px;
+    }
+
+    @include media-between(md, xxl) {
+      margin-bottom: -80px;
+    }
+
+    @include media-down(md) {
+      margin-bottom: -50px;
+    }
+  }
+
   &__inner {
     display: flex;
     flex-direction: column;

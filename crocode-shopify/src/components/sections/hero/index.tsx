@@ -14,12 +14,13 @@ type TProps = {
     text: string
   };
   title: string;
-  subtitle?: string
+  subtitle?: string;
+  shift?: boolean;
 }
 
-const Hero = ({bg, title, subtitle, isShowNetwork = false, button}: TProps) => {
+const Hero = ({bg, title, subtitle, isShowNetwork = false, button, shift = false}: TProps) => {
   return (
-    <section className={styles.hero}>
+    <section className={`${styles.hero} ${shift ? styles['hero--shift'] : ''}`}>
       {bg && (
         <Background desktop={bg.desktop} mobile={bg?.mobile || bg.desktop} alt={bg.alt} priority loading='eager'/>
       )}

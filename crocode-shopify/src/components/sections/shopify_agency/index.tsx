@@ -10,10 +10,13 @@ import { TProjectCard } from '@/types'
 
 type TProps = {
   projects: TProjectCard[]
+  showTitle?: boolean
+  customTitle?: string
 }
 
-const ShopifyAgency = ({projects}: TProps) => {
+const ShopifyAgency = ({projects, showTitle = false, customTitle}: TProps) => {
   const t = useTranslations('HomePage.scalable')
+  const tNav = useTranslations('Header.nav')
   const [emblaRef, emblaApi] = useEmblaCarousel()
   const [canScrollPrev, setCanScrollPrev] = useState(false)
   const [canScrollNext, setCanScrollNext] = useState(false)
@@ -42,10 +45,16 @@ const ShopifyAgency = ({projects}: TProps) => {
   return (
     <Section className={styles.section}>
       <div className={styles.section__inner}>
-        <div className={styles.section__header}>
-          <Text className={styles.section__title} tag='h2' text={t('title')} style='small'/>
-          <Text className={styles.section__subtitle} tag='p' text={t('subtitle')} style='big'/>
-        </div>
+        {showTitle && (
+          <div className={styles.section__header}>
+            <Text
+              className={styles.section__title}
+              tag='h2'
+              text={customTitle || tNav('our-work')}
+              style='small'
+            />
+          </div>
+        )}
         <div className={styles.slider}>
           <div className={styles.embla} ref={emblaRef}>
             <div className={styles.embla__container}>
