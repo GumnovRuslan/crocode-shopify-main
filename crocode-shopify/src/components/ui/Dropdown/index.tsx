@@ -7,9 +7,10 @@ import { TServicesGrouped } from '@/types'
 type TProps = {
   servicesGrouped: TServicesGrouped;
   isDark?: boolean;
+  onLinkClick?: () => void;
 }
 
-const ServicesDropdown = ({ servicesGrouped, isDark }: TProps) => {
+const ServicesDropdown = ({ servicesGrouped, isDark, onLinkClick }: TProps) => {
   const categories = Object.values(servicesGrouped).sort(
     (a, b) => (a.category.order || 0) - (b.category.order || 0)
   )
@@ -23,6 +24,7 @@ const ServicesDropdown = ({ servicesGrouped, isDark }: TProps) => {
               <Link
                 href={`/services/${category.slug.current}`}
                 className={styles.dropdown__category_title}
+                onClick={onLinkClick}
               >
                 {category.categoryName}
               </Link>
@@ -32,6 +34,7 @@ const ServicesDropdown = ({ servicesGrouped, isDark }: TProps) => {
                     <Link
                       href={`/services/${service.slug.current}`}
                       className={styles.dropdown__link}
+                      onClick={onLinkClick}
                     >
                       {service.title}
                     </Link>

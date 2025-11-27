@@ -125,14 +125,13 @@ export default defineType({
       description: 'Main text for "Why Shopify" section',
     }),
 
-    // Offers (4 cards)
+    // Offers
     defineField({
       title: 'Offers',
       name: 'offers',
       type: 'array',
-      description: '4 offer cards shown in dark section',
+      description: 'Offer cards shown in dark section (flexible number)',
       of: [{ type: 'serviceOffer' }],
-      validation: (Rule) => Rule.max(4)
     }),
 
     // Service Details Section
@@ -144,15 +143,10 @@ export default defineType({
     }),
 
     defineField({
-      title: 'Details Text 1',
-      name: 'detailsText1',
+      title: 'Details Text',
+      name: 'detailsText',
       type: 'text',
-    }),
-
-    defineField({
-      title: 'Details Text 2',
-      name: 'detailsText2',
-      type: 'text',
+      description: 'Details text with multiple paragraphs. Use \\n\\n to separate paragraphs.',
     }),
 
     // What's Included Section

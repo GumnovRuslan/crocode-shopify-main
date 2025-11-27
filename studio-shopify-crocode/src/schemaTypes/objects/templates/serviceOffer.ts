@@ -12,17 +12,10 @@ export default defineType({
       validation: (Rule) => Rule.required()
     }),
     defineField({
-      name: 'text1',
+      name: 'text',
       type: 'text',
-      title: 'Text 1',
-      description: 'Use __ to mark underlined text (e.g., "__underlined text__")',
-      validation: (Rule) => Rule.required()
-    }),
-    defineField({
-      name: 'text2',
-      type: 'text',
-      title: 'Text 2',
-      description: 'Use __ to mark underlined text (e.g., "__underlined text__")',
+      title: 'Offer Text',
+      description: 'Use __ to mark underlined text (e.g., "__underlined text__"). Use \\n\\n to separate paragraphs.',
       validation: (Rule) => Rule.required()
     })
   ]

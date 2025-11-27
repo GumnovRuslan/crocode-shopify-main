@@ -18,8 +18,7 @@ export type TServiceCard = {
 
 export type TServiceOffer = {
   title: string;
-  text1: string;
-  text2: string;
+  text: string;
 }
 
 export type TService = {
@@ -43,8 +42,7 @@ export type TService = {
   whyShopifyText?: string;
   offers?: TServiceOffer[];
   detailsTitle?: string;
-  detailsText1?: string;
-  detailsText2?: string;
+  detailsText?: string;
   includedTitle?: string;
   includedItems?: string[];
   videoTitle?: string;

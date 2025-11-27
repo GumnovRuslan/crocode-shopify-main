@@ -2,7 +2,6 @@
 
 import styles from './styles.module.scss'
 import { Section, Text } from '@/components/ui'
-import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { TService } from '@/types'
 
@@ -12,12 +11,14 @@ type TProps = {
 }
 
 const ServiceDescription = ({slug, service}: TProps) => {
-  const t = useTranslations(`ServiceDetailPage.${slug}.description`)
-
-  const title = service.descriptionTitle || t('title')
+  const title = service.descriptionTitle || 'About this service'
   const textParagraphs = service.descriptionText
     ? service.descriptionText.split('\n\n').filter(p => p.trim())
-    : [t('text1'), t('text2')]
+    : []
+
+  // Use heroImage if available, fallback to default image
+  const imageUrl = service.heroImage?.image?.asset?.url || '/images/cards/our-service/background-1.png'
+  const imageAlt = service.heroImage?.altText || 'Service illustration'
 
   return (
     <Section className={styles.description} type='rounded' shift>
@@ -37,8 +38,8 @@ const ServiceDescription = ({slug, service}: TProps) => {
         </div>
         <div className={styles.description__image}>
           <Image
-            src='/images/cards/our-service/background-1.png'
-            alt='Service illustration'
+            src={imageUrl}
+            alt={imageAlt}
             width={592}
             height={554}
             className={styles.description__image_item}

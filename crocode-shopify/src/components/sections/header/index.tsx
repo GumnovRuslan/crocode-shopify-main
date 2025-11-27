@@ -112,7 +112,11 @@ const Header = ({ servicesGrouped }: TProps) => {
                 </Link>
                 {item.hasDropdown && !isMobile && servicesHover && (
                   <div onMouseEnter={handleServicesEnter} onMouseLeave={handleServicesLeave}>
-                    <ServicesDropdown servicesGrouped={servicesGrouped} isDark={isDark} />
+                    <ServicesDropdown
+                      servicesGrouped={servicesGrouped}
+                      isDark={isDark}
+                      onLinkClick={() => setServicesHover(false)}
+                    />
                   </div>
                 )}
               </li>

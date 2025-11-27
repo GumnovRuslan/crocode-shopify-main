@@ -44,12 +44,10 @@ export const getServiceBySlug = (slug: string, lang: string = 'en') => `
     whyShopifyText,
     offers[] {
       title,
-      text1,
-      text2
+      text
     },
     detailsTitle,
-    detailsText1,
-    detailsText2,
+    detailsText,
     includedTitle,
     includedItems,
     videoTitle,

@@ -2,7 +2,6 @@
 
 import styles from './styles.module.scss'
 import { Section, Text, VideoPlayer } from '@/components/ui'
-import { useTranslations } from 'next-intl'
 import { TService } from '@/types'
 
 type TProps = {
@@ -11,10 +10,8 @@ type TProps = {
 }
 
 const VideoSection = ({slug, service}: TProps) => {
-  const t = useTranslations(`ServiceDetailPage.${slug}.video`)
-
-  const videoTitle = service.videoTitle || t('title')
-  const videoUrl = service.videoUrl || t('url')
+  const videoTitle = service.videoTitle || 'Watch Video'
+  const videoUrl = service.videoUrl || ''
 
   return (
     <Section className={styles.video} type='rounded' shift>

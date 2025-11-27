@@ -12,7 +12,6 @@ import {
 } from "@/components/sections"
 import { Background, Section } from "@/components/ui"
 import { TProjectCard, TService } from "@/types"
-import { useTranslations } from "next-intl"
 import { useLightThemeForHeader } from "@/hooks/useHeaderTheme"
 
 type TProps = {
@@ -23,7 +22,6 @@ type TProps = {
 
 const ServiceDetailPage = ({slug, service, projects}: TProps) => {
   useLightThemeForHeader()
-  const t = useTranslations(`ServiceDetailPage.${slug}`)
 
   return (<>
     {/* Hero секция */}
@@ -34,7 +32,7 @@ const ServiceDetailPage = ({slug, service, projects}: TProps) => {
         alt: 'Design & Development background'
       }}
       title={service.title}
-      subtitle={t('hero.subtitle')}
+      subtitle={service.heroSubtitle || ''}
       shift={true}
     />
 
