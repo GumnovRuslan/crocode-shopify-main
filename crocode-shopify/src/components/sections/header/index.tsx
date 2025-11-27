@@ -3,46 +3,65 @@
 import styles  from './styles.module.scss'
 
 import Link from 'next/link'
-import { Button, Burger } from '@/components/ui'
-import { useState, useEffect } from 'react'
+import { Button, Burger, ServicesDropdown } from '@/components/ui'
+import { useState, useEffect, useRef } from 'react'
 import disableBodyScroll from '@/utils/disableBodyScroll'
 import useScreenSize from '@/hooks/useScreenSize'
 import { useHeaderTheme } from '@/contexts/HeaderThemeContext'
 import { useTranslations } from 'next-intl'
+import { TServicesGrouped } from '@/types'
 
 type TNav = {
   text: string
   href: string
+  hasDropdown?: boolean
 }
 
-const Header = () => {
+type TProps = {
+  servicesGrouped: TServicesGrouped;
+}
+
+const Header = ({ servicesGrouped }: TProps) => {
   const t = useTranslations('Header')
   const {theme, isDark} = useHeaderTheme()
   const {isMobile} = useScreenSize()
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false)
+  const [servicesHover, setServicesHover] = useState<boolean>(false)
+  const timeoutRef = useRef<NodeJS.Timeout>()
 
-  // "our-work": "Nasze Realizacje",
-  //     "services": "Usługi",
-  //     "about-us": "O nas",
-  //     "contact": "Kontakt"
-
-  const NAV_LIST = {
-    'our-work': {
+  const NAV_LIST = [
+    {
+      key: 'our-work',
       text: t('nav.our-work'),
       href: '/our-work'
     },
-    'services': {
+    {
+      key: 'services',
       text: t('nav.services'),
-      href: '/services'
+      href: '/services',
+      hasDropdown: true
     },
-    'about-us': {
+    {
+      key: 'about-us',
       text: t('nav.about-us'),
-      href: '/about-us'
+      href: '/our-work'
     },
-    'contact': {
+    {
+      key: 'contact',
       text: t('nav.contact'),
       href: '/contact'
     },
+  ]
+
+  const handleServicesEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current)
+    setServicesHover(true)
+  }
+
+  const handleServicesLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setServicesHover(false)
+    }, 200)
   }
 
   useEffect(() => {
@@ -58,6 +77,12 @@ const Header = () => {
       setMenuIsOpen(false)
     })
   }, [isMobile])
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current)
+    }
+  }, [])
   
   return (
     <header 
@@ -71,9 +96,25 @@ const Header = () => {
         </Link>
         <div className={`${styles.header__menu} ${menuIsOpen ? styles[`header__menu--open`] : ''}`}>
            <nav className={styles.header__nav}>
-            {Object.values(NAV_LIST).map((item, i) => (
-              <li className={styles.header_nav_item} key={i}>
-                <Link className={styles.header__nav_link} onClick={() => setMenuIsOpen(false)} href={item.href}>{item.text}</Link>
+            {NAV_LIST.map((item, i) => (
+              <li
+                className={styles.header__nav_item}
+                key={i}
+                onMouseEnter={() => item.hasDropdown && handleServicesEnter()}
+                onMouseLeave={() => item.hasDropdown && handleServicesLeave()}
+              >
+                <Link
+                  className={styles.header__nav_link}
+                  onClick={() => setMenuIsOpen(false)}
+                  href={item.href}
+                >
+                  {item.text}
+                </Link>
+                {item.hasDropdown && !isMobile && servicesHover && (
+                  <div onMouseEnter={handleServicesEnter} onMouseLeave={handleServicesLeave}>
+                    <ServicesDropdown servicesGrouped={servicesGrouped} isDark={isDark} />
+                  </div>
+                )}
               </li>
             ))}
           </nav>

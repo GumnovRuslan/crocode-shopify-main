@@ -1,0 +1,81 @@
+// Get all services grouped by category for dropdown menu
+export const getServicesForDropdown = (lang: string = 'en') => `
+{
+  "allServiceCategories": *[_type == "serviceCategories" && language == "${lang}"] | order(order asc) {
+    _id,
+    categoryName,
+    "slug": {"current": slug.current},
+    order
+  },
+  "allServices": *[_type == "services" && language == "${lang}"] | order(order asc) {
+    _id,
+    title,
+    "slug": {"current": slug.current},
+    category-> {
+      _id,
+      categoryName
+    },
+    order
+  }
+}
+`;
+
+// Get single service by slug
+export const getServiceBySlug = (slug: string, lang: string = 'en') => `
+{
+  "allServices": *[_type == "services" && slug.current == "${slug}" && language == "${lang}"] {
+    _id,
+    language,
+    title,
+    "slug": {"current": slug.current},
+    heroSubtitle,
+    heroImage {
+      "image": {"asset": {"url": image.asset->url}},
+      altText
+    },
+    category-> {
+      _id,
+      categoryName,
+      "slug": {"current": slug.current}
+    },
+    descriptionTitle,
+    descriptionText,
+    whyShopifyTitle,
+    whyShopifyText,
+    offers[] {
+      title,
+      text1,
+      text2
+    },
+    detailsTitle,
+    detailsText1,
+    detailsText2,
+    includedTitle,
+    includedItems,
+    videoTitle,
+    videoUrl,
+    seo {
+      title,
+      description,
+      keywords,
+      ogType,
+      image {
+        "image": {"asset": {"url": image.asset->url}},
+        altText
+      }
+    }
+  }
+}
+`;
+
+// Get all services (for sitemap, etc.)
+export const getAllServices = (lang: string = 'en') => `
+{
+  "allServices": *[_type == "services" && language == "${lang}"] {
+    _id,
+    title,
+    "slug": {"current": slug.current},
+    language
+  }
+}
+`;

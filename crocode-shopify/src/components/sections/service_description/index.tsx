@@ -4,13 +4,20 @@ import styles from './styles.module.scss'
 import { Section, Text } from '@/components/ui'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
+import { TService } from '@/types'
 
 type TProps = {
-  slug: string
+  slug: string;
+  service: TService;
 }
 
-const ServiceDescription = ({slug}: TProps) => {
+const ServiceDescription = ({slug, service}: TProps) => {
   const t = useTranslations(`ServiceDetailPage.${slug}.description`)
+
+  const title = service.descriptionTitle || t('title')
+  const textParagraphs = service.descriptionText
+    ? service.descriptionText.split('\n\n').filter(p => p.trim())
+    : [t('text1'), t('text2')]
 
   return (
     <Section className={styles.description} type='rounded' shift>
@@ -19,12 +26,13 @@ const ServiceDescription = ({slug}: TProps) => {
           <Text
             className={styles.description__title}
             tag='h2'
-            text={t('title')}
+            text={title}
             style='big'
           />
           <div className={styles.description__text_wrapper}>
-            <p className={styles.description__text}>{t('text1')}</p>
-            <p className={styles.description__text}>{t('text2')}</p>
+            {textParagraphs.map((paragraph, index) => (
+              <p key={index} className={styles.description__text}>{paragraph}</p>
+            ))}
           </div>
         </div>
         <div className={styles.description__image}>

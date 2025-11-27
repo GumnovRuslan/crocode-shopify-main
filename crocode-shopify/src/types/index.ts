@@ -15,3 +15,6 @@ export type {
   TProjectCard,
   TProject,
 }
+
+// Export services types
+export * from './services';

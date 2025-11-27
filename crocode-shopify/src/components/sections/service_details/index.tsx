@@ -4,16 +4,25 @@ import styles from './styles.module.scss'
 import { Background, Section, Text } from '@/components/ui'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
+import { TService } from '@/types'
 
 type TProps = {
-  slug: string
+  slug: string;
+  service: TService;
 }
 
-const ServiceDetails = ({slug}: TProps) => {
+const ServiceDetails = ({slug, service}: TProps) => {
   const tDetails = useTranslations(`ServiceDetailPage.${slug}.details`)
   const tIncluded = useTranslations(`ServiceDetailPage.${slug}.included`)
 
-  const items = ['item1', 'item2', 'item3', 'item4']
+  const detailsTitle = service.detailsTitle || tDetails('title')
+  const detailsText1 = service.detailsText1 || tDetails('text1')
+  const detailsText2 = service.detailsText2 || tDetails('text2')
+
+  const includedTitle = service.includedTitle || tIncluded('title')
+  const includedItems = service.includedItems && service.includedItems.length > 0
+    ? service.includedItems
+    : ['item1', 'item2', 'item3', 'item4'].map(key => tIncluded(key))
 
   return (
     <Section className={styles.details} type='rounded' shift>
@@ -33,24 +42,24 @@ const ServiceDetails = ({slug}: TProps) => {
           <Text
             className={styles.details__title}
             tag='h2'
-            text={tDetails('title')}
+            text={detailsTitle}
             style='big'
           />
-          <p className={styles.details__text}>{tDetails('text1')}</p>
-          <p className={styles.details__text}>{tDetails('text2')}</p>
+          <p className={styles.details__text}>{detailsText1}</p>
+          <p className={styles.details__text}>{detailsText2}</p>
         </div>
 
         <div className={styles.details__section}>
           <Text
             className={styles.details__title}
             tag='h2'
-            text={tIncluded('title')}
+            text={includedTitle}
             style='big'
           />
           <ul className={styles.details__list}>
-            {items.map((key, index) => (
+            {includedItems.map((item, index) => (
               <li className={styles.details__item} key={index}>
-                {tIncluded(key)}
+                {item}
               </li>
             ))}
           </ul>

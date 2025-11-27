@@ -3,13 +3,18 @@
 import styles from './styles.module.scss'
 import { Section, Text, VideoPlayer } from '@/components/ui'
 import { useTranslations } from 'next-intl'
+import { TService } from '@/types'
 
 type TProps = {
-  slug: string
+  slug: string;
+  service: TService;
 }
 
-const VideoSection = ({slug}: TProps) => {
+const VideoSection = ({slug, service}: TProps) => {
   const t = useTranslations(`ServiceDetailPage.${slug}.video`)
+
+  const videoTitle = service.videoTitle || t('title')
+  const videoUrl = service.videoUrl || t('url')
 
   return (
     <Section className={styles.video} type='rounded' shift>
@@ -17,12 +22,12 @@ const VideoSection = ({slug}: TProps) => {
         <Text
           className={styles.video__title}
           tag='h2'
-          text={t('title')}
+          text={videoTitle}
           style='big'
         />
         <VideoPlayer
-          url={t('url')}
-          title={t('title')}
+          url={videoUrl}
+          title={videoTitle}
         />
       </div>
     </Section>

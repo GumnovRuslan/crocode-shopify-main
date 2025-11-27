@@ -1,0 +1,61 @@
+import { DocumentsIcon } from "@sanity/icons";
+import {defineField, defineType} from 'sanity'
+
+export default defineType({
+  name: "serviceCategories",
+  type: "document",
+  title: "Service Categories",
+  icon: DocumentsIcon,
+  preview: {
+    select: {
+      title: "categoryName",
+      subtitle: "language"
+    }
+  },
+  fields: [
+    defineField({
+      name: 'language',
+      title: 'Language',
+      type: 'string',
+      description: 'Language for this category',
+      options: {
+        list: [
+          { title: 'English', value: 'en' },
+          { title: 'Polish', value: 'pl' },
+        ]
+      },
+      validation: (Rule) => Rule.required()
+    }),
+    defineField({
+      title: "Category Name",
+      name: "categoryName",
+      description: "Display name of the service category",
+      type: "string",
+      validation: (Rule) => Rule.required()
+    }),
+    defineField({
+      title: "Slug",
+      name: "slug",
+      type: "slug",
+      description: "URL-friendly category identifier",
+      options: {
+        source: 'categoryName',
+        maxLength: 96,
+      },
+      validation: (Rule) => Rule.required()
+    }),
+    defineField({
+      title: "Description",
+      name: "description",
+      description: "Brief description of the category (optional)",
+      type: "text",
+    }),
+    defineField({
+      title: "Order",
+      name: "order",
+      description: "Display order in dropdown (lower numbers first)",
+      type: "number",
+      initialValue: 0,
+    }),
+  ],
+});

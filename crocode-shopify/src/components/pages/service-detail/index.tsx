@@ -11,16 +11,17 @@ import {
   Experts
 } from "@/components/sections"
 import { Background, Section } from "@/components/ui"
-import { TProjectCard } from "@/types"
+import { TProjectCard, TService } from "@/types"
 import { useTranslations } from "next-intl"
 import { useLightThemeForHeader } from "@/hooks/useHeaderTheme"
 
 type TProps = {
   slug: string;
+  service: TService;
   projects: TProjectCard[]
 }
 
-const ServiceDetailPage = ({slug, projects}: TProps) => {
+const ServiceDetailPage = ({slug, service, projects}: TProps) => {
   useLightThemeForHeader()
   const t = useTranslations(`ServiceDetailPage.${slug}`)
 
@@ -32,13 +33,13 @@ const ServiceDetailPage = ({slug, projects}: TProps) => {
         mobile: '/images/background/bg_hero_mobile.webp',
         alt: 'Design & Development background'
       }}
-      title={t('hero.title')}
+      title={service.title}
       subtitle={t('hero.subtitle')}
       shift={true}
     />
 
     {/* Текстовая секция - описание */}
-    <ServiceDescription slug={slug}/>
+    <ServiceDescription slug={slug} service={service}/>
 
     {/* Секция наших работ */}
     <ShopifyAgency
@@ -53,14 +54,14 @@ const ServiceDetailPage = ({slug, projects}: TProps) => {
         desktop='/images/background/bg-dark.webp'
         alt="background black with waves"
       />
-      <ShopifyOffers slug={slug}/>
+      <ShopifyOffers slug={slug} service={service}/>
     </Section>
 
     {/* Детали о сервисе и что включено */}
-    <ServiceDetails slug={slug}/>
+    <ServiceDetails slug={slug} service={service}/>
 
     {/* Видео секция */}
-    <VideoSection slug={slug}/>
+    <VideoSection slug={slug} service={service}/>
 
     {/* Shopify эксперты */}
     <Experts/>

@@ -3,9 +3,11 @@
 import styles from './styles.module.scss'
 import { Section } from '@/components/ui'
 import { useTranslations } from 'next-intl'
+import { TService } from '@/types'
 
 type TProps = {
-  slug: string
+  slug: string;
+  service: TService;
 }
 
 // Helper function to parse text with __ markers and render with underline
@@ -25,10 +27,17 @@ const parseTextWithUnderline = (text: string) => {
   })
 }
 
-const ShopifyOffers = ({slug}: TProps) => {
+const ShopifyOffers = ({slug, service}: TProps) => {
   const t = useTranslations(`ServiceDetailPage.${slug}`)
 
-  const offers = ['offer1', 'offer2', 'offer3', 'offer4']
+  // Use Sanity offers if available, otherwise fall back to translations
+  const offers = service.offers && service.offers.length > 0
+    ? service.offers
+    : ['offer1', 'offer2', 'offer3', 'offer4'].map(key => ({
+        title: t(`offers.${key}.title`),
+        text1: t(`offers.${key}.text1`),
+        text2: t(`offers.${key}.text2`)
+      }))
 
   return (
     <Section className={styles.offers}>
@@ -38,15 +47,15 @@ const ShopifyOffers = ({slug}: TProps) => {
       </div>
       <div className={styles.offers__inner}>
         <div className={styles.offers__grid}>
-          {offers.map((key, index) => (
+          {offers.map((offer, index) => (
             <div className={styles.offers__card} key={index}>
-              <h3 className={styles.offers__card_title}>{t(`offers.${key}.title`)}</h3>
+              <h3 className={styles.offers__card_title}>{offer.title}</h3>
               <div className={styles.offers__card_texts}>
                 <p className={styles.offers__card_text}>
-                  {parseTextWithUnderline(t(`offers.${key}.text1`))}
+                  {parseTextWithUnderline(offer.text1)}
                 </p>
                 <p className={styles.offers__card_text}>
-                  {parseTextWithUnderline(t(`offers.${key}.text2`))}
+                  {parseTextWithUnderline(offer.text2)}
                 </p>
               </div>
             </div>
