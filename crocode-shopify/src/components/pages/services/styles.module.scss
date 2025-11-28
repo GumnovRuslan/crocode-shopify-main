@@ -11,16 +11,14 @@
 
   &__hero {
     display: flex;
-    justify-content: space-between;
-    gap: fluid-size(40, 343);
+    flex-direction: column;
+    gap: fluid-size(21, 40);
     margin-top: fluid-size(100, 250);
 
     @media (min-width: 768px) {
-      
-    }
-
-    @media (min-width: 1024px) {
-
+      flex-direction: row;
+      justify-content: space-between;
+      gap: fluid-size(-100, 343);
     }
   }
 
@@ -53,13 +51,19 @@
 
   &__navigation {
     display: grid;
-    grid-template-columns: repeat(2, 368px);
+    grid-template-columns: 1fr;
     grid-auto-rows: 48px;
     gap: fluid-size(10, 15);
     align-self: flex-start;
+    width: 100%;
 
     @media (min-width: 768px) {
       align-self: flex-end;
+      min-width: 280px;
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(2, minmax(10, 368px));
     }
   }
 
