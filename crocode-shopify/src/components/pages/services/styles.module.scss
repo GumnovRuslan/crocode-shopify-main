@@ -1,0 +1,101 @@
+.services {
+  position: relative;
+  width: 100%;
+
+  &__inner {
+    position: relative;
+    padding: fluid-size(100, 200) fluid-size(20, 125) fluid-size(62, 150);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__hero {
+    display: flex;
+    justify-content: space-between;
+    gap: fluid-size(40, 343);
+    margin-top: fluid-size(100, 250);
+
+    @media (min-width: 768px) {
+      
+    }
+
+    @media (min-width: 1024px) {
+
+    }
+  }
+
+  &__heroContent {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(20, 40);
+  }
+
+  &__title {
+    font-size: fluid-size(16, 36);
+    font-weight: 700;
+    line-height: 137%;
+    text-transform: uppercase;
+    color: var(--color-text-white);
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(15, 20);
+
+    p {
+      font-size: fluid-size(12, 20);
+      line-height: 142.5%;
+      color: var(--color-text-white);
+      opacity: 0.8;
+    }
+  }
+
+  &__navigation {
+    display: grid;
+    grid-template-columns: repeat(2, 368px);
+    grid-auto-rows: 48px;
+    gap: fluid-size(10, 15);
+    align-self: flex-start;
+
+    @media (min-width: 768px) {
+      align-self: flex-end;
+    }
+  }
+
+  &__navLink {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    text-decoration: none;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__navNumber {
+    font-size: fluid-size(16, 36);
+    font-weight: 400;
+    line-height: 137%;
+    color: var(--color-text-white);
+  }
+
+  &__navText {
+    font-size: fluid-size(16, 20);
+    font-weight: 400;
+    line-height: 137%;
+    text-transform: uppercase;
+    color: var(--color-text-white);
+  }
+
+  &__blocks {
+    display: flex;
+    flex-direction: column;
+    padding-right: fluid-size(0, 225);
+    gap: fluid-size(151, 364);
+    padding-top: fluid-size(62, 231);
+    padding-bottom: fluid-size(0, 81);
+  }
+}

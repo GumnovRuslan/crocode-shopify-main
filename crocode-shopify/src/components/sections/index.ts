@@ -31,6 +31,7 @@ import ShopifyOffers from "./shopify_offers";
 import ServiceDetails from "./service_details";
 import ServiceIncluded from "./service_included";
 import VideoSection from "./video_section";
+import ServiceBlock from "./service_block";
 
 export {
   Header,
@@ -66,4 +67,5 @@ export {
   ServiceDetails,
   ServiceIncluded,
   VideoSection,
+  ServiceBlock,
 }

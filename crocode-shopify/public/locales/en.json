@@ -112,7 +112,85 @@
     }
   },
   "ServicesPage": {
-    "title": "Services"
+    "title": "Services",
+    "hero": {
+      "description": "Are you new to Shopify or do you want to supercharge an existing store? You can count on us.",
+      "description2": "Our team of 40 Shopify experts is here to help you build and expand your online store. We have over 10 years of experience in the field, so you're in the safe hands."
+    },
+    "navigation": {
+      "development": "Development",
+      "design": "Design",
+      "migration": "Migration",
+      "integration": "Integration",
+      "growth": "Growth"
+    },
+    "services": {
+      "development": {
+        "title": "Development",
+        "description": "Are you new to Shopify or do you want to supercharge an existing store? You can count on us.",
+        "description2": "Our team of 40 Shopify experts is here to help you build and expand your online store. We have over 10 years of experience in the field, so you're in the safe hands.",
+        "tags": [
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development"
+        ],
+        "button": "Learn More"
+      },
+      "design": {
+        "title": "Design",
+        "description": "Are you new to Shopify or do you want to supercharge an existing store? You can count on us.",
+        "description2": "Our team of 40 Shopify experts is here to help you build and expand your online store. We have over 10 years of experience in the field, so you're in the safe hands.",
+        "tags": [
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development"
+        ],
+        "button": "Learn More"
+      },
+      "migration": {
+        "title": "Migration",
+        "description": "Are you new to Shopify or do you want to supercharge an existing store? You can count on us.",
+        "description2": "Our team of 40 Shopify experts is here to help you build and expand your online store. We have over 10 years of experience in the field, so you're in the safe hands.",
+        "tags": [
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development"
+        ],
+        "button": "Learn More"
+      },
+      "integration": {
+        "title": "Integration",
+        "description": "Are you new to Shopify or do you want to supercharge an existing store? You can count on us.",
+        "description2": "Our team of 40 Shopify experts is here to help you build and expand your online store. We have over 10 years of experience in the field, so you're in the safe hands.",
+        "tags": [
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development"
+        ],
+        "button": "Learn More"
+      },
+      "growth": {
+        "title": "Growth",
+        "description": "Are you new to Shopify or do you want to supercharge an existing store? You can count on us.",
+        "description2": "Our team of 40 Shopify experts is here to help you build and expand your online store. We have over 10 years of experience in the field, so you're in the safe hands.",
+        "tags": [
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development",
+          "Shopify Plus Development"
+        ],
+        "button": "Learn More"
+      }
+    }
   },
   "AboutUsPage": {
     "hero": {
