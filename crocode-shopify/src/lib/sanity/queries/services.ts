@@ -100,3 +100,26 @@ export const getAllServices = (lang: string = 'en') => `
   }
 }
 `;
+
+// Get single service category by slug with its services
+export const getServiceCategoryBySlug = (slug: string, lang: string = 'en') => `
+{
+  "serviceCategory": *[_type == "serviceCategories" && slug.current == "${slug}" && language == "${lang}"][0] {
+    _id,
+    categoryName,
+    "slug": {"current": slug.current},
+    description,
+    categoryImage {
+      "image": {"asset": {"url": image.asset->url}},
+      altText
+    },
+    order,
+    "services": *[_type == "services" && language == "${lang}" && references(^._id)] | order(order asc) {
+      _id,
+      title,
+      "slug": {"current": slug.current},
+      order
+    }
+  }
+}
+`;

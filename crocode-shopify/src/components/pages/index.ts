@@ -2,6 +2,7 @@ import HomePage from "./home";
 import OurWorkPage from "./our-work";
 import ServicesPage from "./services";
 import ServiceDetailPage from "./service-detail";
+import ServiceCategoryPage from "./service-category";
 import NotFoundPage from "./404";
 import AboutUsPage from "./about-us";
 import ContactPage from "./contact";
@@ -15,6 +16,7 @@ export {
   OurWorkPage,
   ServicesPage,
   ServiceDetailPage,
+  ServiceCategoryPage,
   NotFoundPage,
   AboutUsPage,
   ContactPage,

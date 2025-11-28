@@ -22,7 +22,7 @@ const ServicesDropdown = ({ servicesGrouped, isDark, onLinkClick }: TProps) => {
           {categories.map(({ category, services }) => (
             <div key={category._id} className={styles.dropdown__category}>
               <Link
-                href={`/services/${category.slug.current}`}
+                href={`/services/category/${category.slug.current}`}
                 className={styles.dropdown__category_title}
                 onClick={onLinkClick}
               >
