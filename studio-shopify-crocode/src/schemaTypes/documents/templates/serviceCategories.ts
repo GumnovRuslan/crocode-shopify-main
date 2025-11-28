@@ -47,8 +47,14 @@ export default defineType({
     defineField({
       title: "Description",
       name: "description",
-      description: "Brief description of the category (optional)",
+      description: "Brief description of the category. Use \\n\\n to separate paragraphs.",
       type: "text",
+    }),
+    defineField({
+      title: "Category Image",
+      name: "categoryImage",
+      description: "Image displayed for this category",
+      type: "imageWithAlt",
     }),
     defineField({
       title: "Order",

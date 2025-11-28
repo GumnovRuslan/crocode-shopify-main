@@ -1,3 +1,26 @@
+// Get all service categories with their services for services page
+export const getServiceCategoriesWithServices = (lang: string = 'en') => `
+{
+  "serviceCategories": *[_type == "serviceCategories" && language == "${lang}"] | order(order asc) {
+    _id,
+    categoryName,
+    "slug": {"current": slug.current},
+    description,
+    categoryImage {
+      "image": {"asset": {"url": image.asset->url}},
+      altText
+    },
+    order,
+    "services": *[_type == "services" && language == "${lang}" && references(^._id)] | order(order asc) {
+      _id,
+      title,
+      "slug": {"current": slug.current},
+      order
+    }
+  }
+}
+`;
+
 // Get all services grouped by category for dropdown menu
 export const getServicesForDropdown = (lang: string = 'en') => `
 {

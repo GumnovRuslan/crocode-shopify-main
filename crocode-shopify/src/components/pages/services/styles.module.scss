@@ -52,7 +52,6 @@
   &__navigation {
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 48px;
     gap: fluid-size(10, 15);
     align-self: flex-start;
     width: 100%;

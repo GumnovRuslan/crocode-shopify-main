@@ -2,39 +2,61 @@
 
 import styles from './styles.module.scss'
 import { Button } from '@/components/ui'
+import { TServiceCard } from '@/types'
+import Image from 'next/image'
+import Link from 'next/link'
 
 type TProps = {
   title: string;
   description: string;
-  description2: string;
-  tags: string[];
+  imageUrl?: string;
+  imageAlt?: string;
+  services: TServiceCard[];
   buttonText: string;
+  buttonHref: string;
   id: string;
 }
 
-const ServiceBlock = ({ title, description, description2, tags, buttonText, id }: TProps) => {
+const ServiceBlock = ({ title, description, imageUrl, imageAlt, services, buttonText, buttonHref, id }: TProps) => {
+  // Split description by \n\n to create paragraphs
+  const paragraphs = description.split('\n\n').filter(p => p.trim())
+
   return (
     <div className={styles.serviceBlock} id={id}>
       <div className={styles.serviceBlock__inner}>
         <h2 className={styles.serviceBlock__title}>{title}</h2>
         <div className={styles.serviceBlock__tags}>
-          {tags.map((tag, index) => (
-            <button key={index} className={styles.serviceBlock__tag}>
-              {tag}
-            </button>
+          {services.map((service) => (
+            <Link
+              key={service._id}
+              href={`/services/${service.slug.current}`}
+              className={styles.serviceBlock__tag}
+            >
+              {service.title}
+            </Link>
           ))}
         </div>
-        <div className={styles.serviceBlock__video}>
-          {/* Video placeholder */}
+        <div className={styles.serviceBlock__video} style={{ position: 'relative', overflow: 'hidden' }}>
+          {imageUrl && (
+            <Image
+              src={imageUrl}
+              alt={imageAlt || title}
+              fill
+              style={{ objectFit: 'cover' }}
+            />
+          )}
         </div>
         <div className={styles.serviceBlock__content}>
-          <p className={styles.serviceBlock__description}>{description}</p>
-          <p className={styles.serviceBlock__description}>{description2}</p>
+          {paragraphs.map((paragraph, index) => (
+            <p key={index} className={styles.serviceBlock__description}>
+              {paragraph}
+            </p>
+          ))}
         </div>
         <div className={styles.serviceBlock__buttonBlock}>
             <Button
               as='link'
-              href='#'
+              href={buttonHref}
               text={buttonText}
               styleType='primary'
               className={styles.serviceBlock__button}

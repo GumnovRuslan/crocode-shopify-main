@@ -2,6 +2,11 @@ export type TServiceCategory = {
   _id: string;
   categoryName: string;
   slug: { current: string };
+  description?: string;
+  categoryImage?: {
+    image: { asset: { url: string } };
+    altText: string;
+  };
   order?: number;
 }
 
@@ -56,4 +61,9 @@ export type TServicesGrouped = {
     category: TServiceCategory;
     services: TServiceCard[];
   }
+}
+
+// Service category with its services for services page
+export type TServiceCategoryWithServices = TServiceCategory & {
+  services: TServiceCard[];
 }

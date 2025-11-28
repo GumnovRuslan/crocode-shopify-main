@@ -27,7 +27,7 @@ const Header = ({ servicesGrouped }: TProps) => {
   const {isMobile} = useScreenSize()
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false)
   const [servicesHover, setServicesHover] = useState<boolean>(false)
-  const timeoutRef = useRef<NodeJS.Timeout>()
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   const NAV_LIST = [
     {

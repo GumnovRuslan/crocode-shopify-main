@@ -13,7 +13,9 @@ export async function fetchGROQ<T = any>(
   params?: Record<string, any>,
 ): Promise<{ data: T; error: any }> {
   try {
-    const data = await sanityClient.fetch<T>(query, params);
+    const data = params
+      ? await sanityClient.fetch<T>(query, params)
+      : await sanityClient.fetch<T>(query);
     return { data, error: null };
   } catch (error: any) {
     console.error('GROQ fetch error:', error);

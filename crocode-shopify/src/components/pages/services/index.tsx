@@ -3,12 +3,16 @@
 import { ServiceBlock } from "@/components/sections"
 import { Background, Section } from "@/components/ui"
 import { useDarkThemeForHeader } from "@/hooks/useHeaderTheme"
+import { TServiceCategoryWithServices } from "@/types"
 import { useTranslations } from "next-intl"
+import Link from "next/link"
 import styles from './styles.module.scss'
 
-const servicesList = ['development', 'design', 'migration', 'integration', 'growth'] as const
+type TProps = {
+  serviceCategories: TServiceCategoryWithServices[]
+}
 
-const ServicesPage = () => {
+const ServicesPage = ({ serviceCategories }: TProps) => {
   useDarkThemeForHeader()
   const t = useTranslations('ServicesPage')
 
@@ -27,34 +31,36 @@ const ServicesPage = () => {
               </div>
             </div>
             <nav className={styles.services__navigation}>
-              {servicesList.map((service, index) => (
-                <a
-                  key={service}
-                  href={`#${service}`}
+              {serviceCategories.map((category, index) => (
+                <Link
+                  key={category._id}
+                  href={`/services/category/${category.slug.current}`}
                   className={styles.services__navLink}
                 >
                   <span className={styles.services__navNumber}>
                     {String(index + 1).padStart(2, '0')}
                   </span>
                   <span className={styles.services__navText}>
-                    {t(`navigation.${service}`)}
+                    {category.categoryName}
                   </span>
-                </a>
+                </Link>
               ))}
             </nav>
           </div>
 
           {/* Service Blocks */}
           <div className={styles.services__blocks}>
-            {servicesList.map((service) => (
+            {serviceCategories.map((category) => (
               <ServiceBlock
-                key={service}
-                id={service}
-                title={t(`services.${service}.title`)}
-                description={t(`services.${service}.description`)}
-                description2={t(`services.${service}.description2`)}
-                tags={t.raw(`services.${service}.tags`)}
-                buttonText={t(`services.${service}.button`)}
+                key={category._id}
+                id={category.slug.current}
+                title={category.categoryName}
+                description={category.description || ''}
+                imageUrl={category.categoryImage?.image?.asset?.url}
+                imageAlt={category.categoryImage?.altText || category.categoryName}
+                services={category.services}
+                buttonText={t('services.development.button')}
+                buttonHref={`/services/category/${category.slug.current}`}
               />
             ))}
           </div>
