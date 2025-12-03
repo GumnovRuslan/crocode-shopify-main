@@ -5,6 +5,7 @@ import { useDarkThemeForHeader } from "@/hooks/useHeaderTheme"
 import { TServiceCategoryWithServices } from "@/types"
 import Link from "next/link"
 import styles from '../services/styles.module.scss'
+import Image from 'next/image'
 
 type TProps = {
   category: TServiceCategoryWithServices
