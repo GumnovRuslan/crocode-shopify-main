@@ -25,6 +25,10 @@
         color: var(--color-text-white);
       }
 
+    .header__button {
+        background: var(--color-btn-primary);
+      }
+
     .header__nav_link {
       @include media-up(md) {
         color: var(--color-text-white);
