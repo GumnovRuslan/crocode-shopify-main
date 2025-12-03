@@ -24,7 +24,6 @@ const ServiceDetailPage = ({slug, service, projects}: TProps) => {
   useLightThemeForHeader()
 
   return (<>
-    {/* Hero секция */}
     <Hero
       bg={{
         desktop: '/images/background/bg_hero.webp',
@@ -36,17 +35,14 @@ const ServiceDetailPage = ({slug, service, projects}: TProps) => {
       shift={true}
     />
 
-    {/* Текстовая секция - описание */}
     <ServiceDescription slug={slug} service={service}/>
 
-    {/* Секция наших работ */}
     <ShopifyAgency
       projects={projects.slice(0, 4)}
       showTitle={true}
       customTitleStyle="centered"
     />
 
-    {/* Секция "Почему Shopify" + Офферы на чёрном фоне */}
     <Section type='rounded' isBlack shift>
       <Background
         desktop='/images/background/bg-dark.webp'
@@ -55,13 +51,10 @@ const ServiceDetailPage = ({slug, service, projects}: TProps) => {
       <ShopifyOffers slug={slug} service={service}/>
     </Section>
 
-    {/* Детали о сервисе и что включено */}
     <ServiceDetails slug={slug} service={service}/>
 
-    {/* Видео секция */}
     <VideoSection slug={slug} service={service}/>
 
-    {/* Shopify эксперты */}
     <Experts/>
   </>)
 }

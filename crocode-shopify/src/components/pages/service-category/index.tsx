@@ -13,7 +13,6 @@ type TProps = {
 const ServiceCategoryPage = ({ category }: TProps) => {
   useDarkThemeForHeader()
 
-  // Split description by \n\n to create paragraphs
   const descriptionParagraphs = category.description
     ? category.description.split(/\n\n/).filter(p => p.trim())
     : []
@@ -23,7 +22,6 @@ const ServiceCategoryPage = ({ category }: TProps) => {
       <Background desktop='/images/background/bg-black-ball-toll.webp' alt="background black with balls"/>
       <div className={styles.services}>
         <div className={styles.services__inner}>
-          {/* Hero Section */}
           <div className={styles.services__hero}>
             <div className={styles.services__heroContent}>
               <h1 className={styles.services__title}>{category.categoryName}</h1>
