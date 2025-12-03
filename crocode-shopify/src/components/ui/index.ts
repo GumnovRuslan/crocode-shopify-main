@@ -16,6 +16,8 @@ import Text from "./text";
 import Article from "./cards/article";
 import MapboxMap from "./map";
 import CardIndustry from "./cards/card_industry";
+import VideoPlayer from "./video_player";
+import ServicesDropdown from "./Dropdown";
 
 export {
   Button,
@@ -36,4 +38,6 @@ export {
   Article,
   MapboxMap,
   CardIndustry,
+  VideoPlayer,
+  ServicesDropdown,
 }

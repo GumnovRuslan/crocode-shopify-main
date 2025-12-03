@@ -1,3 +1,5 @@
+'use client'
+
 import styles from './styles.module.scss'
 
 import { InstagramIcon, LinkedinIcon, TwitterIcon } from '@/components/icons'
@@ -5,6 +7,7 @@ import { Button } from '@/components/ui'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import { usePathname } from 'next/navigation'
 
 const NETWORK = [
   {
@@ -23,7 +26,8 @@ const NETWORK = [
 
 const Footer = () => {
   const t = useTranslations('Footer')
-  const nav = 'columns.what-we-do.nav'
+  const pathname = usePathname()
+  const isServiceDetailPage = pathname?.startsWith('/services/') && pathname !== '/services'
 
   return (
     <footer className={styles.footer}>
@@ -43,22 +47,24 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          
-          <div className={styles.footer__menu}>
-            <div className={styles.footer__column}>
-              <p className={styles.footer__column_title}>{t('columns.what-we-do.title')}</p>
-              <Link href='/our-work' className={styles.footer__list_item}>{t(`columns.what-we-do.nav.our-work`)}</Link>
-              <Link href='/services' className={styles.footer__list_item}>{t(`columns.what-we-do.nav.services`)}</Link>
-              <Link href='/about-us' className={styles.footer__list_item}>{t(`columns.what-we-do.nav.about-us`)}</Link>
-              <Link href='/why-crocode' className={styles.footer__list_item}>{t(`columns.what-we-do.nav.why-crocode`)}</Link>
-              <Link href='/faqs' className={styles.footer__list_item}>{t(`columns.what-we-do.nav.faqs`)}</Link>
+
+          {!isServiceDetailPage && (
+            <div className={styles.footer__menu}>
+              <div className={styles.footer__column}>
+                <p className={styles.footer__column_title}>{t('columns.what-we-do.title')}</p>
+                <Link href='/our-work' className={styles.footer__list_item}>{t(`columns.what-we-do.nav.our-work`)}</Link>
+                <Link href='/services' className={styles.footer__list_item}>{t(`columns.what-we-do.nav.services`)}</Link>
+                <Link href='/about-us' className={styles.footer__list_item}>{t(`columns.what-we-do.nav.about-us`)}</Link>
+                <Link href='/why-crocode' className={styles.footer__list_item}>{t(`columns.what-we-do.nav.why-crocode`)}</Link>
+                <Link href='/faqs' className={styles.footer__list_item}>{t(`columns.what-we-do.nav.faqs`)}</Link>
+              </div>
+              <div className={styles.footer__column}>
+                <p className={styles.footer__column_title}>{t('columns.get-in-touch.title')}</p>
+                <Link href='/contact' className={styles.footer__list_item}>{t(`columns.get-in-touch.nav.email`)}</Link>
+                <Link href='/contact' className={styles.footer__list_item}>{t(`columns.get-in-touch.nav.contact`)}</Link>
+              </div>
             </div>
-            <div className={styles.footer__column}>
-              <p className={styles.footer__column_title}>{t('columns.get-in-touch.title')}</p>
-              <Link href='/contact' className={styles.footer__list_item}>{t(`columns.get-in-touch.nav.email`)}</Link>
-              <Link href='/contact' className={styles.footer__list_item}>{t(`columns.get-in-touch.nav.contact`)}</Link>
-            </div>
-          </div>
+          )}
         </div>
         <div className={styles.footer__bottom}>
           <div className={styles.footer__bottom_content}>

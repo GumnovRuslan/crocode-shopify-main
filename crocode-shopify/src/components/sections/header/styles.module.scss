@@ -108,6 +108,11 @@
     }
   }
 
+  &__nav_item {
+    position: relative;
+    list-style: none;
+  }
+
   &__nav_link {
     line-height: 120%;
 

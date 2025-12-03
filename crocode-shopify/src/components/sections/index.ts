@@ -25,6 +25,13 @@ import Gallery from "./project_gallery";
 import CaseStudyDetails from "./case_study_details";
 import ArticlesSection from "./articles";
 import MapSection from "./map";
+import ServiceDescription from "./service_description";
+import WhyShopify from "./why_shopify";
+import ShopifyOffers from "./shopify_offers";
+import ServiceDetails from "./service_details";
+import ServiceIncluded from "./service_included";
+import VideoSection from "./video_section";
+import ServiceBlock from "./service_block";
 
 export {
   Header,
@@ -54,4 +61,11 @@ export {
   CaseStudyDetails,
   ArticlesSection,
   MapSection,
+  ServiceDescription,
+  WhyShopify,
+  ShopifyOffers,
+  ServiceDetails,
+  ServiceIncluded,
+  VideoSection,
+  ServiceBlock,
 }
