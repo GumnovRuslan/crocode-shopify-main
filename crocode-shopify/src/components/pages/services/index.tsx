@@ -34,7 +34,7 @@ const ServicesPage = ({ serviceCategories }: TProps) => {
               {serviceCategories.map((category, index) => (
                 <Link
                   key={category._id}
-                  href={`/services/category/${category.slug.current}`}
+                  href={`/services/${category.slug.current}`}
                   className={styles.services__navLink}
                 >
                   <span className={styles.services__navNumber}>
@@ -60,7 +60,7 @@ const ServicesPage = ({ serviceCategories }: TProps) => {
                 imageAlt={category.categoryImage?.altText || category.categoryName}
                 services={category.services}
                 buttonText={t('services.development.button')}
-                buttonHref={`/services/category/${category.slug.current}`}
+                buttonHref={`/services/${category.slug.current}`}
               />
             ))}
           </div>
