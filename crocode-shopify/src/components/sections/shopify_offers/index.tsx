@@ -9,7 +9,6 @@ type TProps = {
   service: TService;
 }
 
-// Helper function to parse text with __ markers and render with underline
 const parseTextWithUnderline = (text: string) => {
   const parts = text.split(/(__.*?__)/g)
 
@@ -28,6 +27,7 @@ const parseTextWithUnderline = (text: string) => {
 
 const ShopifyOffers = ({slug, service}: TProps) => {
   const offers = service.offers || []
+  console.log("service", service)
 
   return (
     <Section className={styles.offers}>
@@ -38,7 +38,6 @@ const ShopifyOffers = ({slug, service}: TProps) => {
       <div className={styles.offers__inner}>
         <div className={styles.offers__grid}>
           {offers.map((offer, index) => {
-            // Split text into paragraphs, handle null/undefined
             const paragraphs = offer.text
               ? offer.text.split('\n\n').filter(p => p.trim())
               : []
@@ -57,6 +56,7 @@ const ShopifyOffers = ({slug, service}: TProps) => {
             )
           })}
         </div>
+        <p className={styles.offers__card_texts}>{service.whyShopifyFinalText || ''}</p>
       </div>
     </Section>
   )

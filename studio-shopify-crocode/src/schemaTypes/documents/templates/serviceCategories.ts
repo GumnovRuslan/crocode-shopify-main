@@ -51,6 +51,12 @@ export default defineType({
       type: "text",
     }),
     defineField({
+      title: "Text",
+      name: "text",
+      description: "Brief text of the category. Use \\n\\n to separate paragraphs.",
+      type: "text",
+    }),
+    defineField({
       title: "Category Image",
       name: "categoryImage",
       description: "Image displayed for this category",

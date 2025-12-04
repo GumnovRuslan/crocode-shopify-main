@@ -134,6 +134,13 @@ export default defineType({
       of: [{ type: 'serviceOffer' }],
     }),
 
+    defineField({
+      title: 'Why Shopify Final Text',
+      name: 'whyShopifyFinalText',
+      type: 'text',
+      description: 'Final text for "Why Shopify" section',
+    }),
+
     // Service Details Section
     defineField({
       title: 'Details Title',
@@ -147,23 +154,6 @@ export default defineType({
       name: 'detailsText',
       type: 'text',
       description: 'Details text with multiple paragraphs. Use \\n\\n to separate paragraphs.',
-    }),
-
-    // What's Included Section
-    defineField({
-      title: 'Included Title',
-      name: 'includedTitle',
-      type: 'string',
-      description: 'Title for "What is included" section',
-    }),
-
-    defineField({
-      title: 'Included Items',
-      name: 'includedItems',
-      type: 'array',
-      description: 'List of items included in the service',
-      of: [{ type: 'string' }],
-      validation: (Rule) => Rule.max(6)
     }),
 
     // Video Section

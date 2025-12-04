@@ -1,4 +1,3 @@
-// Get all service categories with their services for services page
 export const getServiceCategoriesWithServices = (lang: string = 'en') => `
 {
   "serviceCategories": *[_type == "serviceCategories" && language == "${lang}"] | order(order asc) {
@@ -21,7 +20,6 @@ export const getServiceCategoriesWithServices = (lang: string = 'en') => `
 }
 `;
 
-// Get all services grouped by category for dropdown menu
 export const getServicesForDropdown = (lang: string = 'en') => `
 {
   "allServiceCategories": *[_type == "serviceCategories" && language == "${lang}"] | order(order asc) {
@@ -43,7 +41,6 @@ export const getServicesForDropdown = (lang: string = 'en') => `
 }
 `;
 
-// Get single service by slug
 export const getServiceBySlug = (slug: string, lang: string = 'en') => `
 {
   "allServices": *[_type == "services" && slug.current == "${slug}" && language == "${lang}"] {
@@ -89,7 +86,6 @@ export const getServiceBySlug = (slug: string, lang: string = 'en') => `
 }
 `;
 
-// Get all services (for sitemap, etc.)
 export const getAllServices = (lang: string = 'en') => `
 {
   "allServices": *[_type == "services" && language == "${lang}"] {
@@ -101,7 +97,6 @@ export const getAllServices = (lang: string = 'en') => `
 }
 `;
 
-// Get single service category by slug with its services
 export const getServiceCategoryBySlug = (slug: string, lang: string = 'en') => `
 {
   "serviceCategory": *[_type == "serviceCategories" && slug.current == "${slug}" && language == "${lang}"][0] {

@@ -5,7 +5,7 @@ export const sanityClient = createClient({
   dataset: process.env.SANITY_STUDIO_DATASET!,
   token: process.env.SANITY_TOKEN,
   apiVersion: '2023-08-01',
-  useCdn: false, // Set to false for fresh data
+  useCdn: false,
 });
 
 export async function fetchGROQ<T = any>(

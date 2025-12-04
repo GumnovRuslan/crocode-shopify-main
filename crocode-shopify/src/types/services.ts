@@ -45,17 +45,15 @@ export type TService = {
   descriptionText: string;
   whyShopifyTitle?: string;
   whyShopifyText?: string;
+  whyShopifyFinalText?: string;
   offers?: TServiceOffer[];
   detailsTitle?: string;
   detailsText?: string;
-  includedTitle?: string;
-  includedItems?: string[];
   videoTitle?: string;
   videoUrl?: string;
   seo?: any;
 }
 
-// Grouped services for dropdown
 export type TServicesGrouped = {
   [categoryId: string]: {
     category: TServiceCategory;
@@ -63,7 +61,6 @@ export type TServicesGrouped = {
   }
 }
 
-// Service category with its services for services page
 export type TServiceCategoryWithServices = TServiceCategory & {
   services: TServiceCard[];
 }

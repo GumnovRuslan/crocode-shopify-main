@@ -16,9 +16,6 @@ const ServiceDetails = ({slug, service}: TProps) => {
     ? service.detailsText.split('\n\n').filter(p => p.trim())
     : []
 
-  const includedTitle = service.includedTitle || 'What is included'
-  const includedItems = service.includedItems || []
-
   return (
     <Section className={styles.details} type='rounded' shift>
       <Background
@@ -43,22 +40,6 @@ const ServiceDetails = ({slug, service}: TProps) => {
           {detailsParagraphs.map((paragraph, index) => (
             <p key={index} className={styles.details__text}>{paragraph}</p>
           ))}
-        </div>
-
-        <div className={styles.details__section}>
-          <Text
-            className={styles.details__title}
-            tag='h2'
-            text={includedTitle}
-            style='big'
-          />
-          <ul className={styles.details__list}>
-            {includedItems.map((item, index) => (
-              <li className={styles.details__item} key={index}>
-                {item}
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </Section>

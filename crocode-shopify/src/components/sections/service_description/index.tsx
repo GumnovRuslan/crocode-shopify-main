@@ -16,7 +16,6 @@ const ServiceDescription = ({slug, service}: TProps) => {
     ? service.descriptionText.split('\n\n').filter(p => p.trim())
     : []
 
-  // Use heroImage if available, fallback to default image
   const imageUrl = service.heroImage?.image?.asset?.url || '/images/cards/our-service/background-1.png'
   const imageAlt = service.heroImage?.altText || 'Service illustration'
 

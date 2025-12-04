@@ -32,8 +32,6 @@
 
   &__list {
     @include media-up(lg) {
-      // width: max-content;
-      // margin: 0 auto;
       display: flex;
       justify-content: center;
       gap: fluid-size(25, 40);
