@@ -9,6 +9,8 @@ interface HeaderThemeContextType {
   setTheme: (theme: HeaderTheme) => void
   isDark: boolean
   isLight: boolean
+  hasBackgroundImage: boolean
+  setHasBackgroundImage: (hasImage: boolean) => void
 }
 
 const HeaderThemeContext = createContext<HeaderThemeContextType | undefined>(undefined)
@@ -18,17 +20,20 @@ interface HeaderThemeProviderProps {
   defaultTheme?: HeaderTheme
 }
 
-export const HeaderThemeProvider: React.FC<HeaderThemeProviderProps> = ({ 
-  children, 
-  defaultTheme = 'light' 
+export const HeaderThemeProvider: React.FC<HeaderThemeProviderProps> = ({
+  children,
+  defaultTheme = 'light'
 }) => {
   const [theme, setTheme] = useState<HeaderTheme>(defaultTheme)
+  const [hasBackgroundImage, setHasBackgroundImage] = useState<boolean>(false)
 
   const value: HeaderThemeContextType = {
     theme,
     setTheme,
     isDark: theme === 'dark',
     isLight: theme === 'light',
+    hasBackgroundImage,
+    setHasBackgroundImage,
   }
 
   return (

@@ -23,7 +23,7 @@ type TProps = {
 
 const Header = ({ servicesGrouped }: TProps) => {
   const t = useTranslations('Header')
-  const {theme, isDark} = useHeaderTheme()
+  const {theme, isDark, hasBackgroundImage} = useHeaderTheme()
   const {isMobile} = useScreenSize()
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false)
   const [servicesHover, setServicesHover] = useState<boolean>(false)
@@ -85,9 +85,10 @@ const Header = ({ servicesGrouped }: TProps) => {
   }, [])
   
   return (
-    <header 
-    className={`${styles.header} 
+    <header
+    className={`${styles.header}
     ${isDark ? styles[`header--dark`] : styles[`header--light`]}
+    ${hasBackgroundImage ? styles[`header--has-bg-image`] : ''}
     ${menuIsOpen ? styles[`header--menu-open`] : styles[`header--menu-hidden`]}`
     }>
       <div className={styles.header__inner}>
