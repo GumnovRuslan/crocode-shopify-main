@@ -3,6 +3,7 @@ export type TServiceCategory = {
   categoryName: string;
   slug: { current: string };
   description?: string;
+  text?: string;
   categoryImage?: {
     image: { asset: { url: string } };
     altText: string;
@@ -22,6 +23,11 @@ export type TServiceCard = {
 }
 
 export type TServiceOffer = {
+  title: string;
+  text: string;
+}
+
+export type TServiceDetail = {
   title: string;
   text: string;
 }
@@ -47,8 +53,7 @@ export type TService = {
   whyShopifyText?: string;
   whyShopifyFinalText?: string;
   offers?: TServiceOffer[];
-  detailsTitle?: string;
-  detailsText?: string;
+  details?: TServiceDetail[];
   videoTitle?: string;
   videoUrl?: string;
   seo?: any;

@@ -66,10 +66,11 @@ export const getServiceBySlug = (slug: string, lang: string = 'en') => `
       title,
       text
     },
-    detailsTitle,
-    detailsText,
-    includedTitle,
-    includedItems,
+    whyShopifyFinalText,
+    details[] {
+      title,
+      text
+    },
     videoTitle,
     videoUrl,
     seo {
@@ -104,6 +105,7 @@ export const getServiceCategoryBySlug = (slug: string, lang: string = 'en') => `
     categoryName,
     "slug": {"current": slug.current},
     description,
+    text,
     categoryImage {
       "image": {"asset": {"url": image.asset->url}},
       altText

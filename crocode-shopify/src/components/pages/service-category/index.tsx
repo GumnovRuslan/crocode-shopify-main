@@ -6,6 +6,7 @@ import { TServiceCategoryWithServices } from "@/types"
 import Link from "next/link"
 import styles from '../services/styles.module.scss'
 import Image from 'next/image'
+import { renderParsedContent } from '@/utils/parseTextContent'
 
 type TProps = {
   category: TServiceCategoryWithServices
@@ -57,6 +58,17 @@ const ServiceCategoryPage = ({ category }: TProps) => {
                 fill
                 style={{ objectFit: 'cover' }}
               />
+            </div>
+          )}
+          {category.text && (
+            <div className={styles.services__textContent}>
+              {renderParsedContent(category.text, {
+                paragraphClassName: styles.services__textParagraph,
+                listClassName: styles.services__list,
+                listItemClassName: styles.services__listItem,
+                h2ClassName: styles.services__h2,
+                h3ClassName: styles.services__h3,
+              })}
             </div>
           )}
         </div>

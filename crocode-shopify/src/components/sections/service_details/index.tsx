@@ -4,6 +4,7 @@ import styles from './styles.module.scss'
 import { Background, Section, Text } from '@/components/ui'
 import Image from 'next/image'
 import { TService } from '@/types'
+import { renderParsedContent } from '@/utils/parseTextContent'
 
 type TProps = {
   slug: string;
@@ -11,10 +12,11 @@ type TProps = {
 }
 
 const ServiceDetails = ({slug, service}: TProps) => {
-  const detailsTitle = service.detailsTitle || 'Service Details'
-  const detailsParagraphs = service.detailsText
-    ? service.detailsText.split('\n\n').filter(p => p.trim())
-    : []
+  const details = service.details || []
+
+  if (details.length === 0) {
+    return null
+  }
 
   return (
     <Section className={styles.details} type='rounded' shift>
@@ -30,17 +32,23 @@ const ServiceDetails = ({slug, service}: TProps) => {
         className={styles.details__pattern}
       />
       <div className={styles.details__inner}>
-        <div className={styles.details__section}>
-          <Text
-            className={styles.details__title}
-            tag='h2'
-            text={detailsTitle}
-            style='big'
-          />
-          {detailsParagraphs.map((paragraph, index) => (
-            <p key={index} className={styles.details__text}>{paragraph}</p>
-          ))}
-        </div>
+        {details.map((detail, index) => (
+          <div key={index} className={styles.details__section}>
+            <Text
+              className={styles.details__title}
+              tag='h2'
+              text={detail.title}
+              style='big'
+            />
+            {renderParsedContent(detail.text, {
+              paragraphClassName: styles.details__text,
+              listClassName: styles.details__list,
+              listItemClassName: styles.details__item,
+              h2ClassName: styles.details__h2,
+              h3ClassName: styles.details__h3,
+            })}
+          </div>
+        ))}
       </div>
     </Section>
   )
