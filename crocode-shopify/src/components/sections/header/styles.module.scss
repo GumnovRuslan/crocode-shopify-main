@@ -46,6 +46,12 @@
     }
   }
 
+  &--light:not(.header--has-bg-image) {
+    .header__button {
+      background: var(--color-btn-primary);
+    }
+  }
+
   &__inner {
     position: relative;
     height: 100%;

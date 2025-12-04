@@ -1,7 +1,10 @@
+'use client'
+
 import styles from './styles.module.scss'
 
 import Link from 'next/link'
 import { Button, Background, Text } from '@/components/ui'
+import { useBackgroundImageForHeader } from '@/hooks/useHeaderTheme'
 
 type TProps = {
   bg?: {
@@ -19,6 +22,9 @@ type TProps = {
 }
 
 const Hero = ({bg, title, subtitle, isShowNetwork = false, button, shift = false}: TProps) => {
+  if (bg) {
+    useBackgroundImageForHeader()
+  }
   return (
     <section className={`${styles.hero} ${shift ? styles['hero--shift'] : ''}`}>
       {bg && (
