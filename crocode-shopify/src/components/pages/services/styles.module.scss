@@ -101,4 +101,15 @@
     padding-top: fluid-size(62, 231);
     padding-bottom: fluid-size(0, 81);
   }
+
+  &__categoryImage {
+    width: 100%;
+    height: fluid-size(268, 679);
+    background: #4a4a4a;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: fluid-size(30, 120);
+  }
 }

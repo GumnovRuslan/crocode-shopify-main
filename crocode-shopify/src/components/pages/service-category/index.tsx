@@ -49,6 +49,16 @@ const ServiceCategoryPage = ({ category }: TProps) => {
               ))}
             </nav>
           </div>
+          {category.categoryImage && (
+            <div className={styles.services__categoryImage} style={{ position: 'relative', overflow: 'hidden' }}>
+              <Image
+                src={category.categoryImage.image.asset.url}
+                alt={category.categoryImage.altText || category.categoryName}
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
+          )}
         </div>
       </div>
     </Section>
