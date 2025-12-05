@@ -4,6 +4,7 @@ import styles from './styles.module.scss'
 import { Section, Text } from '@/components/ui'
 import Image from 'next/image'
 import { TService } from '@/types'
+import { renderParsedContent } from '@/utils/parseTextContent'
 
 type TProps = {
   slug: string;
@@ -12,9 +13,6 @@ type TProps = {
 
 const ServiceDescription = ({slug, service}: TProps) => {
   const title = service.descriptionTitle || 'About this service'
-  const textParagraphs = service.descriptionText
-    ? service.descriptionText.split('\n\n').filter(p => p.trim())
-    : []
 
   const imageUrl = service.heroImage?.image?.asset?.url || '/images/cards/our-service/background-1.png'
   const imageAlt = service.heroImage?.altText || 'Service illustration'
@@ -30,9 +28,13 @@ const ServiceDescription = ({slug, service}: TProps) => {
             style='big'
           />
           <div className={styles.description__text_wrapper}>
-            {textParagraphs.map((paragraph, index) => (
-              <p key={index} className={styles.description__text}>{paragraph}</p>
-            ))}
+            {renderParsedContent(service.descriptionText, {
+              paragraphClassName: styles.description__text,
+              listClassName: styles.description__list,
+              listItemClassName: styles.description__list_item,
+              h2ClassName: styles.description__h2,
+              h3ClassName: styles.description__h3,
+            })}
           </div>
         </div>
         <div className={styles.description__image}>

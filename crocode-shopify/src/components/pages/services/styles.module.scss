@@ -49,6 +49,46 @@
     }
   }
 
+  &__descriptionParagraph {
+    font-size: fluid-size(12, 20);
+    line-height: 142.5%;
+    color: var(--color-text-white);
+    opacity: 0.8;
+  }
+
+  &__descriptionList {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(10, 15);
+    padding-left: fluid-size(20, 30);
+  }
+
+  &__descriptionListItem {
+    font-size: fluid-size(12, 20);
+    line-height: 142.5%;
+    color: var(--color-text-white);
+    opacity: 0.8;
+    list-style-type: disc;
+  }
+
+  &__descriptionH2 {
+    font-size: fluid-size(14, 24);
+    font-weight: 700;
+    line-height: 137%;
+    text-transform: uppercase;
+    color: var(--color-text-white);
+    margin-top: fluid-size(10, 20);
+  }
+
+  &__descriptionH3 {
+    font-size: fluid-size(12, 20);
+    font-weight: 700;
+    line-height: 137%;
+    text-transform: uppercase;
+    color: var(--color-text-white);
+    margin-top: fluid-size(8, 15);
+  }
+
   &__navigation {
     display: grid;
     grid-template-columns: 1fr;
@@ -145,7 +185,7 @@
 
   &__h2 {
     font-size: fluid-size(14, 24);
-    font-weight: 700;
+    font-weight: 400;
     line-height: 137%;
     text-transform: uppercase;
     color: var(--color-text-white);
@@ -154,7 +194,7 @@
 
   &__h3 {
     font-size: fluid-size(12, 20);
-    font-weight: 700;
+    font-weight: 400;
     line-height: 137%;
     text-transform: uppercase;
     color: var(--color-text-white);

@@ -17,7 +17,17 @@ const ShopifyOffers = ({slug, service}: TProps) => {
     <Section className={styles.offers}>
       <div className={styles.offers__heading}>
         <h2 className={styles.offers__title}>{service.whyShopifyTitle || 'Why Shopify'}</h2>
-        <p className={styles.offers__subtitle}>{service.whyShopifyText || ''}</p>
+        {service.whyShopifyText && (
+          <div className={styles.offers__subtitle}>
+            {renderParsedContent(service.whyShopifyText, {
+              paragraphClassName: styles.offers__subtitle_text,
+              listClassName: styles.offers__subtitle_list,
+              listItemClassName: styles.offers__subtitle_list_item,
+              h2ClassName: styles.offers__subtitle_h2,
+              h3ClassName: styles.offers__subtitle_h3,
+            })}
+          </div>
+        )}
       </div>
       <div className={styles.offers__inner}>
         <div className={styles.offers__grid}>
