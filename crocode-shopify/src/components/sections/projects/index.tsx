@@ -61,15 +61,20 @@ const Projects = ({projects, categories}: TProps) => {
     return sortArray(filteredProjects)
   }, [filteredProjects, selectedCategories])
 
+  const availableCategories = useMemo(() => {
+    return categories.filter(category =>
+      projects.some(project => project.category?._id === category._id)
+    )
+  }, [categories, projects])
 
   return (<>
     <section className={styles.projects}>
       <div className={styles.projects__filter}>
-        {categories?.map((category, i) => {
+        {availableCategories?.map((category, i) => {
           const isActive = selectedCategories.some(item => item?._id === category?._id)
           return (
-            <Tag 
-              text={category.categoryName} 
+            <Tag
+              text={category.categoryName}
               isActive={isActive}
               onClick={() => toggleCategory(category)}
               key={i}
