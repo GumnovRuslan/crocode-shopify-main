@@ -7,6 +7,7 @@ import { BtkIcon } from '@/components/icons'
 import { Comment, Section, SliderBtn, Text } from '@/components/ui'
 import useEmblaCarousel from 'embla-carousel-react'
 import { useTranslations } from 'next-intl'
+import { splitTextIntoParagraphs } from '@/utils/parseTextContent'
 
 const Comments = () => {
   const t = useTranslations('HomePage.comments')
@@ -23,18 +24,20 @@ const Comments = () => {
       project: t(`${key}.project`)
     }))
 
+  const textParagraphs = splitTextIntoParagraphs(t('text'));
+
     useEffect(() => {
       if (!emblaApi) return;
-  
+
       const updateButtons = () => {
         setCanScrollPrev(emblaApi.canScrollPrev());
         setCanScrollNext(emblaApi.canScrollNext());
       };
-  
+
       updateButtons();
       emblaApi.on('select', updateButtons);
       emblaApi.on('reInit', updateButtons);
-  
+
       return () => {
         emblaApi.off('select', updateButtons);
         emblaApi.off('reInit', updateButtons);
@@ -45,6 +48,11 @@ const Comments = () => {
     <Section className={styles.comments}>
       <div className={styles.comments__inner}>
         <Text className={styles.comments__title} tag='h2' text={t('title')} style='big'/>
+        <div className={styles.comments__texts}>
+          {textParagraphs.map((paragraph, index) => (
+            <p key={index} className={styles.comments__text}>{paragraph}</p>
+          ))}
+        </div>
         <div className={styles.slider}>
           <div className={styles.slider__comment}>
             <div className={styles.slider__comment_btk}>

@@ -7,6 +7,7 @@ import { useState, useEffect, useCallback} from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import { useTranslations } from 'next-intl'
 import { TProjectCard } from '@/types'
+import { splitTextIntoParagraphs } from '@/utils/parseTextContent'
 
 type TProps = {
   projects: TProjectCard[]
@@ -24,6 +25,8 @@ const ShopifyAgency = ({projects, showTitle = false, customTitle, customTitleSty
 
   const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
+
+  const textParagraphs = splitTextIntoParagraphs(t('text'));
 
   useEffect(() => {
     if (!emblaApi) return;
@@ -58,6 +61,11 @@ const ShopifyAgency = ({projects, showTitle = false, customTitle, customTitleSty
             <>
               <Text className={styles.section__title} tag='h2' text={t('title')} style='small'/>
               <Text className={styles.section__subtitle} tag='p' text={t('subtitle')} style='big'/>
+              <div className={styles.section__texts}>
+                {textParagraphs.map((paragraph, index) => (
+                  <p key={index} className={styles.section__text}>{paragraph}</p>
+                ))}
+              </div>
             </>
           )}
         </div>

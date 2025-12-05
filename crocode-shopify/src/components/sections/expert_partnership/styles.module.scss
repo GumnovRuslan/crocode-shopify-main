@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:  fluid-size(135, 265) 20px fluid-size(125, 150);
+    padding:  fluid-size(135, 265) fluid-size(20, 203) fluid-size(125, 150);
   }
 
   &__title {
@@ -24,12 +24,18 @@
     color: var(--color-text-black);
   }
 
+  &__texts{
+    margin-bottom: fluid-size(70, 50);
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(13, 20);
+  }
+
   &__message {
     font-size: fluid-size(12, 20);
     line-height: 180%;
     text-align: center;
     max-width: fluid-size(336, 757);
     color: var(--color-text-black);
-    margin-bottom: fluid-size(70, 50);
   }
 }

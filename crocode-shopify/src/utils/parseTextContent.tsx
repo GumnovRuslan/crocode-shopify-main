@@ -124,3 +124,8 @@ export const renderParsedContent = (
     }
   })
 }
+
+export const splitTextIntoParagraphs = (text: string): string[] => {
+  if (!text) return []
+  return text.split('\n\n').map(p => p.trim()).filter(p => p.length > 0)
+}

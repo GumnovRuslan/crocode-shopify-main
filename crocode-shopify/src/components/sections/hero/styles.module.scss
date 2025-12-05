@@ -1,9 +1,7 @@
 .hero {
   display: flex;
-  align-items: flex-end;
   position: relative;
-  min-height: 100vh;
-
+  
   img {
     object-fit: cover;
   }
@@ -38,6 +36,7 @@
     display: flex;
     flex-direction: column;
     max-width: fluid-size(500, 1014);
+    margin-top: fluid-size(467, 499);
   }
 
   &__title {

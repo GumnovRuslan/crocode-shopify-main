@@ -18,6 +18,7 @@ const Industries = () => {
       <Background desktop={'/images/background/bg_hero.webp'} mobile='/images/background/bg_hero.webp' alt='background'/>
       <div className={styles.industries__inner}>
         <Text className={styles.industries__title} tag='h2' text={t('title')} style='small'/>
+        <Text className={styles.industries__subtitle} text={t('text')} />
         <div className={styles.industries__content}>
           {cards.map((item, i) => <CardIndustry className={styles.industries__card} {...item} key={i}/>)}
         </div>
