@@ -58,6 +58,7 @@ const ShopifyAgency = ({projects, showTitle = false, customTitle, customTitleSty
             <>
               <Text className={styles.section__title} tag='h2' text={t('title')} style='small'/>
               <Text className={styles.section__subtitle} tag='p' text={t('subtitle')} style='big'/>
+              <Text className={styles.section__subtitle} tag='p' text={t('text')} />
             </>
           )}
         </div>

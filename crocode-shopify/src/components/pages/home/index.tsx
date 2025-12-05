@@ -20,7 +20,7 @@ const HomePage = ({projects}: TProps) => {
   const t = useTranslations('HomePage.hero')
 
   return (<>
-    <Hero 
+    <Hero
       bg={{desktop: '/images/background/bg_hero.webp', mobile: '/images/background/bg_hero_mobile.webp', alt: 'bg hero'}}
       title={t('title')} 
       subtitle={t('subtitle')}

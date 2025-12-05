@@ -45,6 +45,7 @@ const Comments = () => {
     <Section className={styles.comments}>
       <div className={styles.comments__inner}>
         <Text className={styles.comments__title} tag='h2' text={t('title')} style='big'/>
+        <Text className={styles.comments__text} tag='p' text={t('text')} />
         <div className={styles.slider}>
           <div className={styles.slider__comment}>
             <div className={styles.slider__comment_btk}>
