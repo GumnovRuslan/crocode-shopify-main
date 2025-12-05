@@ -3,27 +3,11 @@
 import styles from './styles.module.scss'
 import { Section } from '@/components/ui'
 import { TService } from '@/types'
+import { renderParsedContent } from '@/utils/parseTextContent'
 
 type TProps = {
   slug: string;
   service: TService;
-}
-
-// Helper function to parse text with __ markers and render with underline
-const parseTextWithUnderline = (text: string) => {
-  const parts = text.split(/(__.*?__)/g)
-
-  return parts.map((part, index) => {
-    if (part.startsWith('__') && part.endsWith('__')) {
-      const content = part.slice(2, -2)
-      return (
-        <span key={index} className={styles.underlined}>
-          {content}
-        </span>
-      )
-    }
-    return part
-  })
 }
 
 const ShopifyOffers = ({slug, service}: TProps) => {
@@ -33,30 +17,48 @@ const ShopifyOffers = ({slug, service}: TProps) => {
     <Section className={styles.offers}>
       <div className={styles.offers__heading}>
         <h2 className={styles.offers__title}>{service.whyShopifyTitle || 'Why Shopify'}</h2>
-        <p className={styles.offers__subtitle}>{service.whyShopifyText || ''}</p>
+        {service.whyShopifyText && (
+          <div className={styles.offers__subtitle}>
+            {renderParsedContent(service.whyShopifyText, {
+              paragraphClassName: styles.offers__subtitle_text,
+              listClassName: styles.offers__subtitle_list,
+              listItemClassName: styles.offers__subtitle_list_item,
+              h2ClassName: styles.offers__subtitle_h2,
+              h3ClassName: styles.offers__subtitle_h3,
+            })}
+          </div>
+        )}
       </div>
       <div className={styles.offers__inner}>
         <div className={styles.offers__grid}>
-          {offers.map((offer, index) => {
-            // Split text into paragraphs, handle null/undefined
-            const paragraphs = offer.text
-              ? offer.text.split('\n\n').filter(p => p.trim())
-              : []
-
-            return (
-              <div className={styles.offers__card} key={index}>
-                <h3 className={styles.offers__card_title}>{offer.title}</h3>
-                <div className={styles.offers__card_texts}>
-                  {paragraphs.map((paragraph, pIndex) => (
-                    <p key={pIndex} className={styles.offers__card_text}>
-                      {parseTextWithUnderline(paragraph)}
-                    </p>
-                  ))}
-                </div>
+          {offers.map((offer, index) => (
+            <div className={styles.offers__card} key={index}>
+              <h3 className={styles.offers__card_title}>{offer.title}</h3>
+              <div className={styles.offers__card_texts}>
+                {renderParsedContent(offer.text, {
+                  paragraphClassName: styles.offers__card_text,
+                  listClassName: styles.offers__list,
+                  listItemClassName: styles.offers__list_item,
+                  h2ClassName: styles.offers__h2,
+                  h3ClassName: styles.offers__h3,
+                  underlinedClassName: styles.underlined,
+                })}
               </div>
-            )
-          })}
+            </div>
+          ))}
         </div>
+        {service.whyShopifyFinalText && (
+          <div className={styles.offers__final_text}>
+            {renderParsedContent(service.whyShopifyFinalText, {
+              paragraphClassName: styles.offers__card_text,
+              listClassName: styles.offers__list,
+              listItemClassName: styles.offers__list_item,
+              h2ClassName: styles.offers__h2,
+              h3ClassName: styles.offers__h3,
+              underlinedClassName: styles.underlined,
+            })}
+          </div>
+        )}
       </div>
     </Section>
   )

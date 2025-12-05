@@ -93,29 +93,16 @@ const Form = ({ className }: TProps) => {
     if (!data.budget.trim()) errors.budget = t('inputs.budget.errors.required')
   }
 
-  // Project (опционален, закомментирован)
-  // if (shouldValidate('project')) {
-  //   if (!data.project.trim()) errors.project = 'Project description is required'
-  //   else if (data.project.trim().length < 10)
-  //     errors.project = 'Please provide at least 10 characters'
-  // }
-
-  // if (shouldValidate('newsletter') && !data.newsletter) {
-  //   errors.newsletter = 'You must agree to join the newsletter'
-  // }
-
   hasErrors = Object.keys(errors).length > 0
   return { errors, hasErrors }
 }
 
-  // Автоматическая валидация при изменениях
   useEffect(() => {
     const { errors, hasErrors } = validateForm(formData, touched)
     setErrors(errors)
     setHasValidationErrors(hasErrors)
   }, [formData, touched])
 
-  // Изменение значений
   const handleInputChange = (field: keyof FormData, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }))
     if (!touched[field]) {
@@ -136,7 +123,6 @@ const Form = ({ className }: TProps) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Отмечаем все поля как тронутые
     const allTouched = Object.keys(touched).reduce(
       (acc, key) => ({ ...acc, [key]: true }),
       {} as TouchedFields
@@ -150,7 +136,6 @@ const Form = ({ className }: TProps) => {
     setIsSubmitting(true)
     try {
       console.log('Form data:', formData)
-      // await submitForm(formData)
       alert('Form submitted successfully!')
       setFormData({
         firstName: '',

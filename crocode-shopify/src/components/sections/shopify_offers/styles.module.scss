@@ -21,9 +21,42 @@
   }
 
   &__subtitle{
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(16, 27.4);
+  }
+
+  &__subtitle_text{
     text-transform: capitalize;
     font-size:  fluid-size(16, 32);
     line-height: 137%;
+  }
+
+  &__subtitle_list {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(12, 20);
+    padding-left: fluid-size(20, 30);
+  }
+
+  &__subtitle_list_item {
+    font-size:  fluid-size(16, 32);
+    line-height: 137%;
+    list-style-type: disc;
+  }
+
+  &__subtitle_h2 {
+    font-size:  fluid-size(18, 36);
+    font-weight: 400;
+    line-height: 137%;
+    text-transform: uppercase;
+  }
+
+  &__subtitle_h3 {
+    font-size:  fluid-size(16, 32);
+    font-weight: 400;
+    line-height: 137%;
+    text-transform: uppercase;
   }
 
   &__grid {
@@ -61,10 +94,44 @@
     flex-direction: column;
     gap: fluid-size(16, 27.4);
   }
+
+  &__final_text{
+    margin-top: fluid-size(60, 88);
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(16, 27.4);
+  }
 }
 
 .underlined {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
+}
+
+.offers__list {
+  display: flex;
+  flex-direction: column;
+  gap: fluid-size(16, 27.4);
+  padding-left: fluid-size(20, 30);
+}
+
+.offers__list_item {
+  font-size: fluid-size(12, 20);
+  line-height: 137%;
+  list-style-type: disc;
+}
+
+.offers__h2 {
+  font-size: fluid-size(16, 28);
+  font-weight: 400;
+  line-height: 137%;
+  text-transform: uppercase;
+}
+
+.offers__h3 {
+  font-size: fluid-size(14, 24);
+  font-weight: 400;
+  line-height: 137%;
+  text-transform: uppercase;
 }

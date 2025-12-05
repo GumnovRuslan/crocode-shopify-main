@@ -6,6 +6,7 @@ import { TServiceCategoryWithServices } from "@/types"
 import Link from "next/link"
 import styles from '../services/styles.module.scss'
 import Image from 'next/image'
+import { renderParsedContent } from '@/utils/parseTextContent'
 
 type TProps = {
   category: TServiceCategoryWithServices
@@ -13,10 +14,6 @@ type TProps = {
 
 const ServiceCategoryPage = ({ category }: TProps) => {
   useDarkThemeForHeader()
-
-  const descriptionParagraphs = category.description
-    ? category.description.split(/\n\n/).filter(p => p.trim())
-    : []
 
   return (
     <Section isBlack>
@@ -26,11 +23,17 @@ const ServiceCategoryPage = ({ category }: TProps) => {
           <div className={styles.services__hero}>
             <div className={styles.services__heroContent}>
               <h1 className={styles.services__title}>{category.categoryName}</h1>
-              <div className={styles.services__description}>
-                {descriptionParagraphs.map((paragraph, index) => (
-                  <p key={index}>{paragraph}</p>
-                ))}
-              </div>
+              {category.description && (
+                <div className={styles.services__description}>
+                  {renderParsedContent(category.description, {
+                    paragraphClassName: styles.services__descriptionParagraph,
+                    listClassName: styles.services__descriptionList,
+                    listItemClassName: styles.services__descriptionListItem,
+                    h2ClassName: styles.services__descriptionH2,
+                    h3ClassName: styles.services__descriptionH3,
+                  })}
+                </div>
+              )}
             </div>
             <nav className={styles.services__navigation}>
               {category.services.map((service, index) => (
@@ -57,6 +60,17 @@ const ServiceCategoryPage = ({ category }: TProps) => {
                 fill
                 style={{ objectFit: 'cover' }}
               />
+            </div>
+          )}
+          {category.text && (
+            <div className={styles.services__textContent}>
+              {renderParsedContent(category.text, {
+                paragraphClassName: styles.services__textParagraph,
+                listClassName: styles.services__list,
+                listItemClassName: styles.services__listItem,
+                h2ClassName: styles.services__h2,
+                h3ClassName: styles.services__h3,
+              })}
             </div>
           )}
         </div>

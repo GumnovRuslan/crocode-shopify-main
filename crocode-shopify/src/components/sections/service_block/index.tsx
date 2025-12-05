@@ -18,7 +18,6 @@ type TProps = {
 }
 
 const ServiceBlock = ({ title, description, imageUrl, imageAlt, services, buttonText, buttonHref, id }: TProps) => {
-  // Split description by \n\n to create paragraphs
   const paragraphs = description.split('\n\n').filter(p => p.trim())
 
   return (

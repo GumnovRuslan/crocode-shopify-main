@@ -106,7 +106,7 @@ export default defineType({
       title: 'Description Text',
       name: 'descriptionText',
       type: 'text',
-      description: 'Main description text (~100 words - REQUIRED - populate initially). Use \\n\\n to separate paragraphs.',
+      description: 'Main description text (~100 words - REQUIRED - populate initially). Use empty line to separate paragraphs. Start line with "* " for bullet points. Use "## " for h2 and "### " for h3 headings.',
       validation: (Rule) => Rule.required()
     }),
 
@@ -122,7 +122,7 @@ export default defineType({
       title: 'Why Shopify Text',
       name: 'whyShopifyText',
       type: 'text',
-      description: 'Main text for "Why Shopify" section',
+      description: 'Main text for "Why Shopify" section. Use empty line to separate paragraphs. Start line with "* " for bullet points. Use "## " for h2 and "### " for h3 headings.',
     }),
 
     // Offers
@@ -134,36 +134,20 @@ export default defineType({
       of: [{ type: 'serviceOffer' }],
     }),
 
+    defineField({
+      title: 'Why Shopify Final Text',
+      name: 'whyShopifyFinalText',
+      type: 'text',
+      description: 'Final text shown after offers in "Why Shopify" section. Use empty line to separate paragraphs. Start line with "* " for bullet points. Use "## " for h2 and "### " for h3 headings.',
+    }),
+
     // Service Details Section
     defineField({
-      title: 'Details Title',
-      name: 'detailsTitle',
-      type: 'string',
-      description: 'Title for service details section',
-    }),
-
-    defineField({
-      title: 'Details Text',
-      name: 'detailsText',
-      type: 'text',
-      description: 'Details text with multiple paragraphs. Use \\n\\n to separate paragraphs.',
-    }),
-
-    // What's Included Section
-    defineField({
-      title: 'Included Title',
-      name: 'includedTitle',
-      type: 'string',
-      description: 'Title for "What is included" section',
-    }),
-
-    defineField({
-      title: 'Included Items',
-      name: 'includedItems',
+      title: 'Details',
+      name: 'details',
       type: 'array',
-      description: 'List of items included in the service',
-      of: [{ type: 'string' }],
-      validation: (Rule) => Rule.max(6)
+      description: 'Service detail blocks (flexible number of title + text sections)',
+      of: [{ type: 'serviceDetail' }],
     }),
 
     // Video Section

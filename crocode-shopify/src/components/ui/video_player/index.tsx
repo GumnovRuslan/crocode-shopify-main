@@ -12,7 +12,6 @@ type TProps = {
 const VideoPlayer = ({url, title, className}: TProps) => {
   const [isPlaying, setIsPlaying] = useState(false)
 
-  // Извлекаем ID из URL (поддержка YouTube и Vimeo)
   const getEmbedUrl = (url: string): string => {
     if (url.includes('youtube.com') || url.includes('youtu.be')) {
       const videoId = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/)?.[1]

@@ -9,7 +9,6 @@ export default async function HeaderWrapper() {
 
   const { data } = await fetchGROQ(getServicesForDropdown(locale));
 
-  // Группировка услуг по категориям
   const servicesGrouped: TServicesGrouped = {};
 
   if (data?.allServiceCategories && data?.allServices) {

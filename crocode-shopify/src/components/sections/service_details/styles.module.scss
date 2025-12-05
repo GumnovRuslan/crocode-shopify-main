@@ -53,4 +53,20 @@
     font-size: fluid-size(12, 20);
     list-style-type: disc;
   }
+
+  &__h2 {
+    font-size: fluid-size(16, 28);
+    line-height: 137%;
+    text-transform: uppercase;
+    margin-top: fluid-size(16, 27.4);
+    font-weight: 400;
+  }
+
+  &__h3 {
+    font-size: fluid-size(14, 24);
+    line-height: 137%;
+    text-transform: uppercase;
+    margin-top: fluid-size(12, 20);
+    font-weight: 400;
+  }
 }

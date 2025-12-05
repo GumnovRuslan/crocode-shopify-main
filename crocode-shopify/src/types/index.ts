@@ -16,5 +16,4 @@ export type {
   TProject,
 }
 
-// Export services types
 export * from './services';

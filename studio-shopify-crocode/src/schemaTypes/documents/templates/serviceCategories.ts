@@ -51,6 +51,12 @@ export default defineType({
       type: "text",
     }),
     defineField({
+      title: "Text",
+      name: "text",
+      description: "Brief text of the category. Use empty line to separate paragraphs. Start line with \"* \" for bullet points. Use \"## \" for h2 and \"### \" for h3 headings.",
+      type: "text",
+    }),
+    defineField({
       title: "Category Image",
       name: "categoryImage",
       description: "Image displayed for this category",

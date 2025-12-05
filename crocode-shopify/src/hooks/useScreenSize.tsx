@@ -37,7 +37,6 @@ const useScreenSize = (): ScreenSize => {
       });
     };
 
-    // Initial call
     handleResize();
 
     window.addEventListener('resize', handleResize);

@@ -7,6 +7,7 @@ import solution from './templates/solution'
 import bigAndSmallImages from './templates/bigAndSmallImages'
 import link from './templates/link'
 import serviceOffer from './templates/serviceOffer'
+import serviceDetail from './templates/serviceDetail'
 
 export default [
   seo,
@@ -18,4 +19,5 @@ export default [
   bigAndSmallImages,
   link,
   serviceOffer,
+  serviceDetail,
 ]
