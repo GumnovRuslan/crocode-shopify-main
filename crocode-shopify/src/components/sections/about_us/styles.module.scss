@@ -29,4 +29,10 @@
     line-height: 217%;
     text-align: justify;
   }
+
+  &__texts{
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(17, 20);
+  }
 }
