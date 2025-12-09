@@ -201,6 +201,18 @@
       }
     }
   },
+  "ServicePage": {
+    "ServiceDescription":{
+      "title": "About this service",
+      "imageAlt": "Service illustration"
+    },
+    "ShopifyOffers":{
+      "title": "Why Shopify"
+    },
+    "VideoSection":{
+      "videoTitle": "Video about our work"
+    }
+  },
   "AboutUsPage": {
     "hero": {
       "title": "Experienced professionals with a positive attitude and a genuine passion for creating the best online shopping solutions that inspire and amaze",

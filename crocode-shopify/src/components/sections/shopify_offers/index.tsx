@@ -4,6 +4,7 @@ import styles from './styles.module.scss'
 import { Section } from '@/components/ui'
 import { TService } from '@/types'
 import { renderParsedContent } from '@/utils/parseTextContent'
+import { useTranslations } from "next-intl"
 
 type TProps = {
   slug: string;
@@ -11,12 +12,13 @@ type TProps = {
 }
 
 const ShopifyOffers = ({slug, service}: TProps) => {
+  const t = useTranslations('ServicePage.ShopifyOffers')
   const offers = service.offers || []
 
   return (
     <Section className={styles.offers}>
       <div className={styles.offers__heading}>
-        <h2 className={styles.offers__title}>{service.whyShopifyTitle || 'Why Shopify'}</h2>
+        <h2 className={styles.offers__title}>{service.whyShopifyTitle || t('title')}</h2>
         {service.whyShopifyText && (
           <div className={styles.offers__subtitle}>
             {renderParsedContent(service.whyShopifyText, {
