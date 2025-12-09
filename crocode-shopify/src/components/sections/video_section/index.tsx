@@ -3,6 +3,7 @@
 import styles from './styles.module.scss'
 import { Section, Text, VideoPlayer } from '@/components/ui'
 import { TService } from '@/types'
+import { useTranslations } from "next-intl"
 
 type TProps = {
   slug: string;
@@ -10,7 +11,8 @@ type TProps = {
 }
 
 const VideoSection = ({slug, service}: TProps) => {
-  const videoTitle = service.videoTitle || 'Watch Video'
+  const t = useTranslations('ServicePage.VideoSection')
+  const videoTitle = service.videoTitle || t('videoTitle')
   const videoUrl = service.videoUrl || ''
 
   return (

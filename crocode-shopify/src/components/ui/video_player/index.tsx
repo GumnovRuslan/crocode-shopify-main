@@ -27,7 +27,7 @@ const VideoPlayer = ({url, title, className}: TProps) => {
   return (
     <div className={`${styles.player} ${className || ''}`}>
       <div className={styles.player__wrapper}>
-        {isPlaying ? (
+        {/* {isPlaying ? ( */}
           <iframe
             className={styles.player__iframe}
             src={getEmbedUrl(url)}
@@ -36,7 +36,7 @@ const VideoPlayer = ({url, title, className}: TProps) => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
-        ) : (
+        {/* ) : (
           <div
             className={styles.player__preview}
             onClick={() => setIsPlaying(true)}
@@ -49,7 +49,7 @@ const VideoPlayer = ({url, title, className}: TProps) => {
             </button>
             <div className={styles.player__overlay}></div>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   )

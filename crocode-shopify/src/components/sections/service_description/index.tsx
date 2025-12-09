@@ -5,6 +5,7 @@ import { Section, Text } from '@/components/ui'
 import Image from 'next/image'
 import { TService } from '@/types'
 import { renderParsedContent } from '@/utils/parseTextContent'
+import { useTranslations } from "next-intl"
 
 type TProps = {
   slug: string;
@@ -12,10 +13,11 @@ type TProps = {
 }
 
 const ServiceDescription = ({slug, service}: TProps) => {
-  const title = service.descriptionTitle || 'About this service'
+  const t = useTranslations('ServicePage.ServiceDescription')
+  const title = service.descriptionTitle || t('title');
 
   const imageUrl = service.heroImage?.image?.asset?.url || '/images/cards/our-service/background-1.png'
-  const imageAlt = service.heroImage?.altText || 'Service illustration'
+  const imageAlt = service.heroImage?.altText || t('imageAlt')
 
   return (
     <Section className={styles.description} type='rounded' shift>
