@@ -36,7 +36,7 @@ const VideoPlayer = ({url, title, className}: TProps) => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
-        {/* ) : (
+        {/* ) : (   \\\\
           <div
             className={styles.player__preview}
             onClick={() => setIsPlaying(true)}
