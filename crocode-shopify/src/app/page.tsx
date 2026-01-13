@@ -4,7 +4,6 @@ import { getProjects } from "@/lib/sanity/queries/projects";
 import { TProjectCard } from "@/types";
 import { getLocale } from "next-intl/server";
 
-
 export default async () => {
   const locale: string = await getLocale()
   const { data: projectsData } = await fetchGraphQL(getProjects(locale));

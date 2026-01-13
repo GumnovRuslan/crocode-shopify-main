@@ -48,7 +48,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {!isServiceDetailPage && (
             <div className={styles.footer__menu}>
               <div className={styles.footer__column}>
                 <p className={styles.footer__column_title}>{t('columns.what-we-do.title')}</p>
@@ -64,7 +63,6 @@ const Footer = () => {
                 <Link href='/contact' className={styles.footer__list_item}>{t(`columns.get-in-touch.nav.contact`)}</Link>
               </div>
             </div>
-          )}
         </div>
         <div className={styles.footer__bottom}>
           <div className={styles.footer__bottom_content}>
