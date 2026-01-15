@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(npx sanity graphql deploy)",
+      "Bash(npx sanity graphql deploy:*)"
+    ]
+  }
+}
