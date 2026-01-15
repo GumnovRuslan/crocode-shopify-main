@@ -1,4 +1,4 @@
-import { TImage } from "./image"
+import { TImage, TImageWithAltText } from "./image"
 import { PortableTextBlock } from "@portabletext/react"
 
 export type TBrief = {

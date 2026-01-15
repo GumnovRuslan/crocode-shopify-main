@@ -23,14 +23,54 @@
       }
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1 {
+      font-size: 2em;
+      font-weight: 700;
       margin-bottom: 0.5em;
     }
 
-    ul, ol {
+    h2 {
+      font-size: 1.5em;
+      font-weight: 700;
+      margin-bottom: fluid-size(20, 40);
+      margin-top: fluid-size(20, 40);
+    }
+
+    h3 {
+      font-size: 1.25em;
+      font-weight: 600;
+      margin-bottom: fluid-size(20, 40);
+      margin-top: fluid-size(20, 40);
+    }
+
+    h4 {
+      font-size: 1.1em;
+      font-weight: 600;
+      margin-bottom: 0.5em;
+    }
+
+    h5, h6 {
+      font-size: 1em;
+      font-weight: 600;
+      margin-bottom: 0.5em;
+    }
+
+    ul {
       text-align: left;
       margin-bottom: 1em;
       padding-left: 1.5em;
+      list-style-type: disc;
+    }
+
+    ol {
+      text-align: left;
+      margin-bottom: 1em;
+      padding-left: 1.5em;
+      list-style-type: decimal;
+    }
+
+    li {
+      list-style: inherit;
     }
 
     strong {
