@@ -58,6 +58,11 @@
         "text": "Explore case studies"
       }
     },
+    "video": {
+      "title": "Video about our work",
+      "videoUrl": "https://youtu.be/_ed_CKsCbGI",
+      "videoUrlMobile": "https://youtube.com/shorts/fP1tAsg73kw?feature=share"
+    },
     "services": {
       "title": "Services",
       "cards": {
@@ -122,6 +127,11 @@
   },
   "ServicesPage": {
     "title": "Services",
+    "video": {
+      "title": "Video about our work",
+      "videoUrl": "https://youtu.be/_ed_CKsCbGI",
+      "videoUrlMobile": "https://youtube.com/shorts/fP1tAsg73kw?feature=share"
+    },
     "hero": {
       "description": "Are you new to Shopify or do you want to supercharge an existing store? You can count on us.",
       "description2": "Our team of 40 Shopify experts is here to help you build and expand your online store. We have over 10 years of experience in the field, so you're in the safe hands."
