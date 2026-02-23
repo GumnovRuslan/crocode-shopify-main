@@ -95,8 +95,7 @@ export default defineType({
       title: 'Card Image',
       name: 'cardImage',
       type: 'imageWithAlt',
-      description: 'Изображение для карточки',
-      validation: (Rule) => Rule.required()
+      description: 'Изображение для карточки'
     }),
     defineField({
       title: 'Hero images',
