@@ -14,6 +14,9 @@
   &__subtitle {
     color: var(--color-title-white);
     margin-bottom: fluid-size(40, 90);
+    text-transform: uppercase;
+    font-size: fluid-size(32, 64);
+    line-height: 137%;
   }
 
   &__content {
