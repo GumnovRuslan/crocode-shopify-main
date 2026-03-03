@@ -1,0 +1,28 @@
+.video {
+  padding: fluid-size(60, 100) fluid-size(20, 44) 0;
+  background: var(--color-bg-white);
+
+  &--dark {
+    background: transparent;
+    padding: 0;
+    position: relative;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(15, 28);
+    align-items: center;
+  }
+
+  &__title {
+    font-size: fluid-size(20, 36);
+    line-height: 226%;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--dark {
+      color: var(--color-text-white);
+    }
+  }
+}

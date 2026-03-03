@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Header, Footer } from "@/components/sections";
+import { Footer } from "@/components/sections";
+import HeaderWrapper from "@/components/sections/header/HeaderWrapper";
 import { HeaderThemeProvider } from "@/contexts/HeaderThemeContext";
 import {NextIntlClientProvider} from 'next-intl';
 import { getLocale, getTranslations } from "next-intl/server";
@@ -81,7 +82,7 @@ export default async function RootLayout({
       <body className={geistInter.variable}>
         <HeaderThemeProvider>
           <NextIntlClientProvider>
-            <Header/>
+            <HeaderWrapper/>
             <main className="main">
               {children}
             </main>

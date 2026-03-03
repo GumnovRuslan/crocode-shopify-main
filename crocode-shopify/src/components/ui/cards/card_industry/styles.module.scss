@@ -9,7 +9,7 @@
 
   @include media-up(md) {
     max-width: fluid-size(calc(395 / 2.5), 395);
-    height: fluid-size(calc(525 / 2.5), 525);
+    min-height: fluid-size(calc(525 / 2.5), 525);
     padding: fluid-size(10, 18) fluid-size(10, 18) fluid-size(10, 30);
     border-radius: fluid-size(10, 20);
   }

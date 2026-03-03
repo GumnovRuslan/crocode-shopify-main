@@ -1,5 +1,5 @@
 .comments {
-  padding: fluid-size(75, 240) fluid-size(40, 110) fluid-size(160, 240); 
+  padding: fluid-size(75, 240) fluid-size(40, 203) fluid-size(160, 240); 
   color: white;
 
   &__inner {
@@ -16,6 +16,18 @@
     text-transform: uppercase;
     color: var(--color-title-white);
   }
+
+  &__texts{
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(13, 20);
+    font-size: fluid-size(16, 20);
+    margin-bottom: fluid-size(35, 60);
+    padding: 0 fluid-size(0, 100);
+    text-align: center;
+    line-height: 217%;
+  }
+
 }
 
 .slider {

@@ -30,3 +30,15 @@ export const useDarkThemeForHeader = (resetOnUnmount = true) => {
 export const useLightThemeForHeader = (resetOnUnmount = true) => {
   return usePageTheme({ theme: 'light', resetOnUnmount })
 }
+
+export const useBackgroundImageForHeader = (resetOnUnmount = true) => {
+  const { setHasBackgroundImage } = useHeaderTheme()
+
+  useEffect(() => {
+    setHasBackgroundImage(true)
+
+    if (resetOnUnmount) {
+      return () => setHasBackgroundImage(false)
+    }
+  }, [setHasBackgroundImage, resetOnUnmount])
+}

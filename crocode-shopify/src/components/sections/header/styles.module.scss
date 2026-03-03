@@ -25,6 +25,10 @@
         color: var(--color-text-white);
       }
 
+    .header__button {
+        background: var(--color-btn-primary);
+      }
+
     .header__nav_link {
       @include media-up(md) {
         color: var(--color-text-white);
@@ -39,6 +43,12 @@
       .header__logo {
         color: var(--color-text-black);
       }
+    }
+  }
+
+  &--light:not(.header--has-bg-image) {
+    .header__button {
+      background: var(--color-btn-primary);
     }
   }
 
@@ -106,6 +116,11 @@
       width: 100%;
       gap: 52px;
     }
+  }
+
+  &__nav_item {
+    position: relative;
+    list-style: none;
   }
 
   &__nav_link {

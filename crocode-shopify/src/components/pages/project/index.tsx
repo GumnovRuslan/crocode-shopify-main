@@ -7,21 +7,23 @@ type TProps = {
 }
 
 const ProjectPage = ({project}: TProps) => {
+  if (!project) return null
+
   return (
     <>
-      <HeroProject 
+      <HeroProject
         theme={project.theme}
-        title={project?.title} 
+        title={project?.title}
         workDone={project?.workDone}
         subtitle={project?.client}
         background={{
-          desktopSrc: project?.coverImage.imageDesktop.asset.url, 
-          mobileSrc:project?.coverImage.imageMobile.asset.url,  
-          alt: project?.coverImage.altText}}
+          desktopSrc: project?.coverImage?.imageDesktop?.asset?.url || '/images/background/bg_hero.webp',
+          mobileSrc: project?.coverImage?.imageMobile?.asset?.url || '/images/background/bg_hero_mobile.webp',
+          alt: project?.coverImage?.altText || project?.title || 'Project cover'}}
       />
       <Summary brief={project?.brief} title={project?.title}/>
       <Gallery image={project?.gallery}/>
-      <CaseStudyDetails solution={project?.solution}/>
+      <CaseStudyDetails solutionRaw={project?.solutionRaw}/>
       <Section type='rounded' isBlack>
         <Background desktop='/images/background/bg-black-ball.webp' alt="background black with balls"/>
         <Comments/>

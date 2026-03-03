@@ -1,7 +1,10 @@
 .aboutUs {
-  &__inner {
-    padding: fluid-size(70, 130) fluid-size(25, 110) fluid-size(145, 210); 
-  }
+
+  padding: fluid-size(70, 130) fluid-size(25, 110) fluid-size(80, 140); 
+  gap: fluid-size(70, 130);
+  display: flex;
+  flex-direction: column;
+
 
   &__title {
     margin-bottom: fluid-size(17, 20);
@@ -28,5 +31,11 @@
     font-size: fluid-size(16, 20);
     line-height: 217%;
     text-align: justify;
+  }
+
+  &__texts{
+    display: flex;
+    flex-direction: column;
+    gap: fluid-size(17, 20);
   }
 }
