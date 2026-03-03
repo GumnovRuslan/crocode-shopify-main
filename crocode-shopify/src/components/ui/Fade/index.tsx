@@ -1,5 +1,5 @@
 "use client";
-import { motion, useInView, variantProps } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 import * as React from "react";
 
 export function Fade({
@@ -13,12 +13,14 @@ export function Fade({
   className?: string;
   staggerChildren?: number;
 }) {
-  const FADE_DOWN = {
+  const FADE_DOWN: Variants = {
     show: { opacity: 1, y: 0, transition: { type: "spring" } },
     hidden: { opacity: 0, y: direction === "down" ? -100 : 100 },
   };
+
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true });
+
   return (
     <motion.div
       ref={ref}
