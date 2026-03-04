@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   position: relative;
-  
+
   img {
     object-fit: cover;
   }
@@ -40,6 +40,9 @@
   }
 
   &__title {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     text-transform: uppercase;
     font-size: fluid-size(32, 64);
     line-height: 120%;
@@ -65,3 +68,5 @@
     color: var(--color-text-black);
   }
 }
+
+// styles.module.scss

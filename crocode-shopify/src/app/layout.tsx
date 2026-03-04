@@ -4,9 +4,10 @@ import Script from "next/script";
 import { Footer } from "@/components/sections";
 import HeaderWrapper from "@/components/sections/header/HeaderWrapper";
 import { HeaderThemeProvider } from "@/contexts/HeaderThemeContext";
-import {NextIntlClientProvider} from 'next-intl';
+import { NextIntlClientProvider } from "next-intl";
 import "@/styles/index.scss";
-import '@/styles/root.scss';
+import "@/styles/root.scss";
+import CustomCursor from "@/components/ui/Cursor";
 
 const geistInter = Inter({
   variable: "--font-geist-sans",
@@ -38,13 +39,12 @@ export default function RootLayout({
             d.getElementsByTagName("head")[0].appendChild(s);
           })();
         `}</Script>
+        <CustomCursor />
         <HeaderThemeProvider>
           <NextIntlClientProvider>
-            <HeaderWrapper/>
-            <main className="main">
-              {children}
-            </main>
-            <Footer/>
+            <HeaderWrapper />
+            <main className="main">{children}</main>
+            <Footer />
           </NextIntlClientProvider>
         </HeaderThemeProvider>
       </body>
