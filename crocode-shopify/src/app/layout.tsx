@@ -29,17 +29,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={geistInter.variable}>
-        <Script id="crisp-chat" strategy="afterInteractive">{`
-          window.$crisp=[];
-          window.CRISP_WEBSITE_ID="ed361aa1-d0e9-4073-ac92-8639c34d42ea";
-          (function(){
-            var d=document;
-            var s=d.createElement("script");
-            s.src="https://client.crisp.chat/l.js";
-            s.async=1;
+        <Script id="crisp-chat" strategy="afterInteractive">
+        {`
+          window.$crisp = [];
+          window.CRISP_WEBSITE_ID = "ed361aa1-d0e9-4073-ac92-8639c34d42ea";
+          window.CRISP_RUNTIME_CONFIG = {
+            locale: "en"
+          };
+
+          (function () {
+            var d = document;
+            var s = d.createElement("script");
+            s.src = "https://client.crisp.chat/l.js";
+            s.async = 1;
             d.getElementsByTagName("head")[0].appendChild(s);
           })();
-        `}</Script>
+        `}
+        </Script>
         <CustomCursor />
         <HeaderThemeProvider>
           <NextIntlClientProvider>

@@ -30,38 +30,34 @@ async function getZohoAccessToken(): Promise<string | null> {
   return data.access_token;
 }
 
-async function leadExistsInZoho(accessToken: string, email: string): Promise<boolean> {
-  const { ZOHO_API_URL } = process.env;
-  const apiUrl = ZOHO_API_URL || "https://www.zohoapis.eu/crm/v2";
+async function findLeadByEmail(accessToken: string, email: string): Promise<string | null> {
+  const apiUrl = process.env.ZOHO_API_URL || "https://www.zohoapis.eu/crm/v2";
 
   try {
     const res = await fetch(
       `${apiUrl}/Leads/search?criteria=(Email:equals:${encodeURIComponent(email)})`,
-      {
-        headers: {
-          Authorization: `Zoho-oauthtoken ${accessToken}`,
-        },
-      }
+      { headers: { Authorization: `Zoho-oauthtoken ${accessToken}` } }
     );
 
-    if (res.status === 204) {
-      return false;
-    }
+    if (res.status === 204) return null;
 
     if (!res.ok) {
       console.error("[Zoho] Lead search failed:", res.status, await res.text().catch(() => ""));
-      return false;
+      return null;
     }
 
     const data = await res.json();
-    return !!(data.data && data.data.length > 0);
+    if (data.data && data.data.length > 0) {
+      return data.data[0].id as string;
+    }
+    return null;
   } catch (err) {
     console.error("[Zoho] Lead search error:", err);
-    return false;
+    return null;
   }
 }
 
-async function createZohoLead(
+async function createLead(
   accessToken: string,
   formData: {
     firstName: string;
@@ -69,17 +65,9 @@ async function createZohoLead(
     companyName: string;
     email: string;
     phone: string;
-    budget: string;
-    project: string;
   }
-): Promise<void> {
-  const { ZOHO_API_URL } = process.env;
-  const apiUrl = ZOHO_API_URL || "https://www.zohoapis.eu/crm/v2";
-
-  const exists = await leadExistsInZoho(accessToken, formData.email);
-  if (exists) {
-    return;
-  }
+): Promise<string | null> {
+  const apiUrl = process.env.ZOHO_API_URL || "https://www.zohoapis.eu/crm/v2";
 
   const res = await fetch(`${apiUrl}/Leads`, {
     method: "POST",
@@ -96,7 +84,6 @@ async function createZohoLead(
           Email: formData.email,
           Phone: formData.phone,
           Lead_Source: "Website",
-          Description: `Budget: ${formData.budget}\n\nProject: ${formData.project}`,
         },
       ],
     }),
@@ -106,6 +93,71 @@ async function createZohoLead(
     const text = await res.text().catch(() => "");
     console.error("[Zoho] Lead creation failed:", res.status, text);
     throw new Error(`Zoho lead creation failed: ${res.status}`);
+  }
+
+  const data = await res.json();
+  return data.data?.[0]?.details?.id ?? null;
+}
+
+async function addNoteToLead(
+  accessToken: string,
+  leadId: string,
+  budget: string,
+  project: string
+): Promise<void> {
+  const apiUrl = process.env.ZOHO_API_URL || "https://www.zohoapis.eu/crm/v2";
+
+  const noteContent = [
+    budget ? `Budget: ${budget}` : "",
+    project ? `Project details:\n${project}` : "",
+  ]
+    .filter(Boolean)
+    .join("\n\n");
+
+  const res = await fetch(`${apiUrl}/Notes`, {
+    method: "POST",
+    headers: {
+      Authorization: `Zoho-oauthtoken ${accessToken}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      data: [
+        {
+          Note_Title: "Website Inquiry",
+          Note_Content: noteContent,
+          Parent_Id: leadId,
+          $se_module: "Leads",
+        },
+      ],
+    }),
+  });
+
+  if (!res.ok) {
+    const text = await res.text().catch(() => "");
+    console.error("[Zoho] Note creation failed:", res.status, text);
+  }
+}
+
+async function processZohoLead(
+  accessToken: string,
+  formData: {
+    firstName: string;
+    lastName: string;
+    companyName: string;
+    email: string;
+    phone: string;
+    budget: string;
+    project: string;
+  }
+): Promise<void> {
+  let leadId = await findLeadByEmail(accessToken, formData.email);
+
+  if (!leadId) {
+    leadId = await createLead(accessToken, formData);
+  }
+
+  if (leadId) {
+    await addNoteToLead(accessToken, leadId, formData.budget, formData.project);
   }
 }
 
@@ -163,7 +215,7 @@ export async function POST(req: NextRequest) {
   try {
     const accessToken = await getZohoAccessToken();
     if (accessToken) {
-      await createZohoLead(accessToken, {
+      await processZohoLead(accessToken, {
         firstName,
         lastName,
         companyName,
@@ -173,7 +225,7 @@ export async function POST(req: NextRequest) {
         project,
       });
     } else {
-      console.warn("[Zoho] Skipping lead creation — no access token");
+      console.warn("[Zoho] Skipping — no access token");
       errors.push("crm_token");
     }
   } catch {
