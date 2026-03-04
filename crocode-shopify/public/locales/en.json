@@ -472,11 +472,11 @@
   },
   "PrivacyPolicyPage": {
     "title": "PRIVACY POLICY",
-    "effectiveDate": "<strong>Effective date</strong>: March 3, 2026",
-    "applies": "This Privacy Policy applies to: <strong>crocodelab.com</strong> (the \"Website\").",
+    "effectiveDate": "Effective date: March 3, 2026",
+    "applies": "This Privacy Policy applies to: crocodelab.com (the \"Website\").",
     "section1": {
       "title": "1. Data Controller",
-      "text": "The controller of your personal data is:\nKROKOD sp. z o.o.\nul. Tadeusza Rejtana 53A/303, 35-326 Rzeszów, Poland, EU\nNIP: 8133877628\nEmail (privacy contact): welcome@crocodelab.com"
+      "text": "The controller of your personal data is:\n<strong>KROKOD sp. z o.o.</strong>\nul. Tadeusza Rejtana 53A/303, 35-326 Rzeszów, Poland, EU\nNIP: 8133877628\nEmail (privacy contact): <strong>welcome@crocodelab.com</strong>"
     },
     "section2": {
       "title": "2. Personal data we collect",
@@ -521,46 +521,46 @@
       "title": "4. Legal bases (GDPR)",
       "intro": "Where GDPR applies, we rely on:",
       "items": [
-        "Contract / steps prior to entering into a contract (Art. 6(1)(b)) — handling your inquiry, preparing an offer",
-        "Legitimate interests (Art. 6(1)(f)) — security, preventing fraud/abuse, improving the Website, sales operations",
-        "Consent (Art. 6(1)(a)) — non-essential cookies (analytics/marketing if used), newsletter/marketing emails (only if you opt in)",
-        "Legal obligation (Art. 6(1)(c)) — accounting/tax/legal requirements when applicable"
+        "<strong>Contract / steps prior to entering into a contract</strong> (Art. 6(1)(b)) — handling your inquiry, preparing an offer",
+        "<strong>Legitimate interests</strong> (Art. 6(1)(f)) — security, preventing fraud/abuse, improving the Website, sales operations",
+        "<strong>Consent</strong> (Art. 6(1)(a)) — non-essential cookies (analytics/marketing if used), newsletter/marketing emails (only if you opt in)",
+        "<strong>Legal obligation</strong> (Art. 6(1)(c)) — accounting/tax/legal requirements when applicable"
       ]
     },
     "section5": {
       "title": "5. Cookies and analytics",
-      "text": "We use cookies and similar technologies. Where required, we ask for your consent before placing non-essential cookies.\nWe use Google Analytics 4 (GA4) to understand Website usage and improve performance. Details are in our Cookie Policy."
+      "text": "We use cookies and similar technologies. Where required, we ask for your consent before placing non-essential cookies.\nWe use <strong>Google Analytics 4 (GA4)</strong> to understand Website usage and improve performance. Details are in our <strong>Cookie Policy</strong>."
     },
     "section6": {
       "title": "6. Recipients (service providers)",
       "intro": "We may share personal data with trusted providers, only as necessary:",
       "items": [
-        "Vercel — hosting and infrastructure for the Website",
-        "Google Analytics 4 (Google) — analytics",
-        "Zoho CRM — lead and sales process management",
-        "MailerLite — email communications and newsletter (only if enabled and/or you opt in)",
-        "Crisp Chat — chat communications (only if enabled)"
+        "<strong>Vercel</strong> — hosting and infrastructure for the Website",
+        "<strong>Google Analytics 4 (Google)</strong> — analytics",
+        "<strong>Zoho CRM</strong> — lead and sales process management",
+        "<strong>MailerLite</strong> — email communications and newsletter (only if enabled and/or you opt in)",
+        "<strong>Crisp Chat</strong> — chat communications (only if enabled)"
       ],
       "outro": "We may also share data with professional advisers (legal/accounting) or authorities if required by law."
     },
     "section7": {
       "title": "7. International transfers",
-      "text": "Some providers may process data outside the EEA. When applicable, we use appropriate safeguards such as Standard Contractual Clauses (SCCs) and other legally recognized mechanisms."
+      "text": "Some providers may process data outside the EEA. When applicable, we use appropriate safeguards such as <strong>Standard Contractual Clauses (SCCs)</strong> and other legally recognized mechanisms."
     },
     "section8": {
       "title": "8. Data retention",
       "intro": "We keep personal data only as long as necessary:",
       "items": [
-        "Inquiries/leads: up to 24 months from last contact, unless a contract follows",
-        "Client/project records: duration of the contract + retention required by applicable law (e.g., accounting/tax)",
-        "Security logs: up to 90 days (unless longer needed for incident investigation)",
-        "Analytics: according to our GA4 settings",
-        "Newsletter (if enabled): until you unsubscribe or withdraw consent"
+        "<strong>Inquiries/leads:</strong> up to <strong>24 months</strong> from last contact, unless a contract follows",
+        "<strong>Client/project records:</strong> duration of the contract + retention required by applicable law (e.g., accounting/tax)",
+        "<strong>Security logs:</strong> up to <strong>90 days</strong> (unless longer needed for incident investigation)",
+        "<strong>Analytics:</strong> according to our GA4 settings",
+        "<strong>Newsletter (if enabled):</strong> until you unsubscribe or withdraw consent"
       ]
     },
     "section9": {
       "title": "9. Your rights",
-      "text": "You may have the right to access, rectify, delete, restrict, object, and (where applicable) port your data, and to withdraw consent at any time.\nTo exercise rights, email welcome@crocodelab.com.\nYou also have the right to lodge a complaint with your supervisory authority. In Poland: UODO."
+      "text": "You may have the right to access, rectify, delete, restrict, object, and (where applicable) port your data, and to withdraw consent at any time.\nTo exercise rights, email <strong>welcome@crocodelab.com</strong>.\nYou also have the right to lodge a complaint with your supervisory authority. In Poland: <strong>UODO</strong>."
     },
     "section10": {
       "title": "10. Security",
@@ -591,11 +591,11 @@
       },
       "subsectionB": {
         "title": "B) Analytics (consent-based where required)",
-        "text": "Used to understand how the Website is used and improve it.\nProvider: Google Analytics 4 (GA4)"
+        "text": "Used to understand how the Website is used and improve it.\nProvider: <strong>Google Analytics 4 (GA4)</strong>"
       },
       "subsectionC": {
         "title": "C) Functional/communication (if enabled)",
-        "text": "May be used by Website tools such as embedded forms, email tools, or live chat, depending on implementation.\nProviders may include: MailerLite (forms/email), Live chat provider (to be implemented)"
+        "text": "May be used by Website tools such as embedded forms, email tools, or live chat, depending on implementation.\nProviders may include: <strong>MailerLite (forms/email)</strong>, <strong>Live chat provider (to be implemented)</strong>"
       },
       "subsectionD": {
         "title": "D) Marketing (only if enabled)",
