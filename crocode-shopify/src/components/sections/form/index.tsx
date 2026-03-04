@@ -287,7 +287,7 @@ const Form = ({ className }: TProps) => {
                 .
               </p>
               <span
-                className={`${styles.form__error} ${isSubmitDisabled ? styles["form__error--active"] : styles["form__error--hidden"]}`}
+                className={`${styles.form__error} ${hasValidationErrors ? styles["form__error--active"] : styles["form__error--hidden"]}`}
               >
                 {t("button.errors.required")}
               </span>

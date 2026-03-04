@@ -24,7 +24,10 @@ const CookiePolicyPage = () => {
 
         <div className={styles.section}>
           <h2 className={styles.section__title}>{t("section1.title")}</h2>
-          <p className={styles.section__text}>{t("section1.text")}</p>
+          <p
+            className={styles.section__text}
+            dangerouslySetInnerHTML={{ __html: t.raw("section1.text") as string }}
+          />
         </div>
 
         <div className={styles.section}>
@@ -33,44 +36,54 @@ const CookiePolicyPage = () => {
             <p className={styles.section__subsection_title}>
               {t("section2.subsectionA.title")}
             </p>
-            <p className={styles.section__text}>
-              {t("section2.subsectionA.text")}
-            </p>
+            <p
+              className={styles.section__text}
+              dangerouslySetInnerHTML={{ __html: t.raw("section2.subsectionA.text") as string }}
+            />
           </div>
           <div className={styles.section__subsection}>
             <p className={styles.section__subsection_title}>
               {t("section2.subsectionB.title")}
             </p>
-            <p className={styles.section__text}>
-              {t("section2.subsectionB.text")}
-            </p>
+            <p
+              className={styles.section__text}
+              dangerouslySetInnerHTML={{ __html: t.raw("section2.subsectionB.text") as string }}
+            />
           </div>
           <div className={styles.section__subsection}>
             <p className={styles.section__subsection_title}>
               {t("section2.subsectionC.title")}
             </p>
-            <p className={styles.section__text}>
-              {t("section2.subsectionC.text")}
-            </p>
+            <p
+              className={styles.section__text}
+              dangerouslySetInnerHTML={{ __html: t.raw("section2.subsectionC.text") as string }}
+            />
           </div>
           <div className={styles.section__subsection}>
             <p className={styles.section__subsection_title}>
               {t("section2.subsectionD.title")}
             </p>
-            <p className={styles.section__text}>
-              {t("section2.subsectionD.text")}
-            </p>
+            <p
+              className={styles.section__text}
+              dangerouslySetInnerHTML={{ __html: t.raw("section2.subsectionD.text") as string }}
+            />
           </div>
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.section__title}>{t("section3.title")}</h2>
-          <p className={styles.section__text}>{t("section3.text")}</p>
+          <p
+            className={styles.section__text}
+            dangerouslySetInnerHTML={{ __html: t.raw("section3.text") as string }}
+          />
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.section__title}>{t("section4.title")}</h2>
-          <p className={styles.section__text}>{t("section4.text")}</p>
+          <p
+            className={styles.section__text}
+            dangerouslySetInnerHTML={{ __html: t.raw("section4.text") as string }}
+          />
         </div>
       </div>
     </Section>

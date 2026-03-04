@@ -15,10 +15,50 @@ async function getZohoAccessToken(): Promise<string | null> {
     { method: "POST" }
   );
 
-  if (!res.ok) return null;
+  if (!res.ok) {
+    const text = await res.text().catch(() => "");
+    console.error("[Zoho] Token refresh failed:", res.status, text);
+    return null;
+  }
 
   const data = await res.json();
-  return data.access_token || null;
+  if (!data.access_token) {
+    console.error("[Zoho] No access_token in response:", data);
+    return null;
+  }
+
+  return data.access_token;
+}
+
+async function leadExistsInZoho(accessToken: string, email: string): Promise<boolean> {
+  const { ZOHO_API_URL } = process.env;
+  const apiUrl = ZOHO_API_URL || "https://www.zohoapis.eu/crm/v2";
+
+  try {
+    const res = await fetch(
+      `${apiUrl}/Leads/search?criteria=(Email:equals:${encodeURIComponent(email)})`,
+      {
+        headers: {
+          Authorization: `Zoho-oauthtoken ${accessToken}`,
+        },
+      }
+    );
+
+    if (res.status === 204) {
+      return false;
+    }
+
+    if (!res.ok) {
+      console.error("[Zoho] Lead search failed:", res.status, await res.text().catch(() => ""));
+      return false;
+    }
+
+    const data = await res.json();
+    return !!(data.data && data.data.length > 0);
+  } catch (err) {
+    console.error("[Zoho] Lead search error:", err);
+    return false;
+  }
 }
 
 async function createZohoLead(
@@ -36,23 +76,12 @@ async function createZohoLead(
   const { ZOHO_API_URL } = process.env;
   const apiUrl = ZOHO_API_URL || "https://www.zohoapis.eu/crm/v2";
 
-  const searchRes = await fetch(
-    `${apiUrl}/Leads/search?criteria=(Email:equals:${encodeURIComponent(formData.email)})`,
-    {
-      headers: {
-        Authorization: `Zoho-oauthtoken ${accessToken}`,
-      },
-    }
-  );
-
-  if (searchRes.ok) {
-    const searchData = await searchRes.json();
-    if (searchData.data && searchData.data.length > 0) {
-      return;
-    }
+  const exists = await leadExistsInZoho(accessToken, formData.email);
+  if (exists) {
+    return;
   }
 
-  await fetch(`${apiUrl}/Leads`, {
+  const res = await fetch(`${apiUrl}/Leads`, {
     method: "POST",
     headers: {
       Authorization: `Zoho-oauthtoken ${accessToken}`,
@@ -62,7 +91,7 @@ async function createZohoLead(
       data: [
         {
           First_Name: formData.firstName,
-          Last_Name: formData.lastName,
+          Last_Name: formData.lastName || formData.firstName,
           Company: formData.companyName,
           Email: formData.email,
           Phone: formData.phone,
@@ -72,9 +101,19 @@ async function createZohoLead(
       ],
     }),
   });
+
+  if (!res.ok) {
+    const text = await res.text().catch(() => "");
+    console.error("[Zoho] Lead creation failed:", res.status, text);
+    throw new Error(`Zoho lead creation failed: ${res.status}`);
+  }
 }
 
-async function addMailerLiteSubscriber(email: string, firstName: string, lastName: string): Promise<void> {
+async function addMailerLiteSubscriber(
+  email: string,
+  firstName: string,
+  lastName: string
+): Promise<void> {
   const { MAILERLITE_API_KEY, MAILERLITE_GROUP_ID } = process.env;
 
   if (!MAILERLITE_API_KEY) return;
@@ -89,7 +128,7 @@ async function addMailerLiteSubscriber(email: string, firstName: string, lastNam
     body.groups = [MAILERLITE_GROUP_ID];
   }
 
-  await fetch("https://connect.mailerlite.com/api/subscribers", {
+  const res = await fetch("https://connect.mailerlite.com/api/subscribers", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${MAILERLITE_API_KEY}`,
@@ -98,6 +137,12 @@ async function addMailerLiteSubscriber(email: string, firstName: string, lastNam
     },
     body: JSON.stringify(body),
   });
+
+  if (!res.ok) {
+    const text = await res.text().catch(() => "");
+    console.error("[MailerLite] Subscriber creation failed:", res.status, text);
+    throw new Error(`MailerLite failed: ${res.status}`);
+  }
 }
 
 export async function POST(req: NextRequest) {
@@ -118,7 +163,18 @@ export async function POST(req: NextRequest) {
   try {
     const accessToken = await getZohoAccessToken();
     if (accessToken) {
-      await createZohoLead(accessToken, { firstName, lastName, companyName, email, phone, budget, project });
+      await createZohoLead(accessToken, {
+        firstName,
+        lastName,
+        companyName,
+        email,
+        phone,
+        budget,
+        project,
+      });
+    } else {
+      console.warn("[Zoho] Skipping lead creation — no access token");
+      errors.push("crm_token");
     }
   } catch {
     errors.push("crm");

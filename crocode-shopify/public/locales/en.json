@@ -472,8 +472,8 @@
   },
   "PrivacyPolicyPage": {
     "title": "PRIVACY POLICY",
-    "effectiveDate": "Effective date: March 3, 2026",
-    "applies": "This Privacy Policy applies to: crocodelab.com (the \"Website\").",
+    "effectiveDate": "<strong>Effective date</strong>: March 3, 2026",
+    "applies": "This Privacy Policy applies to: <strong>crocodelab.com</strong> (the \"Website\").",
     "section1": {
       "title": "1. Data Controller",
       "text": "The controller of your personal data is:\nKROKOD sp. z o.o.\nul. Tadeusza Rejtana 53A/303, 35-326 Rzeszów, Poland, EU\nNIP: 8133877628\nEmail (privacy contact): welcome@crocodelab.com"
@@ -613,10 +613,8 @@
   },
   "CookieBanner": {
     "title": "We use cookies",
-    "description": "We use cookies to improve your experience on our website. By accepting, you consent to our use of cookies.",
-    "checkbox": "I want to receive occasional updates and marketing emails.",
+    "description": "We use cookies to improve your experience on our website. By accepting, you consent to our use of cookies. Learn more in our",
     "privacyLink": "Cookie Policy",
-    "privacyText": "Learn more in our",
     "accept": "Accept",
     "decline": "Decline"
   }

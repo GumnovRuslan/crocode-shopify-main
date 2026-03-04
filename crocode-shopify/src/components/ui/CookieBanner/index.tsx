@@ -10,7 +10,6 @@ const COOKIE_CONSENT_KEY = "cookie_consent";
 const CookieBanner = () => {
   const t = useTranslations("CookieBanner");
   const [visible, setVisible] = useState(false);
-  const [marketing, setMarketing] = useState(false);
 
   useEffect(() => {
     const stored = localStorage.getItem(COOKIE_CONSENT_KEY);
@@ -20,26 +19,12 @@ const CookieBanner = () => {
   }, []);
 
   const handleAccept = () => {
-    localStorage.setItem(
-      COOKIE_CONSENT_KEY,
-      JSON.stringify({ accepted: true, marketing })
-    );
+    localStorage.setItem(COOKIE_CONSENT_KEY, JSON.stringify({ accepted: true }));
     setVisible(false);
-
-    if (marketing) {
-      fetch("/api/cookie-consent", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ marketing: true }),
-      }).catch(() => {});
-    }
   };
 
   const handleDecline = () => {
-    localStorage.setItem(
-      COOKIE_CONSENT_KEY,
-      JSON.stringify({ accepted: false, marketing: false })
-    );
+    localStorage.setItem(COOKIE_CONSENT_KEY, JSON.stringify({ accepted: false }));
     setVisible(false);
   };
 
@@ -56,26 +41,6 @@ const CookieBanner = () => {
               {t("privacyLink")}
             </Link>
           </p>
-          <label className={styles.banner__checkbox}>
-            <button
-              type="button"
-              onClick={() => setMarketing((v) => !v)}
-              className={`${styles.banner__checkbox_btn} ${marketing ? styles["banner__checkbox_btn--active"] : ""}`}
-            >
-              <svg viewBox="0 0 10 10" fill="none">
-                <path
-                  d="M1.5 5L4 7.5L8.5 2.5"
-                  stroke="#000"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
-            <span className={styles.banner__checkbox_label}>
-              {t("checkbox")}
-            </span>
-          </label>
         </div>
         <div className={styles.banner__actions}>
           <button

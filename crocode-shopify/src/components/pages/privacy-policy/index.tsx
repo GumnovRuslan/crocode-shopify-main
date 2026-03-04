@@ -24,23 +24,29 @@ const PrivacyPolicyPage = () => {
 
         <div className={styles.section}>
           <h2 className={styles.section__title}>{t("section1.title")}</h2>
-          <p className={styles.section__text}>{t("section1.text")}</p>
+          <p
+            className={styles.section__text}
+            dangerouslySetInnerHTML={{ __html: t.raw("section1.text") as string }}
+          />
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.section__title}>{t("section2.title")}</h2>
-          <p className={styles.section__text}>{t("section2.intro")}</p>
+          <p
+            className={styles.section__text}
+            dangerouslySetInnerHTML={{ __html: t.raw("section2.intro") as string }}
+          />
           <div className={styles.section__subsection}>
             <p className={styles.section__subsection_title}>
               {t("section2.subsectionA.title")}
             </p>
             <ul className={styles.section__list}>
-              {(
-                t.raw("section2.subsectionA.items") as string[]
-              ).map((item, i) => (
-                <li key={i} className={styles.section__list_item}>
-                  {item}
-                </li>
+              {(t.raw("section2.subsectionA.items") as string[]).map((item, i) => (
+                <li
+                  key={i}
+                  className={styles.section__list_item}
+                  dangerouslySetInnerHTML={{ __html: item }}
+                />
               ))}
             </ul>
           </div>
@@ -49,12 +55,12 @@ const PrivacyPolicyPage = () => {
               {t("section2.subsectionB.title")}
             </p>
             <ul className={styles.section__list}>
-              {(
-                t.raw("section2.subsectionB.items") as string[]
-              ).map((item, i) => (
-                <li key={i} className={styles.section__list_item}>
-                  {item}
-                </li>
+              {(t.raw("section2.subsectionB.items") as string[]).map((item, i) => (
+                <li
+                  key={i}
+                  className={styles.section__list_item}
+                  dangerouslySetInnerHTML={{ __html: item }}
+                />
               ))}
             </ul>
           </div>
@@ -62,81 +68,122 @@ const PrivacyPolicyPage = () => {
 
         <div className={styles.section}>
           <h2 className={styles.section__title}>{t("section3.title")}</h2>
-          <p className={styles.section__text}>{t("section3.intro")}</p>
+          <p
+            className={styles.section__text}
+            dangerouslySetInnerHTML={{ __html: t.raw("section3.intro") as string }}
+          />
           <ul className={styles.section__list}>
             {(t.raw("section3.items") as string[]).map((item, i) => (
-              <li key={i} className={styles.section__list_item}>
-                {item}
-              </li>
+              <li
+                key={i}
+                className={styles.section__list_item}
+                dangerouslySetInnerHTML={{ __html: item }}
+              />
             ))}
           </ul>
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.section__title}>{t("section4.title")}</h2>
-          <p className={styles.section__text}>{t("section4.intro")}</p>
+          <p
+            className={styles.section__text}
+            dangerouslySetInnerHTML={{ __html: t.raw("section4.intro") as string }}
+          />
           <ul className={styles.section__list}>
             {(t.raw("section4.items") as string[]).map((item, i) => (
-              <li key={i} className={styles.section__list_item}>
-                {item}
-              </li>
+              <li
+                key={i}
+                className={styles.section__list_item}
+                dangerouslySetInnerHTML={{ __html: item }}
+              />
             ))}
           </ul>
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.section__title}>{t("section5.title")}</h2>
-          <p className={styles.section__text}>{t("section5.text")}</p>
+          <p
+            className={styles.section__text}
+            dangerouslySetInnerHTML={{ __html: t.raw("section5.text") as string }}
+          />
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.section__title}>{t("section6.title")}</h2>
-          <p className={styles.section__text}>{t("section6.intro")}</p>
+          <p
+            className={styles.section__text}
+            dangerouslySetInnerHTML={{ __html: t.raw("section6.intro") as string }}
+          />
           <ul className={styles.section__list}>
             {(t.raw("section6.items") as string[]).map((item, i) => (
-              <li key={i} className={styles.section__list_item}>
-                {item}
-              </li>
+              <li
+                key={i}
+                className={styles.section__list_item}
+                dangerouslySetInnerHTML={{ __html: item }}
+              />
             ))}
           </ul>
-          <p className={styles.section__text}>{t("section6.outro")}</p>
+          <p
+            className={styles.section__text}
+            dangerouslySetInnerHTML={{ __html: t.raw("section6.outro") as string }}
+          />
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.section__title}>{t("section7.title")}</h2>
-          <p className={styles.section__text}>{t("section7.text")}</p>
+          <p
+            className={styles.section__text}
+            dangerouslySetInnerHTML={{ __html: t.raw("section7.text") as string }}
+          />
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.section__title}>{t("section8.title")}</h2>
-          <p className={styles.section__text}>{t("section8.intro")}</p>
+          <p
+            className={styles.section__text}
+            dangerouslySetInnerHTML={{ __html: t.raw("section8.intro") as string }}
+          />
           <ul className={styles.section__list}>
             {(t.raw("section8.items") as string[]).map((item, i) => (
-              <li key={i} className={styles.section__list_item}>
-                {item}
-              </li>
+              <li
+                key={i}
+                className={styles.section__list_item}
+                dangerouslySetInnerHTML={{ __html: item }}
+              />
             ))}
           </ul>
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.section__title}>{t("section9.title")}</h2>
-          <p className={styles.section__text}>{t("section9.text")}</p>
+          <p
+            className={styles.section__text}
+            dangerouslySetInnerHTML={{ __html: t.raw("section9.text") as string }}
+          />
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.section__title}>{t("section10.title")}</h2>
-          <p className={styles.section__text}>{t("section10.text")}</p>
+          <p
+            className={styles.section__text}
+            dangerouslySetInnerHTML={{ __html: t.raw("section10.text") as string }}
+          />
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.section__title}>{t("section11.title")}</h2>
-          <p className={styles.section__text}>{t("section11.text")}</p>
+          <p
+            className={styles.section__text}
+            dangerouslySetInnerHTML={{ __html: t.raw("section11.text") as string }}
+          />
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.section__title}>{t("section12.title")}</h2>
-          <p className={styles.section__text}>{t("section12.text")}</p>
+          <p
+            className={styles.section__text}
+            dangerouslySetInnerHTML={{ __html: t.raw("section12.text") as string }}
+          />
         </div>
       </div>
     </Section>

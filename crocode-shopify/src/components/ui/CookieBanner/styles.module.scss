@@ -55,50 +55,6 @@
     }
   }
 
-  &__checkbox {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin-top: 4px;
-    cursor: pointer;
-  }
-
-  &__checkbox_btn {
-    flex-shrink: 0;
-    width: 18px;
-    height: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 3px;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.2s;
-    margin-top: 2px;
-
-    &--active {
-      background: var(--color-primary);
-      border-color: var(--color-primary);
-
-      svg {
-        display: block;
-      }
-    }
-
-    svg {
-      display: none;
-      width: 10px;
-      height: 10px;
-    }
-  }
-
-  &__checkbox_label {
-    color: var(--color-white);
-    opacity: 0.8;
-    font-size: fluid-size(12, 13);
-    line-height: 150%;
-  }
-
   &__actions {
     display: flex;
     gap: 12px;
