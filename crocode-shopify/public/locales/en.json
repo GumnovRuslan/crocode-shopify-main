@@ -317,12 +317,16 @@
           "placeholder": "Describe your project"
         },
         "checkbox": {
-          "label": "Join our ecommerce newsletter to receive free ecommerce guides, tips, tricks & more",
+          "label": "I want to receive occasional updates and marketing emails.",
           "errors": {
             "required": "You must agree to join the newsletter"
           }
         }
       },
+      "privacyText": "By submitting this form, you agree we may contact you about your inquiry. See our",
+      "privacyTextPrivacy": "Privacy Policy",
+      "privacyTextAnd": "and",
+      "privacyTextCookie": "Cookie Policy",
       "button": {
         "text": "Submit enquiry",
         "submitting": "Submitting...",
@@ -405,7 +409,11 @@
         }
       }
     },
-    "copyright": "© 2025 KROKOD Sp. z o.o. All Rights Reserved"
+    "copyright": "© 2025 KROKOD Sp. z o.o. All Rights Reserved",
+    "legal": {
+      "privacyPolicy": "Privacy Policy",
+      "cookiePolicy": "Cookie Policy"
+    }
   },
   "ServiceDetailPage": {
     "design-development": {
@@ -461,5 +469,153 @@
         "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       }
     }
+  },
+  "PrivacyPolicyPage": {
+    "title": "PRIVACY POLICY",
+    "effectiveDate": "Effective date: March 3, 2026",
+    "applies": "This Privacy Policy applies to: crocodelab.com (the \"Website\").",
+    "section1": {
+      "title": "1. Data Controller",
+      "text": "The controller of your personal data is:\n<strong>KROKOD sp. z o.o.</strong>\nul. Tadeusza Rejtana 53A/303, 35-326 Rzeszów, Poland, EU\nNIP: 8133877628\nEmail (privacy contact): <strong>welcome@crocodelab.com</strong>"
+    },
+    "section2": {
+      "title": "2. Personal data we collect",
+      "intro": "Depending on how you use the Website, we may process:",
+      "subsectionA": {
+        "title": "A) Data you provide (contact/project form, email)",
+        "items": [
+          "First name, last name",
+          "Company name",
+          "Email address",
+          "Phone number (if provided)",
+          "Budget (if provided)",
+          "Project details and any information you include in your message"
+        ]
+      },
+      "subsectionB": {
+        "title": "B) Technical and usage data",
+        "items": [
+          "IP address",
+          "Device and browser details (user agent)",
+          "Language, approximate location (derived from IP)",
+          "Referrer URL",
+          "Pages viewed and interactions",
+          "Cookies and similar identifiers"
+        ]
+      }
+    },
+    "section3": {
+      "title": "3. Purposes of processing",
+      "intro": "We process personal data to:",
+      "items": [
+        "Respond to your inquiry and communicate about your project",
+        "Prepare proposals and take steps prior to entering into a contract",
+        "Manage our sales process in CRM",
+        "Maintain Website security and prevent abuse",
+        "Measure and improve Website performance and user experience (analytics)",
+        "Provide email communication, including optional newsletter/updates (if you opt in)",
+        "Provide live chat support (if enabled on the Website)"
+      ]
+    },
+    "section4": {
+      "title": "4. Legal bases (GDPR)",
+      "intro": "Where GDPR applies, we rely on:",
+      "items": [
+        "<strong>Contract / steps prior to entering into a contract</strong> (Art. 6(1)(b)) — handling your inquiry, preparing an offer",
+        "<strong>Legitimate interests</strong> (Art. 6(1)(f)) — security, preventing fraud/abuse, improving the Website, sales operations",
+        "<strong>Consent</strong> (Art. 6(1)(a)) — non-essential cookies (analytics/marketing if used), newsletter/marketing emails (only if you opt in)",
+        "<strong>Legal obligation</strong> (Art. 6(1)(c)) — accounting/tax/legal requirements when applicable"
+      ]
+    },
+    "section5": {
+      "title": "5. Cookies and analytics",
+      "text": "We use cookies and similar technologies. Where required, we ask for your consent before placing non-essential cookies.\nWe use <strong>Google Analytics 4 (GA4)</strong> to understand Website usage and improve performance. Details are in our <strong>Cookie Policy</strong>."
+    },
+    "section6": {
+      "title": "6. Recipients (service providers)",
+      "intro": "We may share personal data with trusted providers, only as necessary:",
+      "items": [
+        "<strong>Vercel</strong> — hosting and infrastructure for the Website",
+        "<strong>Google Analytics 4 (Google)</strong> — analytics",
+        "<strong>Zoho CRM</strong> — lead and sales process management",
+        "<strong>MailerLite</strong> — email communications and newsletter (only if enabled and/or you opt in)",
+        "<strong>Crisp Chat</strong> — chat communications (only if enabled)"
+      ],
+      "outro": "We may also share data with professional advisers (legal/accounting) or authorities if required by law."
+    },
+    "section7": {
+      "title": "7. International transfers",
+      "text": "Some providers may process data outside the EEA. When applicable, we use appropriate safeguards such as <strong>Standard Contractual Clauses (SCCs)</strong> and other legally recognized mechanisms."
+    },
+    "section8": {
+      "title": "8. Data retention",
+      "intro": "We keep personal data only as long as necessary:",
+      "items": [
+        "<strong>Inquiries/leads:</strong> up to <strong>24 months</strong> from last contact, unless a contract follows",
+        "<strong>Client/project records:</strong> duration of the contract + retention required by applicable law (e.g., accounting/tax)",
+        "<strong>Security logs:</strong> up to <strong>90 days</strong> (unless longer needed for incident investigation)",
+        "<strong>Analytics:</strong> according to our GA4 settings",
+        "<strong>Newsletter (if enabled):</strong> until you unsubscribe or withdraw consent"
+      ]
+    },
+    "section9": {
+      "title": "9. Your rights",
+      "text": "You may have the right to access, rectify, delete, restrict, object, and (where applicable) port your data, and to withdraw consent at any time.\nTo exercise rights, email <strong>welcome@crocodelab.com</strong>.\nYou also have the right to lodge a complaint with your supervisory authority. In Poland: <strong>UODO</strong>."
+    },
+    "section10": {
+      "title": "10. Security",
+      "text": "We apply reasonable technical and organizational measures to protect personal data. No method of transmission or storage is 100% secure."
+    },
+    "section11": {
+      "title": "11. Children",
+      "text": "The Website is not intended for children, and we do not knowingly collect children's data."
+    },
+    "section12": {
+      "title": "12. Changes",
+      "text": "We may update this policy from time to time. The Effective date indicates the latest revision."
+    }
+  },
+  "CookiePolicyPage": {
+    "title": "COOKIE POLICY",
+    "effectiveDate": "Effective date: March 3, 2026",
+    "applies": "Applies to: crocodelab.com",
+    "section1": {
+      "title": "1. What are cookies",
+      "text": "Cookies are small text files stored on your device. We may also use similar technologies."
+    },
+    "section2": {
+      "title": "2. Categories of cookies",
+      "subsectionA": {
+        "title": "A) Strictly necessary",
+        "text": "Required for core functionality and security."
+      },
+      "subsectionB": {
+        "title": "B) Analytics (consent-based where required)",
+        "text": "Used to understand how the Website is used and improve it.\nProvider: <strong>Google Analytics 4 (GA4)</strong>"
+      },
+      "subsectionC": {
+        "title": "C) Functional/communication (if enabled)",
+        "text": "May be used by Website tools such as embedded forms, email tools, or live chat, depending on implementation.\nProviders may include: <strong>MailerLite (forms/email)</strong>, <strong>Live chat provider (to be implemented)</strong>"
+      },
+      "subsectionD": {
+        "title": "D) Marketing (only if enabled)",
+        "text": "If marketing/retargeting tools are added, they will be listed here and handled via consent where required."
+      }
+    },
+    "section3": {
+      "title": "3. Managing cookies",
+      "text": "You can manage cookies via our cookie banner/preferences (if implemented) and your browser settings. Blocking some cookies may affect Website functionality."
+    },
+    "section4": {
+      "title": "4. Updates",
+      "text": "We may update this Cookie Policy when cookies/tools change or legal requirements evolve."
+    }
+  },
+  "CookieBanner": {
+    "title": "We use cookies",
+    "description": "We use cookies to improve your experience on our website. By accepting, you consent to our use of cookies. Learn more in our",
+    "privacyLink": "Cookie Policy",
+    "accept": "Accept",
+    "decline": "Decline"
   }
 }
