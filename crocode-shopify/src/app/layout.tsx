@@ -8,6 +8,7 @@ import { NextIntlClientProvider } from "next-intl";
 import "@/styles/index.scss";
 import "@/styles/root.scss";
 import CustomCursor from "@/components/ui/Cursor";
+import CookieBanner from "@/components/ui/CookieBanner";
 
 const geistInter = Inter({
   variable: "--font-geist-sans",
@@ -45,6 +46,7 @@ export default function RootLayout({
             <HeaderWrapper />
             <main className="main">{children}</main>
             <Footer />
+            <CookieBanner />
           </NextIntlClientProvider>
         </HeaderThemeProvider>
       </body>

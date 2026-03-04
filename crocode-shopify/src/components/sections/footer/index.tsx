@@ -117,8 +117,11 @@ const Footer = () => {
               <Link className={styles.footer__nav_item} href={"/"}>
                 Shopify Agency
               </Link>
-              <Link className={styles.footer__nav_item} href={"/"}>
-                Privacy Policy
+              <Link className={styles.footer__nav_item} href={"/privacy-policy"}>
+                {t("legal.privacyPolicy")}
+              </Link>
+              <Link className={styles.footer__nav_item} href={"/cookie-policy"}>
+                {t("legal.cookiePolicy")}
               </Link>
             </nav>
           </div>
