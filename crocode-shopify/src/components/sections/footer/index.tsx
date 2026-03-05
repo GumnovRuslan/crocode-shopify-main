@@ -20,7 +20,7 @@ const NETWORK = [
     icon: InstagramIcon,
   },
   {
-    href: "#",
+    href: "https://www.linkedin.com/company/crocodelab/",
     icon: LinkedinIcon,
   },
   {
