@@ -3,7 +3,7 @@
 import styles from "./styles.module.scss";
 
 import { InstagramIcon, LinkedinIcon, TwitterIcon } from "@/components/icons";
-import { Button } from "@/components/ui";
+import { Button, ClutchWidget } from "@/components/ui";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -65,6 +65,14 @@ const Footer = () => {
                     <item.icon />
                   </Link>
                 ))}
+                <a
+                  href="https://clutch.co/profile/crocode"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.footer__clutch}
+                >
+                  <ClutchWidget />
+                </a>
               </div>
             </BlurIn>
           </div>
