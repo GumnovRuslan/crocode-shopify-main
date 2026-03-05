@@ -3,7 +3,7 @@
 import styles from "./styles.module.scss";
 
 import Link from "next/link";
-import { Button, Background, Text } from "@/components/ui";
+import { Button, Background, ClutchWidget } from "@/components/ui";
 import { useBackgroundImageForHeader } from "@/hooks/useHeaderTheme";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
@@ -57,31 +57,44 @@ const Hero = ({
           <p className={styles.hero__description}>
             <StaggeredFade text={subtitle || ""} isInView={isInView} />
           </p>
-
-          {button && (
-            <Button
-              as="link"
-              href="/contact"
-              styleType="secondary"
-              className={styles.hero__button}
-              text={button.text}
-            />
-          )}
         </div>
-        {isShowNetwork && (
-          <BlurIn>
-            <div className={styles.hero__networks}>
-              <Link className={styles.hero__network_link} href={"/"}>
-                TWITTER
-              </Link>
-              <Link className={styles.hero__network_link} href={"/"}>
-                FACEBOOK
-              </Link>
-              <Link className={styles.hero__network_link} href={"/"}>
-                LINKEDIN
-              </Link>
-            </div>
-          </BlurIn>
+        {(button || isShowNetwork) && (
+          <div className={styles.hero__bottom}>
+            {button && (
+              <Button
+                as="link"
+                href="/contact"
+                styleType="secondary"
+                className={styles.hero__button}
+                text={button.text}
+              />
+            )}
+            {isShowNetwork && (
+              <BlurIn>
+                <div className={styles.hero__bottom_right}>
+                  <a
+                    href="https://clutch.co/profile/crocode"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.hero__clutch}
+                  >
+                    <ClutchWidget />
+                  </a>
+                  <div className={styles.hero__networks}>
+                    <Link className={styles.hero__network_link} href={"/"}>
+                      TWITTER
+                    </Link>
+                    <Link className={styles.hero__network_link} href={"/"}>
+                      FACEBOOK
+                    </Link>
+                    <Link className={styles.hero__network_link} href={"https://www.linkedin.com/company/crocodelab/"}>
+                      LINKEDIN
+                    </Link>
+                  </div>
+                </div>
+              </BlurIn>
+            )}
+          </div>
         )}
       </div>
     </section>
