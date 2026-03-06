@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import { Section, Text, ResultCard, Background } from "@/components/ui";
 import { Fade } from "@/components/ui/Fade";
 import { useTranslations } from "next-intl";
+import ThreeTrail from "../ThreeTrail";
 
 const CARDS = [
   {
@@ -28,9 +29,10 @@ const OurResult = () => {
   return (
     <Section type="rounded" className={styles.result} shift>
       <Background
-        desktop="/images/background/bg-dark.webp"
+        desktop="/images/background/bg-black-ball.webp"
         alt="background black"
       />
+      <ThreeTrail />
       <div className={styles.result__inner}>
         <Fade direction="down">
           <Text
