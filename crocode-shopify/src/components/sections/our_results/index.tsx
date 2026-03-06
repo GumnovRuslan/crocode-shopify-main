@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import { Section, Text, ResultCard, Background } from "@/components/ui";
 import { Fade } from "@/components/ui/Fade";
 import { useTranslations } from "next-intl";
-import ThreeTrail from "../ThreeTrail";
+import ThreeTrail from "../three_trail";
 
 const CARDS = [
   {

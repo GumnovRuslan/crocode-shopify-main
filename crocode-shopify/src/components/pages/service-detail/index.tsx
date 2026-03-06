@@ -13,7 +13,7 @@ import {
 import { Background, Section } from "@/components/ui";
 import { TProjectCard, TService } from "@/types";
 import { useLightThemeForHeader } from "@/hooks/useHeaderTheme";
-import ThreeTrail from "@/components/sections/ThreeTrail";
+import ThreeTrail from "@/components/sections/three_trail";
 
 type TProps = {
   slug: string;

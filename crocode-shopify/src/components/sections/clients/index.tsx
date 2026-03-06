@@ -8,7 +8,7 @@ import { motion, useInView } from "motion/react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef } from "react";
-import ThreeTrail from "../ThreeTrail";
+import ThreeTrail from "../three_trail";
 import { BlurIn } from "@/components/ui/BlurIn";
 
 const clients_image = [
