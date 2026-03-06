@@ -33,6 +33,10 @@ interface Config {
   randomMotion: number;
 }
 
+interface ThreeTrailProps {
+  opacityValue?: number;
+}
+
 const CONFIG: Config = {
   sampleResolution: 1000,
   blendSteps: 28,
@@ -46,8 +50,8 @@ const CONFIG: Config = {
   opacity2: 0.484,
   color1: "#ffffff",
   color2: "#ffffff",
-  animSpeed: 0.7,
-  waveStrength: 22.3,
+  animSpeed: 0.2,
+  waveStrength: 15.3,
   waveFreqShape: 0.0,
   waveFreqTrail: 1.8,
   twist: -0.212,
@@ -105,7 +109,7 @@ interface ShapeData {
   cuts: Set<number>;
 }
 
-const ThreeTrail: React.FC = () => {
+const ThreeTrail: React.FC<ThreeTrailProps> = ({ opacityValue }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const sceneRef = useRef<THREE.Scene | null>(null);
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
@@ -155,13 +159,16 @@ const ThreeTrail: React.FC = () => {
         t,
       );
 
-      const opacity = THREE.MathUtils.lerp(config.opacity1, config.opacity2, t);
+      const opacity =
+        opacityValue !== undefined
+          ? opacityValue
+          : THREE.MathUtils.lerp(config.opacity1, config.opacity2, t);
 
       const material = new THREE.LineBasicMaterial({
         color,
         transparent: true,
         opacity,
-        linewidth: 1,
+        linewidth: 3,
         depthWrite: false,
       });
 
@@ -220,18 +227,6 @@ const ThreeTrail: React.FC = () => {
     scene.add(ambientLight);
 
     loadDefaultShape();
-
-    // const handleKeyDown = (event: KeyboardEvent) => {
-    //   if (event.code === "KeyP") {
-    //     if (cameraRef.current) {
-    //       const pos = cameraRef.current.position;
-    //       const rot = cameraRef.current.rotation;
-    //       console.log("Camera position:", { x: pos.x, y: pos.y, z: pos.z });
-    //       console.log("Camera rotation:", { x: rot.x, y: rot.y, z: rot.z });
-    //     }
-    //   }
-    // };
-    // window.addEventListener("keydown", handleKeyDown);
 
     const animate = () => {
       animFrameRef.current = requestAnimationFrame(animate);
@@ -379,7 +374,7 @@ const ThreeTrail: React.FC = () => {
         container.removeChild(rendererRef.current.domElement);
       }
     };
-  }, []);
+  }, [opacityValue]);
 
   return (
     <motion.div

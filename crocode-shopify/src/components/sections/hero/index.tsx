@@ -10,7 +10,7 @@ import { useRef } from "react";
 import { WordsPullUp } from "@/components/ui/WordsPullUp";
 import StaggeredFade from "@/components/ui/StaggeredFade";
 import { BlurIn } from "@/components/ui/BlurIn";
-import ThreeTrail from "../ThreeTrail";
+import ThreeTrail from "../three_trail";
 
 type TProps = {
   bg?: {
@@ -54,7 +54,7 @@ const Hero = ({
           loading="eager"
         />
       )}
-      {animatedBg && <ThreeTrail />}
+      {animatedBg && <ThreeTrail opacityValue={1} />}
       <div className={styles.hero__inner}>
         <div className={styles.hero__content} ref={ref}>
           <WordsPullUp text={title} className={styles.hero__title} />
@@ -91,7 +91,10 @@ const Hero = ({
                     <Link className={styles.hero__network_link} href={"/"}>
                       FACEBOOK
                     </Link>
-                    <Link className={styles.hero__network_link} href={"https://www.linkedin.com/company/crocodelab/"}>
+                    <Link
+                      className={styles.hero__network_link}
+                      href={"https://www.linkedin.com/company/crocodelab/"}
+                    >
                       LINKEDIN
                     </Link>
                   </div>
