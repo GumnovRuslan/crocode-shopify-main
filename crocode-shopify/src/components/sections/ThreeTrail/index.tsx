@@ -115,7 +115,7 @@ const ThreeTrail: React.FC = () => {
   const shapeDataRef = useRef<ShapeData>({ points: [], cuts: new Set() });
   const clockRef = useRef<THREE.Clock>(new THREE.Clock());
   const animFrameRef = useRef<number>(null);
-  const isInView = useInView(containerRef);
+  const isInView = useInView(containerRef, { once: true });
 
   const rebuildBlend = () => {
     const group = blendGroupRef.current;
