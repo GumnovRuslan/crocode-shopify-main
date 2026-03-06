@@ -13,6 +13,7 @@ import {
 import { Background, Section } from "@/components/ui";
 import { TProjectCard, TService } from "@/types";
 import { useLightThemeForHeader } from "@/hooks/useHeaderTheme";
+import ThreeTrail from "@/components/sections/ThreeTrail";
 
 type TProps = {
   slug: string;
@@ -47,10 +48,11 @@ const ServiceDetailPage = ({ slug, service, projects }: TProps) => {
 
       <Section type="rounded" isBlack shift>
         <Background
-          desktop="/images/background/bg-dark.webp"
+          desktop="/images/background/bg-black-ball.webp"
           alt="background black with waves"
         />
         <ShopifyOffers slug={slug} service={service} />
+        <ThreeTrail />
       </Section>
 
       <ServiceDetails slug={slug} service={service} />
