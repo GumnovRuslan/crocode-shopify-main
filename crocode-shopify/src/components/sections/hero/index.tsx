@@ -10,6 +10,7 @@ import { useRef } from "react";
 import { WordsPullUp } from "@/components/ui/WordsPullUp";
 import StaggeredFade from "@/components/ui/StaggeredFade";
 import { BlurIn } from "@/components/ui/BlurIn";
+import ThreeTrail from "../ThreeTrail";
 
 type TProps = {
   bg?: {
@@ -24,6 +25,7 @@ type TProps = {
   title: string;
   subtitle?: string;
   shift?: boolean;
+  animatedBg?: boolean;
 };
 
 const Hero = ({
@@ -33,6 +35,7 @@ const Hero = ({
   isShowNetwork = false,
   button,
   shift = false,
+  animatedBg = false,
 }: TProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -51,6 +54,7 @@ const Hero = ({
           loading="eager"
         />
       )}
+      {animatedBg && <ThreeTrail />}
       <div className={styles.hero__inner}>
         <div className={styles.hero__content} ref={ref}>
           <WordsPullUp text={title} className={styles.hero__title} />

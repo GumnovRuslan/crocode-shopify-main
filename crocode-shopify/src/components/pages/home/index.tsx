@@ -33,6 +33,7 @@ const HomePage = ({ projects }: TProps) => {
         subtitle={t("hero.subtitle")}
         isShowNetwork
         button={{ text: t("hero.button.text") }}
+        animatedBg={true}
       />
       <HomeAboutUs />
       <Clients />
