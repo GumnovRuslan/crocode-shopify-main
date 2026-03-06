@@ -15,7 +15,7 @@ const AboutUsPage = () => {
       <Hero
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
-        animatedBg={true}
+        animatedBg={false}
       />
       <OurResult />
       <ShopifyPlusHighlights />
