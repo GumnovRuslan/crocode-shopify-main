@@ -202,9 +202,9 @@ const ThreeTrail: React.FC<ThreeTrailProps> = ({ opacityValue }) => {
 
     const camera = new THREE.PerspectiveCamera(30, width / height, 1, 10000);
     camera.position.set(
-      -216.5019409727058,
-      153.0502663394561,
-      -348.96062971588685,
+      165.04370117304333,
+      -193.2358225410431,
+      224.54508142016735,
     );
     cameraRef.current = camera;
 
@@ -245,6 +245,9 @@ const ThreeTrail: React.FC<ThreeTrailProps> = ({ opacityValue }) => {
           }
         }
       }
+
+      // Обновляем контроллер каждый кадр
+      // controlsRef.current?.update();
 
       const time = clockRef.current.getElapsedTime();
 
@@ -359,6 +362,19 @@ const ThreeTrail: React.FC<ThreeTrailProps> = ({ opacityValue }) => {
     };
 
     animate();
+
+    // const handleKeyDown = (event: KeyboardEvent) => {
+    //   if (event.code === "KeyP") {
+    //     if (cameraRef.current) {
+    //       const pos = cameraRef.current.position;
+    //       const rot = cameraRef.current.rotation;
+    //       console.log("Camera position:", { x: pos.x, y: pos.y, z: pos.z });
+    //       console.log("Camera rotation:", { x: rot.x, y: rot.y, z: rot.z });
+    //     }
+    //   }
+    // };
+
+    // window.addEventListener("keydown", handleKeyDown);
 
     return () => {
       if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);

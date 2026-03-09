@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 import Link from "next/link";
 import { Button, Background, ClutchWidget } from "@/components/ui";
 import { useBackgroundImageForHeader } from "@/hooks/useHeaderTheme";
-import { motion, useInView } from "motion/react";
+import { useInView } from "motion/react";
 import { useRef } from "react";
 import { WordsPullUp } from "@/components/ui/WordsPullUp";
 import StaggeredFade from "@/components/ui/StaggeredFade";
@@ -39,6 +39,7 @@ const Hero = ({
 }: TProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+
   if (bg) {
     useBackgroundImageForHeader();
   }
