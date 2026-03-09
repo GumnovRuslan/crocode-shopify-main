@@ -34,7 +34,6 @@ const ServiceDetailPage = ({ slug, service, projects }: TProps) => {
         }}
         title={service.title}
         subtitle={service.heroSubtitle || ""}
-        shift={true}
         animatedBg
       />
 
