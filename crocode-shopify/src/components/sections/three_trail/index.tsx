@@ -247,7 +247,7 @@ const ThreeTrail: React.FC<ThreeTrailProps> = ({ opacityValue }) => {
       }
 
       // Обновляем контроллер каждый кадр
-      controlsRef.current?.update();
+      // controlsRef.current?.update();
 
       const time = clockRef.current.getElapsedTime();
 
