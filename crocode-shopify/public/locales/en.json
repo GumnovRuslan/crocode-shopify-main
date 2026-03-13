@@ -12,8 +12,8 @@
   },
   "HomePage": {
     "hero": {
-      "title": "Shopify Plus Agency – Official Shopify Premier Partner | Crocode",
-      "subtitle": "Official Shopify Premier Partner and Shopify Plus agency delivering enterprise development, integrations, and growth solutions for global brands.",
+      "title": "Best Shopify development agency - Crocode",
+      "subtitle": "We know for sure that creating a store is incredibly simple and very easy. Making it sell, grow, and make a profit without constant interference is a task for professionals. We don't just develop stores. We are building business web tools that work 24/7, attract customers, and convert them into buyers, even while you are sleeping. We are producers of high-quality web products.",
       "button": {
         "text": "Discuss your project"
       }
@@ -121,20 +121,20 @@
   },
   "OurWork": {
     "hero": {
-      "title": "OUR WORK | Crocode",
-      "subtitle": ""
+      "title": "We've helped top brands and startups create high-performance ecommerce websites",
+      "subtitle": "We are a leading Shopify and Shopify Plus agency that designs, develops strategies, and helps grow ecommerce businesses"
     }
   },
   "ServicesPage": {
-    "title": "Shopify Services | Crocode",
+    "title": "Services",
     "video": {
       "title": "Video about our work",
       "videoUrl": "https://youtu.be/_ed_CKsCbGI",
       "videoUrlMobile": "https://youtube.com/shorts/fP1tAsg73kw?feature=share"
     },
     "hero": {
-      "description": "Full-service Shopify agency offering development, design, migration, integrations, and SEO to help your eCommerce store scale faster.",
-      "description2": ""
+      "description": "Are you new to Shopify or do you want to supercharge an existing store? You can count on us.Our team of 40 Shopify experts is here to help you build and expand your online store. We have over 10 years of experience in the field, so you're in the safe hands.",
+      "description2": "Our team of 40 Shopify experts is here to help you build and expand your online store. We have over 10 years of experience in the field, so you're in the safe hands."
     },
     "navigation": {
       "development": "Development",
@@ -225,8 +225,8 @@
   },
   "AboutUsPage": {
     "hero": {
-      "title": "About Us | Crocode",
-      "subtitle": "Learn more about Crocode, a Shopify Plus agency and Premier Partner helping brands grow through expert development and strategy."
+      "title": "Experienced professionals with a positive attitude and a genuine passion for creating the best online shopping solutions that inspire and amaze",
+      "subtitle": "We are a leading Shopify and Shopify Plus agency that designs, develops strategies, and helps grow ecommerce businesses"
     },
     "results": {
       "title": "Our in-house, skilled team support brands through transformative ecommerce strategies"
@@ -261,8 +261,7 @@
     }
   },
   "ContactPage": {
-    "title": "Contact Us | Crocode",
-    "subtitle": "Get in touch with Crocode’s Shopify experts to discuss your project, request a quote, or schedule a consultation.",
+    "title": "Ready to start your partnership for growth?",
     "form": {
       "title": "Let's talk about your project",
       "inputs": {
@@ -342,8 +341,8 @@
   },
   "WhyCrocodePage": {
     "hero": {
-      "title": "Why you should choose us | Crocode",
-      "subtitle": "Discover why leading brands choose Crocode for Shopify development, performance optimization, and scalable eCommerce solutions."
+      "title": "Our Approach",
+      "subtitle": "We are a Shopify Experts agency that helps ecommerce sites grow by boosting sales, expanding product range, and increasing conversion rates.We are a Shopify Experts agency that helps ecommerce sites grow by boosting sales, expanding product range, and increasing conversion rates"
     },
     "ourService": {
       "card1": {

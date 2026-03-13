@@ -12,6 +12,16 @@ export type TServiceCategory = {
   videoTitle?: string;
   videoUrl?: string;
   videoUrlMobile?: string;
+  seo?: {
+    title?: string;
+    description?: string;
+    keywords?: string;
+    ogType?: string;
+    image?: {
+      image: { asset: { url: string } };
+      altText: string;
+    };
+  };
 }
 
 export type TServiceCard = {
@@ -60,7 +70,16 @@ export type TService = {
   videoTitle?: string;
   videoUrl?: string;
   videoUrlMobile?: string;
-  seo?: any;
+  seo?: {
+    title?: string;
+    description?: string;
+    keywords?: string;
+    ogType?: string;
+    image?: {
+      image: { asset: { url: string } };
+      altText: string;
+    };
+  };
 }
 
 export type TServicesGrouped = {
