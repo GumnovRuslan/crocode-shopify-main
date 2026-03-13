@@ -4,7 +4,8 @@
       "Bash(dir:*)",
       "Bash(npx next build)",
       "mcp__playwright__browser_take_screenshot",
-      "mcp__playwright__browser_evaluate"
+      "mcp__playwright__browser_evaluate",
+      "Bash(find \"E:/work/crocode-shopify-main-2-en/crocode-shopify-main/studio-shopify-crocode/src/schemaTypes/objects\" -name \"*.ts\" | xargs grep -l \"seo\" 2>/dev/null\nfind \"E:/work/crocode-shopify-main-2-en/crocode-shopify-main/studio-shopify-crocode/src\" -name \"*.ts\" | xargs grep -l \"seo\" 2>/dev/null)"
     ]
   }
 }

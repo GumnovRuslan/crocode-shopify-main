@@ -1,0 +1,31 @@
+Задачи:
+- Мне нужно добавить на страницы текущего сайта meta title и meta discription. Конкретные url страниц, meta title и meta discription указаны в @table.txt. Некоторые страницы статичные и данные для них берутся из @crocode-shopify/public/locales/en.json. Другие - динамические и данные для них берутся из Sanity. meta данные должны браться аналогично?
+
+Помоги выполнить данную задачу. Реализуй логику meta в проекте и схемах Sanity (для projects, services и service category), если их ещё нет и они там нужны. Заполни meta данные статичных страниц:
+URL	TITLE	DESCRIPTION
+https://crocode-shopify-main.vercel.app/	Shopify Plus Agency – Official Shopify Premier Partner | Crocode	Official Shopify Premier Partner and Shopify Plus agency delivering enterprise development, integrations, and growth solutions for global brands.
+		
+https://crocode-shopify-main.vercel.app/faqs	FAQs | Crocode	Find answers to common questions about our Crocode Shopify development agency and our services.
+https://crocode-shopify-main.vercel.app/contact	Contact Us | Crocode	Get in touch with Crocode’s Shopify experts to discuss your project, request a quote, or schedule a consultation.
+https://crocode-shopify-main.vercel.app/about-us	About Us | Crocode	Learn more about Crocode, a Shopify Plus agency and Premier Partner helping brands grow through expert development and strategy.
+https://crocode-shopify-main.vercel.app/why-crocode	Why you should choose us | Crocode	Discover why leading brands choose Crocode for Shopify development, performance optimization, and scalable eCommerce solutions.
+		
+https://crocode-shopify-main.vercel.app/services	Shopify Services | Crocode	Full-service Shopify agency offering development, design, migration, integrations, and SEO to help your eCommerce store scale faster.
+
+https://crocode-shopify-main.vercel.app/our-work	OUR WORK | Crocode	
+
+Динамичекие (в Sanity) я внесу сама.
+
+Ты должен:
+- Проанализировать текущую задачу.
+- Посмотреть, есть ли логика meta в проекте. Если нет - реализовать её.
+
+Важно учесть:
+- Никаких стандартных модальных окон добавлять не нужно. Если они нужны, то должны быть собственными компонентами.
+- Не добавляй никаких комментариев в код и файлы.
+- При выполнении задач учти, что весь существующий функционал и логика проекта должны сохраниться. Проект уже полностью рабочий, мы лишь добавляем meta title и meta discription для указанных в @table.txt страниц.
+- Важно, чтобы изменения (если они нужны), соотвествовали стилю кода, структуры, дизайна проекта - чтобы новый код не выбивался из старого.
+
+Используй context7 и playwright при необходимости.
+Если контекст слишком длинный — сожми.
+overthink 
