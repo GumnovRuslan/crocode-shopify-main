@@ -26,35 +26,37 @@ const ServicesPage = ({ serviceCategories }: TProps) => {
       <div className={styles.services}>
         <div className={styles.services__inner}>
           {/* Hero Section */}
-          <h1 className={styles.services__title}>
-            <StaggeredFade text={t("title")} isInView={true} />
-          </h1>
-          <div className={styles.services__hero}>
-            <div className={styles.services__heroContent}>
+          <div className={styles.services__heroSection}>
+            <h1 className={styles.services__title}>
+              <StaggeredFade text={t("title")} isInView={true} />
+            </h1>
+            <div className={styles.services__hero}>
+              <div className={styles.services__heroContent}>
+                <Fade direction="up">
+                  <div className={styles.services__description}>
+                    <p>{t("hero.description")}</p>
+                  </div>
+                </Fade>
+              </div>
               <Fade direction="up">
-                <div className={styles.services__description}>
-                  <p>{t("hero.description")}</p>
-                </div>
+                <nav className={styles.services__navigation}>
+                  {serviceCategories.map((category, index) => (
+                    <Link
+                      key={category._id}
+                      href={`/services/${category.slug.current}`}
+                      className={styles.services__navLink}
+                    >
+                      <span className={styles.services__navNumber}>
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      <span className={styles.services__navText}>
+                        {category.categoryName}
+                      </span>
+                    </Link>
+                  ))}
+                </nav>
               </Fade>
             </div>
-            <Fade direction="up">
-              <nav className={styles.services__navigation}>
-                {serviceCategories.map((category, index) => (
-                  <Link
-                    key={category._id}
-                    href={`/services/${category.slug.current}`}
-                    className={styles.services__navLink}
-                  >
-                    <span className={styles.services__navNumber}>
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <span className={styles.services__navText}>
-                      {category.categoryName}
-                    </span>
-                  </Link>
-                ))}
-              </nav>
-            </Fade>
           </div>
 
           {/* Service Blocks */}

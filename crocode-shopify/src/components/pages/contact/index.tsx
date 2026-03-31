@@ -25,7 +25,7 @@ const ContactPage = () => {
           desktop="/images/background/bg-black-ball-toll.webp"
           alt="background black with balls"
         />
-        <div className={styles.contact__inner} ref={ref}>
+        <div className={styles.contact__hero} ref={ref}>
           <Fade direction="down">
             <Text
               className={styles.contact__title}
@@ -34,18 +34,12 @@ const ContactPage = () => {
               style="small"
             />
           </Fade>
-          <p className={styles.contact__subtitle}>
-            <StaggeredFade
-              text={t("subtitle")}
-              isInView={isInView}
-            ></StaggeredFade>
-          </p>
-          <div className={styles.contact__content}>
-            <Form />
-            <BlurIn>
-              <MapSection />
-            </BlurIn>
-          </div>
+        </div>
+        <div className={styles.contact__content}>
+          <Form />
+          <BlurIn>
+            <MapSection />
+          </BlurIn>
         </div>
       </Section>
     </>

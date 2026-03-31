@@ -8,6 +8,8 @@ import { motion, useInView } from "motion/react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef } from "react";
+import ThreeTrail from "../three_trail";
+import { BlurIn } from "@/components/ui/BlurIn";
 
 const clients_image = [
   {
@@ -92,9 +94,10 @@ const Clients = () => {
   return (
     <Section className={styles.clients} type="rounded" shift>
       <Background
-        desktop="/images/background/bg-dark.webp"
+        desktop="/images/background/bg-black-ball.webp"
         alt="background image"
       />
+      <ThreeTrail />
       <div className={styles.clients__inner} ref={ref}>
         <h2 className={styles.clients__title}>
           {t("title")

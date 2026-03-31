@@ -3,7 +3,7 @@
 import styles from "./styles.module.scss";
 
 import { InstagramIcon, LinkedinIcon, TwitterIcon } from "@/components/icons";
-import { Button } from "@/components/ui";
+import { Button, ClutchWidget } from "@/components/ui";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -20,7 +20,7 @@ const NETWORK = [
     icon: InstagramIcon,
   },
   {
-    href: "#",
+    href: "https://www.linkedin.com/company/crocodelab/",
     icon: LinkedinIcon,
   },
   {
@@ -65,6 +65,14 @@ const Footer = () => {
                     <item.icon />
                   </Link>
                 ))}
+                <a
+                  href="https://clutch.co/profile/crocode"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.footer__clutch}
+                >
+                  <ClutchWidget />
+                </a>
               </div>
             </BlurIn>
           </div>
@@ -114,11 +122,11 @@ const Footer = () => {
               <p className={styles.footer__copyright}>{t("copyright")}</p>
             </div>
             <nav className={styles.footer__nav}>
-              <Link className={styles.footer__nav_item} href={"/"}>
-                Shopify Agency
+              <Link className={styles.footer__nav_item} href={"/privacy-policy"}>
+                {t("legal.privacyPolicy")}
               </Link>
-              <Link className={styles.footer__nav_item} href={"/"}>
-                Privacy Policy
+              <Link className={styles.footer__nav_item} href={"/cookie-policy"}>
+                {t("legal.cookiePolicy")}
               </Link>
             </nav>
           </div>
