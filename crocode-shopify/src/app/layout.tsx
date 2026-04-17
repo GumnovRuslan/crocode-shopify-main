@@ -18,7 +18,11 @@ const geistInter = Inter({
 
 export const metadata: Metadata = {
   title: "Crocode",
-  description: "Official Shopify Premier Partner and Shopify Plus agency delivering enterprise development, integrations, and growth solutions for global brands.",
+  description:
+    "Official Shopify Premier Partner and Shopify Plus agency delivering enterprise development, integrations, and growth solutions for global brands.",
+  other: {
+    "google-site-verification": "1xzFoYUs16ZSveIMlzqxcK5UDu84-oVDlLK1U0oYyKQ",
+  },
 };
 
 export default function RootLayout({
@@ -29,8 +33,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={geistInter.variable}>
+        <Script
+          id="google-analytics-script"
+          src="https://www.googletagmanager.com/gtag/js?id=G-PTGGQ43DPC"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-PTGGQ43DPC');
+        `}
+        </Script>
         <Script id="crisp-chat" strategy="afterInteractive">
-        {`
+          {`
           window.$crisp = [];
           window.CRISP_WEBSITE_ID = "ed361aa1-d0e9-4073-ac92-8639c34d42ea";
           window.CRISP_RUNTIME_CONFIG = {
