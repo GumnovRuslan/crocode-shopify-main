@@ -114,15 +114,15 @@ const HeroBottom = memo(
           <BlurIn>
             <div className={styles.hero__bottom_right}>
               <div className={styles.hero__widgets}>
-                <Link
+                <a
                   href="https://clutch.co/profile/crocode"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.hero__widget_link}
                 >
                   <ClutchWidget />
-                </Link>
-                <Link
+                </a>
+                <a
                   href={
                     "https://www.shopify.com/partners/directory/partner/krokod-sp-z-o-o"
                   }
@@ -130,7 +130,7 @@ const HeroBottom = memo(
                   className={styles.hero__widget_link}
                 >
                   <PartnerWidget />
-                </Link>
+                </a>
               </div>
 
               <div className={styles.hero__networks}>
