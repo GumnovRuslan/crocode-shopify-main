@@ -66,15 +66,15 @@ const Footer = () => {
               </div>
               <div className={styles.footer__network}>
                 <div className={styles.footer__widgets}>
-                  <Link
+                  <a
                     href="https://clutch.co/profile/crocode"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.footer__widget_link}
                   >
                     <ClutchWidget />
-                  </Link>
-                  <Link
+                  </a>
+                  <a
                     href={
                       "https://www.shopify.com/partners/directory/partner/krokod-sp-z-o-o"
                     }
@@ -82,7 +82,7 @@ const Footer = () => {
                     className={styles.footer__widget_link}
                   >
                     <PartnerWidget />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </BlurIn>
