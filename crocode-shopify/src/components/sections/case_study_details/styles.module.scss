@@ -1,6 +1,10 @@
 .details {
   padding: fluid-size(90, 120) 0 fluid-size(90, 280);
 
+  &.withoutGallery {
+    padding-top: fluid-size(40, 60);
+  }
+
   &__inner {
     display: flex;
     flex-direction: column;
