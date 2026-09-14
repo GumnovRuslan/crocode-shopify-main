@@ -9,6 +9,10 @@ type TProps = {
 const ProjectPage = ({project}: TProps) => {
   if (!project) return null
 
+  const hasGallery =
+  !!project?.gallery?.imageDesktop?.asset?.url ||
+  !!project?.gallery?.imageMobile?.asset?.url
+
   return (
     <>
       <HeroProject
@@ -22,8 +26,12 @@ const ProjectPage = ({project}: TProps) => {
           alt: project?.coverImage?.altText || project?.title || 'Project cover'}}
       />
       <Summary brief={project?.brief} title={project?.title}/>
-      <Gallery image={project?.gallery}/>
-      <CaseStudyDetails solutionRaw={project?.solutionRaw}/>
+      {hasGallery && <Gallery image={project?.gallery}/>}
+
+      <CaseStudyDetails
+        solutionRaw={project?.solutionRaw}
+        hasGallery={hasGallery}
+      />
       <Section type='rounded' isBlack>
         <Background desktop='/images/background/bg-black-ball.webp' alt="background black with balls"/>
         <Comments/>
