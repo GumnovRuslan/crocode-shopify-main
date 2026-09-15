@@ -16,7 +16,8 @@ const ProjectCard = ({ className, project }: TProps) => {
         classNameImage={styles.card__image}
         desktop={
           project?.cardImage?.image?.asset?.url ||
-          "/images/cards/card-project.png"
+          // "/images/cards/card-project.png"
+          "/images/background/bg_hero_mobile.webp"
         }
         alt={project?.cardImage?.altText || `Project ${project?.title}`}
       />
