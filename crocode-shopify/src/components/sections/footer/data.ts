@@ -8,7 +8,7 @@ export type TNetwork = {
 
 export const NETWORK: TNetwork[] = [
   {
-    href: "www.youtube.com/@crocodelab",
+    href: "https://www.youtube.com/@crocodelab",
     icon: YoutubeIcon,
   },
   {
