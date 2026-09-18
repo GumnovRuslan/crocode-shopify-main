@@ -136,7 +136,7 @@ const HeroBottom = memo(
               <div className={styles.hero__networks}>
                 <Link
                   className={styles.hero__network_link}
-                  href={"www.youtube.com/@crocodelab"}
+                  href={"https://www.youtube.com/@crocodelab"}
                 >
                   youtube
                 </Link>
