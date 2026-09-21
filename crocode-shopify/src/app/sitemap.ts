@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { getProjectsSlug } from "@/lib/sanity/queries/projects";
 import { fetchGraphQL } from "@/lib/sanity/graphql";
+import { fetchGROQ } from "@/lib/sanity/groq";
 import { TProjectCard, TServiceCard } from "@/types";
 import { getServicesSlug } from "@/lib/sanity/queries/services";
 
@@ -21,11 +22,12 @@ const staticRoutes = [
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Загружаем данные параллельно, чтобы sitemap генерировался быстрее
-  const [{ data: projectsData }, { data: servicesData }] = await Promise.all([
-    fetchGraphQL(getProjectsSlug("en")),
+  const [{ data: projectsData, error: projectsError }, { data: servicesData }] = await Promise.all([
+    fetchGROQ<{ allProjects: TProjectCard[] }>(getProjectsSlug(), { lang: "en" }),
     fetchGraphQL(getServicesSlug("en")),
   ]);
 
+  if (projectsError) throw new Error("Unable to load sitemap projects");
   const projects: TProjectCard[] = projectsData?.allProjects ?? [];
   const services: TServiceCard[] = servicesData?.allServices ?? [];
 

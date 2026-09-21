@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "next start"
+    "start": "next start",
+    "test:projects": "node --test scripts/project-categories.test.cjs"
   },
   "dependencies": {
     "@apollo/client": "^3.13.9",

@@ -2,7 +2,7 @@ import styles from "./styles.module.scss";
 
 import { Button, ProjectCardSecondary, Section, Text } from "@/components/ui";
 import { getLocale, getTranslations } from "next-intl/server";
-import { fetchGraphQL } from "@/lib/sanity/graphql";
+import { fetchGROQ } from "@/lib/sanity/groq";
 import { getProjects } from "@/lib/sanity/queries/projects";
 import { TProjectCard } from "@/types";
 import { BlurIn } from "@/components/ui/BlurIn";
@@ -11,7 +11,8 @@ import { Fade } from "@/components/ui/Fade";
 const LetsTalk = async () => {
   const t = await getTranslations("AboutUsPage.lets-talk");
   const locale: string = await getLocale();
-  const { data: projectsData } = await fetchGraphQL(getProjects(locale));
+  const { data: projectsData, error: projectsError } = await fetchGROQ<{ allProjects: TProjectCard[] }>(getProjects(), { lang: locale });
+  if (projectsError) throw new Error("Unable to load projects");
   const projects: TProjectCard[] = projectsData?.allProjects || [];
 
   return (

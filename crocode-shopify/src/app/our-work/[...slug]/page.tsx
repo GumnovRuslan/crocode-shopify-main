@@ -1,5 +1,7 @@
 import { ProjectPage } from "@/components/pages"
-import { fetchGraphQL } from "@/lib/sanity/graphql";
+import { fetchGROQ } from "@/lib/sanity/groq";
+import type { TProject } from "@/types";
+import { notFound } from "next/navigation";
 import { getProject } from "@/lib/sanity/queries/projects";
 import type { Metadata } from "next";
 
@@ -9,7 +11,8 @@ type PageProps = {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const { data: projectData } = await fetchGraphQL(getProject(slug[0]));
+  const { data: projectData, error } = await fetchGROQ<{ allProjects: TProject[] }>(getProject(), { slug: slug[0] });
+  if (error) throw new Error("Unable to load project");
   const project = projectData?.allProjects?.[0];
 
   if (project?.seo?.title || project?.seo?.description) {
@@ -24,8 +27,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async ({params}: PageProps) => {
   const { slug } = await params;
-  const { data: projectData, errors } = await fetchGraphQL(getProject(slug[0]));
-  const project = projectData?.allProjects[0];
+  const { data: projectData, error } = await fetchGROQ<{ allProjects: TProject[] }>(getProject(), { slug: slug[0] });
+  if (error) throw new Error("Unable to load project");
+  const project = projectData?.allProjects?.[0];
+
+  if (!project) notFound();
 
   return (
     <ProjectPage project={project}/>

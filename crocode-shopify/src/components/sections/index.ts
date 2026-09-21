@@ -9,7 +9,6 @@ import Industries from "./industries";
 import ShopifyAgency from "./shopify_agency";
 import Clients from "./clients";
 import Projects from "./projects";
-import LetsTalk from "./lets-talk";
 import ServicesSection from "./services";
 import NotFound from "./not_found";
 import OurResult from "./our_results";
@@ -45,7 +44,6 @@ export {
   ShopifyAgency,
   Clients,
   Projects,
-  LetsTalk,
   ServicesSection,
   NotFound,
   OurResult,

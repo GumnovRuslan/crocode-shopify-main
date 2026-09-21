@@ -1,3 +1,4 @@
+import 'server-only';
 import { createClient } from '@sanity/client';
 
 export const sanityClient = createClient({
@@ -6,6 +7,7 @@ export const sanityClient = createClient({
   token: process.env.SANITY_TOKEN,
   apiVersion: '2023-08-01',
   useCdn: false,
+  perspective: 'published',
 });
 
 export async function fetchGROQ<T = any>(

@@ -1,6 +1,14 @@
 import { TImage, TImageWithAltText } from "./image"
 import { PortableTextBlock } from "@portabletext/react"
 
+export type TProjectServiceCategory = {
+  _id: string;
+  categoryName: string;
+}
+
+// Keep legacy text readable while existing Sanity documents are migrated.
+export type TProjectWorkDone = TProjectServiceCategory[] | string | null;
+
 export type TBrief = {
   description: string
   industry: string
@@ -15,7 +23,7 @@ export type TProjectCard = {
   _id: string;
   language: string;
   title: string;
-  workDone: string;
+  workDone: TProjectWorkDone;
   slug: { current: string };
   cardImage: TImageWithAltText
   category: {
@@ -30,7 +38,7 @@ export type TProject = {
   language: string;
   title: string;
   client: string;
-  workDone: string;
+  workDone: TProjectWorkDone;
   slug: { current: string };
   coverImage: {
     imageDesktop: TImage

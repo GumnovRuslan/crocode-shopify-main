@@ -1,6 +1,5 @@
 import { ServiceCategoryPage, ServiceDetailPage } from "@/components/pages"
 import { fetchGROQ } from "@/lib/sanity/groq"
-import { fetchGraphQL } from "@/lib/sanity/graphql"
 import { getProjects } from "@/lib/sanity/queries/projects"
 import { getServiceCategoryBySlug, getServiceBySlug } from "@/lib/sanity/queries/services"
 import { TProjectCard, TService, TServiceCategoryWithServices } from "@/types"
@@ -57,7 +56,8 @@ export default async function ServiceOrCategoryPage({ params }: PageProps) {
     notFound()
   }
 
-  const { data: projectsData } = await fetchGraphQL(getProjects(locale))
+  const { data: projectsData, error: projectsError } = await fetchGROQ<{ allProjects: TProjectCard[] }>(getProjects(), { lang: locale })
+  if (projectsError) throw new Error("Unable to load projects");
   const projects: TProjectCard[] = projectsData?.allProjects || []
 
   return (

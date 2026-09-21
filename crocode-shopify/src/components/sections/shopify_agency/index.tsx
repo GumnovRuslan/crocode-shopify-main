@@ -98,8 +98,8 @@ const ShopifyAgency = ({
           <div className={styles.slider}>
             <div className={styles.embla} ref={emblaRef}>
               <div className={styles.embla__container}>
-                {projects?.map((project, i) => (
-                  <div className={styles["embla__slide"]} key={i}>
+                {projects?.map((project) => (
+                  <div className={styles["embla__slide"]} key={project._id}>
                     <ProjectCard
                       className={styles.slider__card}
                       project={project}
