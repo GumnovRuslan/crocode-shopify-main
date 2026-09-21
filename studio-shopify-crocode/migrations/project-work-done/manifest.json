@@ -1,0 +1,1025 @@
+{
+  "resource": {
+    "projectId": "k8culv98",
+    "dataset": "production"
+  },
+  "capturedAt": "2026-09-21T14:44:23.103Z",
+  "status": "preflight-complete",
+  "categories": [
+    {
+      "_id": "19c14478-2353-4e09-b171-fd96143c0bf5",
+      "_rev": "2RlbKxeFZqpYApAqRFprkX",
+      "_type": "serviceCategories",
+      "category": null,
+      "categoryName": "Shopify Integrations",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "shopify-integrations"
+      },
+      "title": null
+    },
+    {
+      "_id": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+      "_rev": "8LO5O2Z8C4HuWQBIr1KrQR",
+      "_type": "serviceCategories",
+      "category": null,
+      "categoryName": "Custom Shopify Development Services",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "custom-shopify-development-services"
+      },
+      "title": null
+    },
+    {
+      "_id": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+      "_rev": "2RlbKxeFZqpYApAqRBzCvB",
+      "_type": "serviceCategories",
+      "category": null,
+      "categoryName": "Shopify Marketing",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "shopify-marketing"
+      },
+      "title": null
+    },
+    {
+      "_id": "be092db6-0142-496a-b5e2-48f52c528cbe",
+      "_rev": "8LO5O2Z8C4HuWQBIr32yJZ",
+      "_type": "serviceCategories",
+      "category": null,
+      "categoryName": "Migration to Shopify",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "migration-to-shopify"
+      },
+      "title": null
+    }
+  ],
+  "categoryMappings": [
+    {
+      "polish": {
+        "_id": "CE1mzVNmMLLKlaCZTQmIS6",
+        "categoryName": "Marketing Shopify",
+        "language": "pl"
+      },
+      "english": {
+        "_id": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+        "_rev": "2RlbKxeFZqpYApAqRBzCvB",
+        "_type": "serviceCategories",
+        "category": null,
+        "categoryName": "Shopify Marketing",
+        "language": "en",
+        "slug": {
+          "_type": "slug",
+          "current": "shopify-marketing"
+        },
+        "title": null
+      }
+    },
+    {
+      "polish": {
+        "_id": "YyMBw7yxP0TD5F3bCiAr8D",
+        "categoryName": "Integracje Shopify",
+        "language": "pl"
+      },
+      "english": {
+        "_id": "19c14478-2353-4e09-b171-fd96143c0bf5",
+        "_rev": "2RlbKxeFZqpYApAqRFprkX",
+        "_type": "serviceCategories",
+        "category": null,
+        "categoryName": "Shopify Integrations",
+        "language": "en",
+        "slug": {
+          "_type": "slug",
+          "current": "shopify-integrations"
+        },
+        "title": null
+      }
+    },
+    {
+      "polish": {
+        "_id": "tgyyf2ygOfIU59A8Epn0mD",
+        "categoryName": "Niestandardowe usługi tworzenia sklepów Shopify",
+        "language": "pl"
+      },
+      "english": {
+        "_id": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+        "_rev": "8LO5O2Z8C4HuWQBIr1KrQR",
+        "_type": "serviceCategories",
+        "category": null,
+        "categoryName": "Custom Shopify Development Services",
+        "language": "en",
+        "slug": {
+          "_type": "slug",
+          "current": "custom-shopify-development-services"
+        },
+        "title": null
+      }
+    },
+    {
+      "polish": {
+        "_id": "tgyyf2ygOfIU59A8Epn1In",
+        "categoryName": "Migracja do Shopify",
+        "language": "pl"
+      },
+      "english": {
+        "_id": "be092db6-0142-496a-b5e2-48f52c528cbe",
+        "_rev": "8LO5O2Z8C4HuWQBIr32yJZ",
+        "_type": "serviceCategories",
+        "category": null,
+        "categoryName": "Migration to Shopify",
+        "language": "en",
+        "slug": {
+          "_type": "slug",
+          "current": "migration-to-shopify"
+        },
+        "title": null
+      }
+    }
+  ],
+  "projects": [
+    {
+      "_id": "016d965e-b137-4666-a5db-48fef068bff8",
+      "_rev": "zpNAPfmzgy9V2WUZNZlp7E",
+      "description": "Crocode partnered with Simply Nootropics to rebuild and expand their ecommerce ecosystem into a stronger, more scalable Shopify store for a wellness supplement brand. The project started with a full Shopify store audit and strategic review, then evolved into a complete Shopify redesign, custom development, app integrations, and the creation of four localized Shopify stores for Australia, New Zealand, Europe, and a global market. The goal was not just to improve the look of the site, but to create a better Shopify customer journey with stronger conversion, retention, and international growth potential.",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "simply-nootropics"
+      },
+      "solution": "What Simply Nootropics Needed From Their New Shopify Setup\n\nSimply Nootropics operates in a competitive nootropics ecommerce space where trust, education, and purchase confidence matter just as much as product quality. Their store needed to communicate the value of the brand more clearly while also making it easier for customers to explore products, understand benefits, and purchase with confidence.\n\nThe project required more than a visual refresh. The brand needed a stronger Shopify UX/UI redesign, better product discovery, more persuasive merchandising, and a more structured retention system. We approached the store as a full Shopify CRO for supplement brand project — not just a redesign, but a growth-focused rebuild.\n\nShopify Redesign and Custom Development\n\nWe redesigned the storefront to create a cleaner, more premium, and more conversion-oriented experience aligned with the expectations of a modern brain supplement ecommerce brand. The new design focused on stronger hierarchy, improved navigation, better mobile usability, and a clearer path from product discovery to checkout.\n\nFrom a development perspective, we implemented a more flexible and scalable storefront structure with a focus on:\n\nclearer product presentation;\n\nstronger collection and product pages;\n\nimproved mobile shopping flow;\n\nbetter merchandising blocks;\n\nsmoother conversion paths.\n\nThe result was a more polished Shopify redesign for wellness ecommerce that better reflected the quality of the brand and supported future optimization.\n\nPersonalized Shopping With a Shopify Product Quiz\n\nOne of the most valuable additions to the store was a Shopify product quiz designed to help customers choose the right supplements based on their goals and needs.\n\nFor a cognitive health supplement store, this is especially important. Many customers are interested in benefits like focus, memory, sleep, stress support, or longevity, but they are not always sure which product is right for them. The quiz created a more guided Shopify personalized shopping experience, reduced decision fatigue, and improved product discovery.\n\nThis feature also supported a stronger Shopify quiz funnel and more relevant product recommendations across the store.\n\nOkendo, Recharge, Rebuy, and Klaviyo Integrations\n\nA major part of the project involved implementing the right Shopify app ecosystem to support trust, retention, and average order value growth.\n\nWe integrated Okendo to improve social proof and customer confidence through a stronger Shopify reviews setup. For a health and wellness Shopify brand, visible customer validation plays a major role in conversion.\n\nWe also implemented Recharge Shopify integration to support subscriptions and recurring orders — a key part of subscription ecommerce on Shopify for supplement brands. This made it easier for customers to subscribe, save, and reorder naturally.\n\nTo improve basket value, we implemented Rebuy Shopify integration for smarter upsells and product recommendations. This supported a more effective Shopify upsell and cross-sell strategy across the shopping journey.\n\nOn the retention side, we helped establish the foundation for Klaviyo Shopify integration and email marketing automation, supporting stronger post-purchase communication, customer retention, and repeat order potential.\n\nShopify Localization and Multi-Store Expansion\n\nOne of the most strategically important parts of this project was the launch of four localized Shopify stores for different markets: Australia, New Zealand, Europe, and Global.\n\nThis was not just a design or content exercise. It required a scalable Shopify multi-store setup and a more structured Shopify international store architecture that could support regional growth more effectively.\n\nFor a supplement brand selling across multiple markets, localization matters far beyond language or currency. It affects customer trust, shopping clarity, and the overall buying experience. By creating localized Shopify stores, we helped Simply Nootropics build a stronger foundation for Shopify international expansion and multi-market ecommerce.\n\nA More Scalable Shopify Ecosystem for Growth\n\nThe final result was a more complete and conversion-ready Shopify ecosystem built around how supplement customers actually shop.\n\nInstead of relying on a basic storefront, Simply Nootropics now has a stronger ecommerce foundation that combines:\n\nShopify redesign\n\ncustom development\n\nproduct quiz implementation\n\nOkendo reviews integration\n\nRecharge subscription setup\n\nRebuy upsell implementation\n\nKlaviyo email automation\n\nShopify localization\n\nThis project is a strong example of Shopify development for a supplement brand done with long-term growth in mind — combining brand presentation, conversion optimization, retention strategy, and international scalability into one cohesive system.",
+      "title": "Simply Nootropics: Shopify Redesign and Growth Optimization for a Supplement Brand",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "YyMBw7yxP0TD5F3bCiAwIr",
+        "title": "Simply Nootropics: Redesign i optymalizacja wzrostu sklepu Shopify dla marki suplementów",
+        "slug": "simply-nootropics"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5"
+        },
+        {
+          "_type": "reference",
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d"
+        }
+      ]
+    },
+    {
+      "_id": "04996bc3-9127-497a-b02d-f567e4732dcc",
+      "_rev": "Aus2Mb6VBF2lWw662ptpP1",
+      "description": "Crocode transformed Parfums de Marly from a primarily content-focused WordPress website into a fully functional Shopify ecommerce store, combining a complete platform migration with a new design, SEO optimization, and performance improvements. The project introduced a structured product catalog, shopping cart, and Shopify Checkout while preserving valuable content and SEO pages. We redesigned the key pages and user experience, connected editorial content with the commercial journey, and implemented a responsive Shopify storefront. Alongside the migration, we optimized metadata, heading structure, internal linking, redirects, indexing, image delivery, third-party scripts, and theme performance to improve Core Web Vitals and create a stronger technical foundation for online sales.",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "parfumsdemarly"
+      },
+      "solution": "Transforming a Content Website Into a High-Performance Shopify Store\n\nFor Parfums de Marly, moving to Shopify was not simply a platform migration. It was part of a broader website optimization project that combined ecommerce development, redesign, SEO migration, and performance optimization.\n\nThe existing website was primarily focused on presenting content and product information rather than supporting a complete online purchasing journey. The project therefore required us to preserve the site's existing content and SEO value while introducing a full ecommerce structure.\n\nAt the same time, the new website needed a more modern interface, stronger internal connections between content and products, and better technical performance.\n\nFrom the beginning, the project centered on:\n\nmigrating the existing WordPress website to Shopify;\n\ntransforming the content-driven site into a complete ecommerce storefront;\n\npreserving important SEO pages and existing content;\n\ncreating a new Shopify design and page structure;\n\nimproving internal linking between content and commercial pages;\n\noptimizing Shopify theme performance and Core Web Vitals;\n\nvalidating the complete website after migration.\n\nMigrating Existing Content to Shopify\n\nOne of the first challenges was moving the existing content without losing the structure and SEO value that had already been established.\n\nWe migrated the site's core:\n\npages;\n\narticles;\n\ninformational materials;\n\nimages;\n\nother required media assets.\n\nThe content was then adapted to the new Shopify structure rather than simply copied into a different CMS.\n\nThis required balancing two objectives: maintaining important existing content while restructuring the website around its new ecommerce functionality.\n\nImportant SEO pages and valuable content were retained as part of the migration, providing continuity between the original website and the new Shopify implementation.\n\nThis approach made the migration more than a basic WordPress to Shopify content transfer. It became a structured Shopify website migration designed around both content preservation and the new commercial architecture.\n\nBuilding a Complete Ecommerce Structure\n\nThe biggest functional change was the transformation of the website from a primarily content-focused platform into a complete online store.\n\nThe new ecommerce structure allows users to move through the entire purchasing journey directly on the website:\n\nproduct discovery → product selection → add to cart → checkout\n\nWe implemented:\n\na structured product catalog;\n\nproduct browsing and selection;\n\nproduct information presentation;\n\nadd-to-cart functionality;\n\nshopping cart functionality;\n\nthe complete purchasing flow;\n\norder checkout through Shopify Checkout.\n\nThis created a new direct sales channel while allowing the site's existing informational content to remain an important part of the customer journey.\n\nInstead of separating content and commerce, we connected them so that users could move naturally from learning about the products to purchasing them.\n\nConnecting Content With Commerce\n\nOne of the key UX goals was to make the existing content more commercially useful without turning the website into a purely transactional storefront.\n\nThe new structure creates stronger relationships between informational pages and the product catalog.\n\nThis means content can support product discovery, while product pages provide a direct path toward purchase.\n\nThe resulting journey is more cohesive:\n\nusers discover relevant information;\n\nthey can explore the associated products;\n\nproduct pages provide a clear next step;\n\nproducts can be added directly to the cart;\n\nthe purchase can be completed through Shopify Checkout.\n\nThis created a stronger content-to-commerce UX and made the existing content a more integrated part of the ecommerce experience.\n\nRedesigning the Shopify Storefront\n\nThe migration also included a complete redesign of the website's visual structure.\n\nRather than reproducing the original interface, we created a new design adapted specifically to the requirements of a Shopify ecommerce environment.\n\nThe redesign included:\n\na new visual structure;\n\nredesigned key pages;\n\nupdated content block layouts;\n\na more consistent interface;\n\nmobile-oriented interface improvements;\n\nlayouts designed to work across both content and commercial pages.\n\nThe main challenge was creating a unified visual system that could accommodate two different types of content: informational pages and ecommerce pages.\n\nThe result was a more coherent Shopify custom storefront where content, products, navigation, and purchasing functionality follow the same overall design language.\n\nCustom Shopify Development for Content and Ecommerce\n\nThe new design was implemented directly in Shopify and adapted to the platform's ecommerce capabilities.\n\nThe development work focused on creating a structure that could support both existing content and new commercial functionality.\n\nThis included:\n\ncustom Shopify page structures;\n\necommerce-oriented layouts;\n\nreusable content elements;\n\nproduct-focused components;\n\nresponsive interface behavior;\n\nintegration between content pages and the shopping experience.\n\nThis approach created a more flexible Shopify custom development foundation instead of treating the redesign as a collection of isolated page templates.\n\nThe result is a storefront architecture capable of supporting both editorial content and product-driven journeys within the same ecommerce system.\n\nSEO Migration Built Around Existing Search Value\n\nSEO was one of the most important parts of the migration because changing platforms and restructuring a website can create significant search visibility risks if the transition is not carefully controlled.\n\nBefore the migration, we analyzed the existing site structure and identified important pages and content that needed to be preserved.\n\nThe SEO work included:\n\nanalyzing the existing website structure;\n\npreserving important SEO pages;\n\nretaining valuable existing content;\n\nconfiguring URL redirects where the structure changed;\n\noptimizing Title and Meta Description elements for key pages;\n\nreviewing heading structure;\n\nimproving internal linking;\n\nchecking technical indexing after migration.\n\nParticular attention was given to the relationship between informational and commercial pages.\n\nBy improving internal linking between these areas, we created a stronger Shopify internal linking structure and clearer paths for both users and search engines.\n\nThe result was a migration strategy designed to preserve existing SEO value while providing a stronger technical foundation for the new ecommerce website.\n\nOptimizing Titles, Meta Descriptions, and Heading Structure\n\nThe migration also provided an opportunity to improve important on-page SEO elements.\n\nFor key pages, we reviewed and optimized:\n\nTitle tags;\n\nMeta Descriptions;\n\nheading hierarchy;\n\npage structure;\n\ninternal links.\n\nThese elements were considered alongside the new Shopify page architecture rather than optimized independently.\n\nThe goal was to create pages that were easier for users to understand while also providing a cleaner information hierarchy for search engines.\n\nThis formed part of a broader Shopify SEO optimization process rather than a one-time metadata update.\n\nShopify Performance Optimization\n\nPerformance was another major focus of the project.\n\nThe migration was used as an opportunity to review the technical resources loaded by the storefront and reduce unnecessary performance overhead.\n\nOur optimization work included:\n\nimproving page loading behavior;\n\nreducing unnecessary resources;\n\noptimizing images;\n\noptimizing third-party script loading;\n\nreviewing the Shopify theme;\n\nchecking key performance indicators;\n\nvalidating Core Web Vitals.\n\nPerformance optimization is particularly important for an ecommerce website because the user experience depends on multiple layers loading efficiently — from content and images to product interfaces, cart functionality, and third-party services.\n\nBy addressing these areas as part of the migration, we created a cleaner technical foundation for the new Shopify storefront.\n\nOptimizing the Shopify Theme and Third-Party Resources\n\nA significant part of the performance work focused on the relationship between the Shopify theme and the resources loaded by the website.\n\nWe reviewed unnecessary resources and worked on improving how assets, images, and third-party scripts were loaded.\n\nThis helped reduce technical overhead and create a more efficient Shopify theme performance setup.\n\nImage optimization was also part of the process, ensuring that visual content could retain its role in the redesigned storefront without creating unnecessary loading costs.\n\nThe result was a more performance-conscious Shopify implementation built around both visual quality and technical efficiency.\n\nPost-Migration SEO and Technical QA\n\nThe migration did not end when the new Shopify storefront went live.\n\nA dedicated post-migration QA process was used to validate the new website across its main technical, ecommerce, and SEO layers.\n\nWe checked:\n\nkey website pages;\n\nlinks and redirects;\n\nresponsive behavior across devices;\n\nproduct catalog functionality;\n\nshopping cart functionality;\n\nShopify Checkout;\n\ntechnical SEO elements;\n\nindexing and page accessibility.\n\nThis final validation was important because migration issues can appear only after the new platform is fully assembled.\n\nBy testing the storefront after implementation, we were able to verify that the new ecommerce system, SEO structure, and redesigned interface were working together as intended.\n\nCombining Shopify Migration, SEO, and Performance\n\nWhat makes the Parfums de Marly project particularly valuable is the combination of several complex objectives within one migration.\n\nThe project was not approached as:\n\nWordPress → Shopify\n\nInstead, it was treated as:\n\nWordPress → Shopify + ecommerce transformation + redesign + SEO migration + performance optimization\n\nEach part of the project influenced the others.\n\nThe ecommerce structure affected the information architecture. The redesign affected how content and products were presented. The new URL structure required redirects. SEO required careful content preservation and internal linking. Performance optimization had to account for the new Shopify theme and ecommerce functionality.\n\nThis integrated approach allowed the migration to improve the website on multiple levels simultaneously.\n\nThe Result: A Faster, SEO-Ready Shopify Ecommerce Foundation\n\nParfums de Marly was successfully migrated from WordPress to Shopify with a complete ecommerce structure, redesigned interface, SEO optimization, and performance improvements.\n\nThe new website provides users with a complete commercial journey:\n\ndiscover product information;\n\nexplore the product catalog;\n\nselect products;\n\nadd products to the cart;\n\ncomplete purchases through Shopify Checkout.\n\nAt the same time, the project preserved important content and SEO pages, introduced a more structured SEO foundation, improved internal linking, and addressed key technical performance factors.\n\nThe final result is a more modern and commercially capable Shopify ecommerce website with:\n\nWordPress to Shopify migration\n\nShopify ecommerce development\n\nShopify custom storefront development\n\nShopify SEO migration\n\nShopify redirects and URL preservation\n\nShopify internal linking optimization\n\nShopify theme performance optimization\n\nimage and third-party script optimization\n\nCore Web Vitals optimization\n\npost-migration technical QA\n\nFor Crocode, Parfums de Marly is a strong example of Shopify migration combined with SEO and performance optimization — demonstrating how a platform change can become an opportunity to improve the entire ecommerce infrastructure rather than simply reproduce an existing website on a new CMS.",
+      "title": "Parfums de Marly: WordPress to Shopify Migration with SEO & Performance Optimization",
+      "workDone": "WordPress to Shopify Migration, Custom Theme Design & Development, SEO & Performance Optimization",
+      "originalWorkDone": "WordPress to Shopify Migration, Custom Theme Design & Development, SEO & Performance Optimization",
+      "polishProject": {
+        "_id": "5d0f263c-338f-4e65-8fc8-cd45ec781b09",
+        "title": "Parfums de Marly: Migracja z WordPress do Shopify z optymalizacją SEO i wydajności",
+        "slug": "parfumsdemarly"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d"
+        },
+        {
+          "_type": "reference",
+          "_key": "be092db60142496ab5e248f52c528cbe",
+          "_ref": "be092db6-0142-496a-b5e2-48f52c528cbe"
+        }
+      ]
+    },
+    {
+      "_id": "2cf4f941-f65b-4748-8086-48e386c02551",
+      "_rev": "f3B9PuFrOuEr1B8BwntHQ4",
+      "description": "Crocode Lab partnered with HVISK to build a Shopify store matching their position as a leading Scandinavian accessories brand. The project required solutions for high-volume sales, international expansion, and demanding visual standards. Not a small ask — this brand has serious expectations.\n",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "hvisk"
+      },
+      "solution": "Brand Requirements and Scale\n\nHVISK sells bags, jewelry, and accessories across multiple European markets. Their previous platform struggled with traffic volumes during campaigns. International fulfillment created logistics headaches that consumed staff time. Brand presentation varied inconsistently across different markets.\n\nThe brief demanded a platform supporting continued growth. Multi-currency and multi-language capabilities came standard. Integration with existing warehouse management was non-negotiable. Performance had to remain stable regardless of traffic spikes — no excuses.\n\nInternational Commerce Architecture\n\nSelling across borders introduces complexity at every step. We implemented a market-aware system that adapts the entire experience based on visitor location. Currency displays correctly. Shipping options match available carriers. Payment methods include local preferences.\n\nTax compliance automation handles VAT calculations accurately. Different rates apply based on product category and destination. The system generates proper documentation for customs. International orders no longer require manual intervention — they just work.\n\nOur international framework addressed key requirements:\n\nautomatic currency conversion with daily rate updates;\n\ntranslated content management across all market languages;\n\nlocalized payment options including regional favorites;\n\ncarrier selection based on destination country;\n\nduty and tax estimation shown before checkout.\n\nThis infrastructure supports expansion into new markets efficiently. Adding countries requires configuration rather than development work.\n\nVisual Identity Implementation\n\nHVISK maintains strong visual standards. Every touchpoint reflects careful brand consideration. We translated their design language into functional ecommerce patterns while preserving artistic integrity.\n\nProduct photography follows specific guidelines we helped establish. Consistent lighting creates cohesive collection pages. Lifestyle imagery shows products styled appropriately. The balance between product focus and aspirational context varies by page type.\n\nTypography uses their custom brand fonts throughout. Heading hierarchies create clear information structure. Body text remains readable at all screen sizes. The overall effect feels distinctly HVISK while performing well technically.\n\nPerformance Under Load\n\nFashion brands experience dramatic traffic variations. Campaign launches, influencer posts, and sale events create sudden spikes. The platform must handle peak loads without degrading experience.\n\nWe implemented aggressive caching strategies and tested them thoroughly:\n\nStatic content distribution. Assets serve from global networks positioned near visitors.\n\nDynamic element isolation. Interactive components load separately from page foundations.\n\nDatabase query optimization. Read-heavy traffic patterns receive specific tuning.\n\nLoad balancing. Traffic distributes across multiple server instances automatically.\n\nFailover protocols. Backup systems activate before primary systems degrade.\n\nLoad testing validated performance before launch. We simulated traffic ten times normal levels. Response times stayed acceptable throughout. Real-world campaigns confirmed the architecture handles actual demand successfully.\n\nWholesale and Partner Integration\n\nHVISK sells through retail partners as well as direct. The wholesale portal gives stockists access to ordering and inventory data. They place orders, track shipments, and manage accounts independently.\n\nEDI connections automate order flow with larger partners. Purchase orders arrive electronically. Inventory updates transmit automatically. Invoicing happens without manual data entry. This automation reduces errors and processing costs.\n\nThe partner integration extends to drop-shipping arrangements. Select retailers sell HVISK products without holding inventory. Orders route automatically for fulfillment from HVISK warehouses. Customer experience remains seamless regardless of sales channel. We continue developing the platform through ongoing partnership — recent additions include virtual try-on for sunglasses and sustainability content integration.",
+      "title": "HVISK: Scandinavian Accessories Brand Development",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "954a3494-1e13-4ae8-add3-40cfa95f65b3",
+        "title": "HVISK: Tworzenie marki akcesoriów skandynawskich",
+        "slug": "hvisk"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5"
+        }
+      ]
+    },
+    {
+      "_id": "577380e3-8632-43b7-99b5-bcb77528074d",
+      "_rev": "AgSw906H5N3BHcJxYYIPfx",
+      "description": "We built a warm, inviting Shopify store for Laidback London, a brand creating handcrafted leather sandals and shoes. The project captured the relaxed spirit of their products while delivering serious ecommerce functionality.\n",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "laidback-london"
+      },
+      "solution": "Brand Spirit and Project Scope\n\nLaidback London produces footwear through traditional techniques in fair-trade workshops. Their customers value craftsmanship, sustainability, and effortless style. The brand personality feels approachable yet refined — casual but not careless.\n\nThe existing website failed to communicate these qualities. Generic templates made the brand indistinguishable from mass-market competitors. Product information lacked the depth conscious consumers expect. Mobile experience particularly disappointed given the target demographic.\n\nDesign Language Development\n\nWe developed a visual language reflecting handmade warmth. Textures suggest natural materials throughout the interface. Color palettes draw from leather, earth, and Mediterranean skies. Typography feels relaxed without losing professionalism.\n\nThe homepage invites exploration rather than pushing sales. Lifestyle photography shows products in authentic contexts. Brand story elements weave naturally through commercial content. The atmosphere welcomes visitors into the Laidback London world.\n\nProduct presentation emphasizes tactile qualities:\n\nclose-up photography reveals leather grain and stitching detail;\n\nmultiple angle views show construction quality;\n\nlifestyle images demonstrate comfortable fit;\n\ncraft process documentation builds appreciation;\n\nartisan stories connect buyers with actual makers.\n\nThese elements justify premium pricing while creating emotional connection.\n\nSustainability Communication\n\nConscious consumers research brand practices carefully before purchasing. We created a transparency framework sharing sustainability information clearly. Material sourcing details appear at product level. Workshop conditions document openly.\n\nThe impact dashboard quantifies environmental commitments. Customers see carbon offset tracking and waste reduction metrics. This transparency differentiates Laidback London from brands making vague claims.\n\nPackaging information addresses common concerns. Recyclable materials, minimal plastic, and reusable elements appear prominently. Shipping impact calculations let customers understand their choices.\n\nSize and Fit Solutions\n\nFootwear returns often result from incorrect sizing. We attacked this problem through multiple approaches:\n\nDetailed measurement guides. Instructions cover foot length, width, and arch characteristics.\n\nBrand comparison tools. Customers relate sizes to familiar brands they already own.\n\nFit finder quiz. Questions about foot shape and wearing habits generate personalized recommendations.\n\nModel-specific notes. Certain styles run differently and display warnings accordingly.\n\nCustomer fit feedback. Reviews prominently feature sizing comments from actual buyers.\n\nThis community knowledge reduces sizing guesswork significantly. Returns dropped noticeably after implementation.\n\nTechnical Implementation Details\n\nWe optimized the store specifically for mobile shoppers who browse during commutes and coffee breaks. Touch targets sized appropriately for easy navigation. Image galleries swipe smoothly. Checkout flows minimized typing requirements.\n\nThe search function understands natural language queries. Customers find products by describing what they want. Results adapt to seasonal availability automatically.\n\nInventory connects with manufacturing planning. Lead times for made-to-order items display accurately. Customers understand when to expect handcrafted pieces requiring production time. Laidback London expanded their product range following platform launch — new categories including bags and accessories integrated smoothly.\n\n\n",
+      "title": "Laidback London: Artisan Footwear on Shopify",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "3c4ff736-6fb3-40c5-a708-bced76e13878",
+        "title": "Laidback London: Ręcznie robione obuwie w sklepie Shopify",
+        "slug": "laidback-london"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        }
+      ]
+    },
+    {
+      "_id": "57752282-8ebd-4f0a-9d20-496a4c1ac677",
+      "_rev": "4ho4ozYz60agXnN2eXnC7O",
+      "description": "Crocode Lab created a bold, distinctive Shopify store for TTSWTRS, a streetwear brand with strong visual identity and passionate community following. The project captured brand energy while building serious commerce infrastructure.\n",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "ttswtrs"
+      },
+      "solution": "Streetwear Market Dynamics\n\nStreetwear operates differently from conventional fashion retail. Limited releases create urgency. Community perception matters enormously. Brand authenticity trumps traditional marketing approaches. The wrong digital presence destroys credibility instantly.\n\nTTSWTRS built their following through genuine creative output. Their previous website looked professional but generic. It failed to capture the energy that made the brand special. Customers noticed the disconnect between brand personality and shopping experience.\n\nBold Visual Identity Translation\n\nWe translated TTSWTRS brand energy into digital form. Typography pushes boundaries appropriately. Color usage reflects streetwear boldness. Animation adds attitude without sacrificing usability.\n\nThe homepage makes an immediate statement. Large format imagery rotates through campaign content. Video integration shows products in cultural context. The experience feels more like editorial content than traditional retail.\n\nDesign choices reinforce brand positioning throughout:\n\nproduct grids break from expected layouts;\n\ndetail pages feature unexpected visual treatments;\n\ncheckout maintains brand voice despite functional focus;\n\nerror messages and empty states reflect personality;\n\nloading states entertain rather than frustrate.\n\nEvery touchpoint reinforces what makes TTSWTRS distinctive.\n\nDrop Commerce Infrastructure\n\nLimited releases drive streetwear retail. We built release management systems handling high-demand launches. Countdown timers build anticipation. Queue systems manage traffic fairly. Inventory controls prevent overselling during frenzy.\n\nThe drop workflow gives TTSWTRS precise control:\n\nScheduling precision. Releases launch to the second at specified times.\n\nAccess control. Early access rewards loyalty program members.\n\nPurchase limits. Per-customer caps prevent reseller abuse.\n\nTraffic management. Queue systems prevent site overload.\n\nThese tools let TTSWTRS execute releases that strengthen rather than damage brand reputation.\n\nCommunity Integration\n\nStreetwear brands live through community engagement. We integrated social proof and community content throughout the shopping experience. User-generated photos show real customers wearing products. Social feeds display without requiring users to leave the store.\n\nThe loyalty program rewards engagement beyond purchasing. Community members earn status through participation. Benefits include early access, exclusive content, and event invitations. This approach builds genuine connection rather than transactional relationship.\n\nContent marketing connects commerce with culture. Lookbooks explore creative concepts. Collaborator features celebrate partnerships. Blog content positions TTSWTRS within broader streetwear conversation.\n\nTechnical Performance Balance\n\nVisual ambition and technical performance often conflict. We resolved this tension through disciplined optimization. Heavy assets compress intelligently. Animation runs smoothly through efficient implementation. The site feels fast despite visual richness.\n\nMobile experience preserves desktop impact at smaller scales. Touch interactions feel natural and responsive. The energy translates across devices successfully. Mobile users convert at rates matching desktop.\n\nLaunch Results and Growth\n\nTTSWTRS launch exceeded traffic projections significantly. The site handled release-day demand without issues. Conversion rates improved compared to the previous platform. Average order values increased through better cross-selling.\n\nCommunity response validated the design direction. Social mentions praised the shopping experience specifically. Brand perception strengthened as digital presence matched offline reputation.\n\nWe maintain ongoing partnership supporting TTSWTRS growth. Recent developments include international expansion, wholesale portal launch, and enhanced loyalty features. The platform scales alongside brand ambitions.\n\n\n",
+      "title": "TTSWTRS: Streetwear Brand Shopify Development",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "03916e7c-25f2-48cc-9980-fb58b434b647",
+        "title": "TTSWTRS: Tworzenie sklepu Shopify dla marki streetwearowej",
+        "slug": "ttswtrs"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d"
+        }
+      ]
+    },
+    {
+      "_id": "5e40e57e-96c4-4030-bd3e-ef37685e0db7",
+      "_rev": "Aus2Mb6VBF2lWw662proQF",
+      "description": "Crocode transformed UrbanSignPrint from a primarily content-focused WordPress website into a fully functional Shopify ecommerce store with a completely redesigned visual identity and user experience. The project combined a full WordPress-to-Shopify migration with custom Shopify development, introducing a product catalog, shopping cart, and Shopify Checkout while preserving key content and SEO pages. We redesigned the core pages, created reusable sections and components, improved the product browsing and purchasing journey, and implemented a responsive experience across desktop, tablet, and mobile. The migration also included redirects and SEO checks to maintain the existing site structure and support a smooth transition to the new platform.",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "urbansignprint"
+      },
+      "solution": "Transforming a Content Website Into a Full Shopify Store\n\nUrban Sign Print needed more than a platform migration. The existing website was primarily a content-focused WordPress site and did not provide a complete ecommerce experience where customers could browse products, add them to a cart, and place orders directly online.\n\nThe project became an opportunity to solve several challenges at once: migrate the existing website from WordPress to Shopify, introduce a complete online sales system, and completely redesign the storefront and user experience.\n\nInstead of simply reproducing the existing website on a new platform, we transformed it into a full Shopify ecommerce store with a product catalog, shopping cart, and Shopify Checkout.\n\nFrom the beginning, the project centered on:\n\nmigrating the existing WordPress website to Shopify;\n\npreserving important content and SEO pages;\n\ntransforming a content-driven website into a complete ecommerce storefront;\n\ncreating a new visual identity and interface;\n\nbuilding a clearer path from content discovery to product purchase;\n\nimplementing the new design directly in Shopify.\n\nFrom a Content Website to a Complete Ecommerce Experience\n\nThe most important aspect of the project was the transformation itself.\n\nThe original Urban Sign Print website was primarily designed to provide information and content. Customers could learn about the business and its offerings, but the website did not function as a complete online store.\n\nWith the move to Shopify, we introduced the missing ecommerce layer.\n\nThe new storefront allows customers to:\n\nbrowse the product catalog;\n\nview product information;\n\nselect products for purchase;\n\nadd products to the shopping cart;\n\nproceed through the purchasing flow;\n\ncomplete orders through Shopify Checkout.\n\nThis changed the role of the website completely. Instead of functioning primarily as a digital information resource, it became a full ecommerce channel capable of supporting direct online sales.\n\nThe migration therefore became much more than a technical WordPress to Shopify migration. It was a complete ecommerce transformation built around the new commercial goals of the website.\n\nBuilding a New Shopify Storefront Architecture\n\nMoving from a content-focused WordPress structure to an ecommerce-focused Shopify storefront required more than simply adding product pages.\n\nThe existing content needed to work alongside a new product catalog, collections, cart, and purchasing journey. This meant reconsidering how information was structured and how users moved through the site.\n\nWe developed the new storefront around a more flexible Shopify architecture with:\n\ncustom page sections;\n\nreusable content components;\n\nredesigned content blocks;\n\nproduct-focused layouts;\n\necommerce-specific page elements;\n\nresponsive layouts for desktop, tablet, and mobile.\n\nThis created a Shopify reusable section architecture that allowed the new design to remain consistent while providing enough flexibility for different types of content.\n\nRather than treating every page as an isolated design, the storefront was built from reusable components that could support the broader structure of the new Shopify store.\n\nCustom Shopify Design and Full Storefront Redesign\n\nThe migration was also used as an opportunity to completely rethink the visual presentation of Urban Sign Print.\n\nWe developed a new visual concept and redesigned the main pages of the website, including the structure and positioning of individual content blocks.\n\nThe redesign focused on creating a more modern and consistent interface while adapting the visual language of the original content website to a new ecommerce environment.\n\nOur work included:\n\ndeveloping a new visual direction;\n\nrestructuring key pages;\n\nredesigning content blocks;\n\nimproving visual hierarchy;\n\nadapting layouts to product-oriented content;\n\ncreating a consistent user interface across the storefront.\n\nThis resulted in a custom Shopify storefront design rather than a simple migration of the existing WordPress appearance.\n\nThe new design was created specifically around the requirements of an online store, allowing content and ecommerce functionality to work together as one experience.\n\nCreating a Clear Path From Content to Purchase\n\nOne of the key UX challenges was connecting the site's existing informational content with its new commercial functionality.\n\nOn a content-focused website, users primarily consume information. On an ecommerce website, that information should also help users move toward a product and, ultimately, a purchase.\n\nWe therefore reworked the user journey to make the transition between content discovery and shopping more natural.\n\nThe new experience provides a clearer path from:\n\ncontent → product discovery → product selection → cart → checkout\n\nThis meant improving how products were presented and making key product information easier to access.\n\nThe result is a more structured Shopify ecommerce UX where informational content and commercial functionality support each other instead of operating as separate parts of the website.\n\nProduct Catalog and Ecommerce Functionality\n\nIntroducing a product catalog was a fundamental part of transforming Urban Sign Print into an ecommerce store.\n\nThe new Shopify implementation includes dedicated product presentation and the functionality required to support online purchasing.\n\nWe focused on creating product pages that provide the information customers need while fitting naturally into the redesigned storefront.\n\nThe ecommerce implementation included:\n\nproduct catalog organization;\n\nproduct presentation;\n\nproduct information layouts;\n\nadd-to-cart functionality;\n\nshopping cart functionality;\n\nthe complete path toward checkout.\n\nThis established the core infrastructure required for a Shopify online store and gave Urban Sign Print a direct sales channel that was not available in the original content-focused website.\n\nCustom Shopify Development and Reusable Components\n\nThe new design was implemented directly in Shopify rather than being treated as a separate visual layer.\n\nWe developed the required Shopify sections and reusable components to reproduce the new visual system while keeping the storefront flexible for future content changes.\n\nThe development approach focused on:\n\nreusable Shopify sections;\n\nadaptable content components;\n\ncustom page layouts;\n\nproduct-oriented storefront elements;\n\nresponsive behavior;\n\nintegration of the new design with Shopify's ecommerce functionality.\n\nThis gave the store a stronger Shopify custom theme development foundation and made the new interface easier to maintain as the business continues to expand its online presence.\n\nResponsive Shopify Storefront Development\n\nBecause the new website needed to serve customers across different devices, the redesigned storefront was developed with responsive behavior from the beginning.\n\nThe interface was adapted for:\n\ndesktop;\n\ntablet;\n\nmobile.\n\nThis was particularly important for the new ecommerce journey. Product discovery, product information, cart interactions, and the transition toward checkout all needed to remain clear and usable regardless of screen size.\n\nThe result is a more consistent responsive Shopify ecommerce experience across the full customer journey.\n\nUX Improvements Across the Shopping Journey\n\nThe redesign was not limited to visual changes. A major part of the project was improving how users interact with the website.\n\nWe simplified the way customers navigate the catalog and made important product information more accessible.\n\nThe UX improvements focused on:\n\neasier product discovery;\n\nclearer product presentation;\n\nimproved information hierarchy;\n\nstronger connections between content and products;\n\na more understandable purchasing path;\n\nsmoother navigation from product discovery to checkout.\n\nThese changes helped turn the website into a more coherent Shopify customer journey, where the different stages of the experience — content, catalog, product selection, cart, and checkout — work together.\n\nSEO-Focused WordPress to Shopify Migration\n\nBecause the existing website already contained valuable content and established SEO pages, preserving its search visibility was an important part of the migration.\n\nBefore moving the website, we reviewed the existing content structure and identified important pages that needed to be retained in the new Shopify implementation.\n\nThe migration process included:\n\nanalyzing the existing website structure;\n\npreserving important SEO content and pages;\n\nmaintaining key content wherever possible;\n\nconfiguring the necessary Shopify redirects;\n\nchecking important SEO elements after migration;\n\nvalidating the accessibility and availability of key pages.\n\nThis allowed the redesign and ecommerce transformation to take place without treating SEO as an afterthought.\n\nThe goal was to create a new Shopify storefront while maintaining continuity between the existing WordPress website and its new ecommerce version.\n\nCombining Migration, Redesign, and Ecommerce Development\n\nWhat makes the Urban Sign Print project particularly significant is that several traditionally separate website projects were handled as one transformation.\n\nThe project combined:\n\nWordPress to Shopify migration;\n\nfull visual redesign;\n\nShopify custom development;\n\necommerce implementation;\n\nUX restructuring;\n\nproduct catalog creation;\n\ncart and checkout implementation;\n\nSEO migration.\n\nEach part influenced the others.\n\nThe new design had to work with ecommerce functionality. The content structure had to work with product discovery. The UX had to support the purchasing journey. And the migration had to preserve important content and SEO pages while introducing an entirely new commercial layer.\n\nThis made the project a true Shopify ecommerce transformation, rather than a simple platform switch.\n\nThe Result: A New Shopify Ecommerce Channel\n\nUrban Sign Print finished the project with more than a new platform and a redesigned interface.\n\nThe existing content-focused website was transformed into a complete Shopify ecommerce store with:\n\na product catalog;\n\nproduct-focused pages;\n\nshopping cart functionality;\n\nonline purchasing;\n\nShopify Checkout;\n\na completely redesigned storefront;\n\nreusable Shopify sections;\n\nresponsive layouts;\n\nan improved customer journey;\n\npreserved SEO content and important pages.\n\nThe migration allowed Urban Sign Print to solve several business and technical challenges within a single project: move from WordPress to Shopify, modernize the entire visual experience, improve UX, and establish a new direct channel for online sales.\n\nFor Crocode, Urban Sign Print is a strong example of Shopify migration combined with full ecommerce redesign — turning an existing content website into a commercially capable online store while preserving valuable content and building a more modern, scalable user experience.",
+      "title": "UrbanSignPrint: WordPress to Shopify Migration & E-commerce Redesign",
+      "workDone": "WordPress to Shopify Migration, Custom Theme Design & Development",
+      "originalWorkDone": "WordPress to Shopify Migration, Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "080087a8-c462-4680-b8f9-4f56719c43cd",
+        "title": "UrbanSignPrint: Migracja z WordPress do Shopify i redesign sklepu ecommerce",
+        "slug": "urbansignprint"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "be092db60142496ab5e248f52c528cbe",
+          "_ref": "be092db6-0142-496a-b5e2-48f52c528cbe"
+        }
+      ]
+    },
+    {
+      "_id": "64e76fe1-6938-4853-8d2b-0700300175dd",
+      "_rev": "f3B9PuFrOuEr1B8BwntlU2",
+      "description": "Crocode Lab created a refined Shopify presence for NNOOR, a contemporary jewelry designer combining traditional craftsmanship with modern aesthetics. The project emphasized visual impact and brand storytelling alongside commercial functionality — both matter equally here.\n",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "nnoor"
+      },
+      "solution": "Brand Essence and Technical Requirements\n\nNNOOR creates statement jewelry using precious metals and stones. Each piece reflects deliberate design philosophy. The brand attracts customers who appreciate artistry and invest in lasting quality rather than trends.\n\nTheir previous website looked dated against competitors. Product photography failed to capture material qualities. The shopping experience felt disconnected from brand positioning. Conversion rates lagged despite strong traffic from fashion coverage.\n\nCrafting the Visual Experience\n\nJewelry demands exceptional photography. We established standards that show pieces accurately while creating desire. Studio shots capture precise details. Lifestyle imagery demonstrates scale and styling options.\n\nThe homepage creates immediate emotional impact. Large format imagery rotates through signature pieces. Motion adds subtle sophistication without distraction. The overall effect feels like entering an atelier rather than clicking into a shop.\n\nInterior pages maintain visual standards throughout the journey:\n\ncollection pages display items as curated groupings;\n\nproduct grids use generous spacing and consistent sizing;\n\ndetail pages lead with photography before specifications;\n\nzoom functionality reveals craftsmanship up close;\n\nrelated items suggest thoughtful pairings.\n\nEvery pixel receives careful consideration. The result honors the thoughtfulness NNOOR brings to their physical creations.\n\nProduct Information Strategy\n\nJewelry purchases often carry emotional weight. Buyers want confidence their investment is sound. We structured product information to build that confidence progressively without overwhelming anyone.\n\nMaterial specifications appear clearly without dominating. Customers see gold purity, stone grades, and dimensions at a glance. Deeper details remain available for those who want them.\n\nCare instructions help customers protect their purchases. Storage recommendations, cleaning guidance, and repair services display prominently. This information communicates that NNOOR stands behind their work.\n\nThe customization interface handles personalization elegantly:\n\nEngraving options. Previews show exactly how text will appear on the piece.\n\nChain length adjustments. Pricing reflects changes immediately without confusion.\n\nRing sizing guidance. Measurement tools reduce incorrect orders significantly.\n\nStone selection. Available alternatives display with price and visual differences.\n\nGift packaging. Premium presentation options add directly from product pages.\n\nThese personalization tools drive higher order values while improving customer satisfaction.\n\nTechnical Performance Balance\n\nVisual richness often conflicts with page performance. Heavy images slow everything down. We resolved this tension through careful optimization. Images compress intelligently without visible quality loss. Progressive loading prioritizes visible content.\n\nCritical rendering paths minimize time to visual impact. Shoppers see polished presentation immediately. Additional functionality loads as they begin interacting. This approach maintains both aesthetics and performance.\n\nMobile experience preserves desktop impact at smaller scales. Touch interactions feel natural and responsive. The luxury sensation translates across devices successfully.\n\nCommercial Results\n\nNNOOR conversion rates improved 127 percent post-launch. Average order value increased as cross-selling became more effective. Return rates dropped significantly with better product representation.\n\nBrand perception shifted measurably. Customer feedback specifically mentions website quality. Press coverage increased as editorial contacts took the brand more seriously. We continue refining the NNOOR experience through ongoing partnership — recent additions include appointment booking for studio visits and a bespoke design inquiry system.\n\n\n",
+      "title": "NNOOR: Contemporary Jewelry Brand Store",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "b407d055-e5db-4a14-bdfc-c4710b843284",
+        "title": "NNOOR: Sklep marki biżuterii współczesnej",
+        "slug": "nnoor"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d"
+        }
+      ]
+    },
+    {
+      "_id": "73e8862e-acb9-4382-8989-d8e268069d61",
+      "_rev": "f3B9PuFrOuEr1B8BwnslAe",
+      "description": "Crocode Lab developed a rugged, high-performance Shopify store for Arcus, a retailer specializing in outdoor and adventure gear. This project demanded technical excellence to handle complex product variations. These customers expect detailed specifications — and they notice when information is missing or wrong.\n",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "arcus"
+      },
+      "solution": "Meeting the Needs of Outdoor Enthusiasts\n\nOutdoor gear shoppers research exhaustively before spending. They compare weight measurements down to grams. They read waterproof ratings and temperature ranges carefully. Generic product descriptions fail these customers completely — they'll just go somewhere else.\n\nArcus came to us frustrated with their existing platform. Product data spread across inconsistent formats. Filtering options missed critical attributes like pack volume and insulation type. The search function returned irrelevant results too often.\n\nStructured Product Information Architecture\n\nWe rebuilt the entire product data model from scratch. Every category received custom attribute sets matching how customers actually shop. Tents display capacity, seasonality, and packed dimensions prominently. Sleeping bags show temperature ratings and fill power clearly. No guessing required.\n\nThe comparison tool lets shoppers evaluate multiple products side by side. Specifications align in rows for easy scanning. Differences highlight automatically. This feature reduced return rates — customers choose correctly the first time when they have proper information.\n\nOur information architecture included these specialized components:\n\ngear compatibility matrices showing what works together;\n\nweight calculators for building complete kit lists;\n\nsize guides with measurement instructions for apparel;\n\ncare instructions accessible from every product page;\n\nwarranty information displayed with claim procedures.\n\nThese tools transform shopping from guesswork into informed decision-making. Customers trust Arcus because they receive complete information upfront.\n\nVisual Treatment for Adventure Products\n\nOutdoor gear photography needs to convey durability and performance. We established photo standards showing products in actual use conditions. Tents appear pitched in varied terrain. Backpacks display properly loaded and worn. Customers see what they're actually buying.\n\nHomepage features rotating adventure imagery that inspires purchase motivation. Video content shows gear tested in demanding environments. User-submitted photos create community connection and social proof.\n\nColor choices throughout reflect natural environments. Earth tones dominate the palette. Accent colors come from technical fabrics in the product line. Typography feels sturdy without being heavy. The overall effect suggests capability and reliability.\n\nTechnical Performance Optimization\n\nOutdoor enthusiasts often shop from areas with poor connectivity — planning next weekend's trip from a cabin, maybe. We optimized aggressively for slow network conditions. Images compress intelligently based on connection speed. Critical content loads first while secondary elements follow.\n\nThe optimization work addressed specific performance challenges:\n\nProgressive image loading. Thumbnails appear immediately with full resolution loading in background.\n\nContent prioritization. Essential product specs render before supplementary materials.\n\nOffline capability. Previously viewed products remain accessible when signal drops.\n\nConnection detection. System adjusts asset quality based on current bandwidth.\n\nAggressive caching. Repeat visits load nearly instantly from local storage.\n\nPage speed scores consistently reach 90 or above on mobile. This performance advantage helps search rankings and reduces bounce rates.\n\nIntegration with Expedition Planning\n\nArcus serves both casual hikers and serious expeditions. We built a trip planning module that helps customers prepare properly. They enter destination, duration, and activity type. The system generates gear checklists they can shop directly.\n\nGroup ordering functionality supports organized trips. Leaders create shared carts that team members contribute to. Bulk discounts apply automatically at quantity thresholds. Shipping consolidates to single addresses for departure points.\n\nThis planning integration drives significant order value increases. Customers who use the trip planner spend three times more than average. They return frequently as new adventures require additional equipment. Arcus expanded internationally following the Shopify migration — multi-language support and localized shipping options reduced cart abandonment from overseas visitors.\n\n\n",
+      "title": "Arcus: Outdoor Equipment Store on Shopify",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "YyMBw7yxP0TD5F3bCiB1wr",
+        "title": "Arcus: Sklep Shopify z wyposażeniem outdoorowym",
+        "slug": "arcus"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "be092db60142496ab5e248f52c528cbe",
+          "_ref": "be092db6-0142-496a-b5e2-48f52c528cbe"
+        }
+      ]
+    },
+    {
+      "_id": "77579ee2-feff-4d00-b0f7-6c4b4d0e45fa",
+      "_rev": "zpNAPfmzgy9V2WUZNZll17",
+      "description": "Crocode worked with Coffeeface to create a sharper, more conversion-focused Shopify store for a skincare brand built around a very specific product story. This was not a broad beauty catalog with dozens of product lines. The brand revolves around a simplified routine — 3-in-1 skincare pads designed to exfoliate, hydrate, and deliver serum-level care in one step. Our task was to shape that positioning into a stronger Shopify skincare ecommerce experience: cleaner presentation, better product storytelling, stronger mobile flow, and a storefront that could convert first-time visitors into confident buyers. The brand’s public product positioning centers on caffeine-based skincare, individually wrapped moisture pads, and a simplified one-step routine, which shaped the direction of the build.",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "coffeeface"
+      },
+      "solution": "What Coffeeface Needed From Their Shopify Store\n\nCoffeeface sits in a competitive beauty ecommerce brand space where visual identity matters, but clarity matters even more. Their product is unusual enough to need explanation. It is not a traditional moisturizer, cleanser, or serum. It is a portable, routine-simplifying skincare format that needs to be understood quickly if it is going to sell well.\n\nThat creates a common ecommerce challenge. If the storefront is too minimal, the product feels unclear. If it is too dense, the experience starts to feel like homework. Coffeeface needed a store that could explain the value of the product without overwhelming the customer.\n\nThe project focused on several priorities from the start. Better Shopify UX/UI redesign. Stronger Shopify product page optimization. Cleaner storytelling around ingredients and benefits. And a more natural shopping flow for a clean skincare brand built around convenience, portability, and daily use.\n\nDesigning Around Product Education and Simplicity\n\nA skincare store like this has to do more than look premium. It has to help customers understand what makes the product different.\n\nWe structured the storefront around that idea. Instead of treating the product like a generic cosmetic item, we built the experience around its positioning: one-step skincare routine, portable skincare pads, and a faster way to handle daily skincare.\n\nThe design system emphasized:\n\ncleaner hierarchy across homepage and product pages;\n\nmore focused messaging blocks;\n\nstronger product-benefit presentation;\n\neasier navigation on mobile;\n\nvisual balance between skincare education and purchase intent.\n\nThis kind of Shopify redesign for beauty ecommerce works best when the site does not try to say everything at once. We made sure the messaging moved in the right order: what it is, why it matters, how it works, and why it fits into everyday routines.\n\nThat structure is especially important for a travel-friendly skincare brand and minimal skincare routine product, where convenience is part of the value proposition.\n\nProduct Page Development for a Differentiated Skincare Offer\n\nFor Coffeeface, the product page was the most important sales environment on the site. That is where trust, explanation, and conversion all have to come together.\n\nWe approached the build with a strong Shopify PDP optimization focus. The product needed to feel simple to buy, but not oversimplified in how it was presented.\n\nWe refined the product page experience around several key goals:\n\nclearer explanation of the 3-in-1 moisture pads concept;\n\nstronger ingredient storytelling;\n\nmore persuasive benefit-led content blocks;\n\nbetter sequencing of product details and usage guidance;\n\nimproved mobile readability and add-to-cart flow.\n\nThis was particularly important because Coffeeface’s positioning relies on both format and ingredients. It is not just about skincare outcomes — it is also about how the product fits into real life. Individually wrapped skincare pads, simplified routines, and easy travel use are all part of the buying logic, so the product page had to sell the system, not just the item.\n\nBuilding a Storefront Around Ingredients and Benefits\n\nBeauty and skincare customers often buy through ingredient trust as much as brand trust. That meant the storefront had to communicate not only what Coffeeface does, but why its formulation mattered.\n\nWe structured the content and design around the brand’s strongest skincare themes:\n\ncaffeine skincare\n\nhydrating skincare products\n\nantioxidant skincare\n\nskin soothing skincare\n\ndaily hydration skincare\n\nThat kind of messaging is especially effective when the experience stays clean and digestible. We avoided turning the storefront into a technical ingredient encyclopedia. Instead, we focused on how the benefits are understood in a shopping context: depuffing, hydration, brightening, smoother-looking skin, and a more convenient daily routine.\n\nThis helped position Coffeeface more clearly as a premium skincare ecommerce brand rather than just another product in a crowded skincare feed.\n\nMobile UX for Beauty Ecommerce\n\nA large share of skincare shopping happens on phones, especially for visually driven products discovered through social and paid traffic. That means mobile performance is not a secondary concern — it is the storefront.\n\nWe treated the mobile experience as a core part of the build rather than a compressed desktop version. Several design and UX decisions were made with mobile-first conversion in mind:\n\nproduct sections that scan cleanly on smaller screens;\n\nclearer touch-friendly purchase flow;\n\nmore compact ingredient and benefit presentation;\n\nsmoother visual rhythm between images, copy, and calls to action;\n\nreduced friction in the add-to-cart journey.\n\nFor a Shopify beauty brand website, small UX decisions tend to have outsized impact. If the customer has to pinch, hunt, or decode what they are looking at, the sale usually disappears.\n\nOur goal was to make Coffeeface feel polished, intuitive, and native to the way skincare shoppers already browse.\n\nConversion-Focused Shopify Development\n\nFrom a development standpoint, this was not just about aesthetics. The store needed to support stronger Shopify conversion optimization and give the brand a better base for future growth.\n\nWe implemented a cleaner storefront structure with an emphasis on:\n\nmodular content flexibility;\n\nstronger landing page flow;\n\nbetter merchandising control;\n\nimproved product storytelling;\n\na more scalable Shopify frontend development foundation.\n\nThis gave Coffeeface a more usable and strategically organized Shopify setup — one that supports not only immediate product sales, but also future testing, iteration, and Shopify growth optimization.\n\nThat matters for beauty brands more than people often realize. Once paid traffic starts scaling, the storefront has to carry much more weight. Better design alone is not enough. The site has to hold attention, build trust, and close efficiently.\n\nThe Result: A More Focused Shopify Experience for a Beauty Brand\n\nThe finished Coffeeface store gave the brand a stronger digital foundation built around what makes the product distinctive. Rather than treating it like a generic skincare launch, we built a more intentional Shopify development for skincare ecommerce experience — one designed around routine simplification, product clarity, and conversion.\n\nThis project brought together several things that matter most in Shopify CRO for skincare brand work:\n\nstronger visual positioning;\n\nclearer product communication;\n\nbetter mobile UX;\n\nmore persuasive product pages;\n\na more scalable ecommerce structure.\n\nFor Crocode, Coffeeface is a strong example of how Shopify development for a beauty brand works best when strategy and product positioning drive the build. The result is not just a better-looking store. It is a storefront that makes the product easier to understand, easier to trust, and easier to buy.",
+      "title": "Coffeeface: Shopify Store Built for a Modern Skincare Brand",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "YyMBw7yxP0TD5F3bCiB5Rd",
+        "title": "Coffeeface: Sklep Shopify Stworzony dla Nowoczesnej Marki Kosmetyków do Pielęgnacji Skóry",
+        "slug": "coffeeface"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d"
+        }
+      ]
+    },
+    {
+      "_id": "8ec29256-976a-4030-ac7c-1f4969704c4a",
+      "_rev": "f3B9PuFrOuEr1B8Bwnsefa",
+      "description": "We crafted a delicate yet functional Shopify store for Christina's Blomster, a Scandinavian florist serving both local delivery and nationwide shipping. The project balanced visual beauty with the operational complexity of perishable product fulfillment — flowers don't wait for anyone.\n",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "christinasblomster"
+      },
+      "solution": "Unique Challenges of Online Flower Retail\n\nSelling flowers online differs fundamentally from typical ecommerce. Products change daily based on market availability. Delivery timing matters critically. Presentation must convey freshness and artistry that customers cannot smell or touch through screens.\n\nChristina's Blomster needed solutions for their specific situation. Local customers expected same-day delivery. Nationwide orders required careful scheduling around shipping conditions. Subscription bouquets needed flexible management. The previous website handled none of these requirements adequately.\n\nInventory and Availability Management\n\nFresh flower inventory fluctuates constantly. We built a system that updates availability based on daily market purchases. Products disappear when stems run out. Substitute suggestions appear automatically for unavailable items — no dead ends.\n\nThe calendar integration restricts delivery dates intelligently. Local zones show same-day options until cutoff times. Distant addresses only display dates matching shipping schedules. Holiday blackout periods prevent impossible delivery promises.\n\nOur availability system handles several complex scenarios:\n\nSeasonal limitations. Certain flowers only appear during specific months. The system shows these constraints clearly.\n\nWeather delays. Extreme temperatures pause shipping to affected regions. Customers see explanatory messages rather than confusing error codes.\n\nCapacity management. Production limits per day prevent over-promising. Popular dates close when maximum orders reach capacity.\n\nCustom order lead times. Special arrangements require advance notice. Checkout enforces minimum preparation windows.\n\nThis backend complexity remains invisible to customers. They simply see what they can order and when it will arrive.\n\nPhotography That Sells Perishables\n\nFlower photography presents unique challenges. Arrangements vary naturally. Colors shift in different lighting. Customers want accurate expectations about their purchases.\n\nWe established photography protocols showing typical rather than ideal arrangements. Multiple angles reveal actual proportions. Detailed shots display flower quality at close range. Context images show scale against common objects.\n\nThe gallery system handles arrangement variations gracefully. Customers understand they receive similar rather than identical bouquets. This honest presentation reduces complaints and returns significantly.\n\nSubscription Bouquet Management\n\nRecurring flower deliveries build stable revenue. We implemented a subscription model tailored to floral retail needs. Customers choose frequency, budget range, and style preferences. Christina's team curates selections matching their profiles.\n\nThe subscription interface offers flexibility that keeps people subscribed:\n\nmodify preferences up until production cutoff each cycle;\n\nskip weeks during vacation without calling anyone;\n\nupgrade for special occasions with one click;\n\nadjust budget as circumstances change;\n\ngift subscriptions to others with separate delivery controls.\n\nGift subscriptions work slightly differently. Givers purchase prepaid periods. Recipients control delivery details without seeing pricing. The separate flows handle emotional nuances of flower gifting appropriately.\n\nLocal and National Fulfillment\n\nChristina's Blomster operates two fulfillment models simultaneously. Local orders ship from their studio via contracted couriers. National orders route through a partner network of regional florists.\n\nWe integrated both fulfillment paths seamlessly. Customers enter addresses without worrying about routing. The system determines optimal fulfillment automatically. Pricing adjusts based on delivery method and distance.\n\nTracking works consistently regardless of fulfillment path. Customers receive updates from arrangement completion through delivery. Photo confirmation shows the actual product left at doorsteps. This visibility builds confidence in quality and service. Christina's Blomster doubled online revenue within six months of launch.\n\n\n",
+      "title": "Christina's Blomster: Florist Shopify Store",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "49574073-7fc2-4dfd-a11a-ccc5bef8a73c",
+        "title": "Christina's Blomster: Sklep Shopify dla kwiaciarni",
+        "slug": "christinasblomster"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5"
+        }
+      ]
+    },
+    {
+      "_id": "901bcef9-b924-4217-a55c-d040b9623de3",
+      "_rev": "AgSw906H5N3BHcJxYYWTJl",
+      "description": "Crocode Lab partnered with SienaHome to create an elegant Shopify destination for premium home furnishings. The brand sells carefully curated furniture, textiles, and decorative objects — pieces that demand proper presentation. Our design work captures the sophisticated aesthetic their customers expect.\n",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "sienahome"
+      },
+      "solution": "The Challenge of Selling Luxury Online\n\nHigh-end home goods present unique ecommerce challenges. Customers cannot touch fabrics or see furniture scale in person. Photography must convey quality that justifies premium prices. The shopping experience itself needs to feel luxurious — otherwise, why pay more?\n\nSienaHome struggled with their template-based store. It looked generic compared to competitor sites. Product presentation failed to communicate craftsmanship. The checkout felt utilitarian rather than aspirational. Conversion rates lagged behind industry benchmarks despite strong traffic numbers.\n\nDesign Philosophy and Execution\n\nWe approached SienaHome as an editorial project rather than a typical ecommerce build. Each page tells a story about living beautifully. Product photography dominates the visual hierarchy. Text supports images rather than competing with them.\n\nThe homepage functions like a magazine cover. Hero images rotate seasonally to reflect current collections. Editorial features highlight designer collaborations and artisan workshops. The effect positions SienaHome as a tastemaker — not just another retailer.\n\nInterior pages maintain consistent elegance through careful choices:\n\ngenerous padding creates breathing room around content;\n\ntypography pairs a refined serif headline font with clean body text;\n\nproduct grids allow asymmetrical layouts for visual interest;\n\nhover states reveal additional views without requiring clicks;\n\ncolor palette stays neutral to complement diverse product styles.\n\nThese design decisions create an environment worthy of luxury products. Visitors feel they have entered a curated gallery rather than a generic store.\n\nRoom Visualization Tools\n\nFurniture shopping online demands help imagining products in context. Will that sofa fit? Does the color work with existing pieces? We developed a room planner tool that lets customers arrange items virtually. They upload photos of their spaces and place SienaHome products within them.\n\nThe augmented reality feature takes visualization further. Mobile users point cameras at empty corners. Products appear at accurate scale in real time. This technology reduces the uncertainty that prevents furniture purchases online.\n\nWe also created curated room sets as shopping shortcuts. Customers purchase complete looks designed by SienaHome stylists. Each set coordinates complementary items across categories. Average order values increased 45 percent through these bundled offerings.\n\nTrade Program Integration\n\nInterior designers represent a significant customer segment for luxury home brands. We built a dedicated trade portal within the Shopify store. Professionals apply for accounts and receive special pricing upon approval.\n\nThe trade experience differs from consumer shopping in important ways:\n\nDual pricing display. Designers see net pricing and suggested retail simultaneously for client quotes.\n\nProject organization. They create projects and save items for different client presentations.\n\nTear sheet generation. Professional specification documents generate automatically.\n\nSplit shipping. Orders route to multiple job sites without complications.\n\nExtended payment terms. Invoice options extend beyond immediate payment requirements.\n\nOrder management for trade accounts handles complexity gracefully. The system tracks designer commissions when clients purchase directly. What once required manual coordination now happens automatically.\n\nResults and Continuing Relationship\n\nSienaHome exceeded revenue targets in their first year on the new platform. Trade program now accounts for 35 percent of sales. Consumer average order value increased significantly. Customer acquisition costs dropped as word-of-mouth grew.\n\nWe maintain the SienaHome store through a retainer relationship. Monthly updates introduce new functionality. Recent additions include a fabric sample request system and white-glove delivery scheduling. The platform evolves alongside the brand.\n\n\n",
+      "title": "SienaHome: Luxury Home Goods Store Development",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "tgyyf2ygOfIU59A8Epn9Je",
+        "title": "SienaHome: Tworzenie sklepu z luksusowymi artykułami do domu",
+        "slug": "sienahome"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        }
+      ]
+    },
+    {
+      "_id": "90f54d4e-3505-4fc2-9e19-d9e7a25e1faa",
+      "_rev": "f3B9PuFrOuEr1B8BwnqdIC",
+      "description": "We developed a comprehensive Shopify store for AllBuy, a general merchandise retailer operating at significant scale. The project demanded solutions for massive catalogs, complex operations, and diverse customer needs.\n",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "allbuy"
+      },
+      "solution": "Enterprise Retail Challenges\n\nAllBuy sells across dozens of product categories. Their catalog spans thousands of items. Customer types range from individual consumers to small business buyers. Operations involve multiple warehouses and shipping partners.\n\nThe previous platform buckled under this complexity. Search struggled with catalog size. Inventory accuracy suffered across locations. Customer experience varied unacceptably by category and order type.\n\nCatalog Architecture at Scale\n\nWe restructured the entire product taxonomy systematically. Categories received consistent attribute definitions. Variants handled complexity without interface confusion. The massive catalog became navigable through intelligent organization.\n\nThe search infrastructure handles scale gracefully. Indexing processes catalog changes continuously. Query processing returns relevant results within milliseconds. Filters narrow options without losing accuracy.\n\nOur catalog solutions addressed specific requirements:\n\nhierarchical categories with unlimited depth;\n\ncross-category attributes for consistent filtering;\n\nbulk editing tools for efficient maintenance;\n\nimport automation from supplier feeds;\n\nsyndication to marketplace channels.\n\nThese capabilities support current operations while enabling continued growth.\n\nMulti-Warehouse Fulfillment\n\nAllBuy ships from multiple distribution centers. Order routing optimizes for speed and cost. Split shipments handle situations where no single location stocks everything. Inventory visibility stays accurate across all facilities.\n\nThe warehouse integration connects with existing management systems. Stock levels sync continuously. Pick lists generate automatically. Shipping labels print where products physically reside.\n\nCustomer communication adapts to fulfillment complexity. Multi-shipment orders show separate tracking for each package. Estimated delivery calculates from actual warehouse locations. Transparency reduces confused inquiries.\n\nCustomer Segmentation and Pricing\n\nDifferent customers warrant different treatment. We implemented pricing tiers that reflect relationship value. Loyal customers earn discounts automatically. Business accounts access wholesale pricing.\n\nThe segmentation engine considers multiple factors:\n\nPurchase history. Volume and frequency influence tier assignment.\n\nAccount type. Business registrations unlock specific pricing.\n\nGeography. Regional pricing reflects market conditions.\n\nChannel origin. Different acquisition sources warrant different treatment.\n\nThis flexibility maximizes revenue while rewarding valuable customers appropriately.\n\nBusiness Customer Features\n\nSmall businesses represent a significant customer segment. We built features serving their distinct needs. Account management handles multiple buyers. Approval workflows route large purchases appropriately.\n\nInvoicing options extend beyond immediate payment. Net terms availability depends on credit assessment. Statement generation and payment tracking work automatically. These capabilities compete with traditional wholesale relationships.\n\nReorder functionality simplifies repeat purchasing. Previous orders convert to new carts instantly. Scheduled reorders automate routine procurement. Business customers appreciate these time-saving conveniences.\n\nOperational Excellence Results\n\nAllBuy operational metrics improved across every dimension. Order processing time decreased 60 percent. Inventory accuracy reached 99.7 percent. Customer service inquiries dropped as self-service improved.\n\nRevenue grew faster than transaction volume as average order values increased. Better discovery connected customers with products they wanted. Cross-sell and bundle features drove incremental purchases.\n\nThe platform now supports continued expansion. New product categories launch without technical barriers. Additional warehouses integrate within days. AllBuy has infrastructure matching their ambitions.",
+      "title": "AllBuy: Multi-Category Retail Platform",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "6828afc2-5ac2-45df-a276-ab7350186849",
+        "title": "AllBuy: Wielokategorowa platforma sprzedaży detalicznej",
+        "slug": "allbuy"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5"
+        }
+      ]
+    },
+    {
+      "_id": "91dbcec8-00b4-4980-84b2-9cd0fd495ee0",
+      "_rev": "95YjOBLsMtjdp90YEYIa3M",
+      "description": "Crocode partnered with Zoofs to build a fully custom Shopify store for a pet supplement brand designed around flexibility, conversion, and a stronger shopping experience. Zoofs operates in the pet supplement ecommerce space, offering products for dogs and cats focused on gut health, mobility, and everyday wellness. Instead of relying on a rigid Shopify theme, we developed a highly reusable storefront architecture with modular sections, a custom product page, bundle logic, and an advanced cart experience built to support Shopify CRO for pet supplement ecommerce.",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "zoofs"
+      },
+      "solution": "What Zoofs Needed From Their New Storefront\n\nZoofs needed more than a good-looking storefront. The brand required a custom ecommerce system that could stay visually fresh without forcing the team to rebuild pages from scratch every time they wanted to launch new content or merchandising campaigns.\n\nThat meant solving two challenges at once. First, the site needed to communicate a premium pet wellness brand identity in a clean and modern way. Second, it had to support a more commercial, conversion-focused shopping flow — especially on product pages and inside the cart.\n\nFrom the beginning, the project centered on:\n\nbuilding a flexible Shopify custom storefront development system;\n\nimproving product merchandising;\n\nincreasing average order value through bundles and cart mechanics;\n\ncreating a more dynamic, sales-oriented customer journey.\n\nBuilding a Reusable Shopify Section Architecture\n\nOne of the most important parts of this project was the storefront architecture itself.\n\nRather than creating a large number of one-off sections, we built the site around a smaller set of highly adaptable components. This made the storefront much easier to scale, maintain, and reuse across different landing pages and merchandising needs.\n\nEach section was developed with a wide range of settings that allowed the Zoofs team to change the visual outcome significantly without needing new code. These controls included:\n\ntext alignment and placement;\n\ntext sizing and hierarchy;\n\nimage positioning and scale;\n\ndecorative highlights and SVG icons;\n\nlayout variations for different content priorities.\n\nThis created a strong Shopify modular design system and a more scalable Shopify reusable section architecture. The same content block could appear multiple times across the store while still feeling visually distinct each time.\n\nThat flexibility is especially valuable for a Shopify custom theme development project. Instead of locking the brand into a fixed visual structure, we gave them a Shopify flexible content sections system that supports future growth, campaign pages, and evolving merchandising needs.\n\nCustom Storefront Development for a More Flexible Brand Experience\n\nThe Zoofs store was built as a fully custom storefront rather than a lightly edited template.\n\nThis allowed us to create a cleaner and more intentional visual language for a brand operating in dog supplement ecommerce, cat supplement ecommerce, and the wider pet health ecommerce category. The design needed to feel modern and trustworthy without becoming too clinical or too generic.\n\nOur development approach focused on:\n\nmore polished section transitions and content rhythm;\n\nstronger product-first layouts;\n\nflexible landing page composition;\n\nreusable merchandising blocks;\n\na storefront structure designed for both performance and long-term maintainability.\n\nThis is where the project moved beyond standard theme work and became a true Shopify custom ecommerce implementation.\n\nProduct Page Development Built for Conversion\n\nThe product page was one of the strongest conversion layers in the Zoofs build.\n\nFor a pet supplement ecommerce brand, customers often need a little extra reassurance before they buy. They are not just choosing a product — they are making a decision about their dog’s or cat’s health. That means the product page has to do more than present features. It has to create urgency, simplify choice, and increase purchase confidence.\n\nWe implemented a custom Shopify product page development setup with several conversion-focused features, including a custom inventory progress bar that displays how much stock remains.\n\nThis Shopify inventory progress bar was designed to function as a subtle urgency mechanic rather than a distracting gimmick. It helps reinforce demand and availability while supporting stronger purchase intent on the product page.\n\nFor stores selling dog probiotics, cat probiotics, pet mobility supplements, and other health-focused products, small trust and urgency mechanics like this can make a meaningful difference.\n\nBundle Logic and Dynamic Pricing on the Product Page\n\nAnother key feature of the Zoofs product page was the custom bundle system.\n\nWe developed a Shopify product bundle builder that allows customers to add multiple products while seeing the total price update dynamically based on quantity and bundle composition. This created a smoother path toward larger purchases and gave the brand more control over how multi-product offers are presented.\n\nThis part of the build supported several high-value ecommerce goals:\n\nbetter Shopify bundle logic development;\n\nstronger Shopify dynamic bundle pricing;\n\nimproved average order value;\n\neasier merchandising of complementary products;\n\nmore persuasive offer presentation.\n\nFor a store selling pet supplement bundles, pet health bundles, and products across adjacent categories like gut health and mobility, this kind of system adds real commercial value.\n\nIt also made the product page feel more interactive and decision-friendly, which is a core part of effective Shopify product page optimization for pet brand stores.\n\nCustom Cart Development With Conversion-Driven UX\n\nThe Zoofs cart was not treated as a simple checkout step. It was built as a meaningful part of the conversion journey.\n\nWe developed a fully custom Shopify custom cart development experience focused on AOV growth and smoother user interaction. One of the standout features was an animated Shopify free shipping progress bar that updates dynamically as products are added or removed from the cart.\n\nInstead of abruptly jumping from one state to another, the progress bar animates smoothly from the previous value to the new one after the cart rerenders. That small detail matters. It makes the cart feel more polished, more alive, and more responsive to the user’s actions.\n\nThis supported a better Shopify custom cart UX and a stronger Shopify cart conversion optimization layer overall.\n\nRecommended Products and Upsell Logic Inside the Cart\n\nTo increase average order value even further, we also implemented a custom product recommendation slider directly inside the cart.\n\nThis Shopify cart upsell development feature allows Zoofs to surface relevant products at a highly valuable point in the purchase journey — after the customer has already committed to adding something to cart, but before checkout is complete.\n\nThat functionality supported:\n\nShopify recommended products in cart\n\nShopify cross-sell in cart\n\nShopify cart merchandising\n\nShopify AOV optimization\n\nFor a brand selling complementary products like dog and cat supplements, gut health formulas, and mobility support items, the cart is one of the best places to introduce relevant add-ons without interrupting the browsing experience.\n\nDesigning for Reusability, Merchandising, and Growth\n\nWhat makes this project especially strong is that it combines two things that are often treated separately: design flexibility and commercial performance.\n\nThe Zoofs storefront was built to be easy for the brand to work with internally, but also to support stronger customer behavior externally. The reusable sections improve content operations. The custom product page improves merchandising. The bundle system improves offer value. The cart improves AOV and checkout momentum.\n\nThat combination is what makes this more than just a visually custom Shopify build. It is a more strategic Shopify conversion-focused custom store built around how ecommerce actually performs.\n\nThe Result: A Scalable Shopify Store for a Pet Wellness Brand\n\nThe final Zoofs store gives the brand a much stronger foundation for growth in the science-backed pet supplements space.\n\nInstead of a fixed storefront with limited flexibility, Zoofs now has a more scalable and commercially effective Shopify system that includes:\n\nShopify reusable sections\n\nShopify modular section development\n\nShopify custom product page\n\nShopify bundle pricing system\n\nShopify inventory progress bar\n\nShopify custom cart development\n\nShopify free shipping progress bar\n\nShopify cart upsell slider\n\nFor Crocode, Zoofs is a strong example of Shopify custom development for a pet supplement brand done properly — balancing visual flexibility, technical precision, and conversion-driven ecommerce functionality in one cohesive build.",
+      "title": "Zoofs: Custom Shopify Store for a Pet Supplement Brand",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "9f137677-c0f5-4eec-a344-b5e4bd9d34de",
+        "title": "Zoofs: Custom Shopify Store dla Marki Suplementów dla Zwierząt",
+        "slug": "zoofs"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d"
+        }
+      ]
+    },
+    {
+      "_id": "a09b45f8-933e-4c8b-9240-def739020e84",
+      "_rev": "f3B9PuFrOuEr1B8Bwnsv6U",
+      "description": "Crocode Lab created a specialized Shopify store for Bearbricks, a retailer focusing on collectible designer toys. This project demanded unique solutions — limited-edition products, passionate collectors, server loads that spike without warning. We built a platform that handles high-demand releases while maintaining the premium feel these products deserve.",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "bearbricks"
+      },
+      "solution": "Understanding the Collectibles Market\n\nThe designer toy market plays by different rules. Products sell out within minutes of release. Collectors track inventory obsessively. Resale markets create pricing dynamics that would confuse most retailers. A standard Shopify template simply cannot handle these pressures.\n\nBearbricks approached us after experiencing website crashes during product drops. Their previous setup buckled under traffic spikes. Frustrated customers. Failed checkouts. The brand risked losing its most dedicated buyers to competitors who had figured this out already.\n\nBuilding for High-Demand Releases\n\nWe engineered the Bearbricks store specifically for launch events. The infrastructure scales automatically when traffic surges — and I mean really surges. Server response times stay consistent whether ten or ten thousand visitors browse simultaneously. We tested this extensively before going live.\n\nThe release management system gives Bearbricks precise control over product drops. Staff schedule launches to the second. Countdown timers build anticipation on product pages. Queue systems manage checkout fairly during peak demand.\n\nSeveral specialized features make the store work for collectors:\n\npre-launch email notifications for registered users;\n\nwaitlist functionality for sold-out items;\n\nauthentication certificates displayed on product pages;\n\ncondition grading system for vintage pieces;\n\ndetailed provenance information when available.\n\nThese tools help collectors make informed decisions quickly. They also reduce customer service inquiries about authenticity and availability — a big operational win.\n\nVisual Design for Premium Products\n\nDesigner toys deserve premium presentation. We developed a gallery system that displays products from multiple angles. Zoom functionality reveals fine details in paint applications and sculpting. Video integration shows figures in motion when manufacturers provide clips.\n\nHomepage rotates featured products and upcoming releases. Collection pages group figures by series, artist, or theme. Individual product pages include related items that collectors often purchase together. This cross-selling approach increased average order values by 28 percent.\n\nColor choices throughout complement products rather than compete with them. Neutral backgrounds let vivid toy colors stand out. Typography stays understated to maintain focus on merchandise imagery.\n\nInventory and Fulfillment Integration\n\nManaging collectible inventory requires precision that most retail systems lack. We connected Bearbricks to a warehouse management system tracking each item individually. Serial numbers link to specific orders for authenticity verification.\n\nThe fulfillment workflow we implemented includes these steps:\n\nOrder confirmation and item allocation. System reserves specific serial-numbered pieces immediately upon purchase.\n\nQuality inspection before packaging. Staff photograph items against order details to document condition.\n\nProtective packaging selection. Different figure sizes and fragility levels trigger appropriate material choices.\n\nShipping carrier optimization. System selects carriers based on destination, value, and delivery speed requirements.\n\nThis documentation prevents disputes and builds buyer confidence. Packaging materials protect delicate figures during transit — no small thing when customers pay premium prices.\n\nOngoing Partnership and Growth\n\nSince launch, Bearbricks has expanded their product range significantly. We adapted the store structure to accommodate new categories. Recent additions include apparel, art prints, and home accessories that complement the core figure collection.\n\nThe platform now handles international sales across 40 countries. Multi-currency display and localized shipping calculations work seamlessly. Tax compliance automation removes manual work from overseas orders. What started as a collector toy store has become a global lifestyle brand.\n\n\n",
+      "title": "Bearbricks: Collectible Toy Store Built on Shopify",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "tgyyf2ygOfIU59A8EpnC7x",
+        "title": "Bearbricks: Sklep z kolekcjonerskimi zabawkami zbudowany na Shopify",
+        "slug": "bearbricks"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5"
+        },
+        {
+          "_type": "reference",
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d"
+        }
+      ]
+    },
+    {
+      "_id": "a63a0817-46e9-4e7d-b2b3-9fd97afdc49c",
+      "_rev": "f3B9PuFrOuEr1B8BwnsRQ6",
+      "description": "Our team built a conversion-focused Shopify store for Kleanse, a science-backed skincare company. The project balanced clinical credibility with approachable brand personality — not an easy combination. We created a shopping experience that educates while it sells.\n",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "kleanse"
+      },
+      "solution": "Brand Positioning and Technical Needs\n\nKleanse formulates products using research-validated ingredients. Their target customers read studies and scrutinize formulations before buying anything. Marketing claims must have actual substance here. The previous website looked credible but performed poorly in terms of actual sales.\n\nThe technical brief included specific requirements. Fast loading speeds matter for skincare shoppers who comparison shop extensively across tabs. Mobile optimization was essential — most traffic came from phones. Integration with their custom formulation database needed seamless connection.\n\nIngredient Education System\n\nSkincare enthusiasts want to understand what they apply to their faces. Fair enough. We created an ingredient glossary explaining every component Kleanse uses. Each entry covers function, research support, and concentration guidelines.\n\nProduct pages link directly to relevant ingredient profiles. Curious shoppers explore the science without leaving the purchase flow. This transparency differentiates Kleanse from competitors hiding behind vague \"proprietary blend\" language.\n\nThe educational approach extends through the entire shopping journey:\n\nRoutine builders. Customers answer questions about skin type and concerns. The system recommends products in correct application order.\n\nCombination warnings. Certain ingredients should not mix. The cart alerts users when selections might cause issues.\n\nConcentration comparisons. Active ingredient percentages display prominently. Shoppers understand exactly what strength they purchase.\n\nClinical study links. Where available, references to published research accompany product claims.\n\nEducation builds confidence in purchase decisions. Informed customers return more frequently and recommend products to others.\n\nVisual Design for Clinical Credibility\n\nThe Kleanse aesthetic communicates scientific rigor without feeling cold or intimidating. Clean lines and ample white space suggest laboratory precision. Product photography shows actual texture and consistency through close-up imagery.\n\nWe avoided typical skincare visual clichés deliberately. No dewdrops on leaves. No models with impossibly perfect skin. Instead, real ingredient photography and process documentation tell the brand story authentically.\n\nThe mobile experience strips away everything unnecessary. Core product information loads first. Supplementary content appears as users scroll deeper. This prioritization keeps pages fast while maintaining educational depth for those who want it.\n\nSubscription and Replenishment\n\nSkincare products deplete predictably. We implemented a subscription system matching typical usage patterns. Thirty, sixty, and ninety-day intervals cover most customer needs. The subscribe-and-save discount incentivizes commitment without feeling pushy.\n\nOne-time purchase remains prominent — always. Customers choose what works for their situation. This balanced approach converts skeptics gradually into subscribers.\n\nAccount management gives subscribers full control over their deliveries:\n\nswap products between shipments without canceling;\n\nskip individual deliveries during travel or when stocked up;\n\nadjust quantities as routines evolve;\n\ncancel anytime without guilt trips or hidden steps;\n\nreactivate easily if circumstances change.\n\nThe low-pressure approach actually reduces cancellations compared to systems that make changes difficult. People stay when they feel respected.\n\nMeasurable Business Impact\n\nKleanse tracks detailed analytics across their customer journey. Conversion rates improved 89 percent after launch. Time on site increased as visitors engaged with educational content. Subscription enrollment now reaches 40 percent of orders.\n\nCustomer service inquiries shifted in nature. Fewer questions about ingredients and formulations arrive. More questions about advanced routine optimization indicate engaged, educated buyers. Support costs decreased while satisfaction increased. The organic search strategy continues generating results — ingredient-focused content ranks well for research queries.\n\n\n",
+      "title": "Kleanse: Skincare Brand Shopify Development",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "b4e3c553-64f0-430f-8025-7c2f25fd8fbf",
+        "title": "Kleanse: Tworzenie sklepu Shopify dla marki kosmetyków do pielęgnacji skóry",
+        "slug": "kleanse"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d"
+        }
+      ]
+    },
+    {
+      "_id": "a98dea4e-1435-4784-a7a8-c216b798f011",
+      "_rev": "AgSw906H5N3BHcJxYYGyK1",
+      "description": "We developed a distinctive Shopify store for Lost Boys Archives, a curated marketplace for rare vintage clothing. This project demanded solutions for one-of-a-kind inventory and passionate collector customers who know exactly what they want.\n",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "lost-boys"
+      },
+      "solution": "The Vintage Retail Challenge\n\nVintage fashion operates on entirely different rules than conventional retail. Every piece exists as a single unit. Condition varies widely. Authentication matters intensely. Shoppers hunt for specific pieces across multiple sellers simultaneously — they're not casual browsers.\n\nLost Boys Archives aggregates vintage from trusted dealers worldwide. Their previous platform handled unique inventory poorly. Products sold on one channel while remaining visible on others. Condition documentation scattered across disconnected systems. Not sustainable.\n\nSingle-Unit Inventory Solutions\n\nWe built inventory management specifically for unique items. Each piece exists exactly once in the system. Sale on any channel triggers immediate removal everywhere. No duplicate sales occur. No customer disappointments from unavailable items.\n\nThe listing process captures detailed condition information systematically. Sellers complete standardized assessments covering measurements, flaws, repairs, and authenticity markers. This consistency helps buyers evaluate items confidently.\n\nOur vintage-specific features include several important functions:\n\nstandardized condition grading from deadstock to heavily worn;\n\nmeasurement templates with predefined points for common garment types;\n\nauthentication documentation uploads reviewed before listing;\n\nprovenance tracking when previous ownership history exists;\n\nera verification based on construction details and labels.\n\nThese tools build marketplace trust essential for high-value vintage sales.\n\nVisual Presentation for Unique Pieces\n\nEach vintage item deserves individual attention. We created photography guidelines ensuring consistent quality while allowing item character to show. Multiple angles capture construction details. Close-ups reveal fabric texture and wear patterns honestly.\n\nProduct page layout emphasizes imagery appropriately. Large photos dominate above the fold. Zoom functionality lets shoppers examine stitching and materials closely. Condition notes appear alongside relevant images.\n\nVideo integration shows garments in motion when sellers provide footage. Drape, fit, and fabric behavior become clearer than static images allow. This added context reduces returns from unmet expectations.\n\nSeller Marketplace Management\n\nLost Boys Archives works with dealers who maintain independent businesses. The seller portal lets partners manage their inventory within the marketplace. They set prices, update descriptions, and track sales independently.\n\nCommission structures handle varying arrangements:\n\nVolume-based rates. Sellers moving significant inventory earn better percentages.\n\nPremium consignor terms. High-value pieces from established sources receive dedicated support.\n\nNew seller probation. Unproven partners face additional review until track record develops.\n\nCategory-specific adjustments. Certain item types warrant different commission structures.\n\nPromotional participation. Sellers opting into site-wide sales receive modified terms.\n\nQuality control processes protect marketplace reputation. Staff review listings before publication. Pricing guidance keeps the catalog coherent. Poor-performing sellers face removal to maintain standards.\n\nCommunity and Discovery\n\nVintage collectors form tight communities around shared interests. We integrated features that encourage connection and discovery. Style guides group items by era and aesthetic. Collector profiles show purchase histories and wish lists.\n\nThe notification system alerts shoppers when desired items appear. Saved searches trigger immediately when matching pieces list. This functionality drives quick sales on desirable inventory.\n\nEditorial content positions Lost Boys Archives as cultural authority. Features explore vintage movements and significant pieces. This content attracts organic search traffic and establishes expertise. Transaction volume increased 300 percent after platform launch as improved discovery connected inventory with eager buyers.",
+      "title": "Lost Boys Archives: Vintage Fashion Marketplace",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "tgyyf2ygOfIU59A8EpnDuj",
+        "title": "Lost Boys Archives: Marketplace z modą vintage",
+        "slug": "lost-boys-archives"
+      },
+      "matchBasis": "Different slug; same brand and substantive project scope in title, description and solution",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5"
+        },
+        {
+          "_type": "reference",
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d"
+        }
+      ]
+    },
+    {
+      "_id": "b3615b0c-b32c-43d9-bde0-52b0b84d998b",
+      "_rev": "9Tq6pzYPBwhEYUkGvniY00",
+      "description": "Crocode Lab built a high-performance Shopify store for Dansk Design Lagersalg, a Danish retailer offering premium furniture and home goods at outlet prices. The project balanced luxury presentation with value-focused messaging and flash sale functionality.\n",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "dansk-design-lagersalg"
+      },
+      "solution": "Outlet Retail Model Requirements\n\nDansk Design Lagersalg sells authentic designer products at reduced prices. Inventory comes from overstock, returns, and display models. Stock changes unpredictably. Individual items may have minor imperfections that need documentation.\n\nThe business model demands specific platform capabilities. Flash sales drive significant traffic spikes. Limited inventory creates urgency without artificial tactics. Condition variations require transparent communication. Speed matters when deals disappear quickly.\n\nPerformance Under Pressure\n\nFlash sales stress ecommerce platforms severely. Traffic spikes ten times normal levels arrive within minutes of email announcements. Checkout must handle simultaneous purchase attempts gracefully. Stock must update instantly to prevent overselling.\n\nWe engineered the Dansk Design Lagersalg platform specifically for these conditions. Caching strategies serve static content from global networks. Dynamic elements isolate from page foundations. Database queries optimize for concurrent read and write operations.\n\nLoad testing validated architecture before launch. Simulated traffic exceeded actual peak demands. Response times stayed acceptable throughout testing. Real sale events confirmed the system handles pressure successfully.\n\nInventory and Condition Documentation\n\nOutlet furniture requires different inventory approaches than standard retail. Each piece may be unique. Condition varies between items in the same product listing. Customers need specific information about what they purchase.\n\nOur inventory system handles this complexity:\n\nindividual item tracking with unique identifiers;\n\ncondition assessment documentation per piece;\n\nphotography showing specific item state;\n\nimperfection disclosure before purchase;\n\nquantity display reflecting actual available units.\n\nThis transparency builds trust in the outlet model. Customers know exactly what to expect.\n\nDeal Discovery and Notification\n\nFinding great deals drives outlet shopper behavior. We built discovery tools matching how bargain hunters actually shop. Price comparison shows original versus outlet pricing clearly. Discount percentages calculate and display automatically.\n\nThe notification system alerts interested shoppers:\n\nCategory subscriptions. Customers follow specific product types.\n\nBrand alerts. Favorite designer notifications arrive immediately.\n\nPrice threshold triggers. Deals meeting criteria generate alerts.\n\nSale event reminders. Countdown emails build anticipation.\n\nThese tools help deal-seekers find relevant opportunities quickly.\n\nScandinavian Design Aesthetic\n\nThe store design reflects Scandinavian minimalism appropriately. Clean layouts let product photography dominate. Typography choices honor design heritage. The overall experience feels coherent with the merchandise.\n\nMobile experience received particular attention. Flash sale participants often shop from phones. Touch targets size appropriately. Checkout flows minimize friction. Speed optimizations ensure pages load quickly on cellular connections.\n\nBusiness Growth Results\n\nDansk Design Lagersalg expanded significantly following platform launch. Transaction volume increased 220 percent. Flash sale conversion rates improved as site reliability grew. Customer acquisition costs dropped as word-of-mouth grew.\n\nThe platform now handles international sales efficiently. Shipping calculations and tax compliance work across Scandinavian markets. Payment options include local preferences. Language support serves Danish, Swedish, and Norwegian customers.\n\nWe continue developing features as the business grows. Recent additions include a warehouse pickup scheduling system and an imperfection discount calculator. The partnership continues producing results.\n\n\n",
+      "title": "Dansk Design Lagersalg: Danish Design Outlet Store",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "e6687091-dde1-4ded-9898-31fa2d6c1652",
+        "title": "Dansk Design Lagersalg: Duński sklep outlet z designem",
+        "slug": "dansk-design-lagersalg"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d"
+        }
+      ]
+    },
+    {
+      "_id": "b9f99ffc-da3f-4906-a248-5abfdb33537e",
+      "_rev": "9Tq6pzYPBwhEYUkGvo5awq",
+      "description": "We created a sophisticated Shopify store for Inwohn, a furniture retailer offering contemporary pieces for modern living spaces. The project addressed the unique challenges of selling substantial home furnishings through digital channels.\n",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "inwohn"
+      },
+      "solution": "Furniture Ecommerce Complexities\n\nLarge furniture purchases involve considerable decision weight. Customers cannot sit in chairs through websites. Scale remains difficult to judge from photographs. Delivery logistics introduce anxiety about damage and installation.\n\nInwohn needed solutions for these inherent challenges. Their existing platform provided basic functionality without addressing furniture-specific concerns. Competitors with better digital experiences captured customers Inwohn should have won.\n\nImmersive Product Presentation\n\nWe developed product pages that compensate for physical absence. Photography protocols capture furniture from every relevant angle. Lifestyle settings show pieces in context. Detail shots reveal material quality and construction methods.\n\nVideo content demonstrates what photos cannot convey. Chairs show ergonomic adjustments. Tables extend and collapse. Sofas demonstrate cushion resilience. This motion content reduces uncertainty significantly.\n\nThe augmented reality feature addresses scale concerns directly. Customers point phone cameras at their spaces. Furniture appears at accurate dimensions in real time. This technology transformed how Inwohn customers shop.\n\nPresentation elements work together to build confidence:\n\ndimensional diagrams show exact measurements;\n\nweight specifications help customers assess handling;\n\nassembly information sets expectations;\n\nmaterial samples available for shipping;\n\nroom planning tools visualize multiple pieces.\n\nThese tools bring physical shopping confidence to digital channels.\n\nDelivery Experience Design\n\nFurniture delivery creates more customer anxiety than the purchase itself. We integrated delivery planning directly into the shopping experience. Customers see available dates during checkout. White-glove service options appear where appropriate.\n\nThe tracking system follows orders from warehouse through installation. Customers know when trucks leave facilities. Delivery windows narrow as vehicles approach. Real-time updates reduce waiting uncertainty.\n\nPost-delivery follow-up captures satisfaction data. Assembly issues route to support quickly. Damage claims process through streamlined workflows. The experience extends beyond payment completion.\n\nRoom Planning and Visualization\n\nFurniture purchases often involve multiple pieces. We built planning tools that help customers coordinate selections. Room layouts let shoppers arrange items virtually. Save and share functions support decision-making across households.\n\nThe design consultation booking system connects customers with expertise. Virtual appointments discuss space planning. Professional guidance builds purchase confidence. This service differentiates Inwohn from basic furniture retailers.\n\nStyle guides help customers understand what coordinates. Collections group complementary pieces visually. Suggested pairings offer starting points without limiting choices.\n\nTrade Program Integration\n\nInterior designers and commercial buyers represent significant volume. The trade portal gives professionals appropriate tools and pricing. Project management features track multiple client orders. Tear sheets generate professional presentations.\n\nCommercial accounts handle larger scale needs:\n\nVolume pricing. Quantity breaks apply automatically to qualifying orders.\n\nProject management. Multiple orders organize under single projects.\n\nLead time visibility. Manufacturing schedules display for planning purposes.\n\nDelivery coordination. Multi-location deliveries schedule efficiently.\n\nThese capabilities serve professional buyers alongside retail customers.\n\nResults and Continuing Development\n\nInwohn sales increased 156 percent within the first year. Average order value grew as visualization tools encouraged complete room purchases. Return rates dropped below industry averages.\n\nThe platform now supports international expansion. Multiple European markets access localized experiences. Currency conversion and delivery estimation work seamlessly across borders.\n\nWe maintain ongoing partnership with Inwohn. Recent additions include a financing integration and a used furniture buyback program. The store evolves with changing customer expectations.\n\n\n",
+      "title": "Inwohn: Contemporary Furniture Store",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "tgyyf2ygOfIU59A8EpoHzk",
+        "title": "Inwohn: Sklep z nowoczesnymi meblami",
+        "slug": "Inwohn"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5"
+        }
+      ]
+    },
+    {
+      "_id": "c0ec0d25-1ef8-4018-9429-5d6fa387a6b1",
+      "_rev": "95YjOBLsMtjdp90YEY7hUi",
+      "description": "Crocode Lab developed a sophisticated Shopify store for Second Chancy, a curated marketplace for pre-owned luxury fashion. The project required solutions for authentication, trust-building, and the unique economics of resale retail.\n",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "second-chancy"
+      },
+      "solution": "Understanding the Resale Market\n\nLuxury resale grows faster than primary luxury retail these days. Buyers seek value while sellers monetize closet assets. Trust determines marketplace success entirely. Counterfeit concerns and condition uncertainty create friction that must be addressed directly — ignore them and you have no business.\n\nSecond Chancy positions as a trusted intermediary. They authenticate every item before listing. Condition assessments follow standardized protocols. This curation differentiates them from peer-to-peer platforms where quality varies wildly.\n\nAuthentication and Trust Framework\n\nWe built authentication documentation into product listings seamlessly. Each item shows verification status and methodology. Serial number checks, material analysis, and expert inspection results appear clearly.\n\nThe trust system addresses buyer concerns proactively:\n\nauthentication certificates accompany every purchase;\n\nstandardized photos capture any wear or damage honestly;\n\ndisputed authenticity triggers full refund processing immediately;\n\nseller ratings build visible track records over time;\n\nstaff review adds accountability layer beyond seller claims.\n\nThis framework builds confidence that drives significant purchases. Buyers trust Second Chancy with transactions worth thousands.\n\nConsignment Management System\n\nSecond Chancy works with individuals selling personal pieces. The consignment portal simplifies submission dramatically. Sellers photograph items, describe condition, and request pickup or drop-off.\n\nPricing tools help sellers set competitive rates. Market data shows comparable sales. Suggested pricing reflects current demand. Sellers make informed decisions about their items.\n\nThe payment workflow handles splits automatically:\n\nSale completion triggers calculation. Commission deducts based on consignment terms immediately.\n\nPayout scheduling. Funds release on regular weekly cycles rather than per-item.\n\nStatement generation. Detailed records show all transactions and fees clearly.\n\nTax documentation. Year-end summaries simplify reporting requirements.\n\nDispute resolution. Clear processes handle the rare problematic transactions.\n\nSellers track inventory and earnings through dedicated dashboards. Everything stays transparent.\n\nVisual Presentation Standards\n\nPre-owned luxury demands impeccable presentation. We established photography protocols ensuring consistent quality. Studio conditions standardize lighting and backgrounds. Multiple angles document each piece thoroughly.\n\nProduct page design emphasizes condition information. Wear indicators appear near primary images. Detail shots zoom to relevant areas. Nothing about item condition surprises buyers after delivery.\n\nBrand organization helps shoppers navigate inventory. Collections filter by designer, category, and price range. Saved searches notify users when desired pieces appear. The discovery experience matches how luxury resale shoppers actually hunt.\n\nPricing and Promotion Tools\n\nResale pricing fluctuates with demand and seasonality. We built dynamic pricing capabilities responding to market conditions. Slow-moving items reduce automatically after configured periods. Hot items maintain pricing until sold.\n\nOffer functionality lets buyers negotiate. Sellers receive notifications and can counter or accept. This flexibility closes sales that would otherwise stall on price sensitivity.\n\nFlash sales clear aging inventory efficiently. The promotion engine handles complex rules. Category discounts, seller-specific sales, and site-wide events all work through unified systems. Second Chancy transaction volume tripled within the first year — average selling price increased as buyer confidence grew.\n\n\n",
+      "title": "Second Chancy: Pre-Owned Fashion Marketplace",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "befdf995-b235-499d-9279-250b60ebd32e",
+        "title": "Second Chancy: Marketplace odzieży używanej",
+        "slug": "second-chancy"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        }
+      ]
+    },
+    {
+      "_id": "d1212e9f-4109-40c8-8486-ce52f6246e16",
+      "_rev": "Mxm1ZpBjbNTIoTpGqFSX5O",
+      "description": "We created an elegant Shopify store for Valse, a brand producing professional dancewear for ballroom and Latin performers. The project addressed specialized sizing needs and the visual demands of performance apparel retail.",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "valsenyc"
+      },
+      "solution": "Dancewear Market Requirements\n\nProfessional dancers need apparel that performs under demanding conditions. Fit must accommodate extreme movement. Materials must maintain appearance through long rehearsals and competition rounds. Style must command attention on competitive floors.\n\nValse serves dancers who invest seriously in their craft. Their previous website failed this discerning audience. Product information lacked performance specifications. Sizing guidance confused rather than helped. The aesthetic felt amateur against competitor offerings.\n\nPerformance Specification System\n\nWe restructured product information around dancer priorities. Every garment shows stretch characteristics, weight, and care requirements prominently. Fabric composition details help dancers assess performance suitability.\n\nThe technical information serves practical decision-making:\n\nmovement range ratings indicate flexibility limits;\n\nbreathability scores help dancers choose for venue conditions;\n\ncare difficulty levels set maintenance expectations;\n\ncostume regulations compliance appears where relevant;\n\npartner coordination notes help couples match.\n\nThis depth positions Valse as a serious supplier to serious dancers.\n\nSpecialized Size and Fit Tools\n\nDancewear sizing differs from everyday clothing. Performance fit requirements vary by dance style. We built sizing tools that account for these nuances.\n\nThe measurement guide uses dance-specific reference points. Customers measure in movement positions. Video demonstrations show proper technique. This approach reduces errors standard size charts cause.\n\nMade-to-measure options handle complex customization:\n\nDetailed measurement submission. Customers provide comprehensive body measurements following video guidance.\n\nTailoring notes capture. Specific requirements record alongside standard measurements.\n\nPattern adjustment confirmation. Staff verify unusual requests before production.\n\nProduction timeline display. Custom pieces show accurate delivery estimates.\n\nFit guarantee. Reasonable alterations included if measurements followed correctly.\n\nProduction teams receive complete specifications digitally. No back-and-forth delays.\n\nVisual Design for Performance Products\n\nDancewear needs to inspire while informing. We balanced aspiration with practical detail. Product photography shows garments in motion when possible. Static shots capture construction quality and fabric behavior.\n\nThe homepage features video content prominently. Competition footage demonstrates product performance. Behind-the-scenes content shows design and production processes. This motion-forward approach suits products meant for movement.\n\nColor organization helps dancers find appropriate options. Categories filter by competition requirements and style conventions. Couples can browse coordinated sets easily. The shopping experience matches how dancers actually plan their wardrobes.\n\nCommunity and Events Integration\n\nCompetitive dancers form tight communities around events. We integrated event calendars and community features. Upcoming competitions display with shopping guides for appropriate attire. Event-specific collections group relevant products.\n\nAmbassador partnerships connect Valse with competitive success. Champion profiles feature on the site. Product recommendations carry endorsement weight. Social proof from respected dancers builds credibility.\n\nThe blog covers competition preparation comprehensively. Packing lists, practice schedules, and performance tips accompany product recommendations. This content attracts organic traffic while supporting customers through their dance journeys. Valse conversion rates improved 94 percent after launch — the platform now supports wholesale operations alongside direct sales.\n\n\n",
+      "title": "Valse: Premium Dance Apparel Store",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "YyMBw7yxP0TD5F3bCiBMqz",
+        "title": "Valse: Sklep z ekskluzywną odzieżą do tańca",
+        "slug": "valsenyc"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d"
+        }
+      ]
+    },
+    {
+      "_id": "d5633cad-3f63-4baf-a372-8158c165a353",
+      "_rev": "9Tq6pzYPBwhEYUkGvnoNjQ",
+      "description": "Our team at Crocode Lab partnered with SpokeX to build an online destination for serious cyclists. Not just another catalog — the brand wanted something that matched the precision of their products. After weeks of discovery calls and prototype iterations, we delivered a custom Shopify solution that speaks directly to the cycling community.",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "spokex-custom-shopify-store-for-premium-cycling-gear"
+      },
+      "solution": "What SpokeX Needed From Their New Platform\n\nSpokeX sells high-end bicycle components and accessories. Their previous website? It failed to showcase product details properly. Customers struggled to find compatible parts for specific bike models. Too many abandoned carts at checkout. Mobile users had it even worse.\n\nThe SpokeX team came to us with clear objectives. Faster page loads. Better product filtering. A checkout that actually converts. We listened, asked a lot of questions, and proposed a ground-up Shopify build tailored to their catalog structure.\n\nTechnical Solutions We Implemented\n\nBuilding an effective cycling store requires understanding how enthusiasts shop. They search by bike type, component category, brand, and compatibility — often all at once. We created a multi-layered filtering system that handles these parameters simultaneously. Results update instantly. No full page reloads.\n\nProduct pages received special attention during development. Each item displays technical specifications in an organized format. High-resolution zoom lets customers examine thread patterns and finishes closely. And here's something cyclists really appreciate: a compatibility checker that cross-references parts with popular bike models.\n\nOur development approach included several key technical improvements:\n\nLazy loading for images. Product galleries load progressively as users scroll. This cut initial page load time by 40 percent.\n\nDynamic inventory display. Stock levels update in real time across all product variants. Customers see exactly what remains available.\n\nSmart search with autocomplete. The search bar suggests products, categories, and brands as shoppers type. Results appear within 200 milliseconds.\n\nStructured data markup. Google now displays rich snippets for SpokeX products. Click-through rates from search improved significantly.\n\nThese technical choices work together to create a fast, reliable shopping experience. Visitors find products quickly and complete purchases without the usual friction points.\n\nDesign Choices That Drive Sales\n\nThe visual language of the SpokeX store reflects cycling culture. Clean lines. Generous white space. Photography that highlights product craftsmanship rather than lifestyle fluff. Color palette? Carbon fiber and anodized aluminum tones — what you'd expect from premium bike parts.\n\nNavigation follows how cyclists actually think about purchases. Main menu organizes products by bike type first, then component category. A secondary navigation bar gives quick access to popular brands and current promotions.\n\nWe paid close attention to typography and readability throughout. Body text uses a sans-serif font at comfortable sizes. Headlines create visual hierarchy without overwhelming anything. Technical specifications appear in monospace — easier to scan that way.\n\nThe mobile experience got equal consideration from day one. Here's what we focused on:\n\ntouch targets that meet accessibility standards without feeling cramped;\n\nswipe gestures that work naturally on product galleries;\n\ncart drawer that slides from the right without disrupting browsing;\n\nsticky add-to-cart buttons on longer product pages;\n\nsimplified filtering that doesn't require precise tapping.\n\nThe result feels native to mobile rather than a squeezed desktop layout. Users actually complete purchases on their phones now.\n\nResults After Launch\n\nSpokeX saw measurable improvements within the first month. Average session duration increased by 65 percent. Bounce rate dropped from 58 to 34 percent. Most importantly, conversion rates nearly doubled compared to the old platform.\n\nMobile sales grew even faster than desktop. The responsive design and optimized checkout removed barriers that previously cost sales. Customer service inquiries about orders decreased as the tracking system became more transparent.\n\nWe continue supporting SpokeX with ongoing optimization. Monthly performance reviews identify new opportunities. Recent updates include a loyalty program integration and expanded payment options for international customers.\n\n\n",
+      "title": "SpokeX: Custom Shopify Store for Premium Cycling Gear",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "268f9e78-f0db-42ae-b785-424d3132e2d1",
+        "title": "SpokeX: Niestandardowy sklep Shopify z ekskluzywnym sprzętem rowerowym",
+        "slug": "spokex"
+      },
+      "matchBasis": "Different slug; same brand and substantive project scope in title, description and solution",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d"
+        }
+      ]
+    },
+    {
+      "_id": "d7ceb3cb-ad82-4b57-850d-ba739acd2c7d",
+      "_rev": "AgSw906H5N3BHcJxYYUnrx",
+      "description": "Crocode Lab developed a calming, effective Shopify store for Relaxe, a brand selling aromatherapy, bath products, and wellness accessories. The project created a shopping experience as soothing as the products themselves.\n",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "relaxe"
+      },
+      "solution": "Wellness Brand Positioning\n\nRelaxe helps customers find moments of calm in busy lives. Their products include essential oils, candles, bath preparations, and meditation accessories. The brand speaks to stressed professionals seeking accessible relaxation methods.\n\nThe previous website created the opposite of relaxation. Cluttered layouts and aggressive pop-ups contradicted the brand promise. Loading delays frustrated visitors. The disconnect between brand values and digital experience cost sales.\n\nDesigning for Calm\n\nWe approached the Relaxe redesign as an exercise in digital tranquility. Color palettes draw from natural spa environments. Animation stays subtle and purposeful. Transitions feel smooth rather than jarring.\n\nThe homepage welcomes without demanding. Featured products appear gently. Navigation options present clearly without overwhelming. The overall sensation mirrors walking into a well-designed wellness space.\n\nVisual choices throughout support the calming intention:\n\nmuted photography tones reduce visual stimulation;\n\ngenerous padding creates breathing room between elements;\n\nfont selections favor readability over trendy styling;\n\nimagery shows products in peaceful contexts;\n\nmotion appears sparingly and smoothly.\n\nEvery design decision asks whether it contributes to or detracts from relaxation.\n\nProduct Discovery and Education\n\nWellness shoppers often know they want to feel better without knowing which products help. We built discovery tools that guide rather than confuse. Quizzes identify needs and recommend suitable items. Collections organize by benefit rather than product type.\n\nThe ingredient education section explains what different components do. Essential oil profiles cover properties and uses. Scent family guides help customers predict preferences. This information empowers confident purchasing.\n\nBundle builders encourage complete wellness routines. Customers combine complementary products at slight discounts. These bundles increase average order values while genuinely serving customer needs.\n\nSubscription Commerce for Replenishment\n\nWellness products deplete with regular use. We implemented subscription options matching natural consumption patterns. Candle lovers receive replacements as they burn through inventory. Essential oil subscriptions keep diffusers supplied.\n\nThe subscription management interface maintains the calm aesthetic. Customers adjust deliveries without friction. Pausing and resuming works instantly. Cancellation remains straightforward because satisfied customers stay anyway.\n\nGift subscriptions serve an important market segment. Self-care subscriptions make thoughtful presents. The gifting flow separates payment from recipient experience appropriately.\n\nScent Selection Challenges\n\nPurchasing fragrance products online presents obvious difficulties. Customers cannot smell through screens. We addressed this limitation through several approaches.\n\nSample programs let customers try before committing to full sizes. Scent profile descriptions use consistent vocabulary customers learn to interpret. Customer reviews specifically address fragrance characteristics.\n\nThe scent finder tool matches preferences to products:\n\nPreference questions. Customers indicate favorite scents from everyday life.\n\nMood selection. Desired emotional outcomes guide recommendations.\n\nExperience level. Beginners receive accessible suggestions. Enthusiasts see nuanced options.\n\nSensitivity considerations. Customers with fragrance sensitivity see appropriate products.\n\nThis guidance reduces the risk that stops fragrance purchases online.\n\nBusiness Outcomes\n\nRelaxe conversion rates improved 78 percent after launch. Customer feedback specifically mentions the pleasant shopping experience. Return rates dropped as product selection matched expectations better.\n\nSubscription enrollment exceeded projections. The non-pushy approach actually converts better than aggressive tactics. Recurring revenue now provides stable business foundation.\n\nWe continue developing the Relaxe platform. Recent additions include a guided meditation content library and a wellness coaching appointment system. The store grows as the brand expands their offerings.\n\n\n",
+      "title": "Relaxe: Wellness Products Shopify Store",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "4bdc290e-00d6-457e-bd14-bb289a769d0b",
+        "title": "Relaxe: Sklep Shopify z produktami wellness",
+        "slug": "relaxe"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d"
+        }
+      ]
+    },
+    {
+      "_id": "de3d031f-c45c-47b6-9789-1284a814f151",
+      "_rev": "Mxm1ZpBjbNTIoTpGqFRzsb",
+      "description": "We developed a complete Shopify store for VitaChipus, a company selling premium nutritional supplements. This project required careful attention to regulatory compliance and customer education — two things that don't always play nice together. The result delivers strong sales performance alongside trustworthy brand presentation.\n",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "vitachipus"
+      },
+      "solution": "Project Background and Requirements\n\nVitaChipus produces vitamin complexes, minerals, and specialty supplements. Their target customers research thoroughly before purchasing. They read ingredient lists. They check dosages against studies. The previous website lacked the educational depth these customers expected.\n\nThe brand also faced challenges with subscription management. Many supplement users prefer automatic reorders — it's just easier. But the old system handled recurring orders poorly. Billing errors. Customer frustration. This directly impacted retention rates and lifetime customer value.\n\nCompliance-First Development Approach\n\nSupplement retail involves strict regulations about health claims. You can't just say whatever sounds good. We built content management systems that help VitaChipus maintain compliance naturally. Product descriptions separate factual information from general wellness statements clearly.\n\nThe development process addressed regulatory requirements systematically:\n\nDisclaimer placement. Required legal notices appear consistently across all product pages. Staff cannot accidentally remove them when editing content.\n\nIngredient transparency. Each product displays complete supplement facts panels. Customers see exactly what they purchase.\n\nSource documentation. Links to third-party testing results build credibility. Certificates of analysis load in modal windows without leaving product pages.\n\nAge verification. Certain products require confirmation before adding to cart. The system handles restricted items appropriately.\n\nThis compliance framework protects VitaChipus legally while building consumer trust. Customers appreciate knowing exactly what they put in their bodies.\n\nSubscription Commerce Implementation\n\nRecurring revenue stabilizes supplement businesses. Makes forecasting easier. Reduces customer acquisition pressure. We implemented a robust subscription system that handles the complexity of health products. Customers choose delivery frequency based on their actual usage patterns.\n\nThe subscription dashboard gives buyers complete control. Pause deliveries during travel. Swap products between shipments. Adjust quantities as needs change. This flexibility reduces cancellations dramatically — people stay subscribed when they don't feel trapped.\n\nWe integrated the subscription engine with inventory forecasting. VitaChipus now predicts demand more accurately. Stock-outs decreased by 73 percent after implementation. Customers receive supplements reliably every cycle.\n\nEducational Content Integration\n\nSupplement shoppers want information. Lots of it. We created a content hub within the store addressing common questions. Articles explain ingredient benefits, dosage guidelines, and combination recommendations.\n\nThe blog connects directly to relevant products. Readers click through from educational content to purchase pages seamlessly. This content strategy drives organic search traffic while building authority in the supplement space.\n\nBeyond articles, we built interactive tools that guide uncertain visitors:\n\nquiz functionality matching health goals to appropriate products;\n\ndietary restriction filters highlighting vegan and allergen-free options;\n\ndosage calculators based on body weight and activity level;\n\ncombination checkers warning about potential interactions;\n\ncomparison tools showing ingredient differences between similar products.\n\nPersonalized results convert browsers into buyers effectively. When someone understands why a product fits their needs, the sale happens naturally.\n\nPerformance Metrics and Outcomes\n\nVitaChipus measures success through several indicators. Subscription sign-ups increased 156 percent in the first quarter. Customer lifetime value grew as retention improved. Return rates dropped below industry averages.\n\nThe site now ranks for competitive supplement keywords organically. Paid advertising costs decreased as organic traffic grew. Content marketing investments continue generating returns months after publication. Mobile commerce accounts for 68 percent of orders — the responsive design handles small screens without sacrificing information density.\n\n\n",
+      "title": "VitaChipus: Health Supplement Brand on Shopify",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "0c386272-f46d-488f-bd31-665adfca78a6",
+        "title": "VitaChipus: Marka suplementów zdrowotnych na Shopify",
+        "slug": "vitachipus"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5"
+        },
+        {
+          "_type": "reference",
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d"
+        }
+      ]
+    },
+    {
+      "_id": "e262f30c-a77e-4599-9df3-9c976eb6d217",
+      "_rev": "AgSw906H5N3BHcJxYYVVKj",
+      "description": "Crocode Lab built a refined Shopify store for SHO, a brand curating minimalist products for intentional living. The project emphasized clean design and thoughtful commerce that reflects the brand philosophy.\n",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "sho"
+      },
+      "solution": "Brand Philosophy and Platform Needs\n\nSHO believes quality matters more than quantity. They curate products that last, serve multiple purposes, and bring genuine joy. Their customer base shares these values and rejects typical consumerist messaging.\n\nThe previous website contradicted brand values visually. Cluttered layouts and aggressive sales tactics alienated the target audience. The shopping experience felt transactional rather than intentional. Customers wanted something different.\n\nDesign That Practices What It Preaches\n\nWe applied minimalist principles rigorously to the design process. Every element earns its place. Whitespace dominates rather than decoration. Typography carries information without ornamentation.\n\nThe homepage presents featured products without overwhelming choice. Curated selections rotate thoughtfully. Editorial introductions explain why specific items merit attention. The overall effect suggests careful consideration rather than abundant inventory.\n\nProduct pages strip away conventional ecommerce noise:\n\nsingle hero images replace crowded galleries;\n\nessential information appears immediately;\n\nsupplementary details expand on demand;\n\nno countdown timers or artificial urgency;\n\nno aggressive upselling or pop-ups.\n\nThis restraint builds trust with customers seeking escape from overwhelming retail experiences.\n\nCuration and Discovery Approach\n\nSHO succeeds through selection, not volume. We built discovery experiences that honor this approach. Collections organize around intentions rather than categories. Customers find products for specific needs and spaces.\n\nThe recommendation engine avoids typical algorithmic pushiness. Suggestions appear as gentle observations. Related items share design philosophy rather than just category. Cross-sells feel like helpful discoveries.\n\nSearch prioritizes relevance over recency. Results favor products that truly match queries. Sponsored placements and promotional manipulation have no place in the experience.\n\nSustainability Documentation\n\nIntentional consumers research product impacts seriously. We created transparency frameworks matching their expectations. Material origins trace clearly. Manufacturing conditions document openly. End-of-life options appear honestly.\n\nEach product shows environmental impact metrics where data exists. Carbon footprint, water usage, and packaging waste quantify consequences. This information helps customers align purchases with values.\n\nThe sustainability dashboard aggregates brand-level commitments. Progress toward goals displays publicly. Accountability measures keep promises meaningful rather than performative.\n\nTechnical Minimalism\n\nThe minimal aesthetic extended to technical implementation. Page weights stay remarkably light. Load times impress even on slow connections. The site feels fast because it genuinely is.\n\nWe achieved this through disciplined development:\n\nImage optimization. Modern formats at appropriate sizes replace bloated assets.\n\nScript minimization. Only essential functionality loads. Analytics and integrations stay lean.\n\nEfficient caching. Repeat visitors experience near-instant loading.\n\nClean code. No framework bloat or unnecessary dependencies.\n\nThis technical discipline reflects brand values while improving business metrics.\n\nMeasured Success\n\nSHO tracks metrics that matter to their model. Customer satisfaction scores improved significantly. Return rates dropped as expectations aligned with reality. Repeat purchase rates indicate genuine product appreciation.\n\nAverage order value decreased initially as aggressive bundling stopped. However, customer lifetime value increased as satisfaction drove loyalty. The trade-off proved worthwhile for sustainable business health.\n\nWe continue partnering with SHO on platform evolution. Recent additions include a product longevity tracking system and a repair service coordination feature. The store grows thoughtfully alongside the brand.\n\n\n",
+      "title": "SHO: Minimalist Lifestyle Products Store",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "YyMBw7yxP0TD5F3bCiBUSv",
+        "title": "SHO: Sklep z minimalistycznymi produktami lifestyle'owymi",
+        "slug": "sho"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        }
+      ]
+    },
+    {
+      "_id": "e3600c4a-c9b9-4f99-ad3f-b59d519674eb",
+      "_rev": "95YjOBLsMtjdp90YEYFv1Q",
+      "description": "Crocode partnered with DrinkTMRW to create a modern Shopify Hydrogen headless ecommerce platform for their science-backed wellness supplements. DrinkTMRW specializes in powdered supplements and fish oil products formulated by certified experts, targeting daily wellness, immune support, and brain-body optimization. The goal was to build a platform that not only conveys product credibility but also drives subscriptions, conversions, and long-term customer retention. We delivered a fast, scalable, and conversion-optimized store designed for nutraceutical ecommerce.",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "drink-tmrw"
+      },
+      "solution": "What DrinkTMRW Needed From Their New Platform\n\nThe DrinkTMRW team approached Crocode with clear objectives. Their previous online presence lacked a seamless subscription flow, did not emphasize scientific credibility effectively, and offered limited flexibility for future campaigns or product launches. Key challenges included:\n\nEstablishing trust for science-based supplements through the website.\n\nDriving first-time purchases and recurring subscriptions.\n\nSupporting subscription-based supplement ecommerce and multi-user subscription options.\n\nEnsuring mobile-first UX and conversion-focused Shopify design.\n\nBuilding a platform that could scale with product line expansion and marketing campaigns.\n\nThe project required not just a Shopify theme but a fully custom headless development for a supplement brand, integrating subscription management, advanced analytics, and preorder functionality.\n\nTechnical Solutions Implemented\n\nHeadless Shopify Hydrogen Architecture\n\nTo meet performance and flexibility goals, we implemented a Shopify headless store development approach using Hydrogen:\n\nServer-Side Rendering (SSR) with React for faster page loads and SEO-friendly content.\n\nGraphQL and Storefront API integration to minimize requests and optimize data fetching.\n\nCustom frontend development allowing flexible, conversion-driven layouts.\n\nDeployment via Oxygen, Shopify’s hosting infrastructure, ensuring scalability and reliability.\n\nThis approach enabled DrinkTMRW to handle complex user flows, including subscriptions, preorders, and promotional campaigns, without the constraints of a standard Shopify theme.\n\nUX/UI and Conversion Optimization (CRO)\n\nWe designed the platform around Shopify CRO best practices for nutraceutical ecommerce:\n\nProduct pages emphasized the value proposition, ingredient transparency, and trust factors like certifications and expert endorsements.\n\nSimplified checkout and subscription flows reduced friction and cognitive load.\n\nMobile-first layout ensured accessibility and ease of use on smartphones and tablets.\n\nLanding pages were structured to support marketing campaigns, optimizing for conversions and subscription sign-ups.\n\nThe result is a storefront where users quickly understand product benefits and can seamlessly subscribe or purchase.\n\nSubscription Management and Retention\n\nIntegration with SKIO enabled advanced subscription ecommerce for supplements:\n\nRecurring orders with flexible intervals.\n\nMulti-user subscription management for households or shared plans.\n\nLoyalty program integration and retention-focused workflows.\n\nCustomer portal for easy subscription management.\n\nSubscriptions became a core driver of LTV optimization, turning first-time buyers into loyal recurring customers.\n\nReviews and Social Proof\n\nWe integrated Okendo to build social proof and trust:\n\nCollect and display user reviews and ratings.\n\nSupport for user surveys to highlight product effectiveness.\n\nEnhanced credibility on product pages to improve conversions.\n\nBy leveraging customer feedback, the site effectively communicates authenticity and quality.\n\nMarketing Automation\n\nKlaviyo integration enabled Shopify email marketing automation:\n\nWelcome flows for new customers.\n\nAbandoned cart recovery sequences.\n\nRetention campaigns targeted at subscription users.\n\nSegmentation for personalized, behavior-driven messaging.\n\nThis integration supports both customer acquisition and ongoing retention, crucial for subscription-based health supplement ecommerce.\n\nAnalytics and Data-Driven Optimization\n\nWe implemented comprehensive analytics to support Shopify data-driven CRO:\n\nEvent tracking via GA4, Meta Pixel, Microsoft Clarity, and GTAG.\n\nHeatmaps and session recordings for behavioral insights.\n\nCentralized dashboard for marketing and performance monitoring.\n\nData aggregation enabling precise ecommerce conversion analytics and informed decision-making.\n\nThis system allows DrinkTMRW to continuously optimize product pages, landing pages, and subscription funnels.\n\nPreorder and Demand Management\n\nTo support new product launches, we developed a Shopify preorder system:\n\nPreorder setup for upcoming supplement products.\n\nWaitlist management to engage interested customers before launch.\n\nMarketing tools for product drops, campaigns, and early access.\n\nThis infrastructure ensures that high-demand launches are smooth and predictable, maximizing revenue opportunities.\n\nThe Result: A Modern, Scalable Shopify Store for Nutraceuticals\n\nThe DrinkTMRW store now delivers a premium wellness supplement ecommerce experience:\n\nFast, headless Shopify Hydrogen development ensures performance and scalability.\n\nConversion-focused UX/UI design drives purchases and subscriptions.\n\nIntegrated SKIO subscriptions and Klaviyo flows maximize retention and LTV.\n\nTransparent product storytelling and Okendo reviews build trust and authority.\n\nAnalytics and tracking support ongoing data-driven optimization.\n\nBy combining custom Shopify development with a subscription-ready, headless architecture, Crocode provided DrinkTMRW with a robust platform to grow their business, engage customers, and scale globally. This project demonstrates how Shopify headless development for a supplement brand can merge technical excellence, UX strategy, and ecommerce performance into a single, cohesive experience.",
+      "title": "DrinkTMRW: Headless Shopify Store for a Science-Based Supplement Brand",
+      "workDone": "Shopify Custom Theme Design & Development",
+      "originalWorkDone": "Shopify Custom Theme Design & Development",
+      "polishProject": {
+        "_id": "35a1f995-5bad-4d09-a24b-7154a57d8e77",
+        "title": "DrinkTMRW: Headless Shopify Store dla Marki Suplementów opartych na Nauce",
+        "slug": "drink-tmrw"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5"
+        },
+        {
+          "_type": "reference",
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d"
+        }
+      ]
+    },
+    {
+      "_id": "ef660120-80ea-49f5-aa83-2111bb424f3c",
+      "_rev": "95YjOBLsMtjdp90YEZ8lpG",
+      "description": "Crocode migrated multiple regional Bannerprinting stores from WooCommerce to Shopify, preserving their existing content structure, product catalog, and key SEO-related URLs. The project included transferring pages, articles, images, and product data, adapting WooCommerce categories to Shopify Collections, and configuring Shopify Locations and inventory management. We also set up redirects, reviewed site structure and links, adapted each regional store to its respective location, and carried out final testing to ensure a consistent and reliable ecommerce experience across all migrated stores.",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "bannerprinting"
+      },
+      "solution": "Migrating Multiple Bannerprinting Stores From WooCommerce to Shopify\n\nBannerprinting needed to move several active regional ecommerce stores from WooCommerce to Shopify without disrupting their existing content, product catalog, or commercial operations.\n\nThe challenge was not simply to move products from one platform to another. Each regional store had its own content and location-specific structure, while the migration also needed to preserve important URLs, maintain the existing catalog organization, and establish a reliable system for inventory and warehouse management on Shopify.\n\nThe project focused on:\n\nmigrating multiple active WooCommerce stores to Shopify;\n\npreserving existing content, pages, articles, and media;\n\ntransferring the product catalog and adapting categories to Shopify Collections;\n\nmaintaining important URL structures for SEO;\n\nconfiguring Shopify Locations and inventory management;\n\nvalidating products, stock availability, links, redirects, and site structure before launch.\n\nPlanning a Multi-Store Shopify Migration\n\nMoving a single ecommerce store between platforms is already a complex process. Migrating several regional stores adds another layer of complexity because the content, catalog, and structure need to remain consistent while still reflecting the requirements of each individual location.\n\nFor Bannerprinting, we approached the migration as a multi-store Shopify implementation rather than a simple data export and import.\n\nThe work covered several connected areas:\n\ncontent migration;\n\nproduct and catalog migration;\n\nregional store adaptation;\n\ninventory and warehouse configuration;\n\nURL and redirect management;\n\nfinal technical validation.\n\nThis allowed the stores to transition to Shopify while maintaining the core structure that existing customers and search engines were already familiar with.\n\nMigrating Existing Content Without Losing the Site Structure\n\nOne of the main requirements was to preserve the existing content of the Bannerprinting stores.\n\nWe migrated the site's existing:\n\npages;\n\narticles;\n\ninformational content;\n\nimages;\n\nother required media assets.\n\nThe goal was not simply to reproduce the content on a new platform. The migration also needed to preserve the core content structure and important URLs wherever possible.\n\nThis is particularly important during a platform migration because changes to URLs and content organization can affect both user navigation and organic search performance.\n\nAs part of the process, we reviewed the resulting Shopify structure and configured the necessary Shopify redirects to help maintain continuity between the old and new versions of the stores.\n\nWooCommerce Product Catalog Migration to Shopify\n\nThe product catalog was another major part of the migration.\n\nWe transferred the core product information from WooCommerce into Shopify, including:\n\nproduct names;\n\nproduct descriptions;\n\nproduct images;\n\nkey product attributes;\n\ncatalog organization.\n\nThe existing WooCommerce categories also had to be adapted to the Shopify data model.\n\nInstead of reproducing the category system exactly as it existed in WooCommerce, we mapped the catalog structure to Shopify Collections, creating an organization that works naturally within the new platform.\n\nAfter the migration, we checked the product pages and catalog structure to make sure that the transferred information was displayed correctly and that products remained properly organized.\n\nThis created a more reliable foundation for ongoing Shopify product catalog management.\n\nAdapting Multiple Regional Stores\n\nBannerprinting operated several regional stores, which meant the migration could not be treated as a single generic storefront deployment.\n\nEach store had to retain its appropriate location-specific structure and content while moving to the same underlying ecommerce platform.\n\nOur work included:\n\nmigrating the individual regional stores;\n\nadapting each store to its corresponding location;\n\nvalidating regional content;\n\nchecking product catalogs;\n\nverifying that the resulting Shopify stores maintained their expected structure.\n\nThis approach allowed Bannerprinting to move multiple existing ecommerce operations to Shopify while preserving the distinctions between the regional storefronts.\n\nShopify Locations and Inventory Management\n\nInventory management was another important part of the migration.\n\nThe new Shopify setup required an appropriate structure for Locations, warehouses, and product availability. We configured the store's locations and established the necessary relationship between products, inventory, and available quantities.\n\nThe work included:\n\nconfiguring Shopify Locations;\n\nsetting up inventory management;\n\nchecking product stock levels;\n\nvalidating available quantities;\n\nverifying the relationship between products and their corresponding locations.\n\nThis was particularly important because inventory availability needs to remain reliable after a platform migration. A product can be transferred successfully from a technical perspective while still producing incorrect availability information if the underlying location and inventory structure is not configured correctly.\n\nFor Bannerprinting, inventory validation therefore formed an important part of the overall migration process.\n\nTechnical Shopify Configuration After the Migration\n\nOnce the core content and catalog data had been transferred, we configured the essential Shopify store settings and reviewed the resulting site structure.\n\nThe technical work included:\n\nconfiguring the main Shopify store settings;\n\nchecking page and collection structures;\n\nsetting up required redirects;\n\nreviewing internal links;\n\nvalidating the resulting URL structure;\n\nchecking the migrated catalog;\n\nperforming final pre-launch testing.\n\nThis stage was important because migration issues are not always visible immediately after data import. A product may exist but have incorrect availability. A page may be present but have the wrong URL. A collection may contain products but not reflect the intended catalog hierarchy.\n\nThe final validation process helped identify and resolve these issues before the stores went live on the new platform.\n\nA Controlled Migration From WooCommerce to Shopify\n\nThe Bannerprinting project demonstrates that a successful WooCommerce to Shopify migration is about much more than transferring database records.\n\nThe migration had to account for several layers of an active ecommerce business at the same time:\n\ncontent and media needed to remain available;\n\nproducts and descriptions needed to transfer correctly;\n\ncategories needed to be adapted to Shopify Collections;\n\nregional storefronts needed to retain their individual structure;\n\ninventory and locations needed to work correctly;\n\nURLs and redirects needed to be reviewed for continuity;\n\nthe complete storefront needed to be tested before launch.\n\nBy treating these areas as parts of one migration process, we were able to move the Bannerprinting stores to Shopify without rebuilding their ecommerce presence from the ground up.\n\nThe Result: A Unified Shopify Foundation for Multiple Stores\n\nThe Bannerprinting migration successfully moved several active regional WooCommerce ecommerce stores to Shopify, including their core content, product catalogs, media, and commercial infrastructure.\n\nThe resulting Shopify setup provides a unified platform for managing:\n\nproducts and catalogs;\n\nregional storefronts;\n\nShopify Collections;\n\nlocations and inventory;\n\ncontent and media;\n\nredirects and site structure.\n\nFor Crocode, Bannerprinting is a strong example of multi-store Shopify migration where the priority is not simply changing platforms, but preserving an existing ecommerce operation while creating a more manageable foundation for future growth.\n\nThe project combines WooCommerce to Shopify migration, catalog restructuring, regional store adaptation, Shopify inventory management, URL preservation, and technical validation into one controlled ecommerce migration process.",
+      "title": "Bannerprinting: WooCommerce to Shopify Migration for Multiple Stores",
+      "workDone": "WooCommerce to Shopify Migration, Content & Product Data Migration, Multi-Store Setup",
+      "originalWorkDone": "WooCommerce to Shopify Migration, Content & Product Data Migration, Multi-Store Setup",
+      "polishProject": {
+        "_id": "d724677f-ace5-4c9e-aa61-708d99d2f868",
+        "title": "Bannerprinting: Migracja z WooCommerce do Shopify dla wielu sklepów",
+        "slug": "bannerprinting"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "be092db60142496ab5e248f52c528cbe",
+          "_ref": "be092db6-0142-496a-b5e2-48f52c528cbe"
+        }
+      ]
+    },
+    {
+      "_id": "f31a79d5-3e51-442a-ab69-62bd1490c81a",
+      "_rev": "95YjOBLsMtjdp90YEZ8jFg",
+      "description": "Crocode migrated Newrock from WordPress to Shopify while preserving its existing content, product catalog, and core site structure. The project included configuring payment gateways and Shopify Checkout, testing payment flows and transactions, and adapting the existing ecommerce infrastructure to the new platform. We also reworked the site's navigation and collection structure to make product discovery more intuitive, simplify access to key categories, and improve the experience across desktop and mobile. The migration included URL and internal linking checks, necessary redirects, and final technical QA to ensure a smooth transition while maintaining the site's SEO structure.",
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "newrock"
+      },
+      "solution": "Migrating NEWROCK to Shopify With a New Ecommerce Navigation\n\nNEWROCK needed more than a straightforward WordPress to Shopify migration. The existing website needed to retain its content and catalog while gaining the commercial infrastructure required for a reliable Shopify ecommerce experience.\n\nAt the same time, the existing navigation structure needed to be reconsidered. As the store's catalog and commercial functionality moved to Shopify, users needed a clearer way to find relevant categories, products, and sections.\n\nThe project therefore combined three core areas: Shopify migration, payment infrastructure, and navigation redesign.\n\nFrom the beginning, the project centered on:\n\nmigrating the existing WordPress website to Shopify;\n\ntransferring products, catalog content, pages, and media;\n\nconfiguring the required Shopify payment gateways;\n\nvalidating the complete payment and checkout flow;\n\nredesigning the site's main navigation and catalog structure;\n\nimproving product discovery and mobile navigation;\n\npreserving SEO considerations while restructuring the site.\n\nMigrating the Existing WordPress Website to Shopify\n\nThe first stage of the project was the migration of NEWROCK's existing website from WordPress to Shopify.\n\nThe goal was to move the existing website content into the new platform while adapting its structure to Shopify's ecommerce architecture.\n\nThe migration included:\n\nexisting website content;\n\nproduct catalog;\n\nproduct information;\n\npages and informational materials;\n\nimages;\n\nrequired media assets.\n\nThe existing structure was then adapted to Shopify rather than simply reproduced as a one-to-one copy.\n\nThis allowed the new platform to support the requirements of a modern ecommerce store while retaining the content and product information that already existed on the WordPress website.\n\nThe result was a structured Shopify ecommerce foundation ready for the next stage of the project: payment configuration and a more effective navigation system.\n\nSetting Up the Shopify Payment Infrastructure\n\nA successful migration is not complete when products and pages appear correctly on the new platform. The commercial infrastructure also needs to work reliably.\n\nFor NEWROCK, we configured the required payment gateways in Shopify and verified the complete purchasing flow.\n\nThe payment implementation included:\n\nconnecting the required payment gateways;\n\nconfiguring available payment methods;\n\nchecking the payment process;\n\nrunning test transactions;\n\nvalidating the Shopify Checkout flow after migration.\n\nTesting was particularly important because payment functionality sits at the most critical point of the ecommerce journey.\n\nA customer can browse the catalog and add products to a cart successfully, but the store still cannot function commercially if the payment and checkout process fails.\n\nWe therefore validated the complete flow from cart to Shopify Checkout, including test transactions before launch.\n\nRedesigning the Main Store Navigation\n\nOne of the most important improvements in the project was the redesign of NEWROCK's navigation.\n\nThe existing structure was analyzed to identify ways to make the store easier to understand and reduce the effort required to reach important categories and products.\n\nWe redesigned the main navigation around a clearer catalog hierarchy, focusing on:\n\neasier access to primary categories;\n\nclearer organization of products;\n\nimproved category discovery;\n\nmore logical navigation between sections;\n\na structure compatible with Shopify Collections.\n\nThe objective was not simply to create a different menu. The navigation was redesigned as part of the broader Shopify information architecture.\n\nThis created a clearer relationship between the main menu, collections, category pages, and individual products.\n\nBuilding a More Structured Shopify Collection System\n\nThe navigation redesign was closely connected to the structure of the catalog itself.\n\nWe configured the relevant Shopify Collections and associated pages so that users could move more naturally through the product hierarchy.\n\nA well-structured collection system provides an important layer between the main navigation and individual product pages. It allows customers to first identify the category they need and then narrow their selection through the relevant products.\n\nFor NEWROCK, this meant creating a more coherent path:\n\nmain navigation → category → collection → product\n\nThis structure also provided a stronger foundation for future catalog growth because new products and categories can be incorporated into an established navigation system rather than added to an increasingly complex menu.\n\nImproving Product Discovery and Ecommerce UX\n\nThe navigation changes were primarily driven by UX.\n\nThe goal was to reduce unnecessary steps between a customer's starting point and the products or categories they are looking for.\n\nThe improved structure focused on:\n\nmaking major categories easier to find;\n\nreducing navigation complexity;\n\nimproving product discovery;\n\ncreating clearer relationships between collections and products;\n\nmaking the store easier to understand at a glance.\n\nThese changes created a more straightforward Shopify ecommerce UX and helped turn the site's navigation into an active part of the purchasing journey.\n\nInstead of making users work through a complex structure to find relevant products, the new navigation provides a clearer route through the catalog.\n\nOptimizing Navigation for Mobile Users\n\nThe navigation redesign also accounted for the way customers interact with ecommerce stores on smaller screens.\n\nMobile navigation needs to provide the same basic catalog logic as desktop navigation while working within a much more constrained interface.\n\nWe therefore optimized the structure for mobile users with a focus on:\n\neasier access to important categories;\n\nclearer navigation hierarchy;\n\nsimpler movement through the catalog;\n\nimproved product discovery on smaller screens.\n\nThis helped create a more consistent responsive Shopify navigation across desktop and mobile experiences.\n\nThe objective was not to create two separate information architectures, but to make the same underlying catalog structure easier to use across different devices.\n\nSEO-Safe Navigation and URL Restructuring\n\nChanging navigation and catalog structure can have consequences beyond UX.\n\nWhen categories, collections, and pages are reorganized, URLs and internal links may also change. That means a navigation redesign needs to account for SEO from the beginning.\n\nAs part of the NEWROCK project, we reviewed the structural changes and handled the necessary technical SEO checks.\n\nThis included:\n\nreviewing URL changes after migration;\n\nconfiguring required Shopify redirects;\n\nchecking internal links after restructuring;\n\nverifying access to important pages;\n\nchecking the availability of key pages for search engines.\n\nThis approach helped ensure that the new navigation could be improved without treating the existing SEO structure as something separate from the redesign.\n\nThe result was a more usable catalog structure with the necessary technical measures to support continuity after the migration.\n\nPost-Migration QA Across the Ecommerce Journey\n\nThe final stage of the project was dedicated to validating the new Shopify implementation before launch.\n\nThe QA process covered the main areas affected by the migration and restructuring:\n\nmigrated pages;\n\nproduct catalog;\n\ncollections;\n\nnavigation;\n\ninternal links;\n\nredirects;\n\npayment functionality;\n\nShopify Checkout;\n\nmobile behavior;\n\naccessibility of important pages.\n\nPayment functionality received particular attention because it had to be tested independently from the content and navigation migration.\n\nTest transactions helped verify that the configured payment infrastructure was working correctly before the store was released.\n\nThis created a more controlled transition from the original WordPress website to the new Shopify environment.\n\nCombining Migration, Payments, and Information Architecture\n\nWhat makes the NEWROCK project different from a standard platform migration is the combination of technical and UX work.\n\nThe project addressed three connected layers of the ecommerce experience:\n\nPlatform:\nThe existing WordPress website was migrated to Shopify with its products, content, pages, and media.\n\nCommerce:\nThe required payment gateways were configured and the complete Shopify Checkout flow was tested.\n\nNavigation:\nThe site's information architecture was redesigned around clearer categories, collections, product discovery, and mobile usability.\n\nThese areas work together.\n\nA well-structured catalog is more useful when customers can actually find products. A good navigation system is more valuable when the checkout process works reliably. And a functional payment system is only useful if customers can efficiently reach the products they want to purchase.\n\nThis made the project a broader Shopify ecommerce implementation rather than a simple CMS migration.\n\nThe Result: A Clearer and More Reliable Shopify Store\n\nNEWROCK was successfully migrated from WordPress to Shopify with a new payment infrastructure and a redesigned navigation system.\n\nThe resulting Shopify store provides:\n\nmigrated products and catalog content;\n\npreserved pages and informational materials;\n\nconfigured Shopify payment gateways;\n\nvalidated Shopify Checkout;\n\na redesigned main navigation;\n\nstructured Shopify Collections;\n\nimproved product discovery;\n\nmobile-optimized navigation;\n\nSEO-aware URL and redirect management;\n\nvalidated internal links and key pages.\n\nFor Crocode, NEWROCK is a strong example of WordPress to Shopify migration combined with payment gateway setup and ecommerce navigation redesign.\n\nThe project demonstrates how a platform migration can also be used to improve the underlying information architecture — making the store easier to navigate, easier to maintain, and better prepared for continued commercial and SEO development.",
+      "title": "Newrock: WordPress to Shopify Migration & Navigation Redesign",
+      "workDone": "WordPress to Shopify Migration, Payment Gateway Setup & Navigation Optimization",
+      "originalWorkDone": "WordPress to Shopify Migration, Payment Gateway Setup & Navigation Optimization",
+      "polishProject": {
+        "_id": "8461bcf9-1ddf-48db-b887-0e5c791bf986",
+        "title": "Newrock: Migracja z WordPress do Shopify i redesign nawigacji",
+        "slug": "newrock"
+      },
+      "matchBasis": "Matching slug (case-insensitive), brand and substantive project scope",
+      "proposedWorkDone": [
+        {
+          "_type": "reference",
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe"
+        },
+        {
+          "_type": "reference",
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5"
+        },
+        {
+          "_type": "reference",
+          "_key": "be092db60142496ab5e248f52c528cbe",
+          "_ref": "be092db6-0142-496a-b5e2-48f52c528cbe"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "SienaHome: Marketing withheld pending confirmation that retainer covers maintenance rather than feature development.",
+    "Kleanse and Laidback London: Integracje withheld because implementation is not established by the description."
+  ],
+  "unresolvedCases": []
+}

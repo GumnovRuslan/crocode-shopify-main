@@ -1,0 +1,374 @@
+[
+  {
+    "_id": "020a2f3a-6638-4d45-a980-ea95c75b3718",
+    "_rev": "2RlbKxeFZqpYApAqRC7z1N",
+    "_type": "services",
+    "category": {
+      "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopify-crm-integrations"
+    },
+    "title": "Shopify CRM Integrations"
+  },
+  {
+    "_id": "08a7cfe7-b1a7-479e-8d2b-415c1b160d92",
+    "_rev": "8LO5O2Z8C4HuWQBIr1O8F2",
+    "_type": "services",
+    "category": {
+      "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopify-site-maintenance"
+    },
+    "title": "Shopify Site Maintenance"
+  },
+  {
+    "_id": "19c14478-2353-4e09-b171-fd96143c0bf5",
+    "_rev": "2RlbKxeFZqpYApAqRFprkX",
+    "_type": "serviceCategories",
+    "category": null,
+    "categoryName": "Shopify Integrations",
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopify-integrations"
+    },
+    "title": null
+  },
+  {
+    "_id": "24db7a81-3570-4f83-811d-f3fd1628b620",
+    "_rev": "Q3uyLhmHndK2MusL7kVx2L",
+    "_type": "services",
+    "category": {
+      "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopify-design-services"
+    },
+    "title": "Shopify Design Services"
+  },
+  {
+    "_id": "2a39ead1-6fdc-45c5-875c-dadb14ca1bd5",
+    "_rev": "Q3uyLhmHndK2MusL7kUs7Z",
+    "_type": "services",
+    "category": {
+      "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopify-pim-integrations"
+    },
+    "title": "Shopify PIM Integrations"
+  },
+  {
+    "_id": "406af098-9844-4c11-83af-a8fa302278b4",
+    "_rev": "2RlbKxeFZqpYApAqRd3v8r",
+    "_type": "services",
+    "category": {
+      "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopify-amazon-integration"
+    },
+    "title": "Shopify Amazon Integration"
+  },
+  {
+    "_id": "47dcb3b3-8333-4a56-a35b-db34c5224bce",
+    "_rev": "Zf73VVqqP7eu9m7U8jNl1T",
+    "_type": "services",
+    "category": {
+      "_ref": "be092db6-0142-496a-b5e2-48f52c528cbe",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopware-to-shopify-migration"
+    },
+    "title": "Shopware to Shopify Migration"
+  },
+  {
+    "_id": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+    "_rev": "8LO5O2Z8C4HuWQBIr1KrQR",
+    "_type": "serviceCategories",
+    "category": null,
+    "categoryName": "Custom Shopify Development Services",
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "custom-shopify-development-services"
+    },
+    "title": null
+  },
+  {
+    "_id": "4bd00850-a0b3-49e5-a963-e6c69dee303a",
+    "_rev": "Q3uyLhmHndK2MusL7kVmvR",
+    "_type": "services",
+    "category": {
+      "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopify-erp-integrations"
+    },
+    "title": "Shopify ERP Integrations"
+  },
+  {
+    "_id": "5596e0bb-510e-4ed4-8728-a7fb92b0bf53",
+    "_rev": "2RlbKxeFZqpYApAqRGQAj3",
+    "_type": "services",
+    "category": {
+      "_ref": "be092db6-0142-496a-b5e2-48f52c528cbe",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "magento-to-shopify-migration"
+    },
+    "title": "Magento to Shopify Migration"
+  },
+  {
+    "_id": "5e23795c-774c-4b3b-a859-182096c4d989",
+    "_rev": "Q3uyLhmHndK2MusL7y69rH",
+    "_type": "services",
+    "category": {
+      "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopify-theme-development"
+    },
+    "title": "Shopify Theme Development"
+  },
+  {
+    "_id": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+    "_rev": "2RlbKxeFZqpYApAqRBzCvB",
+    "_type": "serviceCategories",
+    "category": null,
+    "categoryName": "Shopify Marketing",
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopify-marketing"
+    },
+    "title": null
+  },
+  {
+    "_id": "6b57e76b-090c-4330-8ef4-2a085f8ce794",
+    "_rev": "Q3uyLhmHndK2MusL7kWENl",
+    "_type": "services",
+    "category": {
+      "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopify-conversion-rate-optimization"
+    },
+    "title": "Shopify Conversion Rate Optimization"
+  },
+  {
+    "_id": "714d3321-fd31-495d-97eb-6310ef5d7640",
+    "_rev": "Q3uyLhmHndK2MusL7kWNB7",
+    "_type": "services",
+    "category": {
+      "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopify-consulting-services"
+    },
+    "title": "Shopify Consulting Services"
+  },
+  {
+    "_id": "8732ec5a-f3a7-48c2-83d9-2a6580ab5164",
+    "_rev": "Q3uyLhmHndK2MusL7kV4Ht",
+    "_type": "services",
+    "category": {
+      "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopify-headless-e-commerce"
+    },
+    "title": "Shopify Headless E-Commerce"
+  },
+  {
+    "_id": "884ed20e-7c04-4ad1-b4b5-ee6c03aeb28e",
+    "_rev": "Q3uyLhmHndK2MusL7kUX9t",
+    "_type": "services",
+    "category": {
+      "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopify-plus-development"
+    },
+    "title": "Shopify Plus Development"
+  },
+  {
+    "_id": "8bc60ef3-c9eb-434b-ac59-fd5c8274ffed",
+    "_rev": "2RlbKxeFZqpYApAqRC5cTh",
+    "_type": "services",
+    "category": {
+      "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopify-seo-services"
+    },
+    "title": "Shopify SEO Services"
+  },
+  {
+    "_id": "8c1d815e-8084-4883-ab58-efb06367f79f",
+    "_rev": "zEfsGweX58WztKkZEvYAGI",
+    "_type": "services",
+    "category": {
+      "_ref": "be092db6-0142-496a-b5e2-48f52c528cbe",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "woocommerce-to-shopify-migration"
+    },
+    "title": "WooCommerce to Shopify Migration"
+  },
+  {
+    "_id": "9066b2d8-4847-4393-97a2-bbacbc08417d",
+    "_rev": "8LO5O2Z8C4HuWQBIr1LCp3",
+    "_type": "services",
+    "category": {
+      "_ref": "be092db6-0142-496a-b5e2-48f52c528cbe",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "wordpress-to-shopify-migration"
+    },
+    "title": "WordPress to Shopify Migration"
+  },
+  {
+    "_id": "9254a863-270c-42fe-b912-e21d6cb5e268",
+    "_rev": "Q3uyLhmHndK2MusL7kTkmR",
+    "_type": "services",
+    "category": {
+      "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopify-speed-optimization"
+    },
+    "title": "Shopify Speed Optimization"
+  },
+  {
+    "_id": "b8577153-ed28-4281-a882-fb4d9efc3c66",
+    "_rev": "8LO5O2Z8C4HuWQBIr1QKSC",
+    "_type": "services",
+    "category": {
+      "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "shopify-app-development"
+    },
+    "title": "Shopify App Development"
+  },
+  {
+    "_id": "be092db6-0142-496a-b5e2-48f52c528cbe",
+    "_rev": "8LO5O2Z8C4HuWQBIr32yJZ",
+    "_type": "serviceCategories",
+    "category": null,
+    "categoryName": "Migration to Shopify",
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "migration-to-shopify"
+    },
+    "title": null
+  },
+  {
+    "_id": "ed2a54c7-a44b-4130-8498-f189bb16abaf",
+    "_rev": "Q3uyLhmHndK2MusL7kWz9p",
+    "_type": "services",
+    "category": {
+      "_ref": "be092db6-0142-496a-b5e2-48f52c528cbe",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "bigcommerce-to-shopify-migration"
+    },
+    "title": "BigCommerce to Shopify Migration"
+  },
+  {
+    "_id": "f4c90a7a-c654-4e95-9e0b-40e4a2e8a64a",
+    "_rev": "Q3uyLhmHndK2MusL7kX6Gh",
+    "_type": "services",
+    "category": {
+      "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5",
+      "_type": "reference"
+    },
+    "categoryName": null,
+    "language": "en",
+    "slug": {
+      "_type": "slug",
+      "current": "dhl-dpd-ups-tnt-gls-fedex"
+    },
+    "title": "DHL, DPD, UPS, TNT, GLS, FedEx "
+  }
+]

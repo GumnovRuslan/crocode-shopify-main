@@ -1,0 +1,78 @@
+{
+  "resource": {
+    "projectId": "k8culv98",
+    "dataset": "production"
+  },
+  "appId": "w5d6f76jxa81kvdkuauqful9",
+  "ownershipVerifiedVia": "Sanity MCP get_project_studios, before and after deployment",
+  "url": "https://shopify-crocode-studio.sanity.studio/",
+  "schemaId": "_.schemas.default",
+  "verifiedAt": "2026-09-21T14:54:31.130Z",
+  "manifestCreatedAt": "2026-09-21T14:48:51.422Z",
+  "status": "deployed-and-verified",
+  "build": {
+    "command": "sanity build",
+    "exitCode": 0
+  },
+  "deployment": {
+    "command": "sanity deploy --yes --schema-required",
+    "exitCode": 0,
+    "schemasDeployed": 1
+  },
+  "hostedManifest": {
+    "url": "https://shopify-crocode-studio.sanity.studio/static/create-manifest.json",
+    "schemaFile": "ca201bbf.create-schema.json",
+    "resourceVerified": true
+  },
+  "workDone": {
+    "name": "workDone",
+    "type": "array",
+    "of": [
+      {
+        "type": "reference",
+        "to": [
+          {
+            "type": "serviceCategories"
+          }
+        ],
+        "options": {
+          "disableNew": true
+        }
+      }
+    ],
+    "serializedValidation": [
+      {
+        "flag": "presence",
+        "constraint": "required"
+      },
+      {
+        "flag": "min",
+        "constraint": 1
+      },
+      {
+        "flag": "custom"
+      }
+    ],
+    "localSourceValidation": "Rule.required().min(1).unique().custom(async ...); validates published categories in project language",
+    "validationSerializationNote": "CLI 4.10.2 serialized schema omits unique and function bodies; these remain in the deployed source bundle. MCP readback and public hosted manifest both confirm the reference-array shape."
+  },
+  "versions": {
+    "sanity": "4.10.2",
+    "vision": "4.10.2",
+    "autoUpdateRuntime": "4.22.0"
+  },
+  "dependencyChanges": false,
+  "graphqlRedeployed": false,
+  "warnings": [
+    {
+      "code": "stale-secondary-schema-source",
+      "schemaId": "uEiCypyyXGVowSu8XzHUFLOHkHlNweRpO0ZlKWkneBWBWeg",
+      "detail": "MCP default Studio-deployed source still describes old string workDone. CLI deployment published _.schemas.default; explicit MCP readback and public hosted manifest verify new array. Use exact _.schemas.default for this deployment. Stale source was not deleted or overwritten."
+    },
+    {
+      "code": "runtime-version-difference",
+      "detail": "CLI recommends matching local packages to auto-update runtime; build and deployment succeeded without dependency changes."
+    }
+  ],
+  "mcpSchemaReadback": "Full schema definition for projects. Workspace \"default\", schemaId \"_.schemas.default\". When using these field definitions with another tool that accepts workspaceName, pass workspaceName \"default\". schemaId is only for get_schema.: \n<fields>\n  <options>\n    <list>\n      <title>English</title>\n      <value>en</value>\n    </list>\n    <list>\n      <title>Polish</title>\n      <value>pl</value>\n    </list>\n  </options>\n  <validation>\n    <rules>\n      <flag>valid</flag>\n      <constraint>en</constraint>\n      <constraint>pl</constraint>\n    </rules>\n    <rules>\n      <flag>presence</flag>\n      <constraint>required</constraint>\n    </rules>\n    <level>error</level>\n  </validation>\n  <description>На каком языке отображать проект</description>\n  <name>language</name>\n  <type>string</type>\n</fields>\n<fields>\n  <validation>\n    <rules>\n      <flag>presence</flag>\n      <constraint>required</constraint>\n    </rules>\n    <level>error</level>\n  </validation>\n  <description>Название проекта</description>\n  <name>title</name>\n  <type>string</type>\n</fields>\n<fields>\n  <description>Название заказчика или оргинизации</description>\n  <name>client</name>\n  <type>string</type>\n</fields>\n<fields>\n  <validation>\n    <rules>\n      <flag>presence</flag>\n      <constraint>required</constraint>\n    </rules>\n    <rules>\n      <flag>min</flag>\n      <constraint>1</constraint>\n    </rules>\n    <rules>\n      <flag>custom</flag>\n    </rules>\n    <level>error</level>\n  </validation>\n  <description>Select the service categories describing the work completed for this project.</description>\n  <of>\n    <options>\n      <disableNew>true</disableNew>\n    </options>\n    <to>\n      <type>serviceCategories</type>\n    </to>\n    <type>reference</type>\n    <title>Reference to service categories</title>\n  </of>\n  <name>workDone</name>\n  <type>array</type>\n</fields>\n<fields>\n  <options>\n    <source>title</source>\n    <maxLength>96</maxLength>\n  </options>\n  <validation>\n    <rules>\n      <flag>custom</flag>\n    </rules>\n    <rules>\n      <flag>presence</flag>\n      <constraint>required</constraint>\n    </rules>\n    <level>error</level>\n  </validation>\n  <description>Название ссылки проекта</description>\n  <name>slug</name>\n  <type>slug</type>\n</fields>\n<fields>\n  <options>\n    <list>\n      <title>light</title>\n      <value>light</value>\n    </list>\n    <list>\n      <title>dark</title>\n      <value>dark</value>\n    </list>\n  </options>\n  <initialValue>light</initialValue>\n  <validation>\n    <rules>\n      <flag>valid</flag>\n      <constraint>light</constraint>\n      <constraint>dark</constraint>\n    </rules>\n    <rules>\n      <flag>presence</flag>\n      <constraint>required</constraint>\n    </rules>\n    <level>error</level>\n  </validation>\n  <description>В какой теме отображать hero и header</description>\n  <name>theme</name>\n  <type>string</type>\n</fields>\n<fields>\n  <description>К какой категории относится проект</description>\n  <to>\n    <type>projectCategories</type>\n  </to>\n  <name>category</name>\n  <type>reference</type>\n</fields>\n<fields>\n  <description>Изображение для карточки</description>\n  <name>cardImage</name>\n  <type>imageWithAlt</type>\n</fields>\n<fields>\n  <description>Изображения для главной страницы</description>\n  <name>coverImage</name>\n  <type>bigAndSmallImages</type>\n  <title>Hero images</title>\n</fields>\n<fields>\n  <description>Краткое описание проекта</description>\n  <name>brief</name>\n  <type>brief</type>\n</fields>\n<fields>\n  <description>Изображения для галереи</description>\n  <name>gallery</name>\n  <type>bigAndSmallImages</type>\n</fields>\n<fields>\n  <description>Описание выполненой работы</description>\n  <of>\n    <marks>\n      <annotations>\n        <i18nTitleKey>inputs.portable-text.annotation.link</i18nTitleKey>\n        <options>\n          <modal>\n            <type>popover</type>\n          </modal>\n        </options>\n        <fields>\n          <validation>\n            <rules>\n              <flag>uri</flag>\n              <constraint>\n                <options>\n                  <scheme>/^http$/</scheme>\n                  <scheme>/^https$/</scheme>\n                  <scheme>/^tel$/</scheme>\n                  <scheme>/^mailto$/</scheme>\n                  <allowRelative>true</allowRelative>\n                  <relativeOnly>false</relativeOnly>\n                  <allowCredentials>false</allowCredentials>\n                </options>\n              </constraint>\n            </rules>\n            <level>error</level>\n          </validation>\n          <description>A valid web, email, phone, or relative link.</description>\n          <name>href</name>\n          <type>url</type>\n          <title>Link</title>\n        </fields>\n        <name>link</name>\n        <type>object</type>\n      </annotations>\n      <decorators>\n        <value>strong</value>\n        <title>Strong</title>\n      </decorators>\n      <decorators>\n        <value>em</value>\n        <title>Emphasis</title>\n      </decorators>\n      <decorators>\n        <value>code</value>\n        <title>Code</title>\n      </decorators>\n    </marks>\n    <lists>\n      <value>bullet</value>\n      <title>Bullet</title>\n    </lists>\n    <lists>\n      <value>number</value>\n      <title>Numbered</title>\n    </lists>\n    <styles>\n      <value>normal</value>\n      <title>Normal</title>\n    </styles>\n    <styles>\n      <value>h1</value>\n      <title>H1</title>\n    </styles>\n    <styles>\n      <value>h2</value>\n      <title>H2</title>\n    </styles>\n    <styles>\n      <value>h3</value>\n      <title>H3</title>\n    </styles>\n    <styles>\n      <value>h4</value>\n      <title>H4</title>\n    </styles>\n    <styles>\n      <value>h5</value>\n      <title>H5</title>\n    </styles>\n    <styles>\n      <value>h6</value>\n      <title>H6</title>\n    </styles>\n    <styles>\n      <value>blockquote</value>\n      <title>Quote</title>\n    </styles>\n    <type>block</type>\n  </of>\n  <name>solution</name>\n  <type>array</type>\n</fields>\n<fields>\n  <hidden>true</hidden>\n  <name>status</name>\n  <type>string</type>\n</fields>\n<fields>\n  <options>\n    <collapsible>true</collapsible>\n    <collapsed>true</collapsed>\n  </options>\n  <name>seo</name>\n  <type>seo</type>\n</fields>\n<name>projects</name>\n<type>document</type>\n\n"
+}
