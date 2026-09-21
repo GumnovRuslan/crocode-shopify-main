@@ -1,9 +1,9 @@
 # English Project Work Done rollout
 
-## Release 1: compatibility (current source)
+## Release 1: compatibility (deployed to master; user verified Production)
 
 - All Project reads use GROQ with the published perspective; legacy strings and category arrays are supported.
-- ServiceDetailPage intentionally keeps projects.slice(0, 4). The category query is prepared and tested but not used by the service route.
+- Release 1 retained four projects. Current local Release 2 uses getProjectsByServiceCategory with the service category ID and language, and passes all matches to ShopifyAgency.
 - The local Projects schema is prepared. Do not deploy Studio or create migration drafts before Release 1 is verified in Production.
 - No runtime JSON overlay, preview switch, content migration, Git push or deployment is included.
 
@@ -14,7 +14,7 @@
 3. Merge to master yourself, wait for Vercel Ready and verify the same Production pages.
 4. Only after confirmation continue with migration. Preview and Production share Sanity data; branches do not isolate drafts.
 
-## Sanity migration (pending MCP access and the deployment gate)
+## Sanity migration (deployment gate satisfied; pending authorized MCP session)
 
 - Target from local CLI: k8culv98 / production. Confirm through MCP before writing.
 - Existing hosted Studio: https://shopify-crocode-studio.sanity.studio/ ; appId w5d6f76jxa81kvdkuauqful9. Confirm ownership before configuring/deploying.
@@ -26,7 +26,7 @@
 - Inspect migration drafts, publish with current draft revision guards, verify memberships and remaining drafts; retain original values for rollback.
 - Deploy the local structured schema to the existing Studio only after migration; verify deployed schema through MCP. No GraphQL deployment is needed.
 
-## Release 2 (after migration)
+## Release 2 (code prepared; publish only after verified migration)
 
 1. In src/app/services/[slug]/page.tsx use getProjectsByServiceCategory() with {lang: locale, categoryId: service.category?._id ?? null}.
 2. In ServiceDetailPage pass projects directly, removing slice(0, 4). Keep home and general portfolio unfiltered.
@@ -43,4 +43,10 @@ Rollback frontend to Release 1, never to the original string-only GraphQL releas
 - Local frontend environment confirmed k8culv98 / production (no credentials logged).
 - Browser checks on localhost:3100/services/shopify-crm-integrations and /services/shopware-to-shopify-migration: 4 cards each, slider moves, no JavaScript exceptions.
 - Home, /our-work, /our-work/simply-nootropics and /sitemap.xml returned HTTP 200 locally.
-- Remote Preview and Production release checks are pending user deployment. No Sanity content was written and hosted Studio was not deployed.
+- Release 1 deployment to master and Production verification subsequently confirmed by the user. These local checks concern Release 1; Release 2 live-data/Preview checks remain pending.
+
+## Current handoff
+
+SANITY_HANDOFF.md is the complete task for the separate terminal with English MCP access. It owns Sanity data/Studio and writes manifest.json, classification.md, published-result.json, studio-deployment-result.json and HANDOFF_RESULT.md here. This session owns frontend only.
+
+All six query tests pass with Release 2 connected. Do not publish Release 2 before the migration report confirms complete published English memberships and Studio deployment. Until that migration, legacy string Work Done does not match the new category filter and local service galleries may be empty. No runtime fallback or local JSON overlay has been added.

@@ -40,7 +40,7 @@ const ServiceDetailPage = ({ slug, service, projects }: TProps) => {
       <ServiceDescription slug={slug} service={service} />
 
       <ShopifyAgency
-        projects={projects.slice(0, 4)}
+        projects={projects}
         showTitle={true}
         customTitleStyle="centered"
       />

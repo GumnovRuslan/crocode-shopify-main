@@ -1,0 +1,734 @@
+{
+  "resource": {
+    "projectId": "k8culv98",
+    "dataset": "production"
+  },
+  "status": "published-verified",
+  "verifiedAt": "2026-09-21T14:53:16.137Z",
+  "updatedField": "workDone",
+  "documents": [
+    {
+      "_id": "016d965e-b137-4666-a5db-48fef068bff8",
+      "_rev": "pcT5cUTM5ohqBnZd4qcmiJ",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "simply-nootropics"
+      },
+      "title": "Simply Nootropics: Shopify Redesign and Growth Optimization for a Supplement Brand",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5",
+          "_type": "reference"
+        },
+        {
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "04996bc3-9127-497a-b02d-f567e4732dcc",
+      "_rev": "pcT5cUTM5ohqBnZd4qcmiJ",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "parfumsdemarly"
+      },
+      "title": "Parfums de Marly: WordPress to Shopify Migration with SEO & Performance Optimization",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+          "_type": "reference"
+        },
+        {
+          "_key": "be092db60142496ab5e248f52c528cbe",
+          "_ref": "be092db6-0142-496a-b5e2-48f52c528cbe",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "2cf4f941-f65b-4748-8086-48e386c02551",
+      "_rev": "pcT5cUTM5ohqBnZd4qcmiJ",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "hvisk"
+      },
+      "title": "HVISK: Scandinavian Accessories Brand Development",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "577380e3-8632-43b7-99b5-bcb77528074d",
+      "_rev": "pcT5cUTM5ohqBnZd4qcmiJ",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "laidback-london"
+      },
+      "title": "Laidback London: Artisan Footwear on Shopify",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "57752282-8ebd-4f0a-9d20-496a4c1ac677",
+      "_rev": "pcT5cUTM5ohqBnZd4qcmiJ",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "ttswtrs"
+      },
+      "title": "TTSWTRS: Streetwear Brand Shopify Development",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "5e40e57e-96c4-4030-bd3e-ef37685e0db7",
+      "_rev": "pcT5cUTM5ohqBnZd4qcmiJ",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "urbansignprint"
+      },
+      "title": "UrbanSignPrint: WordPress to Shopify Migration & E-commerce Redesign",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "be092db60142496ab5e248f52c528cbe",
+          "_ref": "be092db6-0142-496a-b5e2-48f52c528cbe",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "64e76fe1-6938-4853-8d2b-0700300175dd",
+      "_rev": "pcT5cUTM5ohqBnZd4qcmiJ",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "nnoor"
+      },
+      "title": "NNOOR: Contemporary Jewelry Brand Store",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "73e8862e-acb9-4382-8989-d8e268069d61",
+      "_rev": "pcT5cUTM5ohqBnZd4qcmiJ",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "arcus"
+      },
+      "title": "Arcus: Outdoor Equipment Store on Shopify",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "be092db60142496ab5e248f52c528cbe",
+          "_ref": "be092db6-0142-496a-b5e2-48f52c528cbe",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "77579ee2-feff-4d00-b0f7-6c4b4d0e45fa",
+      "_rev": "pcT5cUTM5ohqBnZd4qcmiJ",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "coffeeface"
+      },
+      "title": "Coffeeface: Shopify Store Built for a Modern Skincare Brand",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "8ec29256-976a-4030-ac7c-1f4969704c4a",
+      "_rev": "pcT5cUTM5ohqBnZd4qcmiJ",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "christinasblomster"
+      },
+      "title": "Christina's Blomster: Florist Shopify Store",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "901bcef9-b924-4217-a55c-d040b9623de3",
+      "_rev": "pcT5cUTM5ohqBnZd4qcmiJ",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "sienahome"
+      },
+      "title": "SienaHome: Luxury Home Goods Store Development",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "90f54d4e-3505-4fc2-9e19-d9e7a25e1faa",
+      "_rev": "pcT5cUTM5ohqBnZd4qcmiJ",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "allbuy"
+      },
+      "title": "AllBuy: Multi-Category Retail Platform",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "91dbcec8-00b4-4980-84b2-9cd0fd495ee0",
+      "_rev": "pcT5cUTM5ohqBnZd4qcmiJ",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "zoofs"
+      },
+      "title": "Zoofs: Custom Shopify Store for a Pet Supplement Brand",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "a09b45f8-933e-4c8b-9240-def739020e84",
+      "_rev": "pcT5cUTM5ohqBnZd4qcmiJ",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "bearbricks"
+      },
+      "title": "Bearbricks: Collectible Toy Store Built on Shopify",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5",
+          "_type": "reference"
+        },
+        {
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "a63a0817-46e9-4e7d-b2b3-9fd97afdc49c",
+      "_rev": "pcT5cUTM5ohqBnZd4qcnMc",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "kleanse"
+      },
+      "title": "Kleanse: Skincare Brand Shopify Development",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "a98dea4e-1435-4784-a7a8-c216b798f011",
+      "_rev": "pcT5cUTM5ohqBnZd4qcnMc",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "lost-boys"
+      },
+      "title": "Lost Boys Archives: Vintage Fashion Marketplace",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5",
+          "_type": "reference"
+        },
+        {
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "b3615b0c-b32c-43d9-bde0-52b0b84d998b",
+      "_rev": "pcT5cUTM5ohqBnZd4qcnMc",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "dansk-design-lagersalg"
+      },
+      "title": "Dansk Design Lagersalg: Danish Design Outlet Store",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "b9f99ffc-da3f-4906-a248-5abfdb33537e",
+      "_rev": "pcT5cUTM5ohqBnZd4qcnMc",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "inwohn"
+      },
+      "title": "Inwohn: Contemporary Furniture Store",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "c0ec0d25-1ef8-4018-9429-5d6fa387a6b1",
+      "_rev": "pcT5cUTM5ohqBnZd4qcnMc",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "second-chancy"
+      },
+      "title": "Second Chancy: Pre-Owned Fashion Marketplace",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "d1212e9f-4109-40c8-8486-ce52f6246e16",
+      "_rev": "pcT5cUTM5ohqBnZd4qcnMc",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "valsenyc"
+      },
+      "title": "Valse: Premium Dance Apparel Store",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "d5633cad-3f63-4baf-a372-8158c165a353",
+      "_rev": "pcT5cUTM5ohqBnZd4qcnMc",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "spokex-custom-shopify-store-for-premium-cycling-gear"
+      },
+      "title": "SpokeX: Custom Shopify Store for Premium Cycling Gear",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "d7ceb3cb-ad82-4b57-850d-ba739acd2c7d",
+      "_rev": "pcT5cUTM5ohqBnZd4qcnMc",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "relaxe"
+      },
+      "title": "Relaxe: Wellness Products Shopify Store",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "de3d031f-c45c-47b6-9789-1284a814f151",
+      "_rev": "pcT5cUTM5ohqBnZd4qcnMc",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "vitachipus"
+      },
+      "title": "VitaChipus: Health Supplement Brand on Shopify",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5",
+          "_type": "reference"
+        },
+        {
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "e262f30c-a77e-4599-9df3-9c976eb6d217",
+      "_rev": "pcT5cUTM5ohqBnZd4qcnMc",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "sho"
+      },
+      "title": "SHO: Minimalist Lifestyle Products Store",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "e3600c4a-c9b9-4f99-ad3f-b59d519674eb",
+      "_rev": "pcT5cUTM5ohqBnZd4qcnMc",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "drink-tmrw"
+      },
+      "title": "DrinkTMRW: Headless Shopify Store for a Science-Based Supplement Brand",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5",
+          "_type": "reference"
+        },
+        {
+          "_key": "6a41d85c93934f85aaabce230a12df6d",
+          "_ref": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "ef660120-80ea-49f5-aa83-2111bb424f3c",
+      "_rev": "pcT5cUTM5ohqBnZd4qcnMc",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "bannerprinting"
+      },
+      "title": "Bannerprinting: WooCommerce to Shopify Migration for Multiple Stores",
+      "workDone": [
+        {
+          "_key": "be092db60142496ab5e248f52c528cbe",
+          "_ref": "be092db6-0142-496a-b5e2-48f52c528cbe",
+          "_type": "reference"
+        }
+      ]
+    },
+    {
+      "_id": "f31a79d5-3e51-442a-ab69-62bd1490c81a",
+      "_rev": "pcT5cUTM5ohqBnZd4qcnMc",
+      "_type": "projects",
+      "categoryName": null,
+      "language": "en",
+      "slug": {
+        "_type": "slug",
+        "current": "newrock"
+      },
+      "title": "Newrock: WordPress to Shopify Migration & Navigation Redesign",
+      "workDone": [
+        {
+          "_key": "48171bc20d524a5bb952af712bb8fafe",
+          "_ref": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+          "_type": "reference"
+        },
+        {
+          "_key": "19c1447823534e09b171fd96143c0bf5",
+          "_ref": "19c14478-2353-4e09-b171-fd96143c0bf5",
+          "_type": "reference"
+        },
+        {
+          "_key": "be092db60142496ab5e248f52c528cbe",
+          "_ref": "be092db6-0142-496a-b5e2-48f52c528cbe",
+          "_type": "reference"
+        }
+      ]
+    }
+  ],
+  "counts": [
+    {
+      "_id": "19c14478-2353-4e09-b171-fd96143c0bf5",
+      "categoryName": "Shopify Integrations",
+      "projects": 10
+    },
+    {
+      "_id": "48171bc2-0d52-4a5b-b952-af712bb8fafe",
+      "categoryName": "Custom Shopify Development Services",
+      "projects": 26
+    },
+    {
+      "_id": "6a41d85c-9393-4f85-aaab-ce230a12df6d",
+      "categoryName": "Shopify Marketing",
+      "projects": 15
+    },
+    {
+      "_id": "be092db6-0142-496a-b5e2-48f52c528cbe",
+      "categoryName": "Migration to Shopify",
+      "projects": 5
+    }
+  ],
+  "remainingMigrationDrafts": 0,
+  "unresolvedCases": [],
+  "verification": {
+    "allUserFieldsComparedBeforePublish": true,
+    "excludedMetadata": [
+      "_id",
+      "_rev",
+      "_updatedAt",
+      "_system"
+    ],
+    "guardedPatch": true,
+    "guardedPublish": true,
+    "publishedTitleSlugLanguageAndMembershipChecked": true
+  },
+  "draftRevisions": {
+    "016d965e-b137-4666-a5db-48fef068bff8": "S2sjj3g6NHcQRM9RF1zVPE",
+    "04996bc3-9127-497a-b02d-f567e4732dcc": "F0zb64h3xr6h3MPnt2aQI6",
+    "2cf4f941-f65b-4748-8086-48e386c02551": "pcT5cUTM5ohqBnZd4qchgY",
+    "577380e3-8632-43b7-99b5-bcb77528074d": "S2sjj3g6NHcQRM9RF224LA",
+    "57752282-8ebd-4f0a-9d20-496a4c1ac677": "S2sjj3g6NHcQRM9RF224US",
+    "5e40e57e-96c4-4030-bd3e-ef37685e0db7": "S2sjj3g6NHcQRM9RF224jw",
+    "64e76fe1-6938-4853-8d2b-0700300175dd": "F0zb64h3xr6h3MPnt2aPgQ",
+    "73e8862e-acb9-4382-8989-d8e268069d61": "F0zb64h3xr6h3MPnt2aPSI",
+    "77579ee2-feff-4d00-b0f7-6c4b4d0e45fa": "pcT5cUTM5ohqBnZd4qchhN",
+    "8ec29256-976a-4030-ac7c-1f4969704c4a": "S2sjj3g6NHcQRM9RF224dk",
+    "901bcef9-b924-4217-a55c-d040b9623de3": "pcT5cUTM5ohqBnZd4qcheu",
+    "90f54d4e-3505-4fc2-9e19-d9e7a25e1faa": "pcT5cUTM5ohqBnZd4qchfj",
+    "91dbcec8-00b4-4980-84b2-9cd0fd495ee0": "F0zb64h3xr6h3MPnt2aPX0",
+    "a09b45f8-933e-4c8b-9240-def739020e84": "S2sjj3g6NHcQRM9RF224OG",
+    "a63a0817-46e9-4e7d-b2b3-9fd97afdc49c": "F0zb64h3xr6h3MPnt2aYQ2",
+    "a98dea4e-1435-4784-a7a8-c216b798f011": "F0zb64h3xr6h3MPnt2aYeA",
+    "b3615b0c-b32c-43d9-bde0-52b0b84d998b": "S2sjj3g6NHcQRM9RF229BY",
+    "b9f99ffc-da3f-4906-a248-5abfdb33537e": "S2sjj3g6NHcQRM9RF228zA",
+    "c0ec0d25-1ef8-4018-9429-5d6fa387a6b1": "F0zb64h3xr6h3MPnt2aYx0",
+    "d1212e9f-4109-40c8-8486-ce52f6246e16": "pcT5cUTM5ohqBnZd4qciht",
+    "d5633cad-3f63-4baf-a372-8158c165a353": "S2sjj3g6NHcQRM9RF2292G",
+    "d7ceb3cb-ad82-4b57-850d-ba739acd2c7d": "S2sjj3g6NHcQRM9RF229Ee",
+    "de3d031f-c45c-47b6-9789-1284a814f151": "pcT5cUTM5ohqBnZd4qcijX",
+    "e262f30c-a77e-4599-9df3-9c976eb6d217": "F0zb64h3xr6h3MPnt2aYis",
+    "e3600c4a-c9b9-4f99-ad3f-b59d519674eb": "S2sjj3g6NHcQRM9RF229Kq",
+    "ef660120-80ea-49f5-aa83-2111bb424f3c": "pcT5cUTM5ohqBnZd4qcikM",
+    "f31a79d5-3e51-442a-ab69-62bd1490c81a": "pcT5cUTM5ohqBnZd4qcim0"
+  }
+}
