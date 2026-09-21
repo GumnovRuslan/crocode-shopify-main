@@ -1,5 +1,8 @@
 "use client";
 
+import type { TProjectWorkDone } from "@/types/templates/project";
+import { formatProjectWorkDone } from "@/utils/projectWorkDone";
+
 import { useDarkThemeForHeader } from "@/hooks/useHeaderTheme";
 import styles from "./styles.module.scss";
 
@@ -9,7 +12,7 @@ import { BlurIn } from "@/components/ui/BlurIn";
 type TProps = {
   theme: string | null;
   title: string;
-  workDone: string;
+  workDone: TProjectWorkDone;
   subtitle: string;
   background: {
     desktopSrc: string;
@@ -57,7 +60,7 @@ const HeroProject = ({
           <p
             className={`${styles.hero__text} ${isDarkTheme ? styles["hero__text--dark"] : ""}`}
           >
-            {workDone}
+            {formatProjectWorkDone(workDone)}
           </p>
         </div>
       </Section>

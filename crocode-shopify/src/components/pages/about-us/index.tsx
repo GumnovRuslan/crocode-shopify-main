@@ -1,7 +1,7 @@
+import LetsTalk from "@/components/sections/lets-talk";
 import {
   Hero,
   Comments,
-  LetsTalk,
   OurResult,
   ShopifyPlusHighlights,
 } from "@/components/sections";

@@ -1,3 +1,4 @@
+import { formatProjectWorkDone } from "@/utils/projectWorkDone";
 import styles from "./styles.module.scss";
 
 import Link from "next/link";
@@ -26,7 +27,7 @@ const ProjectCard = ({ className, project }: TProps) => {
         className={styles.card__link}
       >
         <span className={styles.card__title}>{project?.title}</span>
-        <span className={styles.card__label}>{project?.workDone}</span>
+        <span className={styles.card__label}>{formatProjectWorkDone(project?.workDone)}</span>
       </Link>
     </div>
   );

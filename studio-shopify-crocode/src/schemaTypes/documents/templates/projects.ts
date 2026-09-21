@@ -1,5 +1,5 @@
 import { DocumentsIcon } from '@sanity/icons'
-import { defineField, defineType } from 'sanity'
+import { defineArrayMember, defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'projects',
@@ -43,9 +43,34 @@ export default defineType({
     defineField({
       title: 'Work Done',
       name: 'workDone',
-      type: 'string',
-      description: 'Краткое описание проделанной работы (Shopify Custom Theme Design & Development)',
-      validation: (Rule) => Rule.required()
+      type: 'array',
+      description: 'Select the service categories describing the work completed for this project.',
+      of: [
+        defineArrayMember({
+          type: 'reference',
+          to: [{ type: 'serviceCategories' }],
+          options: {
+            disableNew: true,
+            filter: ({ document }) => ({
+              filter: 'language == $lang',
+              params: { lang: document.language || '' },
+            }),
+          },
+        }),
+      ],
+      validation: (Rule) => Rule.required().min(1).unique().custom(async (value, context) => {
+        if (!Array.isArray(value) || !value.length) return true
+        const language = context.document?.language
+        if (!language) return 'Select the project language first.'
+        const ids = value.map((item) => (item as { _ref?: string })._ref)
+        if (ids.some((id) => !id)) return 'Select a service category for every item.'
+        const client = context.getClient({ apiVersion: '2023-08-01' }).withConfig({ perspective: 'published' })
+        const count = await client.fetch<number>(
+          'count(*[_type == "serviceCategories" && _id in $ids && language == $language])',
+          { ids, language },
+        )
+        return count === new Set(ids).size || 'Choose published service categories in the project language.'
+      }),
     }),
     defineField({
       name: 'slug',

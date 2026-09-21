@@ -1,4 +1,5 @@
-import { HeroProject, Summary, Gallery, Comments, LetsTalk, CaseStudyDetails } from "@/components/sections"
+import LetsTalk from "@/components/sections/lets-talk";
+import { HeroProject, Summary, Gallery, Comments, CaseStudyDetails } from "@/components/sections"
 import { Background, Section } from "@/components/ui"
 import { TProject } from "@/types/templates/project"
 

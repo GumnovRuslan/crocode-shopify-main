@@ -1,26 +1,46 @@
-export const getProjects = (lang: string = "en") => `
-  query {
-  allProjects(where: { language: { eq: "${lang}" } }) {
-  	_id
-    language
-    title
-    workDone
-    slug {current}
-    category {
-      _id
-      categoryName
-    }
-    cardImage {
-      image {asset {url}}
-      altText
-    }
+const workDoneFields = /* groq */ `
+  "workDone": select(
+    defined(count(workDone)) => (workDone[]->{_id, categoryName})[defined(_id)],
+    coalesce(workDone, [])
+  )
+`;
+
+const projectCardFields = /* groq */ `
+  _id,
+  language,
+  title,
+  ${workDoneFields},
+  slug {current},
+  category->{_id, categoryName},
+  cardImage {
+    image {asset->{url}},
+    altText
+  }
+`;
+
+// Parameters are passed separately to fetchGROQ, never interpolated from input.
+export const getProjects = () => /* groq */ `
+{
+  "allProjects": *[_type == "projects" && language == $lang] | order(_id asc) {
+    ${projectCardFields}
   }
 }
 `;
 
-export const getProjectsSlug = (lang: string = "en") => `
-  query {
-  allProjects(where: { language: { eq: "${lang}" } }) {
+export const getProjectsByServiceCategory = () => /* groq */ `
+{
+  "allProjects": *[
+    _type == "projects" && language == $lang &&
+    defined($categoryId) && $categoryId in workDone[]._ref
+  ] | order(_id asc) {
+    ${projectCardFields}
+  }
+}
+`;
+
+export const getProjectsSlug = () => /* groq */ `
+{
+  "allProjects": *[_type == "projects" && language == $lang] | order(_id asc) {
     slug {current}
   }
 }
@@ -48,44 +68,44 @@ export const getArticleSeo = (slug: string) => `
 }
 `;
 
-export const getProject = (slug: string) => `
-  query {
-    allProjects(where: { slug: { current: { eq: "${slug}" } } }) {
-    _id
-    title
-    client
-    workDone
-    language
-    slug {current}
-    theme
+export const getProject = () => /* groq */ `
+{
+  "allProjects": *[_type == "projects" && slug.current == $slug] {
+    _id,
+    title,
+    client,
+    ${workDoneFields},
+    language,
+    slug {current},
+    theme,
     coverImage {
-      imageDesktop {asset {url}}
-      imageMobile {asset {url}}
+      imageDesktop {asset->{url}},
+      imageMobile {asset->{url}},
       altText
-    }
+    },
     brief {
-      description
-      industry
-      technologies
+      description,
+      industry,
+      technologies,
       website {
-        text
+        text,
         url
       }
-    }
+    },
     gallery {
-      imageDesktop {asset {url}}
-      imageMobile {asset {url}}
+      imageDesktop {asset->{url}},
+      imageMobile {asset->{url}},
       altText
-    }
-    solutionRaw
+    },
+    "solutionRaw": solution,
     seo {
-      title
-      description
-      keywords
-      ogType
-      twitterCard
+      title,
+      description,
+      keywords,
+      ogType,
+      twitterCard,
       image {
-        image { asset { url } }
+        image {asset->{url}},
         altText
       }
     }

@@ -1,5 +1,5 @@
 import { HomePage } from "@/components/pages";
-import { fetchGraphQL } from "@/lib/sanity/graphql";
+import { fetchGROQ } from "@/lib/sanity/groq";
 import { getProjects } from "@/lib/sanity/queries/projects";
 import { TProjectCard } from "@/types";
 import { getLocale } from "next-intl/server";
@@ -12,7 +12,8 @@ export const metadata: Metadata = {
 
 export default async () => {
   const locale: string = await getLocale()
-  const { data: projectsData } = await fetchGraphQL(getProjects(locale));
+  const { data: projectsData, error: projectsError } = await fetchGROQ<{ allProjects: TProjectCard[] }>(getProjects(), { lang: locale });
+  if (projectsError) throw new Error("Unable to load projects");
   const projects: TProjectCard[] = projectsData?.allProjects || [];
 
   return <HomePage projects={projects}/>

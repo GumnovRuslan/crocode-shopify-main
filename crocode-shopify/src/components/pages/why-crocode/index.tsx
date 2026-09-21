@@ -1,4 +1,5 @@
-import { Hero, Comments, LetsTalk, WhyChooseUs, AgencyDescription, OurServices } from "@/components/sections";
+import LetsTalk from "@/components/sections/lets-talk";
+import { Hero, Comments, WhyChooseUs, AgencyDescription, OurServices } from "@/components/sections";
 import { Background, Section } from "@/components/ui";
 import { useTranslations } from "next-intl";
 
