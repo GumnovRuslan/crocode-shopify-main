@@ -1,5 +1,6 @@
 "use client";
 
+import { BlurIn } from "@/components/ui/BlurIn";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { useLightThemeForHeader } from "@/hooks/useHeaderTheme";
@@ -17,14 +18,16 @@ export default function BlogArticleHeader({ title, author, articleDate }: Props)
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <Link href="/blog" className={styles.back}>
-          <span aria-hidden="true">←</span> {t("backToBlog")}
-        </Link>
-        <h1 className={styles.title}>{title}</h1>
-        <div className={styles.meta}>
-          <span>{t("by")} <strong>{author}</strong></span>
-          <time dateTime={articleDate}>{formatArticleDate(articleDate, locale)}</time>
-        </div>
+        <BlurIn duration={0.5}>
+          <Link href="/blog" className={styles.back}>
+            <span aria-hidden="true">←</span> {t("backToBlog")}
+          </Link>
+          <h1 className={styles.title}>{title}</h1>
+          <div className={styles.meta}>
+            <span>{t("by")} <strong>{author}</strong></span>
+            <time dateTime={articleDate}>{formatArticleDate(articleDate, locale)}</time>
+          </div>
+        </BlurIn>
       </div>
     </header>
   );

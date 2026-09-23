@@ -63,8 +63,10 @@
     border-radius: 12px;
   }
 
-  > :first-child { margin-top: 0; }
-  > :last-child { margin-bottom: 0; }
+  > :first-child,
+  > :first-child > div > :first-child { margin-top: 0; }
+  > :last-child,
+  > :last-child > div > :last-child { margin-bottom: 0; }
 }
 
 .underline {

@@ -20,6 +20,8 @@ function loadTS(path, replacements = {}) {
 const utils = loadTS('../src/utils/blog.ts');
 const BlogBody = loadTS('../src/components/sections/blog-body/index.tsx', {
   '@/utils/blog': utils,
+  '@/components/ui/Fade': {Fade: ({children}) => children},
+  '@/components/ui/BlurIn': {BlurIn: ({children}) => children},
   './styles.module.scss': {},
   'next/image': props => React.createElement('img', props),
   'next/link': props => React.createElement('a', props),
