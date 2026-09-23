@@ -27,6 +27,7 @@ const Footer = () => {
     nav: [
       { text: t(`columns.what-we-do.nav.our-work`), href: "/our-work" },
       { text: t(`columns.what-we-do.nav.services`), href: "/services" },
+      { text: t(`columns.what-we-do.nav.blog`), href: "/blog" },
       { text: t(`columns.what-we-do.nav.about-us`), href: "/about-us" },
       { text: t(`columns.what-we-do.nav.why-crocode`), href: "/why-crocode" },
       { text: t(`columns.what-we-do.nav.faqs`), href: "/faqs" },

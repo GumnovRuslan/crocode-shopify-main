@@ -8,6 +8,7 @@ import bigAndSmallImages from './templates/bigAndSmallImages'
 import link from './templates/link'
 import serviceOffer from './templates/serviceOffer'
 import serviceDetail from './templates/serviceDetail'
+import blogBody from './templates/blogBody'
 
 export default [
   seo,
@@ -20,4 +21,5 @@ export default [
   link,
   serviceOffer,
   serviceDetail,
+  blogBody,
 ]
