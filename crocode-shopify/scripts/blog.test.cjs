@@ -82,3 +82,38 @@ test('invalid links and colors render text without unsafe attributes', () => {
   assert.ok(!html.includes('href='));
   assert.ok(!html.includes('style='));
 });
+
+const queries = loadTS('../src/lib/sanity/queries/blogArticles.ts');
+function dataFunctions(fetchGROQ) {
+  return loadTS('../src/lib/sanity/blogArticles.ts', {
+    'server-only': {},
+    react: {cache: fn => fn},
+    '@/lib/sanity/groq': {fetchGROQ},
+    '@/lib/sanity/queries/blogArticles': queries,
+  });
+}
+
+test('article loaders pass language and slug as parameters and preserve projected content', async () => {
+  const calls = [];
+  const article = {title: 'Live title', body: [block('Live content')]};
+  const data = dataFunctions(async (query, params) => {
+    calls.push({query, params});
+    return {data: params.slug ? article : [article], error: null};
+  });
+  assert.deepEqual(await data.fetchBlogArticles('en'), [article]);
+  const slug = 'slug" || true';
+  assert.equal(await data.fetchBlogArticle(slug, 'en'), article);
+  assert.deepEqual(calls.map(call => call.params), [{lang: 'en'}, {slug, lang: 'en'}]);
+  assert.ok(!calls[1].query.includes(slug));
+  assert.ok(calls.every(call => call.query.includes('_type == "blogArticle"')));
+});
+
+test('missing article is distinct from Sanity failure and empty listing is allowed', async () => {
+  const missing = dataFunctions(async () => ({data: null, error: null}));
+  assert.equal(await missing.fetchBlogArticle('missing', 'en'), null);
+  const empty = dataFunctions(async () => ({data: [], error: null}));
+  assert.deepEqual(await empty.fetchBlogArticles('en'), []);
+  const failed = dataFunctions(async () => ({data: null, error: 'network error'}));
+  await assert.rejects(failed.fetchBlogArticle('example', 'en'), /Unable to load blog article/);
+  await assert.rejects(failed.fetchBlogArticles('en'), /Unable to load blog articles/);
+});
