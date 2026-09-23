@@ -3,12 +3,24 @@
     "nav": {
       "our-work": "Our Work",
       "services": "Services",
+      "blog": "Blogs",
       "about-us": "About Us",
       "contact": "Contact"
     },
     "button": {
       "text": "Get In Touch"
     }
+  },
+  "Blog": {
+    "title": "Blogs",
+    "metaTitle": "Blogs | Crocode",
+    "eyebrow": "Shopify insights",
+    "description": "Practical guides and insights from our Shopify team. Explore platform migrations, learn from real projects, and take the next step with your store.",
+    "latestArticles": "Latest articles",
+    "readArticle": "Read article",
+    "backToBlog": "Back to blogs",
+    "by": "By",
+    "empty": "New articles are on their way. Check back soon."
   },
   "HomePage": {
     "hero": {
@@ -483,6 +495,7 @@
         "title": "What we do",
         "nav": {
           "our-work":"Our Work",
+          "blog": "Blogs",
           "services": "Services",
           "about-us":"About Us",
           "why-crocode": "Why Crocode",

@@ -1,0 +1,34 @@
+.section {
+  background: var(--color-bg-white);
+  padding: fluid-size(48, 88) fluid-size(20, 125) fluid-size(80, 150);
+}
+
+.inner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: fluid-size(20, 28);
+  font-weight: 600;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-bottom: fluid-size(28, 48);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 48px;
+
+  @include media-up(md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: fluid-size(24, 48);
+  }
+}
+
+.empty {
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 40px 0;
+}

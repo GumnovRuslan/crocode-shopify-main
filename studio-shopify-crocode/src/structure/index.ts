@@ -13,6 +13,7 @@ export const structure: StructureResolver = (S) =>
       S.divider(),
 
       langList(S, 'Blogs', 'blogs'),
+      S.documentTypeListItem('blogArticle').title('Blog Articles'),
       
       S.divider(),
 
@@ -21,6 +22,7 @@ export const structure: StructureResolver = (S) =>
       // Остальные документы (если есть)
       ...S.documentTypeListItems().filter((item) => 
         item.getId() !== 'blogs' 
+        && item.getId() !== 'blogArticle'
         && item.getId() !== 'projects' 
         && item.getId() !== 'projectCategories'
         && item.getId() !== 'sanity.imageAsset' // Исключаем медиа-ассеты из общего списка
