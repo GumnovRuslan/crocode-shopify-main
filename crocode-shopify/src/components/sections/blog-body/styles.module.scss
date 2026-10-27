@@ -73,3 +73,8 @@
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+@media (prefers-reduced-motion: no-preference) {
+  :global(html):has(.body) {
+    scroll-behavior: smooth;
+  }
+}

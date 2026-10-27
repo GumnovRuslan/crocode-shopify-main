@@ -48,14 +48,32 @@ test('links distinguish internal destinations, anchors, contact links and extern
 
 test('all heading levels and nested lists produce semantic HTML', () => {
   const body = [
-    ...Array.from({length: 6}, (_, i) => block(`Heading ${i + 1}`, {style: `h${i + 1}`})),
+    ...Array.from({length: 6}, (_, i) => block(`heading-${i + 1}`, {style: `h${i + 1}`})),
     block('First', {listItem: 'number', level: 1}),
     block('Nested', {listItem: 'bullet', level: 2}),
     block('Second', {listItem: 'number', level: 1}),
   ];
   const html = renderToStaticMarkup(React.createElement(BlogBody, {body}));
-  for (let i = 1; i <= 6; i++) assert.ok(html.includes(`<h${i}>Heading ${i}</h${i}>`));
+  for (let i = 1; i <= 6; i++) assert.ok(html.includes(`<h${i} id="section-heading-${i}">heading-${i}</h${i}>`));
   assert.ok(html.includes('<ol><li>First<ul><li>Nested</li></ul></li><li>Second</li></ol>'));
+});
+
+test('table of contents anchors resolve uniquely and survive heading edits and reordering', () => {
+  const heading = (key, text) => block(key, {style: 'h2', children: [{_type: 'span', _key: 's', marks: [], text}]});
+  const toc = block('toc', {
+    markDefs: [{_type: 'link', _key: 'link', href: '#section-target'}],
+    children: [{_type: 'span', _key: 's', marks: ['link'], text: 'Jump to section'}],
+  });
+  for (const body of [
+    [toc, heading('target', 'Same title'), heading('other', 'Same title')],
+    [toc, heading('other', 'Same title'), heading('target', 'Edited title')],
+  ]) {
+    const html = renderToStaticMarkup(React.createElement(BlogBody, {body}));
+    assert.ok(html.includes('<a href="#section-target">Jump to section</a>'));
+    assert.equal((html.match(/id="section-target"/g) || []).length, 1);
+    assert.equal((html.match(/id="section-other"/g) || []).length, 1);
+    assert.ok(!html.includes('target="_blank"'));
+  }
 });
 
 test('combined marks, external links and image position survive rendering without executing HTML', () => {
