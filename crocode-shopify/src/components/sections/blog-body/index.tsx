@@ -10,12 +10,14 @@ import styles from "./styles.module.scss";
 const components: PortableTextComponents = {
   block: {
     normal: ({ children }) => <Fade direction="down"><p>{children}</p></Fade>,
-    h1: ({ children }) => <Fade direction="down"><h1>{children}</h1></Fade>,
-    h2: ({ children }) => <Fade direction="down"><h2>{children}</h2></Fade>,
-    h3: ({ children }) => <Fade direction="down"><h3>{children}</h3></Fade>,
-    h4: ({ children }) => <Fade direction="down"><h4>{children}</h4></Fade>,
-    h5: ({ children }) => <Fade direction="down"><h5>{children}</h5></Fade>,
-    h6: ({ children }) => <Fade direction="down"><h6>{children}</h6></Fade>,
+    // Stable block keys keep incoming anchors valid when headings are edited or reordered.
+    // Avoid translated animation wrappers so native fragment scrolling targets the final position.
+    h1: ({ children, value }) => <h1 id={`section-${value._key}`}>{children}</h1>,
+    h2: ({ children, value }) => <h2 id={`section-${value._key}`}>{children}</h2>,
+    h3: ({ children, value }) => <h3 id={`section-${value._key}`}>{children}</h3>,
+    h4: ({ children, value }) => <h4 id={`section-${value._key}`}>{children}</h4>,
+    h5: ({ children, value }) => <h5 id={`section-${value._key}`}>{children}</h5>,
+    h6: ({ children, value }) => <h6 id={`section-${value._key}`}>{children}</h6>,
   },
   marks: {
     strong: ({ children }) => <strong>{children}</strong>,
